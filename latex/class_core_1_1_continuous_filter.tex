@@ -1,0 +1,105 @@
+\hypertarget{class_core_1_1_continuous_filter}{}\section{Класс Core\+:\+:Continuous\+Filter}
+\label{class_core_1_1_continuous_filter}\index{Core\+::\+Continuous\+Filter@{Core\+::\+Continuous\+Filter}}
+
+
+Базовый класс для всех непрерывныз фильтров оптимальной структуры.  
+
+
+
+
+{\ttfamily \#include \char`\"{}continuous\+\_\+filter.\+h\char`\"{}}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_core_1_1_continuous_filter_a5f28c1f5aaf740be3a6a8af09c0fcc22}{}\label{class_core_1_1_continuous_filter_a5f28c1f5aaf740be3a6a8af09c0fcc22} 
+\hyperlink{class_core_1_1_continuous_filter_a5f28c1f5aaf740be3a6a8af09c0fcc22}{Continuous\+Filter} (\hyperlink{namespace_core_a4811af8148ba137d644b9a61a042cf03}{Ptr\+Filter\+Parameters} \hyperlink{class_core_1_1_filter_a44aa749b49ba46256975ce545531ecf7}{params}, \hyperlink{namespace_core_abfda8f69fcacfcea2696549b548ed737}{Ptr\+Task} task)
+\begin{DoxyCompactList}\small\item\em Конструктор. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_core_1_1_continuous_filter_a4c30983f9354344717538f807855f2ae}{zero\+Iteration} () override
+\begin{DoxyCompactList}\small\item\em Нулевая итерация алгоритма (инициализирует начальные состояния). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespace_core_a95543587a560c6c497c6cadf68e03a62}{Ptr\+C\+Task} \hyperlink{class_core_1_1_continuous_filter_aaea7d47a9d573b9a88007780c4c3a722}{m\+\_\+task}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Базовый класс для всех непрерывныз фильтров оптимальной структуры. 
+
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{class_core_1_1_continuous_task}{Continuous\+Task}. 
+\end{DoxySeeAlso}
+
+
+См. определение в файле continuous\+\_\+filter.\+h строка 17
+
+
+
+Граф наследования\+:Core\+:\+:Continuous\+Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_core_1_1_continuous_filter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Core\+:\+:Continuous\+Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{class_core_1_1_continuous_filter__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Методы}
+\hypertarget{class_core_1_1_continuous_filter_a4c30983f9354344717538f807855f2ae}{}\label{class_core_1_1_continuous_filter_a4c30983f9354344717538f807855f2ae} 
+\index{Core\+::\+Continuous\+Filter@{Core\+::\+Continuous\+Filter}!zero\+Iteration@{zero\+Iteration}}
+\index{zero\+Iteration@{zero\+Iteration}!Core\+::\+Continuous\+Filter@{Core\+::\+Continuous\+Filter}}
+\subsubsection{\texorpdfstring{zero\+Iteration()}{zeroIteration()}}
+{\footnotesize\ttfamily void Core\+::\+Continuous\+Filter\+::zero\+Iteration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Нулевая итерация алгоритма (инициализирует начальные состояния). 
+
+Практически для всех дискретных фильтров оптимальной структуры имеет вид\+: \[Z_0 = m_0^x = M[X_0],\]
+
+В гауссовском АОФ (ФНА) добавляется уравнение для апостериорной ковариации объекта\+: \[P_0 = D_0^x = D[X_0].\] 
+
+Замещает \hyperlink{class_core_1_1_filter_af95880b734c4b8dc3d8c02f222b32506}{Core\+::\+Filter}.
+
+
+
+Переопределяется в \hyperlink{class_filters_1_1_continuous_1_1_a_o_f_ab416b56dbeb26366f495f03b3c08ad5e}{Filters\+::\+Continuous\+::\+A\+OF}.
+
+
+
+См. определение в файле continuous\+\_\+filter.\+cc строка 19
+
+
+
+\subsection{Данные класса}
+\hypertarget{class_core_1_1_continuous_filter_aaea7d47a9d573b9a88007780c4c3a722}{}\label{class_core_1_1_continuous_filter_aaea7d47a9d573b9a88007780c4c3a722} 
+\index{Core\+::\+Continuous\+Filter@{Core\+::\+Continuous\+Filter}!m\+\_\+task@{m\+\_\+task}}
+\index{m\+\_\+task@{m\+\_\+task}!Core\+::\+Continuous\+Filter@{Core\+::\+Continuous\+Filter}}
+\subsubsection{\texorpdfstring{m\+\_\+task}{m\_task}}
+{\footnotesize\ttfamily \hyperlink{namespace_core_a95543587a560c6c497c6cadf68e03a62}{Ptr\+C\+Task} Core\+::\+Continuous\+Filter\+::m\+\_\+task\hspace{0.3cm}{\ttfamily [protected]}}
+
+Указатель на экземпляр задачи, с которой происходит работа. 
+
+См. определение в файле continuous\+\_\+filter.\+h строка 38
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/core/continuous\+\_\+filter.\+h\item 
+src/core/continuous\+\_\+filter.\+cc\end{DoxyCompactItemize}

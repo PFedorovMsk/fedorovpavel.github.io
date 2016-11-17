@@ -1,0 +1,84 @@
+\hypertarget{class_color_manager}{}\section{Класс Color\+Manager}
+\label{class_color_manager}\index{Color\+Manager@{Color\+Manager}}
+
+
+Класс для управления набором цветов.  
+
+
+
+
+{\ttfamily \#include \char`\"{}color\+\_\+manager.\+h\char`\"{}}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_color_manager_a430efaaefd3650e29bcf4802394c29e9}{Color\+Manager} ()
+\begin{DoxyCompactList}\small\item\em Конструктор. \end{DoxyCompactList}\item 
+\hypertarget{class_color_manager_ab7ace598efd321831f0924572a4bf84e}{}\label{class_color_manager_ab7ace598efd321831f0924572a4bf84e} 
+const Q\+Color \& \hyperlink{class_color_manager_ab7ace598efd321831f0924572a4bf84e}{next\+Color} ()
+\begin{DoxyCompactList}\small\item\em Достает цвет из массива, сдвигает (циклически) индекс. \end{DoxyCompactList}\item 
+\hypertarget{class_color_manager_ae32d588a9d0144e2d55408c29f2f11ef}{}\label{class_color_manager_ae32d588a9d0144e2d55408c29f2f11ef} 
+void \hyperlink{class_color_manager_ae32d588a9d0144e2d55408c29f2f11ef}{reset} ()
+\begin{DoxyCompactList}\small\item\em Сбрасывает индекс последнего извлеченного цвета до нулевого. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_color_manager_a7b6e45b4281881b4cf37a40dafd1a77a}{m\+\_\+current\+Index}
+\item 
+Q\+Vector$<$ Q\+Color $>$ \hyperlink{class_color_manager_ac91ea962bfa95bc3ed7da0bfd44615f4}{m\+\_\+colors}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Класс для управления набором цветов. 
+
+См. определение в файле color\+\_\+manager.\+h строка 10
+
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_color_manager_a430efaaefd3650e29bcf4802394c29e9}{}\label{class_color_manager_a430efaaefd3650e29bcf4802394c29e9} 
+\index{Color\+Manager@{Color\+Manager}!Color\+Manager@{Color\+Manager}}
+\index{Color\+Manager@{Color\+Manager}!Color\+Manager@{Color\+Manager}}
+\subsubsection{\texorpdfstring{Color\+Manager()}{ColorManager()}}
+{\footnotesize\ttfamily Color\+Manager\+::\+Color\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Конструктор. 
+
+Генерирует набор цветов и сохраняет его в массив.
+
+Генерация происходит таким образом, чтобы соседние цвета были максимально \char`\"{}непохожими\char`\"{}. 
+
+См. определение в файле color\+\_\+manager.\+cc строка 4
+
+
+
+\subsection{Данные класса}
+\hypertarget{class_color_manager_ac91ea962bfa95bc3ed7da0bfd44615f4}{}\label{class_color_manager_ac91ea962bfa95bc3ed7da0bfd44615f4} 
+\index{Color\+Manager@{Color\+Manager}!m\+\_\+colors@{m\+\_\+colors}}
+\index{m\+\_\+colors@{m\+\_\+colors}!Color\+Manager@{Color\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+colors}{m\_colors}}
+{\footnotesize\ttfamily Q\+Vector$<$Q\+Color$>$ Color\+Manager\+::m\+\_\+colors\hspace{0.3cm}{\ttfamily [private]}}
+
+Массив под набор цветов. 
+
+См. определение в файле color\+\_\+manager.\+h строка 31
+
+\hypertarget{class_color_manager_a7b6e45b4281881b4cf37a40dafd1a77a}{}\label{class_color_manager_a7b6e45b4281881b4cf37a40dafd1a77a} 
+\index{Color\+Manager@{Color\+Manager}!m\+\_\+current\+Index@{m\+\_\+current\+Index}}
+\index{m\+\_\+current\+Index@{m\+\_\+current\+Index}!Color\+Manager@{Color\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+current\+Index}{m\_currentIndex}}
+{\footnotesize\ttfamily int Color\+Manager\+::m\+\_\+current\+Index\hspace{0.3cm}{\ttfamily [private]}}
+
+Индекс последнего цвета, котороый \char`\"{}взяли\char`\"{}. 
+
+См. определение в файле color\+\_\+manager.\+h строка 30
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/gui/color\+\_\+manager.\+h\item 
+src/gui/color\+\_\+manager.\+cc\end{DoxyCompactItemize}

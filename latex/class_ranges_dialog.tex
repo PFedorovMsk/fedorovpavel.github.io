@@ -1,0 +1,194 @@
+\hypertarget{class_ranges_dialog}{}\section{Класс Ranges\+Dialog}
+\label{class_ranges_dialog}\index{Ranges\+Dialog@{Ranges\+Dialog}}
+
+
+Диалоговое окно для изменения границ осей координат.  
+
+
+
+
+{\ttfamily \#include \char`\"{}ranges\+\_\+dialog.\+h\char`\"{}}
+
+\subsection*{Сигналы}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_ranges_dialog_a8d4fb1f4d8bd2e5e3d0bc36f390e4974}{ranges\+Changed} (Math\+::\+Vector2 x, Math\+::\+Vector2 y)
+\begin{DoxyCompactList}\small\item\em Сигнал. Сообщает всем связанным виджетам новые значения границ осей координат. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ranges_dialog_a029bf2335408c07771d67c5875433214}{Ranges\+Dialog} (const Math\+::\+Vector2 \&x, const Math\+::\+Vector2 \&y, Q\+Widget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Конструктор. \end{DoxyCompactList}\item 
+\hypertarget{class_ranges_dialog_a0852f0249101bfae86f5b7c037b77f97}{}\label{class_ranges_dialog_a0852f0249101bfae86f5b7c037b77f97} 
+\hyperlink{class_ranges_dialog_a0852f0249101bfae86f5b7c037b77f97}{$\sim$\+Ranges\+Dialog} ()
+\begin{DoxyCompactList}\small\item\em Деструктор. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Закрытые слоты}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_ranges_dialog_a4b7d45fb0b5f225da1305ef8ce80ad6e}{}\label{class_ranges_dialog_a4b7d45fb0b5f225da1305ef8ce80ad6e} 
+void \hyperlink{class_ranges_dialog_a4b7d45fb0b5f225da1305ef8ce80ad6e}{on\+Y\+Max\+Changed} (double y\+Max)
+\begin{DoxyCompactList}\small\item\em Сохраняет новое значение верхней границы оси OY. \end{DoxyCompactList}\item 
+\hypertarget{class_ranges_dialog_a8f9567a3bc26d5e75c17a0eb85298869}{}\label{class_ranges_dialog_a8f9567a3bc26d5e75c17a0eb85298869} 
+void \hyperlink{class_ranges_dialog_a8f9567a3bc26d5e75c17a0eb85298869}{on\+Y\+Min\+Changed} (double y\+Min)
+\begin{DoxyCompactList}\small\item\em Сохраняет новое значение нижней границы оси OY. \end{DoxyCompactList}\item 
+\hypertarget{class_ranges_dialog_a58929e0764374f0f07406b8a3042bad3}{}\label{class_ranges_dialog_a58929e0764374f0f07406b8a3042bad3} 
+void \hyperlink{class_ranges_dialog_a58929e0764374f0f07406b8a3042bad3}{on\+X\+Max\+Changed} (double x\+Max)
+\begin{DoxyCompactList}\small\item\em Сохраняет новое значение правой границы оси OX. \end{DoxyCompactList}\item 
+\hypertarget{class_ranges_dialog_a64b596bcf23ba7e4bc1b94b60e0b64d0}{}\label{class_ranges_dialog_a64b596bcf23ba7e4bc1b94b60e0b64d0} 
+void \hyperlink{class_ranges_dialog_a64b596bcf23ba7e4bc1b94b60e0b64d0}{on\+X\+Min\+Changed} (double x\+Min)
+\begin{DoxyCompactList}\small\item\em Сохраняет новое значение левой границы оси OX. \end{DoxyCompactList}\item 
+\hypertarget{class_ranges_dialog_af9c1d18ebe5c3d31135f5fc448a78197}{}\label{class_ranges_dialog_af9c1d18ebe5c3d31135f5fc448a78197} 
+void \hyperlink{class_ranges_dialog_af9c1d18ebe5c3d31135f5fc448a78197}{on\+Accepted\+Clicked} ()
+\begin{DoxyCompactList}\small\item\em Испускает сигнал \hyperlink{class_ranges_dialog_a8d4fb1f4d8bd2e5e3d0bc36f390e4974}{ranges\+Changed(\+Math\+::\+Vector2 x, Math\+::\+Vector2 y)} и закрывает окно. \end{DoxyCompactList}\item 
+\hypertarget{class_ranges_dialog_a468a5018e8cce506affa2113b1e620e3}{}\label{class_ranges_dialog_a468a5018e8cce506affa2113b1e620e3} 
+void \hyperlink{class_ranges_dialog_a468a5018e8cce506affa2113b1e620e3}{on\+Rejected\+Clicked} ()
+\begin{DoxyCompactList}\small\item\em Закрывает окно (все изменения отклонены). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_ranges_dialog_ad57f53fe1a4c87c825f02154b539c10c}{load\+Fonts} ()
+\begin{DoxyCompactList}\small\item\em Загружает шрифты и устанавливает их параметры (начертание, размер и т.\+д.). \end{DoxyCompactList}\item 
+void \hyperlink{class_ranges_dialog_aa05dcc5245ec5014e71866acdfc81de1}{init\+Controls} (const Math\+::\+Vector2 \&x, const Math\+::\+Vector2 \&y)
+\begin{DoxyCompactList}\small\item\em Инициализирует управляющие элементы и связывает их сигналы с нужными слотами. \end{DoxyCompactList}\item 
+\hypertarget{class_ranges_dialog_abd72fb84fe9762c5b3a53811fc3dde91}{}\label{class_ranges_dialog_abd72fb84fe9762c5b3a53811fc3dde91} 
+void \hyperlink{class_ranges_dialog_abd72fb84fe9762c5b3a53811fc3dde91}{init\+Layouts} ()
+\begin{DoxyCompactList}\small\item\em Устанавливает расположение всех элементов на виджете. \end{DoxyCompactList}\item 
+\hypertarget{class_ranges_dialog_a12f1da38b72c0a1005145f56e9160ba6}{}\label{class_ranges_dialog_a12f1da38b72c0a1005145f56e9160ba6} 
+void \hyperlink{class_ranges_dialog_a12f1da38b72c0a1005145f56e9160ba6}{init\+Plotter} ()
+\begin{DoxyCompactList}\small\item\em Инициализирует поле рисовальщика Q\+Custom\+Plot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_ranges_dialog_aa7e90336b7f703eda2d04b74cc29b1f1}{}\label{class_ranges_dialog_aa7e90336b7f703eda2d04b74cc29b1f1} 
+Q\+Double\+Spin\+Box $\ast$ {\bfseries m\+\_\+dsb\+X\+Min}
+\item 
+\hypertarget{class_ranges_dialog_a336a353a6730dc45cbac777808b6c368}{}\label{class_ranges_dialog_a336a353a6730dc45cbac777808b6c368} 
+Q\+Double\+Spin\+Box $\ast$ {\bfseries m\+\_\+dsb\+X\+Max}
+\item 
+\hypertarget{class_ranges_dialog_a5ca6eae82b600f510d7e0e45bd0c254a}{}\label{class_ranges_dialog_a5ca6eae82b600f510d7e0e45bd0c254a} 
+Q\+Double\+Spin\+Box $\ast$ {\bfseries m\+\_\+dsb\+Y\+Min}
+\item 
+\hypertarget{class_ranges_dialog_a2b993d1980494d1dcd45a9f432c04c39}{}\label{class_ranges_dialog_a2b993d1980494d1dcd45a9f432c04c39} 
+Q\+Double\+Spin\+Box $\ast$ {\bfseries m\+\_\+dsb\+Y\+Max}
+\item 
+\hypertarget{class_ranges_dialog_a68fd573fcf8e4c35716edca9b983ee16}{}\label{class_ranges_dialog_a68fd573fcf8e4c35716edca9b983ee16} 
+Q\+Custom\+Plot $\ast$ {\bfseries m\+\_\+plotter}
+\item 
+\hypertarget{class_ranges_dialog_abd076dcdfac169f18d61b361478fa523}{}\label{class_ranges_dialog_abd076dcdfac169f18d61b361478fa523} 
+Q\+Dialog\+Button\+Box $\ast$ {\bfseries m\+\_\+button\+Box}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Диалоговое окно для изменения границ осей координат. 
+
+См. определение в файле ranges\+\_\+dialog.\+h строка 15
+
+
+
+Граф наследования\+:Ranges\+Dialog\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{class_ranges_dialog__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Ranges\+Dialog\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{class_ranges_dialog__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_ranges_dialog_a029bf2335408c07771d67c5875433214}{}\label{class_ranges_dialog_a029bf2335408c07771d67c5875433214} 
+\index{Ranges\+Dialog@{Ranges\+Dialog}!Ranges\+Dialog@{Ranges\+Dialog}}
+\index{Ranges\+Dialog@{Ranges\+Dialog}!Ranges\+Dialog@{Ranges\+Dialog}}
+\subsubsection{\texorpdfstring{Ranges\+Dialog()}{RangesDialog()}}
+{\footnotesize\ttfamily Ranges\+Dialog\+::\+Ranges\+Dialog (\begin{DoxyParamCaption}\item[{const Math\+::\+Vector2 \&}]{x,  }\item[{const Math\+::\+Vector2 \&}]{y,  }\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Конструктор. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & -\/ пара (min, max) для оси OX. \\
+\hline
+{\em y} & -\/ пара (min, max) для оси OY. \\
+\hline
+\end{DoxyParams}
+
+
+См. определение в файле ranges\+\_\+dialog.\+cc строка 5
+
+
+
+\subsection{Методы}
+\hypertarget{class_ranges_dialog_aa05dcc5245ec5014e71866acdfc81de1}{}\label{class_ranges_dialog_aa05dcc5245ec5014e71866acdfc81de1} 
+\index{Ranges\+Dialog@{Ranges\+Dialog}!init\+Controls@{init\+Controls}}
+\index{init\+Controls@{init\+Controls}!Ranges\+Dialog@{Ranges\+Dialog}}
+\subsubsection{\texorpdfstring{init\+Controls()}{initControls()}}
+{\footnotesize\ttfamily void Ranges\+Dialog\+::init\+Controls (\begin{DoxyParamCaption}\item[{const Math\+::\+Vector2 \&}]{x,  }\item[{const Math\+::\+Vector2 \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Инициализирует управляющие элементы и связывает их сигналы с нужными слотами. 
+
+! 
+\begin{DoxyParams}{Аргументы}
+{\em x} & -\/ пара (min, max) для оси OX. \\
+\hline
+{\em y} & -\/ пара (min, max) для оси OY. \\
+\hline
+\end{DoxyParams}
+
+
+См. определение в файле ranges\+\_\+dialog.\+cc строка 18
+
+\hypertarget{class_ranges_dialog_ad57f53fe1a4c87c825f02154b539c10c}{}\label{class_ranges_dialog_ad57f53fe1a4c87c825f02154b539c10c} 
+\index{Ranges\+Dialog@{Ranges\+Dialog}!load\+Fonts@{load\+Fonts}}
+\index{load\+Fonts@{load\+Fonts}!Ranges\+Dialog@{Ranges\+Dialog}}
+\subsubsection{\texorpdfstring{load\+Fonts()}{loadFonts()}}
+{\footnotesize\ttfamily void Ranges\+Dialog\+::load\+Fonts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Загружает шрифты и устанавливает их параметры (начертание, размер и т.\+д.). 
+
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{class_font_manager}{Font\+Manager}. 
+\end{DoxySeeAlso}
+
+
+См. определение в файле ranges\+\_\+dialog.\+cc строка 73
+
+\hypertarget{class_ranges_dialog_a8d4fb1f4d8bd2e5e3d0bc36f390e4974}{}\label{class_ranges_dialog_a8d4fb1f4d8bd2e5e3d0bc36f390e4974} 
+\index{Ranges\+Dialog@{Ranges\+Dialog}!ranges\+Changed@{ranges\+Changed}}
+\index{ranges\+Changed@{ranges\+Changed}!Ranges\+Dialog@{Ranges\+Dialog}}
+\subsubsection{\texorpdfstring{ranges\+Changed}{rangesChanged}}
+{\footnotesize\ttfamily void Ranges\+Dialog\+::ranges\+Changed (\begin{DoxyParamCaption}\item[{Math\+::\+Vector2}]{x,  }\item[{Math\+::\+Vector2}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Сигнал. Сообщает всем связанным виджетам новые значения границ осей координат. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/gui/ranges\+\_\+dialog.\+h\item 
+src/gui/ranges\+\_\+dialog.\+cc\end{DoxyCompactItemize}

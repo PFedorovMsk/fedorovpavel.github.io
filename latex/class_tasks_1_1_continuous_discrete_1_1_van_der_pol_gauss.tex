@@ -1,0 +1,189 @@
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss}{}\section{Класс Tasks\+:\+:Continuous\+Discrete\+:\+:Van\+Der\+Pol\+Gauss}
+\label{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss}\index{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss@{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss}}
+
+
+Осциллятор Ван-\/дер-\/Поля (непрерывно-\/дискретный, гауссовский) для фильтров оптимальной структуры.  
+
+
+
+
+{\ttfamily \#include \char`\"{}cd\+\_\+vanderpol\+\_\+gauss.\+h\char`\"{}}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss_aef78157117996a736918e7dcd9ebbdd5}{}\label{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss_aef78157117996a736918e7dcd9ebbdd5} 
+\hyperlink{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss_aef78157117996a736918e7dcd9ebbdd5}{Van\+Der\+Pol\+Gauss} ()
+\begin{DoxyCompactList}\small\item\em Конструктор. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+Vector \hyperlink{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss_acfe935d9f4f452f3e10cb5f41fc8530a}{tau} (const Vector \&m, const Matrix \&D) const override
+\begin{DoxyCompactList}\small\item\em Структурная функция прогноза $\tau(t, m, D)$. \end{DoxyCompactList}\item 
+Matrix \hyperlink{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss_addb8066d1f4701c0c453d07ffa8631ff}{Theta} (const Vector \&m, const Matrix \&D) const override
+\begin{DoxyCompactList}\small\item\em Структурная функция прогноза $\Theta(t,m,D)$. \end{DoxyCompactList}\item 
+Matrix \hyperlink{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss_acb431d1a24b276610f6b7c7ff343fb9f}{A} (const Vector \&m, const Matrix \&D) const override
+\begin{DoxyCompactList}\small\item\em Возвращает матрицу якоби $A(t, m, D)$ для функции $\tau(t, m, D)$. \end{DoxyCompactList}\item 
+Matrix \hyperlink{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss_a757eb311b72b3cabcee59eab9d732de5}{G} (const Vector \&m, const Matrix \&D) const override
+\begin{DoxyCompactList}\small\item\em Структурная функция коррекции $G_k(m, D)$. \end{DoxyCompactList}\item 
+Matrix \hyperlink{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss_adbd6671eb347348b68db28d899484336}{F} (const Vector \&m, const Matrix \&D) const override
+\begin{DoxyCompactList}\small\item\em Структурная функция коррекции $F_k(m, D)$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Дополнительные унаследованные члены}
+
+
+\subsection{Подробное описание}
+Осциллятор Ван-\/дер-\/Поля (непрерывно-\/дискретный, гауссовский) для фильтров оптимальной структуры. 
+
+См. определение в файле cd\+\_\+vanderpol\+\_\+gauss.\+h строка 18
+
+
+
+Граф наследования\+:Tasks\+:\+:Continuous\+Discrete\+:\+:Van\+Der\+Pol\+Gauss\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Tasks\+:\+:Continuous\+Discrete\+:\+:Van\+Der\+Pol\+Gauss\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Методы}
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss_acb431d1a24b276610f6b7c7ff343fb9f}{}\label{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss_acb431d1a24b276610f6b7c7ff343fb9f} 
+\index{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss@{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss}!A@{A}}
+\index{A@{A}!Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss@{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss}}
+\subsubsection{\texorpdfstring{A()}{A()}}
+{\footnotesize\ttfamily Matrix Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss\+::A (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Возвращает матрицу якоби $A(t, m, D)$ для функции $\tau(t, m, D)$. 
+
+Она имеет следующий вид для
+
+
+\begin{DoxyItemize}
+\item гауссовского приближения\+: \[A(t, m, D) = \frac{d}{dm} \tau(t, m),\]
+\item линеаризованного приближения\+: \[A(t, m, D) = \frac{d}{dm} a(t, m).\] 
+\end{DoxyItemize}
+
+Замещает \hyperlink{class_core_1_1_continuous_discrete_task_a332d99b61aabb919bffe75d0eec05cfe}{Core\+::\+Continuous\+Discrete\+Task}.
+
+
+
+См. определение в файле cd\+\_\+vanderpol\+\_\+gauss.\+cc строка 37
+
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss_adbd6671eb347348b68db28d899484336}{}\label{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss_adbd6671eb347348b68db28d899484336} 
+\index{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss@{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss}!F@{F}}
+\index{F@{F}!Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss@{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss}}
+\subsubsection{\texorpdfstring{F()}{F()}}
+{\footnotesize\ttfamily Matrix Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss\+::F (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Структурная функция коррекции $F_k(m, D)$. 
+
+Она имеет следующий вид для
+
+
+\begin{DoxyItemize}
+\item гауссовского приближения\+: \[F_k(m, D) = \int (M[c_k(x,W_k)\cdot c_k^T(x, W_k)] \cdot N(x\ |\ m,D))dx - h_k(m,D)\cdot h_k^T(m,D),\]
+\item линеаризованного приближения\+: \[F_k(m, D) = C_k^x(m)\cdot D\cdot C_k^{xT}(m) + C_k^w(m)\cdot D[W_k]\cdot C_k^{wT}(m).\]
+\end{DoxyItemize}
+
+Здесь $C_k^x(x) = \frac{d}{dx} c_k(x, M[W_k]),\ C_k^w(x) = \frac{d}{dw} c_k(x, M[W_k])$. 
+
+Замещает \hyperlink{class_core_1_1_continuous_discrete_task_a08947ea4d4eb819e0e8530e682a1a377}{Core\+::\+Continuous\+Discrete\+Task}.
+
+
+
+См. определение в файле cd\+\_\+vanderpol\+\_\+gauss.\+cc строка 54
+
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss_a757eb311b72b3cabcee59eab9d732de5}{}\label{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss_a757eb311b72b3cabcee59eab9d732de5} 
+\index{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss@{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss}!G@{G}}
+\index{G@{G}!Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss@{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss}}
+\subsubsection{\texorpdfstring{G()}{G()}}
+{\footnotesize\ttfamily Matrix Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss\+::G (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Структурная функция коррекции $G_k(m, D)$. 
+
+Она имеет следующий вид для
+
+
+\begin{DoxyItemize}
+\item гауссовского приближения\+: \[G_k(m, D) = \frac{d}{dm}h_k(m,D),\]
+\item линеаризованного приближения\+: \[G_k(m, D) = \frac{d}{dm}c_k(m,M[W_k]).\] 
+\end{DoxyItemize}
+
+Замещает \hyperlink{class_core_1_1_continuous_discrete_task_a2bc6d34d112ec0999857f7f9e0f67dda}{Core\+::\+Continuous\+Discrete\+Task}.
+
+
+
+См. определение в файле cd\+\_\+vanderpol\+\_\+gauss.\+cc строка 49
+
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss_acfe935d9f4f452f3e10cb5f41fc8530a}{}\label{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss_acfe935d9f4f452f3e10cb5f41fc8530a} 
+\index{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss@{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss}!tau@{tau}}
+\index{tau@{tau}!Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss@{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss}}
+\subsubsection{\texorpdfstring{tau()}{tau()}}
+{\footnotesize\ttfamily Vector Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss\+::tau (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Структурная функция прогноза $\tau(t, m, D)$. 
+
+Она имеет следующий вид для
+
+
+\begin{DoxyItemize}
+\item гауссовского приближения\+: \[\tau(t, m, D) = \int a(t,x)\cdot N(x\ |\ m, D)dx,\]
+\item линеаризованного приближения\+: \[\tau(t, m, D) = a(t, m).\] 
+\end{DoxyItemize}
+
+Замещает \hyperlink{class_core_1_1_continuous_discrete_task_a491a9dc4463031a6f5f2eeda24d8ba9c}{Core\+::\+Continuous\+Discrete\+Task}.
+
+
+
+См. определение в файле cd\+\_\+vanderpol\+\_\+gauss.\+cc строка 17
+
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss_addb8066d1f4701c0c453d07ffa8631ff}{}\label{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss_addb8066d1f4701c0c453d07ffa8631ff} 
+\index{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss@{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss}!Theta@{Theta}}
+\index{Theta@{Theta}!Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss@{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss}}
+\subsubsection{\texorpdfstring{Theta()}{Theta()}}
+{\footnotesize\ttfamily Matrix Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss\+::\+Theta (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Структурная функция прогноза $\Theta(t,m,D)$. 
+
+Она имеет следующий вид для
+
+
+\begin{DoxyItemize}
+\item гауссовского приближения\+: \[\Theta(t,m,D) = \int B(t,x)\cdot B^T(t,x)\cdot N(x\ |\ m,D)dx,\]
+\item линеаризованного приближения\+: \[\Theta(t,m,D) = B(t,m)\cdot B^T(t,m).\] 
+\end{DoxyItemize}
+
+Замещает \hyperlink{class_core_1_1_continuous_discrete_task_a961cc49fd0c72ba0a211bb4913ca3ece}{Core\+::\+Continuous\+Discrete\+Task}.
+
+
+
+См. определение в файле cd\+\_\+vanderpol\+\_\+gauss.\+cc строка 28
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/tasks/continuous\+\_\+discrete/cd\+\_\+vanderpol\+\_\+gauss.\+h\item 
+src/tasks/continuous\+\_\+discrete/cd\+\_\+vanderpol\+\_\+gauss.\+cc\end{DoxyCompactItemize}

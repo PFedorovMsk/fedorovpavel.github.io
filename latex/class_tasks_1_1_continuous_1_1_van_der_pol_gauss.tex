@@ -1,0 +1,110 @@
+\hypertarget{class_tasks_1_1_continuous_1_1_van_der_pol_gauss}{}\section{Класс Tasks\+:\+:Continuous\+:\+:Van\+Der\+Pol\+Gauss}
+\label{class_tasks_1_1_continuous_1_1_van_der_pol_gauss}\index{Tasks\+::\+Continuous\+::\+Van\+Der\+Pol\+Gauss@{Tasks\+::\+Continuous\+::\+Van\+Der\+Pol\+Gauss}}
+
+
+Осциллятор Ван-\/дер-\/Поля (непрерывный, гауссовский) для фильтров оптимальной структуры.  
+
+
+
+
+{\ttfamily \#include \char`\"{}c\+\_\+vanderpol\+\_\+gauss.\+h\char`\"{}}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tasks_1_1_continuous_1_1_van_der_pol_gauss_ae40ae7f81419b9ca24403335e72d92d2}{}\label{class_tasks_1_1_continuous_1_1_van_der_pol_gauss_ae40ae7f81419b9ca24403335e72d92d2} 
+\hyperlink{class_tasks_1_1_continuous_1_1_van_der_pol_gauss_ae40ae7f81419b9ca24403335e72d92d2}{Van\+Der\+Pol\+Gauss} ()
+\begin{DoxyCompactList}\small\item\em Конструктор. \end{DoxyCompactList}\item 
+Matrix \hyperlink{class_tasks_1_1_continuous_1_1_van_der_pol_gauss_a2ef625f7f8c590726c5b52e67622c172}{A} (const Vector \&m, const Matrix \&\hyperlink{class_tasks_1_1_continuous_1_1_van_der_pol_linear_a07e8842a175006f214238a9f71e5ebdf}{D}) const override
+\begin{DoxyCompactList}\small\item\em Структурная функция $A(t, m, D)$. \end{DoxyCompactList}\item 
+Matrix \hyperlink{class_tasks_1_1_continuous_1_1_van_der_pol_gauss_a1b61ca6de96df17b049bc7934a241e47}{G} (const Vector \&m, const Matrix \&\hyperlink{class_tasks_1_1_continuous_1_1_van_der_pol_linear_a07e8842a175006f214238a9f71e5ebdf}{D}) const override
+\begin{DoxyCompactList}\small\item\em Структурная функция $G(t, m, D)$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tasks_1_1_continuous_1_1_van_der_pol_gauss_aefe0f9432c2c283fba65ca73e6092f28}{}\label{class_tasks_1_1_continuous_1_1_van_der_pol_gauss_aefe0f9432c2c283fba65ca73e6092f28} 
+Matrix \hyperlink{class_tasks_1_1_continuous_1_1_van_der_pol_gauss_aefe0f9432c2c283fba65ca73e6092f28}{Q} (const Vector \&m, const Matrix \&\hyperlink{class_tasks_1_1_continuous_1_1_van_der_pol_linear_a07e8842a175006f214238a9f71e5ebdf}{D}) const override
+\begin{DoxyCompactList}\small\item\em Возвращает интенсивность шумов $Q(\cdot) = B(\cdot) \cdot B^T(\cdot)$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Дополнительные унаследованные члены}
+
+
+\subsection{Подробное описание}
+Осциллятор Ван-\/дер-\/Поля (непрерывный, гауссовский) для фильтров оптимальной структуры. 
+
+См. определение в файле c\+\_\+vanderpol\+\_\+gauss.\+h строка 18
+
+
+
+Граф наследования\+:Tasks\+:\+:Continuous\+:\+:Van\+Der\+Pol\+Gauss\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{class_tasks_1_1_continuous_1_1_van_der_pol_gauss__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Tasks\+:\+:Continuous\+:\+:Van\+Der\+Pol\+Gauss\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{class_tasks_1_1_continuous_1_1_van_der_pol_gauss__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Методы}
+\hypertarget{class_tasks_1_1_continuous_1_1_van_der_pol_gauss_a2ef625f7f8c590726c5b52e67622c172}{}\label{class_tasks_1_1_continuous_1_1_van_der_pol_gauss_a2ef625f7f8c590726c5b52e67622c172} 
+\index{Tasks\+::\+Continuous\+::\+Van\+Der\+Pol\+Gauss@{Tasks\+::\+Continuous\+::\+Van\+Der\+Pol\+Gauss}!A@{A}}
+\index{A@{A}!Tasks\+::\+Continuous\+::\+Van\+Der\+Pol\+Gauss@{Tasks\+::\+Continuous\+::\+Van\+Der\+Pol\+Gauss}}
+\subsubsection{\texorpdfstring{A()}{A()}}
+{\footnotesize\ttfamily Matrix Tasks\+::\+Continuous\+::\+Van\+Der\+Pol\+Gauss\+::A (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Структурная функция $A(t, m, D)$. 
+
+Она имеет следующий вид для
+
+
+\begin{DoxyItemize}
+\item линеаризованного приближения\+: \[A(t, m, D) = \frac{d}{dm} a(t, m).\] 
+\end{DoxyItemize}
+
+Замещает \hyperlink{class_core_1_1_continuous_task_a75fbac1abe67223cd7938b724c5cce45}{Core\+::\+Continuous\+Task}.
+
+
+
+См. определение в файле c\+\_\+vanderpol\+\_\+gauss.\+cc строка 17
+
+\hypertarget{class_tasks_1_1_continuous_1_1_van_der_pol_gauss_a1b61ca6de96df17b049bc7934a241e47}{}\label{class_tasks_1_1_continuous_1_1_van_der_pol_gauss_a1b61ca6de96df17b049bc7934a241e47} 
+\index{Tasks\+::\+Continuous\+::\+Van\+Der\+Pol\+Gauss@{Tasks\+::\+Continuous\+::\+Van\+Der\+Pol\+Gauss}!G@{G}}
+\index{G@{G}!Tasks\+::\+Continuous\+::\+Van\+Der\+Pol\+Gauss@{Tasks\+::\+Continuous\+::\+Van\+Der\+Pol\+Gauss}}
+\subsubsection{\texorpdfstring{G()}{G()}}
+{\footnotesize\ttfamily Matrix Tasks\+::\+Continuous\+::\+Van\+Der\+Pol\+Gauss\+::G (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Структурная функция $G(t, m, D)$. 
+
+Она имеет следующий вид для
+
+
+\begin{DoxyItemize}
+\item линеаризованного приближения\+: \[G(t, m, D) = \frac{d}{dm} c(t, m).\] 
+\end{DoxyItemize}
+
+Замещает \hyperlink{class_core_1_1_continuous_task_a1b579e183ffa229f97048aadfd834517}{Core\+::\+Continuous\+Task}.
+
+
+
+См. определение в файле c\+\_\+vanderpol\+\_\+gauss.\+cc строка 29
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/tasks/continuous/c\+\_\+vanderpol\+\_\+gauss.\+h\item 
+src/tasks/continuous/c\+\_\+vanderpol\+\_\+gauss.\+cc\end{DoxyCompactItemize}

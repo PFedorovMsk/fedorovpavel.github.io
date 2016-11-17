@@ -1,0 +1,92 @@
+\hypertarget{class_filters_1_1_discrete_1_1_f_o_s}{}\section{Класс Filters\+:\+:Discrete\+:\+:F\+OS}
+\label{class_filters_1_1_discrete_1_1_f_o_s}\index{Filters\+::\+Discrete\+::\+F\+OS@{Filters\+::\+Discrete\+::\+F\+OS}}
+
+
+Класс, реализующий дискретный фильтр оптимальной структуры.  
+
+
+
+
+{\ttfamily \#include \char`\"{}d\+\_\+fos.\+h\char`\"{}}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_filters_1_1_discrete_1_1_f_o_s_a4ccb53bc00846f7ca140b55316241749}{}\label{class_filters_1_1_discrete_1_1_f_o_s_a4ccb53bc00846f7ca140b55316241749} 
+\hyperlink{class_filters_1_1_discrete_1_1_f_o_s_a4ccb53bc00846f7ca140b55316241749}{F\+OS} (\hyperlink{namespace_core_a4811af8148ba137d644b9a61a042cf03}{Core\+::\+Ptr\+Filter\+Parameters} \hyperlink{class_core_1_1_filter_a44aa749b49ba46256975ce545531ecf7}{params}, \hyperlink{namespace_core_abfda8f69fcacfcea2696549b548ed737}{Core\+::\+Ptr\+Task} task)
+\begin{DoxyCompactList}\small\item\em Конструктор. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_filters_1_1_discrete_1_1_f_o_s_a66b52dd04e77257393fe156b71e5582f}{algorithm} () override
+\begin{DoxyCompactList}\small\item\em Выполняет алгоритм. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_filters_1_1_discrete_1_1_f_o_s_ac00393ddad3a1ba203e09db8cbc52944}{}\label{class_filters_1_1_discrete_1_1_f_o_s_ac00393ddad3a1ba203e09db8cbc52944} 
+void {\bfseries compute\+Params} (size\+\_\+t n, Array$<$ Math\+::\+Vector $>$ \&u, Math\+::\+Matrix \&T)
+\end{DoxyCompactItemize}
+\subsection*{Дополнительные унаследованные члены}
+
+
+\subsection{Подробное описание}
+Класс, реализующий дискретный фильтр оптимальной структуры. 
+
+См. определение в файле d\+\_\+fos.\+h строка 16
+
+
+
+Граф наследования\+:Filters\+:\+:Discrete\+:\+:F\+OS\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{class_filters_1_1_discrete_1_1_f_o_s__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Filters\+:\+:Discrete\+:\+:F\+OS\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{class_filters_1_1_discrete_1_1_f_o_s__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Методы}
+\hypertarget{class_filters_1_1_discrete_1_1_f_o_s_a66b52dd04e77257393fe156b71e5582f}{}\label{class_filters_1_1_discrete_1_1_f_o_s_a66b52dd04e77257393fe156b71e5582f} 
+\index{Filters\+::\+Discrete\+::\+F\+OS@{Filters\+::\+Discrete\+::\+F\+OS}!algorithm@{algorithm}}
+\index{algorithm@{algorithm}!Filters\+::\+Discrete\+::\+F\+OS@{Filters\+::\+Discrete\+::\+F\+OS}}
+\subsubsection{\texorpdfstring{algorithm()}{algorithm()}}
+{\footnotesize\ttfamily void Filters\+::\+Discrete\+::\+F\+O\+S\+::algorithm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Выполняет алгоритм. 
+
+Вектор $Z_t$ оценки вычисляется следующим образом\+: \[\Lambda_k = \tau_{k-1}(U_{k-1}, T_{k-1}),\] \[\Psi_k = \Theta_{k-1}(U_{k-1}, T_{k-1}),\] \[Z_k = \Lambda_k + \Psi_k \cdot G_k^T(\Lambda_k, \Psi_k) \cdot F_k^{-1}(\Lambda_k, \Psi_k) \cdot [Y_k - h_k(\Lambda_k, \Psi_k)].\]
+
+Параметры вычисляются так\+: \[D_k^\delta = cov([Y_k^T\ \ Z_k^T]^T),\] \[[\Gamma_k^y\ \ \Gamma_k^z] = [D_{kk}^{xy}\ \ D_{kk}^{xz}] \cdot (D_k^\delta)^{-1},\] \[\chi_k = m_k^x - \Gamma_k^y \cdot m_k^y - \Gamma_k^z \cdot m_k^z,\] \[T_k = D_k^x - \Gamma_k^y \cdot (D_{kk}^{xy})^T - \Gamma_k^z \cdot (D_{kk}^{xz})^T,\] \[U_k = \Gamma_k^y \cdot Y_k + \Gamma_k^z \cdot Z_k + \chi_k.\]
+
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{class_core_1_1_discrete_filter}{Core\+::\+Discrete\+Filter} 
+
+\hyperlink{class_core_1_1_discrete_task}{Core\+::\+Discrete\+Task} 
+\end{DoxySeeAlso}
+
+
+Замещает \hyperlink{class_core_1_1_filter_a438681ee3e54aba2148042d9f8011ab8}{Core\+::\+Filter}.
+
+
+
+См. определение в файле d\+\_\+fos.\+cc строка 90
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/filters/discrete/d\+\_\+fos.\+h\item 
+src/filters/discrete/d\+\_\+fos.\+cc\end{DoxyCompactItemize}

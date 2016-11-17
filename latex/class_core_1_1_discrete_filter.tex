@@ -1,0 +1,105 @@
+\hypertarget{class_core_1_1_discrete_filter}{}\section{Класс Core\+:\+:Discrete\+Filter}
+\label{class_core_1_1_discrete_filter}\index{Core\+::\+Discrete\+Filter@{Core\+::\+Discrete\+Filter}}
+
+
+Базовый класс для всех дискретных фильтров оптимальной структуры.  
+
+
+
+
+{\ttfamily \#include \char`\"{}discrete\+\_\+filter.\+h\char`\"{}}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_core_1_1_discrete_filter_a87399ba405c2dfe8037191fe907df141}{}\label{class_core_1_1_discrete_filter_a87399ba405c2dfe8037191fe907df141} 
+\hyperlink{class_core_1_1_discrete_filter_a87399ba405c2dfe8037191fe907df141}{Discrete\+Filter} (\hyperlink{namespace_core_a4811af8148ba137d644b9a61a042cf03}{Ptr\+Filter\+Parameters} \hyperlink{class_core_1_1_filter_a44aa749b49ba46256975ce545531ecf7}{params}, \hyperlink{namespace_core_abfda8f69fcacfcea2696549b548ed737}{Ptr\+Task} task)
+\begin{DoxyCompactList}\small\item\em Конструктор. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_core_1_1_discrete_filter_a658617c64c7067bb6b98b5e9d78f982e}{zero\+Iteration} () override
+\begin{DoxyCompactList}\small\item\em Нулевая итерация алгоритма (инициализирует начальные состояния). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespace_core_a9cd3f9b81303651b8d115031018f0ebf}{Ptr\+D\+Task} \hyperlink{class_core_1_1_discrete_filter_a6a2d67be8eaa0df383fe080474975faa}{m\+\_\+task}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Базовый класс для всех дискретных фильтров оптимальной структуры. 
+
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{class_core_1_1_discrete_task}{Discrete\+Task}. 
+\end{DoxySeeAlso}
+
+
+См. определение в файле discrete\+\_\+filter.\+h строка 18
+
+
+
+Граф наследования\+:Core\+:\+:Discrete\+Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_core_1_1_discrete_filter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Core\+:\+:Discrete\+Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{class_core_1_1_discrete_filter__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Методы}
+\hypertarget{class_core_1_1_discrete_filter_a658617c64c7067bb6b98b5e9d78f982e}{}\label{class_core_1_1_discrete_filter_a658617c64c7067bb6b98b5e9d78f982e} 
+\index{Core\+::\+Discrete\+Filter@{Core\+::\+Discrete\+Filter}!zero\+Iteration@{zero\+Iteration}}
+\index{zero\+Iteration@{zero\+Iteration}!Core\+::\+Discrete\+Filter@{Core\+::\+Discrete\+Filter}}
+\subsubsection{\texorpdfstring{zero\+Iteration()}{zeroIteration()}}
+{\footnotesize\ttfamily void Core\+::\+Discrete\+Filter\+::zero\+Iteration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Нулевая итерация алгоритма (инициализирует начальные состояния). 
+
+Практически для всех дискретных фильтров оптимальной структуры имеет вид\+: \[Z_0 = H_0 \cdot Y_0 + e_0,\] \[H_0 = D_{00}^{xy} \cdot (D_{00}^{xy})^{-1},\] \[e_0 = m_0^x - H_0 \cdot m_0^y.\]
+
+В гауссовском АОФ (ФНА) добавляется уравнение для апостериорной ковариации объекта\+: \[P_0 = D_0^x - H_0 \cdot (D_{00}^{xy})^T.\] 
+
+Замещает \hyperlink{class_core_1_1_filter_af95880b734c4b8dc3d8c02f222b32506}{Core\+::\+Filter}.
+
+
+
+Переопределяется в \hyperlink{class_filters_1_1_discrete_1_1_a_o_f_aa822fe74d7ca160f898db1c1289e17f7}{Filters\+::\+Discrete\+::\+A\+OF}.
+
+
+
+См. определение в файле discrete\+\_\+filter.\+cc строка 21
+
+
+
+\subsection{Данные класса}
+\hypertarget{class_core_1_1_discrete_filter_a6a2d67be8eaa0df383fe080474975faa}{}\label{class_core_1_1_discrete_filter_a6a2d67be8eaa0df383fe080474975faa} 
+\index{Core\+::\+Discrete\+Filter@{Core\+::\+Discrete\+Filter}!m\+\_\+task@{m\+\_\+task}}
+\index{m\+\_\+task@{m\+\_\+task}!Core\+::\+Discrete\+Filter@{Core\+::\+Discrete\+Filter}}
+\subsubsection{\texorpdfstring{m\+\_\+task}{m\_task}}
+{\footnotesize\ttfamily \hyperlink{namespace_core_a9cd3f9b81303651b8d115031018f0ebf}{Ptr\+D\+Task} Core\+::\+Discrete\+Filter\+::m\+\_\+task\hspace{0.3cm}{\ttfamily [protected]}}
+
+Указатель на экземпляр задачи, с которой происходит работа. 
+
+См. определение в файле discrete\+\_\+filter.\+h строка 41
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/core/discrete\+\_\+filter.\+h\item 
+src/core/discrete\+\_\+filter.\+cc\end{DoxyCompactItemize}

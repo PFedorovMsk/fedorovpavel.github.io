@@ -1,0 +1,70 @@
+\hypertarget{namespace_math_1_1_rand}{}\section{Пространство имен Math\+:\+:Rand}
+\label{namespace_math_1_1_rand}\index{Math\+::\+Rand@{Math\+::\+Rand}}
+
+
+Модуль, содержащий описание и реализацию методов генерации случайных величин.  
+
+
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespace_math_1_1_rand_a9453617916a97c982c22f2b020a42e47}{}\label{namespace_math_1_1_rand_a9453617916a97c982c22f2b020a42e47} 
+void \hyperlink{namespace_math_1_1_rand_a9453617916a97c982c22f2b020a42e47}{set\+Randomize} ()
+\begin{DoxyCompactList}\small\item\em Устонавливает случайную последовательность для генерации СВ. \end{DoxyCompactList}\item 
+\hypertarget{namespace_math_1_1_rand_adb05648d372d8a1d62395ce68feca0fa}{}\label{namespace_math_1_1_rand_adb05648d372d8a1d62395ce68feca0fa} 
+void \hyperlink{namespace_math_1_1_rand_adb05648d372d8a1d62395ce68feca0fa}{set\+Rand\+Seed} (uint seed)
+\begin{DoxyCompactList}\small\item\em Позволяет создавать повторяющиеся последовательности для генерации СВ. \end{DoxyCompactList}\item 
+\hypertarget{namespace_math_1_1_rand_aeabcc694147b60b153e8a1ef0db2d845}{}\label{namespace_math_1_1_rand_aeabcc694147b60b153e8a1ef0db2d845} 
+double \hyperlink{namespace_math_1_1_rand_aeabcc694147b60b153e8a1ef0db2d845}{uniform} ()
+\begin{DoxyCompactList}\small\item\em Возвращает значение $ x \sim U(0,1)$ (равномерное распределение). \end{DoxyCompactList}\item 
+\hypertarget{namespace_math_1_1_rand_afca61ab1c61ad2c5432521716de9e646}{}\label{namespace_math_1_1_rand_afca61ab1c61ad2c5432521716de9e646} 
+double \hyperlink{namespace_math_1_1_rand_afca61ab1c61ad2c5432521716de9e646}{uniform} (double a, double b)
+\begin{DoxyCompactList}\small\item\em Возвращает значение $ x \sim U(a,b)$ (равномерное распределение). \end{DoxyCompactList}\item 
+\hypertarget{namespace_math_1_1_rand_a64b32318d99ccaf50a4203419a044dd5}{}\label{namespace_math_1_1_rand_a64b32318d99ccaf50a4203419a044dd5} 
+double \hyperlink{namespace_math_1_1_rand_a64b32318d99ccaf50a4203419a044dd5}{gaussian} ()
+\begin{DoxyCompactList}\small\item\em Возвращает значение $ x \sim N(0,1)$ (гауссовское распределение). \end{DoxyCompactList}\item 
+\hypertarget{namespace_math_1_1_rand_ae9a7ea263eab794e49f2ea3e234e1774}{}\label{namespace_math_1_1_rand_ae9a7ea263eab794e49f2ea3e234e1774} 
+double \hyperlink{namespace_math_1_1_rand_ae9a7ea263eab794e49f2ea3e234e1774}{gaussian} (double m, double s)
+\begin{DoxyCompactList}\small\item\em Возвращает значение $ x \sim N(m,s^2)$ (гауссовское распределение). \end{DoxyCompactList}\item 
+\hypertarget{namespace_math_1_1_rand_adc86807430ed1e6cd60eb2f940f032e7}{}\label{namespace_math_1_1_rand_adc86807430ed1e6cd60eb2f940f032e7} 
+double \hyperlink{namespace_math_1_1_rand_adc86807430ed1e6cd60eb2f940f032e7}{log\+Normal} (double m, double s)
+\begin{DoxyCompactList}\small\item\em Возвращает значение $ x \sim lnN(m,s^2)$ (логнормальное распределение). \end{DoxyCompactList}\item 
+\hypertarget{namespace_math_1_1_rand_a4c692e54ef84c65b1ac870a3d8ab35c8}{}\label{namespace_math_1_1_rand_a4c692e54ef84c65b1ac870a3d8ab35c8} 
+double \hyperlink{namespace_math_1_1_rand_a4c692e54ef84c65b1ac870a3d8ab35c8}{chi\+Squared} (uint k)
+\begin{DoxyCompactList}\small\item\em Возвращает значение $ x \sim \chi^2(k)$ (распределение хи-\/квадрат). \end{DoxyCompactList}\item 
+\hypertarget{namespace_math_1_1_rand_a9734bfad6fcbf96582aaa3e9cf9aab02}{}\label{namespace_math_1_1_rand_a9734bfad6fcbf96582aaa3e9cf9aab02} 
+double \hyperlink{namespace_math_1_1_rand_a9734bfad6fcbf96582aaa3e9cf9aab02}{students} (uint n)
+\begin{DoxyCompactList}\small\item\em Возвращает значение $ x \sim t(n)$ (распределение Стьюдента). \end{DoxyCompactList}\item 
+\hypertarget{namespace_math_1_1_rand_a98f49933c521884e649e999b6a3c9fb6}{}\label{namespace_math_1_1_rand_a98f49933c521884e649e999b6a3c9fb6} 
+double \hyperlink{namespace_math_1_1_rand_a98f49933c521884e649e999b6a3c9fb6}{fishers} (uint n1, uint n2)
+\begin{DoxyCompactList}\small\item\em Возвращает значение $ x \sim F(n_1,n_2)$ (распределение Фишера). \end{DoxyCompactList}\item 
+\hypertarget{namespace_math_1_1_rand_a412ad37c8ba56a33e8d4687df37c9442}{}\label{namespace_math_1_1_rand_a412ad37c8ba56a33e8d4687df37c9442} 
+double \hyperlink{namespace_math_1_1_rand_a412ad37c8ba56a33e8d4687df37c9442}{rayleighs} (double s)
+\begin{DoxyCompactList}\small\item\em Возвращает значение $ x \sim R(s)$ (распределение Рэлея). \end{DoxyCompactList}\item 
+\hypertarget{namespace_math_1_1_rand_ae6019c3dc46b97c95fa29083f191dcf8}{}\label{namespace_math_1_1_rand_ae6019c3dc46b97c95fa29083f191dcf8} 
+double \hyperlink{namespace_math_1_1_rand_ae6019c3dc46b97c95fa29083f191dcf8}{exponential} (double l)
+\begin{DoxyCompactList}\small\item\em Возвращает значение $ x \sim Exp(l)$ (экспоненциальное распределение). \end{DoxyCompactList}\item 
+\hypertarget{namespace_math_1_1_rand_a431a3d55f304ba341c9583bca0848f26}{}\label{namespace_math_1_1_rand_a431a3d55f304ba341c9583bca0848f26} 
+Vector \hyperlink{namespace_math_1_1_rand_a431a3d55f304ba341c9583bca0848f26}{gaussian\+Vector} (long n)
+\begin{DoxyCompactList}\small\item\em Возвращает вектор размерности $n$ c независимыми компонентами, распределенными как $x_i \sim N(0,1)$. \end{DoxyCompactList}\item 
+\hypertarget{namespace_math_1_1_rand_a615d58fe0cc83a62f4c74376d4a47d61}{}\label{namespace_math_1_1_rand_a615d58fe0cc83a62f4c74376d4a47d61} 
+Vector \hyperlink{namespace_math_1_1_rand_a615d58fe0cc83a62f4c74376d4a47d61}{gaussian\+Vector} (long n, double m, double s)
+\begin{DoxyCompactList}\small\item\em Возвращает вектор размерности $n$ c независимыми компонентами, распределенными как $x_i \sim N(m,s^2)$. \end{DoxyCompactList}\item 
+Vector \hyperlink{namespace_math_1_1_rand_a9508f6778a02ce0f0be669cb32e25dc6}{gaussian\+Vector} (const Vector \&mean, const Matrix \&cov)
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Модуль, содержащий описание и реализацию методов генерации случайных величин. 
+
+\subsection{Функции}
+\hypertarget{namespace_math_1_1_rand_a9508f6778a02ce0f0be669cb32e25dc6}{}\label{namespace_math_1_1_rand_a9508f6778a02ce0f0be669cb32e25dc6} 
+\index{Math\+::\+Rand@{Math\+::\+Rand}!gaussian\+Vector@{gaussian\+Vector}}
+\index{gaussian\+Vector@{gaussian\+Vector}!Math\+::\+Rand@{Math\+::\+Rand}}
+\subsubsection{\texorpdfstring{gaussian\+Vector()}{gaussianVector()}}
+{\footnotesize\ttfamily Vector Math\+::\+Rand\+::gaussian\+Vector (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption})}
+
+Возвращает вектор размерности $n$ с математическим ожаданием $n$ и дисперсией $D$ (компоненты зависимые). 
+
+См. определение в файле random.\+cc строка 105
+

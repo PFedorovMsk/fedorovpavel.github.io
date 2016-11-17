@@ -1,0 +1,225 @@
+\hypertarget{class_core_1_1_discrete_task}{}\section{Класс Core\+:\+:Discrete\+Task}
+\label{class_core_1_1_discrete_task}\index{Core\+::\+Discrete\+Task@{Core\+::\+Discrete\+Task}}
+
+
+Базовый тип задач для дискретных фильтров оптимальной структуры.  
+
+
+
+
+{\ttfamily \#include \char`\"{}discrete\+\_\+task.\+h\char`\"{}}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_core_1_1_discrete_task_adee71fa5aa876df16d0585bdf66cd26e}{}\label{class_core_1_1_discrete_task_adee71fa5aa876df16d0585bdf66cd26e} 
+\hyperlink{class_core_1_1_discrete_task_adee71fa5aa876df16d0585bdf66cd26e}{Discrete\+Task} ()
+\begin{DoxyCompactList}\small\item\em Конструктор. \end{DoxyCompactList}\item 
+virtual Vector \hyperlink{class_core_1_1_discrete_task_a49d377fa365d5ec3e05962ee751f2d9e}{a} (const Vector \&x) const =0
+\begin{DoxyCompactList}\small\item\em Функция объекта $a_k(X_k) = a_k(X_k, V_k)$. \end{DoxyCompactList}\item 
+virtual Vector \hyperlink{class_core_1_1_discrete_task_a82c1aa8100dd9211739f8fd9f7d52c81}{b} (const Vector \&x) const =0
+\begin{DoxyCompactList}\small\item\em Функция измерителя $b(X_k) = b_k(X_k, W_k)$. \end{DoxyCompactList}\item 
+virtual Vector \hyperlink{class_core_1_1_discrete_task_aed780d7286bc88d0a2debb585601b3ca}{tau} (const Vector \&m, const Matrix \&D) const =0
+\begin{DoxyCompactList}\small\item\em Структурная функция прогноза $\tau_k(m, D)$. \end{DoxyCompactList}\item 
+virtual Matrix \hyperlink{class_core_1_1_discrete_task_a18906155257c5febd937f2f0c633e5ed}{Theta} (const Vector \&m, const Matrix \&D) const =0
+\begin{DoxyCompactList}\small\item\em Структурная функция прогноза $\Theta_k(m, D)$. \end{DoxyCompactList}\item 
+virtual Vector \hyperlink{class_core_1_1_discrete_task_a09eb964bfe445c1905758bfff4fc1537}{h} (const Vector \&m, const Matrix \&D) const =0
+\begin{DoxyCompactList}\small\item\em Структурная функция коррекции $h_k(m, D)$. \end{DoxyCompactList}\item 
+virtual Matrix \hyperlink{class_core_1_1_discrete_task_a5fd0bac544a6e124ad071043a37881c3}{G} (const Vector \&m, const Matrix \&D) const =0
+\begin{DoxyCompactList}\small\item\em Структурная функция коррекции $G_k(m, D)$. \end{DoxyCompactList}\item 
+virtual Matrix \hyperlink{class_core_1_1_discrete_task_ac55ca2cd47f0c9f7e5d3d3704becee46}{F} (const Vector \&m, const Matrix \&D) const =0
+\begin{DoxyCompactList}\small\item\em Структурная функция коррекции $F_k(m, D)$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_core_1_1_discrete_task_a4fd463183eb4a6cf8fe55d0579adae47}{}\label{class_core_1_1_discrete_task_a4fd463183eb4a6cf8fe55d0579adae47} 
+virtual Matrix \hyperlink{class_core_1_1_discrete_task_a4fd463183eb4a6cf8fe55d0579adae47}{dadx} (const Vector \&x) const =0
+\begin{DoxyCompactList}\small\item\em Вспомогательная функция, вычисляет $\nabla_x a_k(x,v)$. \end{DoxyCompactList}\item 
+\hypertarget{class_core_1_1_discrete_task_adcf68e112d0f30dabe00a754a4760161}{}\label{class_core_1_1_discrete_task_adcf68e112d0f30dabe00a754a4760161} 
+virtual Matrix \hyperlink{class_core_1_1_discrete_task_adcf68e112d0f30dabe00a754a4760161}{dadv} (const Vector \&x) const =0
+\begin{DoxyCompactList}\small\item\em Вспомогательная функция, вычисляет $\nabla_v a_k(x,v)$. \end{DoxyCompactList}\item 
+\hypertarget{class_core_1_1_discrete_task_ac7944bf297b9fba78e35428afa05bf89}{}\label{class_core_1_1_discrete_task_ac7944bf297b9fba78e35428afa05bf89} 
+virtual Matrix \hyperlink{class_core_1_1_discrete_task_ac7944bf297b9fba78e35428afa05bf89}{dbdx} (const Vector \&x) const =0
+\begin{DoxyCompactList}\small\item\em Вспомогательная функция, вычисляет $\nabla_x b_k(x,w)$. \end{DoxyCompactList}\item 
+\hypertarget{class_core_1_1_discrete_task_a6ed33be26249cbe572b55cca7614c071}{}\label{class_core_1_1_discrete_task_a6ed33be26249cbe572b55cca7614c071} 
+virtual Matrix \hyperlink{class_core_1_1_discrete_task_a6ed33be26249cbe572b55cca7614c071}{dbdw} (const Vector \&x) const =0
+\begin{DoxyCompactList}\small\item\em Вспомогательная функция, вычисляет $\nabla_w b_k(x,w)$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Дополнительные унаследованные члены}
+
+
+\subsection{Подробное описание}
+Базовый тип задач для дискретных фильтров оптимальной структуры. 
+
+Описываемая система имеет следующий вид
+
+
+\begin{DoxyItemize}
+\item Объект\+: \[X_{k+1} = a_k(X_k, V_k),\ \ \ k = 0, 1, \ldots\]
+\item Измеритель\+: \[Y_k = b_k(X_k, W_k),\ \ \ k = 0, 1, \ldots\]
+\end{DoxyItemize}
+
+Здесь $X_k$ -\/ вектор состояния объекта, $Y_k$ -\/ вектор измерений, $V_k, W_k$ -\/ векторы независимых дискретных белых шумов. 
+
+См. определение в файле discrete\+\_\+task.\+h строка 23
+
+
+
+Граф наследования\+:Core\+:\+:Discrete\+Task\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_core_1_1_discrete_task__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Core\+:\+:Discrete\+Task\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{class_core_1_1_discrete_task__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Методы}
+\hypertarget{class_core_1_1_discrete_task_a49d377fa365d5ec3e05962ee751f2d9e}{}\label{class_core_1_1_discrete_task_a49d377fa365d5ec3e05962ee751f2d9e} 
+\index{Core\+::\+Discrete\+Task@{Core\+::\+Discrete\+Task}!a@{a}}
+\index{a@{a}!Core\+::\+Discrete\+Task@{Core\+::\+Discrete\+Task}}
+\subsubsection{\texorpdfstring{a()}{a()}}
+{\footnotesize\ttfamily virtual Vector Core\+::\+Discrete\+Task\+::a (\begin{DoxyParamCaption}\item[{const Vector \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Функция объекта $a_k(X_k) = a_k(X_k, V_k)$. 
+
+Шум $V_k$ генерируется внутри. 
+
+Замещается в \hyperlink{class_tasks_1_1_discrete_1_1_landing_linear_af0c0c48603fc226055ee233f93fa21fc}{Tasks\+::\+Discrete\+::\+Landing\+Linear}.
+
+\hypertarget{class_core_1_1_discrete_task_a82c1aa8100dd9211739f8fd9f7d52c81}{}\label{class_core_1_1_discrete_task_a82c1aa8100dd9211739f8fd9f7d52c81} 
+\index{Core\+::\+Discrete\+Task@{Core\+::\+Discrete\+Task}!b@{b}}
+\index{b@{b}!Core\+::\+Discrete\+Task@{Core\+::\+Discrete\+Task}}
+\subsubsection{\texorpdfstring{b()}{b()}}
+{\footnotesize\ttfamily virtual Vector Core\+::\+Discrete\+Task\+::b (\begin{DoxyParamCaption}\item[{const Vector \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Функция измерителя $b(X_k) = b_k(X_k, W_k)$. 
+
+Шум $W_k$ генерируется внутри. 
+
+Замещается в \hyperlink{class_tasks_1_1_discrete_1_1_landing_linear_a599d3491da6d84ba68c43433235e9980}{Tasks\+::\+Discrete\+::\+Landing\+Linear}.
+
+\hypertarget{class_core_1_1_discrete_task_ac55ca2cd47f0c9f7e5d3d3704becee46}{}\label{class_core_1_1_discrete_task_ac55ca2cd47f0c9f7e5d3d3704becee46} 
+\index{Core\+::\+Discrete\+Task@{Core\+::\+Discrete\+Task}!F@{F}}
+\index{F@{F}!Core\+::\+Discrete\+Task@{Core\+::\+Discrete\+Task}}
+\subsubsection{\texorpdfstring{F()}{F()}}
+{\footnotesize\ttfamily virtual Matrix Core\+::\+Discrete\+Task\+::F (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Структурная функция коррекции $F_k(m, D)$. 
+
+Она имеет следующий вид для
+
+
+\begin{DoxyItemize}
+\item гауссовского приближения\+: \[F_k(m, D) = M_N[M[b_k(m, W_k)\cdot b_k^T(m, W_k)] \ |\ m, D] - h_k(m,D) \cdot h_k^T(m, D),\]
+\item линеаризованного приближения\+: \[F_k(m, D) = B_k^x(m) \cdot D \cdot B_k^{xT}(m) + B_k^w(m) \cdot D[W_k] \cdot B_k^{wT}(m).\]
+\end{DoxyItemize}
+
+Здесь $B_k^x(x) = \nabla_x b_k(x, M[W_k]),\ B_k^w(x) = \nabla_w b_k(x, M[W_k])$. 
+
+Замещается в \hyperlink{class_tasks_1_1_discrete_1_1_landing_linear_abb4e2b054240cf909f0128721237334c}{Tasks\+::\+Discrete\+::\+Landing\+Linear}.
+
+\hypertarget{class_core_1_1_discrete_task_a5fd0bac544a6e124ad071043a37881c3}{}\label{class_core_1_1_discrete_task_a5fd0bac544a6e124ad071043a37881c3} 
+\index{Core\+::\+Discrete\+Task@{Core\+::\+Discrete\+Task}!G@{G}}
+\index{G@{G}!Core\+::\+Discrete\+Task@{Core\+::\+Discrete\+Task}}
+\subsubsection{\texorpdfstring{G()}{G()}}
+{\footnotesize\ttfamily virtual Matrix Core\+::\+Discrete\+Task\+::G (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Структурная функция коррекции $G_k(m, D)$. 
+
+Она имеет следующий вид для
+
+
+\begin{DoxyItemize}
+\item гауссовского приближения\+: \[G_k(m, D) = \nabla_m h_k(m,D),\]
+\item линеаризованного приближения\+: \[G_k(m, D) = \nabla_m b_k(m, M[W_k]).\] 
+\end{DoxyItemize}
+
+Замещается в \hyperlink{class_tasks_1_1_discrete_1_1_landing_linear_a290890c1d3a91803249a1f5d62bc658f}{Tasks\+::\+Discrete\+::\+Landing\+Linear}.
+
+\hypertarget{class_core_1_1_discrete_task_a09eb964bfe445c1905758bfff4fc1537}{}\label{class_core_1_1_discrete_task_a09eb964bfe445c1905758bfff4fc1537} 
+\index{Core\+::\+Discrete\+Task@{Core\+::\+Discrete\+Task}!h@{h}}
+\index{h@{h}!Core\+::\+Discrete\+Task@{Core\+::\+Discrete\+Task}}
+\subsubsection{\texorpdfstring{h()}{h()}}
+{\footnotesize\ttfamily virtual Vector Core\+::\+Discrete\+Task\+::h (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Структурная функция коррекции $h_k(m, D)$. 
+
+Она имеет следующий вид для
+
+
+\begin{DoxyItemize}
+\item гауссовского приближения\+: \[h_k(m, D) = M_N[M[b_k(m, W_k)] \ |\ m, D],\]
+\item линеаризованного приближения\+: \[h_k(m, D) = b_k(m, M[W_k]).\] 
+\end{DoxyItemize}
+
+Замещается в \hyperlink{class_tasks_1_1_discrete_1_1_landing_linear_a9b1f90547fca3b460b48693b2e16219a}{Tasks\+::\+Discrete\+::\+Landing\+Linear}.
+
+\hypertarget{class_core_1_1_discrete_task_aed780d7286bc88d0a2debb585601b3ca}{}\label{class_core_1_1_discrete_task_aed780d7286bc88d0a2debb585601b3ca} 
+\index{Core\+::\+Discrete\+Task@{Core\+::\+Discrete\+Task}!tau@{tau}}
+\index{tau@{tau}!Core\+::\+Discrete\+Task@{Core\+::\+Discrete\+Task}}
+\subsubsection{\texorpdfstring{tau()}{tau()}}
+{\footnotesize\ttfamily virtual Vector Core\+::\+Discrete\+Task\+::tau (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Структурная функция прогноза $\tau_k(m, D)$. 
+
+Она имеет следующий вид для
+
+
+\begin{DoxyItemize}
+\item гауссовского приближения\+: \[\tau_k(m, D) = M_N[M[a_k(m, V_k)] \ |\ m, D],\]
+\item линеаризованного приближения\+: \[\tau_k(m, D) = a_k(m, M[V_k]).\] 
+\end{DoxyItemize}
+
+Замещается в \hyperlink{class_tasks_1_1_discrete_1_1_landing_linear_a8f2022967fae3dde3e7d2df3f7fa98f8}{Tasks\+::\+Discrete\+::\+Landing\+Linear}.
+
+\hypertarget{class_core_1_1_discrete_task_a18906155257c5febd937f2f0c633e5ed}{}\label{class_core_1_1_discrete_task_a18906155257c5febd937f2f0c633e5ed} 
+\index{Core\+::\+Discrete\+Task@{Core\+::\+Discrete\+Task}!Theta@{Theta}}
+\index{Theta@{Theta}!Core\+::\+Discrete\+Task@{Core\+::\+Discrete\+Task}}
+\subsubsection{\texorpdfstring{Theta()}{Theta()}}
+{\footnotesize\ttfamily virtual Matrix Core\+::\+Discrete\+Task\+::\+Theta (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Структурная функция прогноза $\Theta_k(m, D)$. 
+
+Она имеет следующий вид для
+
+
+\begin{DoxyItemize}
+\item гауссовского приближения\+: \[\Theta_k(m, D) = M_N[M[a_k(m, V_k)\cdot a_k^T(m, V_k)]\ |\ m, D] - \tau_k(m,D) \cdot \tau_k^T(m, D),\]
+\item линеаризованного приближения\+: \[\Theta_k(m, D) = A_k^x(m) \cdot D \cdot A_k^{xT}(m) + A_k^v(m) \cdot D[V_k] \cdot A_k^{v T}(m)\]
+\end{DoxyItemize}
+
+Здесь $A_k^x(x) = \nabla_x a_k(x,M[V_k]),\ A_k^v(x) = \nabla_v a_k(x,M[V_k])$. 
+
+Замещается в \hyperlink{class_tasks_1_1_discrete_1_1_landing_linear_a88dda707914dea5698748f445563400f}{Tasks\+::\+Discrete\+::\+Landing\+Linear}.
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/core/discrete\+\_\+task.\+h\item 
+src/core/discrete\+\_\+task.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,8 @@
+<map id="Core::ContinuousTask" name="Core::ContinuousTask">
+<area shape="rect" id="node4" href="$class_tasks_1_1_continuous_1_1_landing_linear.html" title="Задача спуска ЛА на планету (непрерывная, линеаризованная) для фильтров оптимальной структуры..." alt="" coords="5,229,144,271"/>
+<area shape="rect" id="node6" href="$class_tasks_1_1_continuous_1_1_van_der_pol_linear.html" title="Осциллятор Ван&#45;дер&#45;Поля (непрерывный, линеаризованный) для фильтров оптимальной структуры. " alt="" coords="168,229,307,271"/>
+<area shape="rect" id="node2" href="$class_core_1_1_task.html" title="Базовый класс для всех задач " alt="" coords="113,80,199,107"/>
+<area shape="rect" id="node3" href="$class_core_1_1_function_time.html" title="Базовый класс для классов, представляющих собой функции времени. " alt="" coords="88,5,224,32"/>
+<area shape="rect" id="node5" href="$class_tasks_1_1_continuous_1_1_landing_gauss.html" title="Tasks::Continuous::\lLandingGauss" alt="" coords="5,319,144,360"/>
+<area shape="rect" id="node7" href="$class_tasks_1_1_continuous_1_1_van_der_pol_gauss.html" title="Осциллятор Ван&#45;дер&#45;Поля (непрерывный, гауссовский) для фильтров оптимальной структуры. " alt="" coords="168,319,307,360"/>
+</map>

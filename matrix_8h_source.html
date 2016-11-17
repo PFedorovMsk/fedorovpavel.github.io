@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Optimal Filtering: Исходный файл src/math/matrix.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Optimal Filtering
+   &#160;<span id="projectnumber">v2.6.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ae9a93452e2a84339148a16bcf2eb561.html">math</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">matrix.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MATRIX_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MATRIX_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;src/config.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;third_party/eigen/Dense&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_math.html">Math</a></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">using</span> Matrix    = Eigen::MatrixXd;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">using</span> Vector    = Eigen::VectorXd;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">using</span> RowVector = Eigen::RowVectorXd;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">using</span> Vector2       = Eigen::Vector2d;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">using</span> VectorInt2    = Eigen::Vector2i;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">using</span> RowVector2    = Eigen::RowVector2d;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">using</span> RowVectorInt2 = Eigen::RowVector2i;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">using</span> Vector3       = Eigen::Vector3d;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">using</span> VectorInt3    = Eigen::Vector3i;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">using</span> RowVector3    = Eigen::RowVector3d;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">using</span> RowVectorInt3 = Eigen::RowVector3i;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespace_math.html#a0b4a2119a9abdbfe7902e57a22e6405e">MakeBlockVector</a>(<span class="keyword">const</span> Vector &amp;vec1, <span class="keyword">const</span> Vector &amp;vec2, Vector &amp;blockVec);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespace_math.html#ae35cd48733558c989154be3201e754ab">MakeBlockMatrix</a>(<span class="keyword">const</span> Matrix &amp;mat1, <span class="keyword">const</span> Matrix &amp;mat2, Matrix &amp;blockMat, <span class="keywordtype">bool</span> vertical = <span class="keyword">false</span>);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <span class="comment">// end Math</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif // MATRIX_H</span></div><div class="ttc" id="namespace_math_html_ae35cd48733558c989154be3201e754ab"><div class="ttname"><a href="namespace_math.html#ae35cd48733558c989154be3201e754ab">Math::MakeBlockMatrix</a></div><div class="ttdeci">void MakeBlockMatrix(const Matrix &amp;mat1, const Matrix &amp;mat2, Matrix &amp;blockMat, bool vertical)</div><div class="ttdoc">Cоздает блочную матрицу из двух матриц </div><div class="ttdef"><b>Definition:</b> <a href="matrix_8cc_source.html#l00015">matrix.cc:15</a></div></div>
+<div class="ttc" id="namespace_math_html"><div class="ttname"><a href="namespace_math.html">Math</a></div><div class="ttdoc">Модуль, содержащий описание и реализацию задач математических методов и типов. </div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00007">constants.h:7</a></div></div>
+<div class="ttc" id="namespace_math_html_a0b4a2119a9abdbfe7902e57a22e6405e"><div class="ttname"><a href="namespace_math.html#a0b4a2119a9abdbfe7902e57a22e6405e">Math::MakeBlockVector</a></div><div class="ttdeci">void MakeBlockVector(const Vector &amp;vec1, const Vector &amp;vec2, Vector &amp;blockVec)</div><div class="ttdoc">Создает вектор из двух векторов. </div><div class="ttdef"><b>Definition:</b> <a href="matrix_8cc_source.html#l00008">matrix.cc:8</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>

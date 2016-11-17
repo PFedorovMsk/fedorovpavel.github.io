@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Optimal Filtering: Исходный файл src/core/discrete_task.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Optimal Filtering
+   &#160;<span id="projectnumber">v2.6.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">discrete_task.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef DISCRETE_TASK_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define DISCRETE_TASK_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;task.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_core.html">Core</a></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_core_1_1_discrete_task.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_core_1_1_discrete_task.html">DiscreteTask</a> : <span class="keyword">public</span> <a class="code" href="class_core_1_1_task.html">Task</a></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_core_1_1_discrete_task.html#adee71fa5aa876df16d0585bdf66cd26e">DiscreteTask</a>();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> Vector <a class="code" href="class_core_1_1_discrete_task.html#a49d377fa365d5ec3e05962ee751f2d9e">a</a>(<span class="keyword">const</span> Vector &amp;x) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> Vector <a class="code" href="class_core_1_1_discrete_task.html#a82c1aa8100dd9211739f8fd9f7d52c81">b</a>(<span class="keyword">const</span> Vector &amp;x) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> Vector <a class="code" href="class_core_1_1_discrete_task.html#aed780d7286bc88d0a2debb585601b3ca">tau</a>(<span class="keyword">const</span> Vector &amp;m, <span class="keyword">const</span> Matrix &amp;D) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">virtual</span> Matrix <a class="code" href="class_core_1_1_discrete_task.html#a18906155257c5febd937f2f0c633e5ed">Theta</a>(<span class="keyword">const</span> Vector &amp;m, <span class="keyword">const</span> Matrix &amp;D) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">virtual</span> Vector <a class="code" href="class_core_1_1_discrete_task.html#a09eb964bfe445c1905758bfff4fc1537">h</a>(<span class="keyword">const</span> Vector &amp;m, <span class="keyword">const</span> Matrix &amp;D) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">virtual</span> Matrix <a class="code" href="class_core_1_1_discrete_task.html#a5fd0bac544a6e124ad071043a37881c3">G</a>(<span class="keyword">const</span> Vector &amp;m, <span class="keyword">const</span> Matrix &amp;D) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">virtual</span> Matrix <a class="code" href="class_core_1_1_discrete_task.html#ac55ca2cd47f0c9f7e5d3d3704becee46">F</a>(<span class="keyword">const</span> Vector &amp;m, <span class="keyword">const</span> Matrix &amp;D) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">virtual</span> Matrix <a class="code" href="class_core_1_1_discrete_task.html#a4fd463183eb4a6cf8fe55d0579adae47">dadx</a>(<span class="keyword">const</span> Vector &amp;x) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">virtual</span> Matrix <a class="code" href="class_core_1_1_discrete_task.html#adcf68e112d0f30dabe00a754a4760161">dadv</a>(<span class="keyword">const</span> Vector &amp;x) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">virtual</span> Matrix <a class="code" href="class_core_1_1_discrete_task.html#ac7944bf297b9fba78e35428afa05bf89">dbdx</a>(<span class="keyword">const</span> Vector &amp;x) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keyword">virtual</span> Matrix <a class="code" href="class_core_1_1_discrete_task.html#a6ed33be26249cbe572b55cca7614c071">dbdw</a>(<span class="keyword">const</span> Vector &amp;x) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;};</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div><div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="namespace_core.html#a9cd3f9b81303651b8d115031018f0ebf">  117</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_core.html#a9cd3f9b81303651b8d115031018f0ebf">PtrDTask</a> = std::shared_ptr&lt;DiscreteTask&gt;;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;} <span class="comment">// end Core</span></div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif // DISCRETE_TASK_H</span></div><div class="ttc" id="class_core_1_1_discrete_task_html_a4fd463183eb4a6cf8fe55d0579adae47"><div class="ttname"><a href="class_core_1_1_discrete_task.html#a4fd463183eb4a6cf8fe55d0579adae47">Core::DiscreteTask::dadx</a></div><div class="ttdeci">virtual Matrix dadx(const Vector &amp;x) const =0</div><div class="ttdoc">Вспомогательная функция, вычисляет . </div></div>
+<div class="ttc" id="class_core_1_1_discrete_task_html_a09eb964bfe445c1905758bfff4fc1537"><div class="ttname"><a href="class_core_1_1_discrete_task.html#a09eb964bfe445c1905758bfff4fc1537">Core::DiscreteTask::h</a></div><div class="ttdeci">virtual Vector h(const Vector &amp;m, const Matrix &amp;D) const =0</div><div class="ttdoc">Структурная функция коррекции . </div></div>
+<div class="ttc" id="class_core_1_1_discrete_task_html_a18906155257c5febd937f2f0c633e5ed"><div class="ttname"><a href="class_core_1_1_discrete_task.html#a18906155257c5febd937f2f0c633e5ed">Core::DiscreteTask::Theta</a></div><div class="ttdeci">virtual Matrix Theta(const Vector &amp;m, const Matrix &amp;D) const =0</div><div class="ttdoc">Структурная функция прогноза . </div></div>
+<div class="ttc" id="class_core_1_1_discrete_task_html_ac7944bf297b9fba78e35428afa05bf89"><div class="ttname"><a href="class_core_1_1_discrete_task.html#ac7944bf297b9fba78e35428afa05bf89">Core::DiscreteTask::dbdx</a></div><div class="ttdeci">virtual Matrix dbdx(const Vector &amp;x) const =0</div><div class="ttdoc">Вспомогательная функция, вычисляет . </div></div>
+<div class="ttc" id="class_core_1_1_discrete_task_html_aed780d7286bc88d0a2debb585601b3ca"><div class="ttname"><a href="class_core_1_1_discrete_task.html#aed780d7286bc88d0a2debb585601b3ca">Core::DiscreteTask::tau</a></div><div class="ttdeci">virtual Vector tau(const Vector &amp;m, const Matrix &amp;D) const =0</div><div class="ttdoc">Структурная функция прогноза . </div></div>
+<div class="ttc" id="class_core_1_1_discrete_task_html_ac55ca2cd47f0c9f7e5d3d3704becee46"><div class="ttname"><a href="class_core_1_1_discrete_task.html#ac55ca2cd47f0c9f7e5d3d3704becee46">Core::DiscreteTask::F</a></div><div class="ttdeci">virtual Matrix F(const Vector &amp;m, const Matrix &amp;D) const =0</div><div class="ttdoc">Структурная функция коррекции . </div></div>
+<div class="ttc" id="namespace_core_html"><div class="ttname"><a href="namespace_core.html">Core</a></div><div class="ttdoc">Модуль, содержащий основные классы и методы. </div><div class="ttdef"><b>Definition:</b> <a href="continuous__discrete__filter_8cc_source.html#l00010">continuous_discrete_filter.cc:10</a></div></div>
+<div class="ttc" id="class_core_1_1_task_html"><div class="ttname"><a href="class_core_1_1_task.html">Core::Task</a></div><div class="ttdoc">Базовый класс для всех задач </div><div class="ttdef"><b>Definition:</b> <a href="task_8h_source.html#l00033">task.h:33</a></div></div>
+<div class="ttc" id="class_core_1_1_discrete_task_html_a82c1aa8100dd9211739f8fd9f7d52c81"><div class="ttname"><a href="class_core_1_1_discrete_task.html#a82c1aa8100dd9211739f8fd9f7d52c81">Core::DiscreteTask::b</a></div><div class="ttdeci">virtual Vector b(const Vector &amp;x) const =0</div><div class="ttdoc">Функция измерителя . </div></div>
+<div class="ttc" id="class_core_1_1_discrete_task_html"><div class="ttname"><a href="class_core_1_1_discrete_task.html">Core::DiscreteTask</a></div><div class="ttdoc">Базовый тип задач для дискретных фильтров оптимальной структуры. </div><div class="ttdef"><b>Definition:</b> <a href="discrete__task_8h_source.html#l00023">discrete_task.h:23</a></div></div>
+<div class="ttc" id="class_core_1_1_discrete_task_html_a6ed33be26249cbe572b55cca7614c071"><div class="ttname"><a href="class_core_1_1_discrete_task.html#a6ed33be26249cbe572b55cca7614c071">Core::DiscreteTask::dbdw</a></div><div class="ttdeci">virtual Matrix dbdw(const Vector &amp;x) const =0</div><div class="ttdoc">Вспомогательная функция, вычисляет . </div></div>
+<div class="ttc" id="class_core_1_1_discrete_task_html_a5fd0bac544a6e124ad071043a37881c3"><div class="ttname"><a href="class_core_1_1_discrete_task.html#a5fd0bac544a6e124ad071043a37881c3">Core::DiscreteTask::G</a></div><div class="ttdeci">virtual Matrix G(const Vector &amp;m, const Matrix &amp;D) const =0</div><div class="ttdoc">Структурная функция коррекции . </div></div>
+<div class="ttc" id="namespace_core_html_a9cd3f9b81303651b8d115031018f0ebf"><div class="ttname"><a href="namespace_core.html#a9cd3f9b81303651b8d115031018f0ebf">Core::PtrDTask</a></div><div class="ttdeci">std::shared_ptr&lt; DiscreteTask &gt; PtrDTask</div><div class="ttdoc">Тип умного указателя на DiscreteTask. </div><div class="ttdef"><b>Definition:</b> <a href="discrete__task_8h_source.html#l00117">discrete_task.h:117</a></div></div>
+<div class="ttc" id="class_core_1_1_discrete_task_html_adcf68e112d0f30dabe00a754a4760161"><div class="ttname"><a href="class_core_1_1_discrete_task.html#adcf68e112d0f30dabe00a754a4760161">Core::DiscreteTask::dadv</a></div><div class="ttdeci">virtual Matrix dadv(const Vector &amp;x) const =0</div><div class="ttdoc">Вспомогательная функция, вычисляет . </div></div>
+<div class="ttc" id="class_core_1_1_discrete_task_html_adee71fa5aa876df16d0585bdf66cd26e"><div class="ttname"><a href="class_core_1_1_discrete_task.html#adee71fa5aa876df16d0585bdf66cd26e">Core::DiscreteTask::DiscreteTask</a></div><div class="ttdeci">DiscreteTask()</div><div class="ttdoc">Конструктор. </div><div class="ttdef"><b>Definition:</b> <a href="discrete__task_8cc_source.html#l00008">discrete_task.cc:8</a></div></div>
+<div class="ttc" id="class_core_1_1_discrete_task_html_a49d377fa365d5ec3e05962ee751f2d9e"><div class="ttname"><a href="class_core_1_1_discrete_task.html#a49d377fa365d5ec3e05962ee751f2d9e">Core::DiscreteTask::a</a></div><div class="ttdeci">virtual Vector a(const Vector &amp;x) const =0</div><div class="ttdoc">Функция объекта . </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>

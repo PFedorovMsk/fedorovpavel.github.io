@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Optimal Filtering: Документация</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Optimal Filtering
+   &#160;<span id="projectnumber">v2.6.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Документация </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="intro_sec"></a>
+Об Optimal Filtering</h1>
+<p>Основная задача состоит в предоставлении API для реализации алгоритмов нелинейной фильтрации, их тестирования и сравнения.</p>
+<p>Кроме API имеются готовые реализации нескольких фильтров и задач, на которых они тестируются. Периодически, добавляются новые алгоритмы и задачи.</p>
+<h1><a class="anchor" id="for_compile"></a>
+Что нужно для старта?</h1>
+<h2><a class="anchor" id="compilers"></a>
+Компиляторы</h2>
+<p>Компилятор должен поддерживать стандарт C++11 или более новый. Иначе код не скомпилируется.</p>
+<p>Точно скомпилируется (проверено) при использовании </p><pre class="fragment">  Gсс 4.8 (или новее);
+
+  Clang 5.1 (или новее).
+</pre><p>При использоании более старых версий нужно смотреть, поддерживают ли они стандарт C++11.</p>
+<p>Другие компиляторы не проверялись.</p>
+<h2><a class="anchor" id="gui"></a>
+Графика</h2>
+<p>Графический интерфейс (GUI) написан на Qt. Требуется версия не старше 5.0. Рекомендуется Qt 5.6.1 или новее.</p>
+<p>GUI - вещь опциональная, вся "математика" написана только с использованием STL и библиотеки Eigen. Так что код можно собрать и вовсе без установленного на машине Qt.</p>
+<h2><a class="anchor" id="qt_bugs"></a>
+И ещё...</h2>
+<p>Если вы пользуетесь Windows и собираетесь собрать проект с GUI не забывайте следующее:</p>
+<p>Путь к папке с проектом (исходным кодом) не должен содержать кириллицы.</p>
+<p>Расположения типа </p><pre class="fragment">  "C:\Пользователи\...\optimal_filtering2",
+
+  "C:\...\Рабочий стол\...\optimal_filtering2" 
+</pre><p>и т.д. приведут к невозможности собрать проект - баг Qt на Windows которому 100 лет и, похоже, не будет исправлен никогда =)</p>
+<p>Примеры "хорошего" расположения проекта: </p><pre class="fragment">  "C:\Workspace\optimal_filtering2", 
+
+  "D:\optimal_filtering2" </pre> </div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>

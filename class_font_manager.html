@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Optimal Filtering: Класс FontManager</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Optimal Filtering
+   &#160;<span id="projectnumber">v2.6.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-static-methods">Закрытые статические члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_font_manager-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс FontManager</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Статический класс для работы с загружаемыми из файлов шрифтами (singleton).  
+ <a href="class_font_manager.html#details">Подробнее...</a></p>
+
+<p><code>#include &quot;<a class="el" href="font__manager_8h_source.html">font_manager.h</a>&quot;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ada97aa5e52356da1bc5e8ac73678d9b2"><td class="memItemLeft" align="right" valign="top"><a id="ada97aa5e52356da1bc5e8ac73678d9b2"></a>
+QFont&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_font_manager.html#ada97aa5e52356da1bc5e8ac73678d9b2">regular</a> (int pointSize=9) const</td></tr>
+<tr class="memdesc:ada97aa5e52356da1bc5e8ac73678d9b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает шрифт с обычным начертанием размера pointSize. <br /></td></tr>
+<tr class="separator:ada97aa5e52356da1bc5e8ac73678d9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c5f2de0025fb15b0d3c2420eb7a1146"><td class="memItemLeft" align="right" valign="top"><a id="a2c5f2de0025fb15b0d3c2420eb7a1146"></a>
+QFont&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_font_manager.html#a2c5f2de0025fb15b0d3c2420eb7a1146">regularItalic</a> (int pointSize=9) const</td></tr>
+<tr class="memdesc:a2c5f2de0025fb15b0d3c2420eb7a1146"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает наклонный шрифт размера pointSize. <br /></td></tr>
+<tr class="separator:a2c5f2de0025fb15b0d3c2420eb7a1146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaefa52fc7e009d7395f0984df0067789"><td class="memItemLeft" align="right" valign="top"><a id="aaefa52fc7e009d7395f0984df0067789"></a>
+QFont&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_font_manager.html#aaefa52fc7e009d7395f0984df0067789">regularBold</a> (int pointSize=9) const</td></tr>
+<tr class="memdesc:aaefa52fc7e009d7395f0984df0067789"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает жирный шрифт размера pointSize. <br /></td></tr>
+<tr class="separator:aaefa52fc7e009d7395f0984df0067789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af67c9b0a46ba532a363893102a5ceb38"><td class="memItemLeft" align="right" valign="top"><a id="af67c9b0a46ba532a363893102a5ceb38"></a>
+QFont&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_font_manager.html#af67c9b0a46ba532a363893102a5ceb38">regularBoldItalic</a> (int pointSize=9) const</td></tr>
+<tr class="memdesc:af67c9b0a46ba532a363893102a5ceb38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает жирный наклонный шрифт размера pointSize. <br /></td></tr>
+<tr class="separator:af67c9b0a46ba532a363893102a5ceb38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74afe4af0bcda4414bde7f998f04e224"><td class="memItemLeft" align="right" valign="top"><a id="a74afe4af0bcda4414bde7f998f04e224"></a>
+QFont&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_font_manager.html#a74afe4af0bcda4414bde7f998f04e224">mono</a> (int pointSize=9) const</td></tr>
+<tr class="memdesc:a74afe4af0bcda4414bde7f998f04e224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает моноширинный шрифт с обычным начертанием размера pointSize. <br /></td></tr>
+<tr class="separator:a74afe4af0bcda4414bde7f998f04e224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c25f1d035d56c68043135e4a33c4f3b"><td class="memItemLeft" align="right" valign="top"><a id="a1c25f1d035d56c68043135e4a33c4f3b"></a>
+QFont&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_font_manager.html#a1c25f1d035d56c68043135e4a33c4f3b">monoItalic</a> (int pointSize=9) const</td></tr>
+<tr class="memdesc:a1c25f1d035d56c68043135e4a33c4f3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает моноширинный наклонный шрифт размера pointSize. <br /></td></tr>
+<tr class="separator:a1c25f1d035d56c68043135e4a33c4f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c4adeae1d91707c24cd211f5d645e57"><td class="memItemLeft" align="right" valign="top"><a id="a5c4adeae1d91707c24cd211f5d645e57"></a>
+QFont&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_font_manager.html#a5c4adeae1d91707c24cd211f5d645e57">monoBold</a> (int pointSize=9) const</td></tr>
+<tr class="memdesc:a5c4adeae1d91707c24cd211f5d645e57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает моноширинный жирный шрифт размера pointSize. <br /></td></tr>
+<tr class="separator:a5c4adeae1d91707c24cd211f5d645e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae43b72d3ea68690e635dd33100064ce8"><td class="memItemLeft" align="right" valign="top"><a id="ae43b72d3ea68690e635dd33100064ce8"></a>
+QFont&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_font_manager.html#ae43b72d3ea68690e635dd33100064ce8">monoBoldItalic</a> (int pointSize=9) const</td></tr>
+<tr class="memdesc:ae43b72d3ea68690e635dd33100064ce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает моноширинный жирный наклонный шрифт размера pointSize. <br /></td></tr>
+<tr class="separator:ae43b72d3ea68690e635dd33100064ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:a53cd643c23b4c4bc18a0461e18f2291f"><td class="memItemLeft" align="right" valign="top"><a id="a53cd643c23b4c4bc18a0461e18f2291f"></a>
+static <a class="el" href="class_font_manager.html">FontManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_font_manager.html#a53cd643c23b4c4bc18a0461e18f2291f">instance</a> ()</td></tr>
+<tr class="memdesc:a53cd643c23b4c4bc18a0461e18f2291f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает (единственный) экземпляр <a class="el" href="class_font_manager.html" title="Статический класс для работы с загружаемыми из файлов шрифтами (singleton). ">FontManager</a>. <br /></td></tr>
+<tr class="separator:a53cd643c23b4c4bc18a0461e18f2291f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a2f89acd28b5bd24e747aacd3208131ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_font_manager.html#a2f89acd28b5bd24e747aacd3208131ef">FontManager</a> ()</td></tr>
+<tr class="memdesc:a2f89acd28b5bd24e747aacd3208131ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор.  <a href="#a2f89acd28b5bd24e747aacd3208131ef">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2f89acd28b5bd24e747aacd3208131ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2df69d8089d4e217de41c05c27a40aa"><td class="memItemLeft" align="right" valign="top"><a id="ad2df69d8089d4e217de41c05c27a40aa"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>FontManager</b> (const <a class="el" href="class_font_manager.html">FontManager</a> &amp;)=delete</td></tr>
+<tr class="separator:ad2df69d8089d4e217de41c05c27a40aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ce394118d9c617e9566d8ebfd0c585b"><td class="memItemLeft" align="right" valign="top"><a id="a9ce394118d9c617e9566d8ebfd0c585b"></a>
+<a class="el" href="class_font_manager.html">FontManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_font_manager.html">FontManager</a> &amp;)=delete</td></tr>
+<tr class="separator:a9ce394118d9c617e9566d8ebfd0c585b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Закрытые статические члены</h2></td></tr>
+<tr class="memitem:a4b31083bd250791a4a8de80b028b825d"><td class="memItemLeft" align="right" valign="top">static QFont&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_font_manager.html#a4b31083bd250791a4a8de80b028b825d">getFont</a> (int id, int size, bool bold, bool italic)</td></tr>
+<tr class="memdesc:a4b31083bd250791a4a8de80b028b825d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Находит нужный шрифт и настраивает его свойства.  <a href="#a4b31083bd250791a4a8de80b028b825d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4b31083bd250791a4a8de80b028b825d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a646476403ee76b0ff2a1b6c8cd8dd167"><td class="memItemLeft" align="right" valign="top"><a id="a646476403ee76b0ff2a1b6c8cd8dd167"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_regularId</b></td></tr>
+<tr class="separator:a646476403ee76b0ff2a1b6c8cd8dd167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a378686fcdece0835591b5330dbc98523"><td class="memItemLeft" align="right" valign="top"><a id="a378686fcdece0835591b5330dbc98523"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_regularItalicId</b></td></tr>
+<tr class="separator:a378686fcdece0835591b5330dbc98523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cf5905c16f814e2b61bf847967d3f9c"><td class="memItemLeft" align="right" valign="top"><a id="a5cf5905c16f814e2b61bf847967d3f9c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_regularBoldId</b></td></tr>
+<tr class="separator:a5cf5905c16f814e2b61bf847967d3f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bc9ed18056f9d28de306175cb926d5e"><td class="memItemLeft" align="right" valign="top"><a id="a8bc9ed18056f9d28de306175cb926d5e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_regularBoldItalicId</b></td></tr>
+<tr class="separator:a8bc9ed18056f9d28de306175cb926d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39fd9ae79f9ca7fc2dcb12c12479a90a"><td class="memItemLeft" align="right" valign="top"><a id="a39fd9ae79f9ca7fc2dcb12c12479a90a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_monoId</b></td></tr>
+<tr class="separator:a39fd9ae79f9ca7fc2dcb12c12479a90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d1fa182fc3ae29936aa75017358543"><td class="memItemLeft" align="right" valign="top"><a id="a64d1fa182fc3ae29936aa75017358543"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_monoItalicId</b></td></tr>
+<tr class="separator:a64d1fa182fc3ae29936aa75017358543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5b8f48513accb75075f64bc856b0e45"><td class="memItemLeft" align="right" valign="top"><a id="ac5b8f48513accb75075f64bc856b0e45"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_monoBoldId</b></td></tr>
+<tr class="separator:ac5b8f48513accb75075f64bc856b0e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d4203ecc590815e7d09987099337a09"><td class="memItemLeft" align="right" valign="top"><a id="a9d4203ecc590815e7d09987099337a09"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_monoBoldItalicId</b></td></tr>
+<tr class="separator:a9d4203ecc590815e7d09987099337a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Статический класс для работы с загружаемыми из файлов шрифтами (singleton). </p>
+
+<p>См. определение в файле <a class="el" href="font__manager_8h_source.html">font_manager.h</a> строка <a class="el" href="font__manager_8h_source.html#l00012">12</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a2f89acd28b5bd24e747aacd3208131ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f89acd28b5bd24e747aacd3208131ef">&sect;&nbsp;</a></span>FontManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FontManager::FontManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор. </p>
+<p>Загружает шрифты из файлов (fonts в корневой директории проекта) в базу и привязывает к ним идентификаторы для поиска. </p>
+
+<p>См. определение в файле <a class="el" href="font__manager_8cc_source.html">font_manager.cc</a> строка <a class="el" href="font__manager_8cc_source.html#l00004">4</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a4b31083bd250791a4a8de80b028b825d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b31083bd250791a4a8de80b028b825d">&sect;&nbsp;</a></span>getFont()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFont FontManager::getFont </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bold</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>italic</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Находит нужный шрифт и настраивает его свойства. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>- идентификатор шрифта. </td></tr>
+    <tr><td class="paramname">size</td><td>- размер кегля. </td></tr>
+    <tr><td class="paramname">bold</td><td>- шрифт с жирным начертанием или нет. </td></tr>
+    <tr><td class="paramname">italic</td><td>- шрифт с наклонным начертанием или нет. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>экземпляр шрифта с выставленными свойствами. </dd></dl>
+
+<p>См. определение в файле <a class="el" href="font__manager_8cc_source.html">font_manager.cc</a> строка <a class="el" href="font__manager_8cc_source.html#l00063">63</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/gui/<a class="el" href="font__manager_8h_source.html">font_manager.h</a></li>
+<li>src/gui/<a class="el" href="font__manager_8cc_source.html">font_manager.cc</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>

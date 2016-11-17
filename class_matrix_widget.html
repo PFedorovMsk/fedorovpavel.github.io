@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Optimal Filtering: Класс MatrixWidget</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Optimal Filtering
+   &#160;<span id="projectnumber">v2.6.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-slots">Закрытые слоты</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_matrix_widget-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс MatrixWidget</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для отображения / изменения матриц (или векторов).  
+ <a href="class_matrix_widget.html#details">Подробнее...</a></p>
+
+<p><code>#include &quot;<a class="el" href="matrix__widget_8h_source.html">matrix_widget.h</a>&quot;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a127414cc00d40d2b62721bcf49286c89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix_widget.html#a127414cc00d40d2b62721bcf49286c89">MatrixWidget</a> (const Math::Matrix &amp;<a class="el" href="class_matrix_widget.html#a058562ee7f6d3e1e5671514a39899e3a">matrix</a>, bool onlyPositive=false, bool symmetric=false, QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a127414cc00d40d2b62721bcf49286c89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор.  <a href="#a127414cc00d40d2b62721bcf49286c89">Подробнее...</a><br /></td></tr>
+<tr class="separator:a127414cc00d40d2b62721bcf49286c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eb9219f9cf1bd7e9569a2557cafbf91"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix_widget.html#a3eb9219f9cf1bd7e9569a2557cafbf91">MatrixWidget</a> (long rows, long cols=1, bool onlyPositive=false, bool symmetric=false, QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a3eb9219f9cf1bd7e9569a2557cafbf91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор.  <a href="#a3eb9219f9cf1bd7e9569a2557cafbf91">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3eb9219f9cf1bd7e9569a2557cafbf91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a058562ee7f6d3e1e5671514a39899e3a"><td class="memItemLeft" align="right" valign="top"><a id="a058562ee7f6d3e1e5671514a39899e3a"></a>
+const Math::Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix_widget.html#a058562ee7f6d3e1e5671514a39899e3a">matrix</a> () const</td></tr>
+<tr class="memdesc:a058562ee7f6d3e1e5671514a39899e3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает матрицу, соответствующую текущему состоянию элементов виджета. <br /></td></tr>
+<tr class="separator:a058562ee7f6d3e1e5671514a39899e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Закрытые слоты</h2></td></tr>
+<tr class="memitem:a0d0d61d1a4cf286f90026d1dfa690121"><td class="memItemLeft" align="right" valign="top"><a id="a0d0d61d1a4cf286f90026d1dfa690121"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix_widget.html#a0d0d61d1a4cf286f90026d1dfa690121">onValueChanged</a> ()</td></tr>
+<tr class="memdesc:a0d0d61d1a4cf286f90026d1dfa690121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записывает изменения в матрицу. <br /></td></tr>
+<tr class="separator:a0d0d61d1a4cf286f90026d1dfa690121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a9c693e71b54ca95204792160dfe1c4bf"><td class="memItemLeft" align="right" valign="top"><a id="a9c693e71b54ca95204792160dfe1c4bf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix_widget.html#a9c693e71b54ca95204792160dfe1c4bf">initControls</a> ()</td></tr>
+<tr class="memdesc:a9c693e71b54ca95204792160dfe1c4bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализирует управляющие элементы и связывает их сигналы с нужными слотами. <br /></td></tr>
+<tr class="separator:a9c693e71b54ca95204792160dfe1c4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3c951130052ad2d93105a98c4468b13"><td class="memItemLeft" align="right" valign="top"><a id="ae3c951130052ad2d93105a98c4468b13"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix_widget.html#ae3c951130052ad2d93105a98c4468b13">initLayouts</a> ()</td></tr>
+<tr class="memdesc:ae3c951130052ad2d93105a98c4468b13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает расположение всех элементов на виджете. <br /></td></tr>
+<tr class="separator:ae3c951130052ad2d93105a98c4468b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a82f2f645dfe6a61844cbcaa7b9d74c5f"><td class="memItemLeft" align="right" valign="top"><a id="a82f2f645dfe6a61844cbcaa7b9d74c5f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_onlyPositive</b></td></tr>
+<tr class="separator:a82f2f645dfe6a61844cbcaa7b9d74c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3c5c9a7eb76b52d92ff88e5aac69df8"><td class="memItemLeft" align="right" valign="top"><a id="ad3c5c9a7eb76b52d92ff88e5aac69df8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_symmetric</b></td></tr>
+<tr class="separator:ad3c5c9a7eb76b52d92ff88e5aac69df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45e4733316b0de574c8f333e3f89bd4c"><td class="memItemLeft" align="right" valign="top"><a id="a45e4733316b0de574c8f333e3f89bd4c"></a>
+Math::Matrix&#160;</td><td class="memItemRight" valign="bottom"><b>m_matrix</b></td></tr>
+<tr class="separator:a45e4733316b0de574c8f333e3f89bd4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3a0c3c5c847e0a35aa23a6a7e7d56f6"><td class="memItemLeft" align="right" valign="top"><a id="ab3a0c3c5c847e0a35aa23a6a7e7d56f6"></a>
+QVector&lt; QVector&lt; QDoubleSpinBox * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_boxes</b></td></tr>
+<tr class="separator:ab3a0c3c5c847e0a35aa23a6a7e7d56f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс для отображения / изменения матриц (или векторов). </p>
+
+<p>См. определение в файле <a class="el" href="matrix__widget_8h_source.html">matrix_widget.h</a> строка <a class="el" href="matrix__widget_8h_source.html#l00011">11</a></p>
+</div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:MatrixWidget:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_matrix_widget__inherit__graph.svg" width="110" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса MatrixWidget:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_matrix_widget__coll__graph.svg" width="110" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a127414cc00d40d2b62721bcf49286c89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a127414cc00d40d2b62721bcf49286c89">&sect;&nbsp;</a></span>MatrixWidget() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MatrixWidget::MatrixWidget </td>
+          <td>(</td>
+          <td class="paramtype">const Math::Matrix &amp;&#160;</td>
+          <td class="paramname"><em>matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>onlyPositive</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>symmetric</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrix</td><td>- матрица, по которой инициализируются элементы. </td></tr>
+    <tr><td class="paramname">onlyPositive</td><td>- запрещает ввод отрицательных значений. </td></tr>
+    <tr><td class="paramname">symmetric</td><td>- заставляет дублировать значение в симметричной ячейке. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>См. определение в файле <a class="el" href="matrix__widget_8cc_source.html">matrix_widget.cc</a> строка <a class="el" href="matrix__widget_8cc_source.html#l00007">7</a></p>
+
+</div>
+</div>
+<a id="a3eb9219f9cf1bd7e9569a2557cafbf91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eb9219f9cf1bd7e9569a2557cafbf91">&sect;&nbsp;</a></span>MatrixWidget() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MatrixWidget::MatrixWidget </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>cols</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>onlyPositive</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>symmetric</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rows</td><td>- количество строк матрицы. </td></tr>
+    <tr><td class="paramname">cols</td><td>- количество столбцов матрицы. </td></tr>
+    <tr><td class="paramname">matrix</td><td>- матрица, по которой инициализируются элементы. </td></tr>
+    <tr><td class="paramname">onlyPositive</td><td>- запрещает ввод отрицательных значений. </td></tr>
+    <tr><td class="paramname">symmetric</td><td>- заставляет дублировать значение в симметричной ячейке. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>См. определение в файле <a class="el" href="matrix__widget_8cc_source.html">matrix_widget.cc</a> строка <a class="el" href="matrix__widget_8cc_source.html#l00017">17</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/gui/<a class="el" href="matrix__widget_8h_source.html">matrix_widget.h</a></li>
+<li>src/gui/<a class="el" href="matrix__widget_8cc_source.html">matrix_widget.cc</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>

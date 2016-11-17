@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Optimal Filtering: Структура Core::SingleFilterOutput</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Optimal Filtering
+   &#160;<span id="projectnumber">v2.6.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_core.html">Core</a></li><li class="navelem"><a class="el" href="struct_core_1_1_single_filter_output.html">SingleFilterOutput</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="struct_core_1_1_single_filter_output-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Структура Core::SingleFilterOutput</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Структура, хранящая значение времени и моментные характеристики, соответствующие ему.  
+ <a href="struct_core_1_1_single_filter_output.html#details">Подробнее...</a></p>
+
+<p><code>#include &quot;<a class="el" href="filter__output_8h_source.html">filter_output.h</a>&quot;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:aa06ff31e25433b19e09b67b290a187ca"><td class="memItemLeft" align="right" valign="top">Math::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_core_1_1_single_filter_output.html#aa06ff31e25433b19e09b67b290a187ca">meanX</a></td></tr>
+<tr class="separator:aa06ff31e25433b19e09b67b290a187ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2350a5b96ca5ef7cdb056e091702b5d"><td class="memItemLeft" align="right" valign="top">Math::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_core_1_1_single_filter_output.html#aa2350a5b96ca5ef7cdb056e091702b5d">meanZ</a></td></tr>
+<tr class="separator:aa2350a5b96ca5ef7cdb056e091702b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8e09d89fe2c1bb1577242e950998c10"><td class="memItemLeft" align="right" valign="top">Math::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_core_1_1_single_filter_output.html#ab8e09d89fe2c1bb1577242e950998c10">meanE</a></td></tr>
+<tr class="separator:ab8e09d89fe2c1bb1577242e950998c10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31a2094b47d89df8ffd1befdf43d1f6e"><td class="memItemLeft" align="right" valign="top">Math::Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_core_1_1_single_filter_output.html#a31a2094b47d89df8ffd1befdf43d1f6e">varX</a></td></tr>
+<tr class="separator:a31a2094b47d89df8ffd1befdf43d1f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0b4c0793c1277fe75e19fd96dc4cde4"><td class="memItemLeft" align="right" valign="top">Math::Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_core_1_1_single_filter_output.html#aa0b4c0793c1277fe75e19fd96dc4cde4">varZ</a></td></tr>
+<tr class="separator:aa0b4c0793c1277fe75e19fd96dc4cde4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab89885f694006365cd0f8e4a1bbc6187"><td class="memItemLeft" align="right" valign="top">Math::Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_core_1_1_single_filter_output.html#ab89885f694006365cd0f8e4a1bbc6187">varE</a></td></tr>
+<tr class="separator:ab89885f694006365cd0f8e4a1bbc6187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d2078c50b021df0d91e862d55619637"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_core_1_1_single_filter_output.html#a4d2078c50b021df0d91e862d55619637">time</a></td></tr>
+<tr class="separator:a4d2078c50b021df0d91e862d55619637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Структура, хранящая значение времени и моментные характеристики, соответствующие ему. </p>
+
+<p>См. определение в файле <a class="el" href="filter__output_8h_source.html">filter_output.h</a> строка <a class="el" href="filter__output_8h_source.html#l00017">17</a></p>
+</div><h2 class="groupheader">Данные класса</h2>
+<a id="ab8e09d89fe2c1bb1577242e950998c10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8e09d89fe2c1bb1577242e950998c10">&sect;&nbsp;</a></span>meanE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Math::Vector Core::SingleFilterOutput::meanE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Математическое ожидание \(M[E_t], E_t = |X_t - Z_t|\). </p>
+
+<p>См. определение в файле <a class="el" href="filter__output_8h_source.html">filter_output.h</a> строка <a class="el" href="filter__output_8h_source.html#l00020">20</a></p>
+
+</div>
+</div>
+<a id="aa06ff31e25433b19e09b67b290a187ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa06ff31e25433b19e09b67b290a187ca">&sect;&nbsp;</a></span>meanX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Math::Vector Core::SingleFilterOutput::meanX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Математическое ожидание \(M[X_t]\). </p>
+
+<p>См. определение в файле <a class="el" href="filter__output_8h_source.html">filter_output.h</a> строка <a class="el" href="filter__output_8h_source.html#l00018">18</a></p>
+
+</div>
+</div>
+<a id="aa2350a5b96ca5ef7cdb056e091702b5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2350a5b96ca5ef7cdb056e091702b5d">&sect;&nbsp;</a></span>meanZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Math::Vector Core::SingleFilterOutput::meanZ</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Математическое ожидание \(M[Z_t]\). </p>
+
+<p>См. определение в файле <a class="el" href="filter__output_8h_source.html">filter_output.h</a> строка <a class="el" href="filter__output_8h_source.html#l00019">19</a></p>
+
+</div>
+</div>
+<a id="a4d2078c50b021df0d91e862d55619637"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d2078c50b021df0d91e862d55619637">&sect;&nbsp;</a></span>time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Core::SingleFilterOutput::time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Время \(t\). </p>
+
+<p>См. определение в файле <a class="el" href="filter__output_8h_source.html">filter_output.h</a> строка <a class="el" href="filter__output_8h_source.html#l00024">24</a></p>
+
+</div>
+</div>
+<a id="ab89885f694006365cd0f8e4a1bbc6187"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab89885f694006365cd0f8e4a1bbc6187">&sect;&nbsp;</a></span>varE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Math::Matrix Core::SingleFilterOutput::varE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Дисперсия \(M[E_t], E_t = |X_t - Z_t|\). </p>
+
+<p>См. определение в файле <a class="el" href="filter__output_8h_source.html">filter_output.h</a> строка <a class="el" href="filter__output_8h_source.html#l00023">23</a></p>
+
+</div>
+</div>
+<a id="a31a2094b47d89df8ffd1befdf43d1f6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31a2094b47d89df8ffd1befdf43d1f6e">&sect;&nbsp;</a></span>varX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Math::Matrix Core::SingleFilterOutput::varX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Дисперсия \(M[X_t]\). </p>
+
+<p>См. определение в файле <a class="el" href="filter__output_8h_source.html">filter_output.h</a> строка <a class="el" href="filter__output_8h_source.html#l00021">21</a></p>
+
+</div>
+</div>
+<a id="aa0b4c0793c1277fe75e19fd96dc4cde4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0b4c0793c1277fe75e19fd96dc4cde4">&sect;&nbsp;</a></span>varZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Math::Matrix Core::SingleFilterOutput::varZ</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Дисперсия \(M[Z_t]\). </p>
+
+<p>См. определение в файле <a class="el" href="filter__output_8h_source.html">filter_output.h</a> строка <a class="el" href="filter__output_8h_source.html#l00022">22</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов структуры находятся в файле:<ul>
+<li>src/core/<a class="el" href="filter__output_8h_source.html">filter_output.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>

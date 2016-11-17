@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Optimal Filtering: Исходный файл src/gui/color_manager.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Optimal Filtering
+   &#160;<span id="projectnumber">v2.6.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_99d0482cf009f9d97a0877749b817f19.html">gui</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">color_manager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef COLORMANAGER_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define COLORMANAGER_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QColor&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QVector&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_color_manager.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_color_manager.html">ColorManager</a></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_color_manager.html#a430efaaefd3650e29bcf4802394c29e9">ColorManager</a>();</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">const</span> QColor &amp;<a class="code" href="class_color_manager.html#ab7ace598efd321831f0924572a4bf84e">nextColor</a>();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_color_manager.html#ae32d588a9d0144e2d55408c29f2f11ef">reset</a>();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_color_manager.html#a7b6e45b4281881b4cf37a40dafd1a77a">   30</a></span>&#160;    <span class="keywordtype">int</span>             <a class="code" href="class_color_manager.html#a7b6e45b4281881b4cf37a40dafd1a77a">m_currentIndex</a>; </div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_color_manager.html#ac91ea962bfa95bc3ed7da0bfd44615f4">   31</a></span>&#160;    QVector&lt;QColor&gt; <a class="code" href="class_color_manager.html#ac91ea962bfa95bc3ed7da0bfd44615f4">m_colors</a>;       </div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif // COLORMANAGER_H</span></div><div class="ttc" id="class_color_manager_html_ac91ea962bfa95bc3ed7da0bfd44615f4"><div class="ttname"><a href="class_color_manager.html#ac91ea962bfa95bc3ed7da0bfd44615f4">ColorManager::m_colors</a></div><div class="ttdeci">QVector&lt; QColor &gt; m_colors</div><div class="ttdef"><b>Definition:</b> <a href="color__manager_8h_source.html#l00031">color_manager.h:31</a></div></div>
+<div class="ttc" id="class_color_manager_html_a430efaaefd3650e29bcf4802394c29e9"><div class="ttname"><a href="class_color_manager.html#a430efaaefd3650e29bcf4802394c29e9">ColorManager::ColorManager</a></div><div class="ttdeci">ColorManager()</div><div class="ttdoc">Конструктор. </div><div class="ttdef"><b>Definition:</b> <a href="color__manager_8cc_source.html#l00004">color_manager.cc:4</a></div></div>
+<div class="ttc" id="class_color_manager_html_ab7ace598efd321831f0924572a4bf84e"><div class="ttname"><a href="class_color_manager.html#ab7ace598efd321831f0924572a4bf84e">ColorManager::nextColor</a></div><div class="ttdeci">const QColor &amp; nextColor()</div><div class="ttdoc">Достает цвет из массива, сдвигает (циклически) индекс. </div><div class="ttdef"><b>Definition:</b> <a href="color__manager_8cc_source.html#l00022">color_manager.cc:22</a></div></div>
+<div class="ttc" id="class_color_manager_html_ae32d588a9d0144e2d55408c29f2f11ef"><div class="ttname"><a href="class_color_manager.html#ae32d588a9d0144e2d55408c29f2f11ef">ColorManager::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdoc">Сбрасывает индекс последнего извлеченного цвета до нулевого. </div><div class="ttdef"><b>Definition:</b> <a href="color__manager_8cc_source.html#l00032">color_manager.cc:32</a></div></div>
+<div class="ttc" id="class_color_manager_html"><div class="ttname"><a href="class_color_manager.html">ColorManager</a></div><div class="ttdoc">Класс для управления набором цветов. </div><div class="ttdef"><b>Definition:</b> <a href="color__manager_8h_source.html#l00010">color_manager.h:10</a></div></div>
+<div class="ttc" id="class_color_manager_html_a7b6e45b4281881b4cf37a40dafd1a77a"><div class="ttname"><a href="class_color_manager.html#a7b6e45b4281881b4cf37a40dafd1a77a">ColorManager::m_currentIndex</a></div><div class="ttdeci">int m_currentIndex</div><div class="ttdef"><b>Definition:</b> <a href="color__manager_8h_source.html#l00030">color_manager.h:30</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>

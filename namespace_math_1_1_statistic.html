@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Optimal Filtering: Пространство имен Math::Statistic</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Optimal Filtering
+   &#160;<span id="projectnumber">v2.6.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_math.html">Math</a></li><li class="navelem"><a class="el" href="namespace_math_1_1_statistic.html">Statistic</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Пространство имен Math::Statistic</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Модуль, содержащий описание и реализацию методов работы с моментными характеристиками СВ.  
+<a href="#details">Подробнее...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a6cc81f7b570cb75924f0c4baf46181ee"><td class="memItemLeft" align="right" valign="top"><a id="a6cc81f7b570cb75924f0c4baf46181ee"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_math_1_1_statistic.html#a6cc81f7b570cb75924f0c4baf46181ee">Mean</a> (const Array&lt; double &gt; &amp;sampleX)</td></tr>
+<tr class="memdesc:a6cc81f7b570cb75924f0c4baf46181ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает математическое ожидание по выборке случайных чисел. <br /></td></tr>
+<tr class="separator:a6cc81f7b570cb75924f0c4baf46181ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed3f3d054a2aa64bf15cd3694d087ef7"><td class="memItemLeft" align="right" valign="top"><a id="aed3f3d054a2aa64bf15cd3694d087ef7"></a>
+Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_math_1_1_statistic.html#aed3f3d054a2aa64bf15cd3694d087ef7">Mean</a> (const Array&lt; Vector &gt; &amp;sampleX)</td></tr>
+<tr class="memdesc:aed3f3d054a2aa64bf15cd3694d087ef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает вектор математического ожидания по выборке случайных векторов. <br /></td></tr>
+<tr class="separator:aed3f3d054a2aa64bf15cd3694d087ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a456a80dd9114c6ee20b8c46ac6e73537"><td class="memItemLeft" align="right" valign="top"><a id="a456a80dd9114c6ee20b8c46ac6e73537"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_math_1_1_statistic.html#a456a80dd9114c6ee20b8c46ac6e73537">Var</a> (const Array&lt; double &gt; &amp;sampleX, double meanX)</td></tr>
+<tr class="memdesc:a456a80dd9114c6ee20b8c46ac6e73537"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает дисперсию по выборке случайных чисел и математическому ожиданию. <br /></td></tr>
+<tr class="separator:a456a80dd9114c6ee20b8c46ac6e73537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fa57184d4396f0f85cf07d8d1f80d19"><td class="memItemLeft" align="right" valign="top"><a id="a4fa57184d4396f0f85cf07d8d1f80d19"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_math_1_1_statistic.html#a4fa57184d4396f0f85cf07d8d1f80d19">Var</a> (const Array&lt; double &gt; &amp;sampleX)</td></tr>
+<tr class="memdesc:a4fa57184d4396f0f85cf07d8d1f80d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает дисперсию по выборке случайных чисел. <br /></td></tr>
+<tr class="separator:a4fa57184d4396f0f85cf07d8d1f80d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c94ccceb182ae0c07623a0d3e07269"><td class="memItemLeft" align="right" valign="top"><a id="a82c94ccceb182ae0c07623a0d3e07269"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_math_1_1_statistic.html#a82c94ccceb182ae0c07623a0d3e07269">Cov</a> (const Array&lt; double &gt; &amp;sampleX, const Array&lt; double &gt; &amp;sampleY)</td></tr>
+<tr class="memdesc:a82c94ccceb182ae0c07623a0d3e07269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает ковариацию двух случайных величин по их выборкам. <br /></td></tr>
+<tr class="separator:a82c94ccceb182ae0c07623a0d3e07269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7aadd8aab31379cc285d74a5f30e1bf"><td class="memItemLeft" align="right" valign="top"><a id="ac7aadd8aab31379cc285d74a5f30e1bf"></a>
+Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_math_1_1_statistic.html#ac7aadd8aab31379cc285d74a5f30e1bf">Var</a> (const Array&lt; Vector &gt; &amp;sampleX, const Vector &amp;meanX)</td></tr>
+<tr class="memdesc:ac7aadd8aab31379cc285d74a5f30e1bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает матрицу дисперсии по выборке случайных векторов и вектору математического ожиданию. <br /></td></tr>
+<tr class="separator:ac7aadd8aab31379cc285d74a5f30e1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af18d9a832496607b0be9a47cc2349e00"><td class="memItemLeft" align="right" valign="top"><a id="af18d9a832496607b0be9a47cc2349e00"></a>
+Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_math_1_1_statistic.html#af18d9a832496607b0be9a47cc2349e00">Var</a> (const Array&lt; Vector &gt; &amp;sampleX)</td></tr>
+<tr class="memdesc:af18d9a832496607b0be9a47cc2349e00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает матрицу дисперсии по выборке случайных векторов. <br /></td></tr>
+<tr class="separator:af18d9a832496607b0be9a47cc2349e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10cb1e6659e27127bd4b7d2ca19deb37"><td class="memItemLeft" align="right" valign="top"><a id="a10cb1e6659e27127bd4b7d2ca19deb37"></a>
+Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_math_1_1_statistic.html#a10cb1e6659e27127bd4b7d2ca19deb37">Cov</a> (const Array&lt; Vector &gt; &amp;sampleX, const Array&lt; Vector &gt; &amp;sampleY)</td></tr>
+<tr class="memdesc:a10cb1e6659e27127bd4b7d2ca19deb37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает матрицу ковариации двух случайных векторов по их выборкам. <br /></td></tr>
+<tr class="separator:a10cb1e6659e27127bd4b7d2ca19deb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f485f591ba03413dc10ca85d1d3bf45"><td class="memItemLeft" align="right" valign="top"><a id="a6f485f591ba03413dc10ca85d1d3bf45"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_math_1_1_statistic.html#a6f485f591ba03413dc10ca85d1d3bf45">Median</a> (const Array&lt; double &gt; &amp;sampleX)</td></tr>
+<tr class="memdesc:a6f485f591ba03413dc10ca85d1d3bf45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает медиану по выборке случайных чисел. <br /></td></tr>
+<tr class="separator:a6f485f591ba03413dc10ca85d1d3bf45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Модуль, содержащий описание и реализацию методов работы с моментными характеристиками СВ. </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>

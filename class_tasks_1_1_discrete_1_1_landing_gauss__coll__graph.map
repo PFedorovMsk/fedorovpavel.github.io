@@ -1,0 +1,6 @@
+<map id="Tasks::Discrete::LandingGauss" name="Tasks::Discrete::LandingGauss">
+<area shape="rect" id="node2" href="$class_tasks_1_1_discrete_1_1_landing_linear.html" title="Задача спуска ЛА на планету (дискретная, линеаризованная) для фильтров оптимальной структуры..." alt="" coords="5,229,172,271"/>
+<area shape="rect" id="node3" href="$class_core_1_1_discrete_task.html" title="Базовый тип задач для дискретных фильтров оптимальной структуры. " alt="" coords="21,155,156,181"/>
+<area shape="rect" id="node4" href="$class_core_1_1_task.html" title="Базовый класс для всех задач " alt="" coords="45,80,132,107"/>
+<area shape="rect" id="node5" href="$class_core_1_1_function_time.html" title="Базовый класс для классов, представляющих собой функции времени. " alt="" coords="21,5,157,32"/>
+</map>

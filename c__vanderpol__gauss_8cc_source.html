@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Optimal Filtering: Исходный файл src/tasks/continuous/c_vanderpol_gauss.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Optimal Filtering
+   &#160;<span id="projectnumber">v2.6.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b118c466441e8db851de69c6796245a3.html">tasks</a></li><li class="navelem"><a class="el" href="dir_adf41ff15a85657a03796cde99b869f1.html">continuous</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">c_vanderpol_gauss.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;c_vanderpol_gauss.h&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_tasks.html">Tasks</a></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_core.html#af88278693f3c866f217da796f4bb9af7a535863a82f163709557e59e2eb8139a7">Continuous</a></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_tasks_1_1_continuous_1_1_van_der_pol_gauss.html#ae40ae7f81419b9ca24403335e72d92d2">   11</a></span>&#160;<a class="code" href="class_tasks_1_1_continuous_1_1_van_der_pol_gauss.html#ae40ae7f81419b9ca24403335e72d92d2">VanDerPolGauss::VanDerPolGauss</a>()</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    : <a class="code" href="class_tasks_1_1_continuous_1_1_van_der_pol_linear.html">VanDerPolLinear</a>()</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_core_1_1_task.html#a259973874ba0b34cd7faccfd35dd683f">m_info</a>-&gt;setType(<span class="stringliteral">&quot;Г-&quot;</span>);</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_tasks_1_1_continuous_1_1_van_der_pol_gauss.html#a2ef625f7f8c590726c5b52e67622c172">   17</a></span>&#160;Matrix <a class="code" href="class_tasks_1_1_continuous_1_1_van_der_pol_gauss.html#a2ef625f7f8c590726c5b52e67622c172">VanDerPolGauss::A</a>(<span class="keyword">const</span> Vector &amp;m, <span class="keyword">const</span> Matrix &amp;<a class="code" href="class_tasks_1_1_continuous_1_1_van_der_pol_linear.html#a07e8842a175006f214238a9f71e5ebdf">D</a>)<span class="keyword"> const</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    Matrix res(<a class="code" href="class_core_1_1_task.html#a3314c516035accea22900aede28ee64b">m_dimX</a>, <a class="code" href="class_core_1_1_task.html#a3314c516035accea22900aede28ee64b">m_dimX</a>);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    res(0, 0) = 0.0;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    res(0, 1) = 1.0;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    res(1, 0) = -m_omega * m_omega - 2.0 * m_alpha * m_beta * (m[0] * m[1] + <a class="code" href="class_tasks_1_1_continuous_1_1_van_der_pol_linear.html#a07e8842a175006f214238a9f71e5ebdf">D</a>(0, 1));</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    res(1, 1) = m_alpha - m_alpha * m_beta * (m[0] * m[0] + <a class="code" href="class_tasks_1_1_continuous_1_1_van_der_pol_linear.html#a07e8842a175006f214238a9f71e5ebdf">D</a>(0, 0));</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> res;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_tasks_1_1_continuous_1_1_van_der_pol_gauss.html#a1b61ca6de96df17b049bc7934a241e47">   29</a></span>&#160;Matrix <a class="code" href="class_tasks_1_1_continuous_1_1_van_der_pol_gauss.html#a1b61ca6de96df17b049bc7934a241e47">VanDerPolGauss::G</a>(<span class="keyword">const</span> Vector &amp; <span class="comment">/*m*/</span>, <span class="keyword">const</span> Matrix &amp; <span class="comment">/*D*/</span>)<span class="keyword"> const</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// WARNING G(0,0) = 2 * m[0] ??</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> Matrix::Identity(<a class="code" href="class_core_1_1_task.html#aa317bebd7f5dbfa5dc86463cb0377b12">m_dimY</a>, <a class="code" href="class_core_1_1_task.html#a3314c516035accea22900aede28ee64b">m_dimX</a>);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_tasks_1_1_continuous_1_1_van_der_pol_gauss.html#aefe0f9432c2c283fba65ca73e6092f28">   35</a></span>&#160;Matrix <a class="code" href="class_tasks_1_1_continuous_1_1_van_der_pol_gauss.html#aefe0f9432c2c283fba65ca73e6092f28">VanDerPolGauss::Q</a>(<span class="keyword">const</span> Vector &amp;m, <span class="keyword">const</span> Matrix &amp;<a class="code" href="class_tasks_1_1_continuous_1_1_van_der_pol_linear.html#a07e8842a175006f214238a9f71e5ebdf">D</a>)<span class="keyword"> const</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword"></span>{</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    Matrix b   = <a class="code" href="class_tasks_1_1_continuous_1_1_van_der_pol_linear.html#a2345f38cbb3bc758ec43efad0f570fab">B</a>(m);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    Matrix res = b * b.transpose();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    res(1, 1) += <a class="code" href="class_tasks_1_1_continuous_1_1_van_der_pol_linear.html#a07e8842a175006f214238a9f71e5ebdf">D</a>(1, 1);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> res;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;} <span class="comment">// end Tasks::Continuous</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <span class="comment">// end Tasks</span></div><div class="ttc" id="namespace_core_html_af88278693f3c866f217da796f4bb9af7a535863a82f163709557e59e2eb8139a7"><div class="ttname"><a href="namespace_core.html#af88278693f3c866f217da796f4bb9af7a535863a82f163709557e59e2eb8139a7">Core::FILTER_TYPE::Continuous</a></div></div>
+<div class="ttc" id="class_tasks_1_1_continuous_1_1_van_der_pol_linear_html_a2345f38cbb3bc758ec43efad0f570fab"><div class="ttname"><a href="class_tasks_1_1_continuous_1_1_van_der_pol_linear.html#a2345f38cbb3bc758ec43efad0f570fab">Tasks::Continuous::VanDerPolLinear::B</a></div><div class="ttdeci">Matrix B(const Vector &amp;x) const override</div><div class="ttdoc">Функция диффузии объекта . </div><div class="ttdef"><b>Definition:</b> <a href="c__vanderpol__linear_8cc_source.html#l00067">c_vanderpol_linear.cc:67</a></div></div>
+<div class="ttc" id="class_tasks_1_1_continuous_1_1_van_der_pol_gauss_html_a2ef625f7f8c590726c5b52e67622c172"><div class="ttname"><a href="class_tasks_1_1_continuous_1_1_van_der_pol_gauss.html#a2ef625f7f8c590726c5b52e67622c172">Tasks::Continuous::VanDerPolGauss::A</a></div><div class="ttdeci">Matrix A(const Vector &amp;m, const Matrix &amp;D) const override</div><div class="ttdoc">Структурная функция . </div><div class="ttdef"><b>Definition:</b> <a href="c__vanderpol__gauss_8cc_source.html#l00017">c_vanderpol_gauss.cc:17</a></div></div>
+<div class="ttc" id="class_core_1_1_task_html_a259973874ba0b34cd7faccfd35dd683f"><div class="ttname"><a href="class_core_1_1_task.html#a259973874ba0b34cd7faccfd35dd683f">Core::Task::m_info</a></div><div class="ttdeci">PtrInfo m_info</div><div class="ttdef"><b>Definition:</b> <a href="task_8h_source.html#l00134">task.h:134</a></div></div>
+<div class="ttc" id="class_tasks_1_1_continuous_1_1_van_der_pol_linear_html_a07e8842a175006f214238a9f71e5ebdf"><div class="ttname"><a href="class_tasks_1_1_continuous_1_1_van_der_pol_linear.html#a07e8842a175006f214238a9f71e5ebdf">Tasks::Continuous::VanDerPolLinear::D</a></div><div class="ttdeci">Matrix D(const Vector &amp;x) const override</div><div class="ttdoc">Функция диффузии измерителя . </div><div class="ttdef"><b>Definition:</b> <a href="c__vanderpol__linear_8cc_source.html#l00081">c_vanderpol_linear.cc:81</a></div></div>
+<div class="ttc" id="class_tasks_1_1_continuous_1_1_van_der_pol_linear_html"><div class="ttname"><a href="class_tasks_1_1_continuous_1_1_van_der_pol_linear.html">Tasks::Continuous::VanDerPolLinear</a></div><div class="ttdoc">Осциллятор Ван-дер-Поля (непрерывный, линеаризованный) для фильтров оптимальной структуры. </div><div class="ttdef"><b>Definition:</b> <a href="c__vanderpol__linear_8h_source.html#l00019">c_vanderpol_linear.h:19</a></div></div>
+<div class="ttc" id="namespace_tasks_html"><div class="ttname"><a href="namespace_tasks.html">Tasks</a></div><div class="ttdoc">Модуль, содержащий реализации конкретных задач для фильтров. </div><div class="ttdef"><b>Definition:</b> <a href="c__landing__gauss_8cc_source.html#l00004">c_landing_gauss.cc:4</a></div></div>
+<div class="ttc" id="class_tasks_1_1_continuous_1_1_van_der_pol_gauss_html_ae40ae7f81419b9ca24403335e72d92d2"><div class="ttname"><a href="class_tasks_1_1_continuous_1_1_van_der_pol_gauss.html#ae40ae7f81419b9ca24403335e72d92d2">Tasks::Continuous::VanDerPolGauss::VanDerPolGauss</a></div><div class="ttdeci">VanDerPolGauss()</div><div class="ttdoc">Конструктор. </div><div class="ttdef"><b>Definition:</b> <a href="c__vanderpol__gauss_8cc_source.html#l00011">c_vanderpol_gauss.cc:11</a></div></div>
+<div class="ttc" id="class_tasks_1_1_continuous_1_1_van_der_pol_gauss_html_a1b61ca6de96df17b049bc7934a241e47"><div class="ttname"><a href="class_tasks_1_1_continuous_1_1_van_der_pol_gauss.html#a1b61ca6de96df17b049bc7934a241e47">Tasks::Continuous::VanDerPolGauss::G</a></div><div class="ttdeci">Matrix G(const Vector &amp;m, const Matrix &amp;D) const override</div><div class="ttdoc">Структурная функция . </div><div class="ttdef"><b>Definition:</b> <a href="c__vanderpol__gauss_8cc_source.html#l00029">c_vanderpol_gauss.cc:29</a></div></div>
+<div class="ttc" id="class_tasks_1_1_continuous_1_1_van_der_pol_gauss_html_aefe0f9432c2c283fba65ca73e6092f28"><div class="ttname"><a href="class_tasks_1_1_continuous_1_1_van_der_pol_gauss.html#aefe0f9432c2c283fba65ca73e6092f28">Tasks::Continuous::VanDerPolGauss::Q</a></div><div class="ttdeci">Matrix Q(const Vector &amp;m, const Matrix &amp;D) const override</div><div class="ttdoc">Возвращает интенсивность шумов . </div><div class="ttdef"><b>Definition:</b> <a href="c__vanderpol__gauss_8cc_source.html#l00035">c_vanderpol_gauss.cc:35</a></div></div>
+<div class="ttc" id="class_core_1_1_task_html_a3314c516035accea22900aede28ee64b"><div class="ttname"><a href="class_core_1_1_task.html#a3314c516035accea22900aede28ee64b">Core::Task::m_dimX</a></div><div class="ttdeci">long m_dimX</div><div class="ttdef"><b>Definition:</b> <a href="task_8h_source.html#l00136">task.h:136</a></div></div>
+<div class="ttc" id="class_core_1_1_task_html_aa317bebd7f5dbfa5dc86463cb0377b12"><div class="ttname"><a href="class_core_1_1_task.html#aa317bebd7f5dbfa5dc86463cb0377b12">Core::Task::m_dimY</a></div><div class="ttdeci">long m_dimY</div><div class="ttdef"><b>Definition:</b> <a href="task_8h_source.html#l00137">task.h:137</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>

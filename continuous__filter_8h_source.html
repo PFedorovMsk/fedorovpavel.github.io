@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Optimal Filtering: Исходный файл src/core/continuous_filter.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Optimal Filtering
+   &#160;<span id="projectnumber">v2.6.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">continuous_filter.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CONTINUOUS_FILTER_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CONTINUOUS_FILTER_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;continuous_task.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;filter.h&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_core.html">Core</a></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_core_1_1_continuous_filter.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_core_1_1_continuous_filter.html">ContinuousFilter</a> : <span class="keyword">public</span> <a class="code" href="class_core_1_1_filter.html">Filter</a></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_core_1_1_continuous_filter.html#a5f28c1f5aaf740be3a6a8af09c0fcc22">ContinuousFilter</a>(<a class="code" href="namespace_core.html#a4811af8148ba137d644b9a61a042cf03">PtrFilterParameters</a> <a class="code" href="class_core_1_1_filter.html#a44aa749b49ba46256975ce545531ecf7">params</a>, <a class="code" href="namespace_core.html#abfda8f69fcacfcea2696549b548ed737">PtrTask</a> task);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_core_1_1_continuous_filter.html#a4c30983f9354344717538f807855f2ae">zeroIteration</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_core_1_1_continuous_filter.html#aaea7d47a9d573b9a88007780c4c3a722">   38</a></span>&#160;    <a class="code" href="namespace_core.html#a95543587a560c6c497c6cadf68e03a62">PtrCTask</a> <a class="code" href="class_core_1_1_continuous_filter.html#aaea7d47a9d573b9a88007780c4c3a722">m_task</a>; </div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="namespace_core.html#a83a912e3fc57bd838d6ddc39895999f3">   43</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_core.html#a83a912e3fc57bd838d6ddc39895999f3">PtrCFilter</a> = std::shared_ptr&lt;ContinuousFilter&gt;;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;} <span class="comment">// end Core</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif // CONTINUOUS_FILTER_H</span></div><div class="ttc" id="class_core_1_1_continuous_filter_html_a4c30983f9354344717538f807855f2ae"><div class="ttname"><a href="class_core_1_1_continuous_filter.html#a4c30983f9354344717538f807855f2ae">Core::ContinuousFilter::zeroIteration</a></div><div class="ttdeci">void zeroIteration() override</div><div class="ttdoc">Нулевая итерация алгоритма (инициализирует начальные состояния). </div><div class="ttdef"><b>Definition:</b> <a href="continuous__filter_8cc_source.html#l00019">continuous_filter.cc:19</a></div></div>
+<div class="ttc" id="class_core_1_1_continuous_filter_html_aaea7d47a9d573b9a88007780c4c3a722"><div class="ttname"><a href="class_core_1_1_continuous_filter.html#aaea7d47a9d573b9a88007780c4c3a722">Core::ContinuousFilter::m_task</a></div><div class="ttdeci">PtrCTask m_task</div><div class="ttdef"><b>Definition:</b> <a href="continuous__filter_8h_source.html#l00038">continuous_filter.h:38</a></div></div>
+<div class="ttc" id="class_core_1_1_continuous_filter_html"><div class="ttname"><a href="class_core_1_1_continuous_filter.html">Core::ContinuousFilter</a></div><div class="ttdoc">Базовый класс для всех непрерывныз фильтров оптимальной структуры. </div><div class="ttdef"><b>Definition:</b> <a href="continuous__filter_8h_source.html#l00017">continuous_filter.h:17</a></div></div>
+<div class="ttc" id="class_core_1_1_continuous_filter_html_a5f28c1f5aaf740be3a6a8af09c0fcc22"><div class="ttname"><a href="class_core_1_1_continuous_filter.html#a5f28c1f5aaf740be3a6a8af09c0fcc22">Core::ContinuousFilter::ContinuousFilter</a></div><div class="ttdeci">ContinuousFilter(PtrFilterParameters params, PtrTask task)</div><div class="ttdoc">Конструктор. </div><div class="ttdef"><b>Definition:</b> <a href="continuous__filter_8cc_source.html#l00012">continuous_filter.cc:12</a></div></div>
+<div class="ttc" id="namespace_core_html_abfda8f69fcacfcea2696549b548ed737"><div class="ttname"><a href="namespace_core.html#abfda8f69fcacfcea2696549b548ed737">Core::PtrTask</a></div><div class="ttdeci">std::shared_ptr&lt; Task &gt; PtrTask</div><div class="ttdoc">Тип умного указателя на Task. </div><div class="ttdef"><b>Definition:</b> <a href="task_8h_source.html#l00154">task.h:154</a></div></div>
+<div class="ttc" id="class_core_1_1_filter_html"><div class="ttname"><a href="class_core_1_1_filter.html">Core::Filter</a></div><div class="ttdoc">Базовый класс для всех фильтров. </div><div class="ttdef"><b>Definition:</b> <a href="filter_8h_source.html#l00044">filter.h:44</a></div></div>
+<div class="ttc" id="namespace_core_html"><div class="ttname"><a href="namespace_core.html">Core</a></div><div class="ttdoc">Модуль, содержащий основные классы и методы. </div><div class="ttdef"><b>Definition:</b> <a href="continuous__discrete__filter_8cc_source.html#l00010">continuous_discrete_filter.cc:10</a></div></div>
+<div class="ttc" id="namespace_core_html_a83a912e3fc57bd838d6ddc39895999f3"><div class="ttname"><a href="namespace_core.html#a83a912e3fc57bd838d6ddc39895999f3">Core::PtrCFilter</a></div><div class="ttdeci">std::shared_ptr&lt; ContinuousFilter &gt; PtrCFilter</div><div class="ttdoc">Тип умного указателя на ContinuousFilter. </div><div class="ttdef"><b>Definition:</b> <a href="continuous__filter_8h_source.html#l00043">continuous_filter.h:43</a></div></div>
+<div class="ttc" id="class_core_1_1_filter_html_a44aa749b49ba46256975ce545531ecf7"><div class="ttname"><a href="class_core_1_1_filter.html#a44aa749b49ba46256975ce545531ecf7">Core::Filter::params</a></div><div class="ttdeci">PtrFilterParameters params()</div><div class="ttdoc">Возвращает текущие параметры фильтра. </div><div class="ttdef"><b>Definition:</b> <a href="filter_8cc_source.html#l00041">filter.cc:41</a></div></div>
+<div class="ttc" id="namespace_core_html_a4811af8148ba137d644b9a61a042cf03"><div class="ttname"><a href="namespace_core.html#a4811af8148ba137d644b9a61a042cf03">Core::PtrFilterParameters</a></div><div class="ttdeci">std::shared_ptr&lt; FilterParameters &gt; PtrFilterParameters</div><div class="ttdoc">Тип умного указателя на FilterParameters. </div><div class="ttdef"><b>Definition:</b> <a href="filter__parameters_8h_source.html#l00137">filter_parameters.h:137</a></div></div>
+<div class="ttc" id="namespace_core_html_a95543587a560c6c497c6cadf68e03a62"><div class="ttname"><a href="namespace_core.html#a95543587a560c6c497c6cadf68e03a62">Core::PtrCTask</a></div><div class="ttdeci">std::shared_ptr&lt; ContinuousTask &gt; PtrCTask</div><div class="ttdoc">Тип умного указателя на ContinuousTask. </div><div class="ttdef"><b>Definition:</b> <a href="continuous__task_8h_source.html#l00094">continuous_task.h:94</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>

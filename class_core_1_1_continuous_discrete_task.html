@@ -1,0 +1,672 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Optimal Filtering: Класс Core::ContinuousDiscreteTask</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Optimal Filtering
+   &#160;<span id="projectnumber">v2.6.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_core.html">Core</a></li><li class="navelem"><a class="el" href="class_core_1_1_continuous_discrete_task.html">ContinuousDiscreteTask</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="class_core_1_1_continuous_discrete_task-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс Core::ContinuousDiscreteTask<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Базовый тип задач для непрерывно-дискретных фильтров оптимальной структуры.  
+ <a href="class_core_1_1_continuous_discrete_task.html#details">Подробнее...</a></p>
+
+<p><code>#include &quot;<a class="el" href="continuous__discrete__task_8h_source.html">continuous_discrete_task.h</a>&quot;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a56d51edff4050c662197a16df126ca14"><td class="memItemLeft" align="right" valign="top"><a id="a56d51edff4050c662197a16df126ca14"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_continuous_discrete_task.html#a56d51edff4050c662197a16df126ca14">ContinuousDiscreteTask</a> ()</td></tr>
+<tr class="memdesc:a56d51edff4050c662197a16df126ca14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. <br /></td></tr>
+<tr class="separator:a56d51edff4050c662197a16df126ca14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a478f440555e63f6b14090637a6df46d9"><td class="memItemLeft" align="right" valign="top"><a id="a478f440555e63f6b14090637a6df46d9"></a>
+virtual Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_continuous_discrete_task.html#a478f440555e63f6b14090637a6df46d9">a</a> (const Vector &amp;x) const =0</td></tr>
+<tr class="memdesc:a478f440555e63f6b14090637a6df46d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция сноса объекта \(a(t,x)\). <br /></td></tr>
+<tr class="separator:a478f440555e63f6b14090637a6df46d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdecff4711bae9decda2931343929fae"><td class="memItemLeft" align="right" valign="top"><a id="acdecff4711bae9decda2931343929fae"></a>
+virtual Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_continuous_discrete_task.html#acdecff4711bae9decda2931343929fae">B</a> (const Vector &amp;x) const =0</td></tr>
+<tr class="memdesc:acdecff4711bae9decda2931343929fae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция диффузии объекта \(B(t,x)\). <br /></td></tr>
+<tr class="separator:acdecff4711bae9decda2931343929fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64ea27bc1e2a9e6bf1401fc7622c9aea"><td class="memItemLeft" align="right" valign="top">virtual Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_continuous_discrete_task.html#a64ea27bc1e2a9e6bf1401fc7622c9aea">c</a> (const Vector &amp;x) const =0</td></tr>
+<tr class="memdesc:a64ea27bc1e2a9e6bf1401fc7622c9aea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция измерителя \(c_k(X_k) = c_k(X_k, W_k)\).  <a href="#a64ea27bc1e2a9e6bf1401fc7622c9aea">Подробнее...</a><br /></td></tr>
+<tr class="separator:a64ea27bc1e2a9e6bf1401fc7622c9aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a491a9dc4463031a6f5f2eeda24d8ba9c"><td class="memItemLeft" align="right" valign="top">virtual Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_continuous_discrete_task.html#a491a9dc4463031a6f5f2eeda24d8ba9c">tau</a> (const Vector &amp;m, const Matrix &amp;D) const =0</td></tr>
+<tr class="memdesc:a491a9dc4463031a6f5f2eeda24d8ba9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структурная функция прогноза \(\tau(t, m, D)\).  <a href="#a491a9dc4463031a6f5f2eeda24d8ba9c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a491a9dc4463031a6f5f2eeda24d8ba9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a961cc49fd0c72ba0a211bb4913ca3ece"><td class="memItemLeft" align="right" valign="top">virtual Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_continuous_discrete_task.html#a961cc49fd0c72ba0a211bb4913ca3ece">Theta</a> (const Vector &amp;m, const Matrix &amp;D) const =0</td></tr>
+<tr class="memdesc:a961cc49fd0c72ba0a211bb4913ca3ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структурная функция прогноза \(\Theta(t,m,D)\).  <a href="#a961cc49fd0c72ba0a211bb4913ca3ece">Подробнее...</a><br /></td></tr>
+<tr class="separator:a961cc49fd0c72ba0a211bb4913ca3ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a332d99b61aabb919bffe75d0eec05cfe"><td class="memItemLeft" align="right" valign="top">virtual Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_continuous_discrete_task.html#a332d99b61aabb919bffe75d0eec05cfe">A</a> (const Vector &amp;m, const Matrix &amp;D) const =0</td></tr>
+<tr class="memdesc:a332d99b61aabb919bffe75d0eec05cfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает матрицу якоби \(A(t, m, D)\) для функции \(\tau(t, m, D)\).  <a href="#a332d99b61aabb919bffe75d0eec05cfe">Подробнее...</a><br /></td></tr>
+<tr class="separator:a332d99b61aabb919bffe75d0eec05cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25e88b71eb477d99bad66a66c982af6f"><td class="memItemLeft" align="right" valign="top">virtual Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_continuous_discrete_task.html#a25e88b71eb477d99bad66a66c982af6f">h</a> (const Vector &amp;m, const Matrix &amp;D) const =0</td></tr>
+<tr class="memdesc:a25e88b71eb477d99bad66a66c982af6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структурная функция коррекции \(h_k(m, D)\).  <a href="#a25e88b71eb477d99bad66a66c982af6f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a25e88b71eb477d99bad66a66c982af6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bc6d34d112ec0999857f7f9e0f67dda"><td class="memItemLeft" align="right" valign="top">virtual Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_continuous_discrete_task.html#a2bc6d34d112ec0999857f7f9e0f67dda">G</a> (const Vector &amp;m, const Matrix &amp;D) const =0</td></tr>
+<tr class="memdesc:a2bc6d34d112ec0999857f7f9e0f67dda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структурная функция коррекции \(G_k(m, D)\).  <a href="#a2bc6d34d112ec0999857f7f9e0f67dda">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2bc6d34d112ec0999857f7f9e0f67dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08947ea4d4eb819e0e8530e682a1a377"><td class="memItemLeft" align="right" valign="top">virtual Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_continuous_discrete_task.html#a08947ea4d4eb819e0e8530e682a1a377">F</a> (const Vector &amp;m, const Matrix &amp;D) const =0</td></tr>
+<tr class="memdesc:a08947ea4d4eb819e0e8530e682a1a377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структурная функция коррекции \(F_k(m, D)\).  <a href="#a08947ea4d4eb819e0e8530e682a1a377">Подробнее...</a><br /></td></tr>
+<tr class="separator:a08947ea4d4eb819e0e8530e682a1a377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_core_1_1_task"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_core_1_1_task')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_core_1_1_task.html">Core::Task</a></td></tr>
+<tr class="memitem:a461b8f90dfed42f5657b927916810e0e inherit pub_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a id="a461b8f90dfed42f5657b927916810e0e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#a461b8f90dfed42f5657b927916810e0e">Task</a> ()</td></tr>
+<tr class="memdesc:a461b8f90dfed42f5657b927916810e0e inherit pub_methods_class_core_1_1_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. <br /></td></tr>
+<tr class="separator:a461b8f90dfed42f5657b927916810e0e inherit pub_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a356b979174846c636ed63a50fab13760 inherit pub_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a id="a356b979174846c636ed63a50fab13760"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#a356b979174846c636ed63a50fab13760">~Task</a> ()</td></tr>
+<tr class="memdesc:a356b979174846c636ed63a50fab13760 inherit pub_methods_class_core_1_1_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:a356b979174846c636ed63a50fab13760 inherit pub_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d62812dba83d6a62e1a585c8716b866 inherit pub_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a id="a1d62812dba83d6a62e1a585c8716b866"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Task</b> (const <a class="el" href="class_core_1_1_task.html">Task</a> &amp;)=delete</td></tr>
+<tr class="separator:a1d62812dba83d6a62e1a585c8716b866 inherit pub_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a633a445406c96db460ecf7a8538ce96f inherit pub_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a id="a633a445406c96db460ecf7a8538ce96f"></a>
+<a class="el" href="class_core_1_1_task.html">Task</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_core_1_1_task.html">Task</a> &amp;)=delete</td></tr>
+<tr class="separator:a633a445406c96db460ecf7a8538ce96f inherit pub_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2250776114d414fe0548f089247c347 inherit pub_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a id="ac2250776114d414fe0548f089247c347"></a>
+<a class="el" href="namespace_core.html#a3e0e555656bf795146ebb0882e28da2f">PtrTaskParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#ac2250776114d414fe0548f089247c347">params</a> ()</td></tr>
+<tr class="memdesc:ac2250776114d414fe0548f089247c347 inherit pub_methods_class_core_1_1_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает набор специфических параметров данной задачи. <br /></td></tr>
+<tr class="separator:ac2250776114d414fe0548f089247c347 inherit pub_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf441bb60b373d5b8ffb852215b0318e inherit pub_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a id="aaf441bb60b373d5b8ffb852215b0318e"></a>
+<a class="el" href="namespace_core.html#a3e0e555656bf795146ebb0882e28da2f">PtrTaskParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#aaf441bb60b373d5b8ffb852215b0318e">consts</a> () const</td></tr>
+<tr class="memdesc:aaf441bb60b373d5b8ffb852215b0318e inherit pub_methods_class_core_1_1_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает набор специфических констант данной задачи. <br /></td></tr>
+<tr class="separator:aaf441bb60b373d5b8ffb852215b0318e inherit pub_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94634b748d776df3acad7940024bfb05 inherit pub_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a id="a94634b748d776df3acad7940024bfb05"></a>
+<a class="el" href="namespace_core.html#a647483da8a1266d5bbd3e9bb5cd66d08">PtrInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#a94634b748d776df3acad7940024bfb05">info</a> () const</td></tr>
+<tr class="memdesc:a94634b748d776df3acad7940024bfb05 inherit pub_methods_class_core_1_1_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает строковую информацию о данной задаче (имя, тип). <br /></td></tr>
+<tr class="separator:a94634b748d776df3acad7940024bfb05 inherit pub_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa550c0258f341215291fba1e8518c135 inherit pub_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top">virtual Math::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#aa550c0258f341215291fba1e8518c135">x0</a> () const</td></tr>
+<tr class="memdesc:aa550c0258f341215291fba1e8518c135 inherit pub_methods_class_core_1_1_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает состояние объекта в начальный момент времени.  <a href="class_core_1_1_task.html#aa550c0258f341215291fba1e8518c135">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa550c0258f341215291fba1e8518c135 inherit pub_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b5dadc2fce5b598976b453bc9cbc5c inherit pub_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a id="aa1b5dadc2fce5b598976b453bc9cbc5c"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#aa1b5dadc2fce5b598976b453bc9cbc5c">dimX</a> () const</td></tr>
+<tr class="memdesc:aa1b5dadc2fce5b598976b453bc9cbc5c inherit pub_methods_class_core_1_1_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает размерность вектора состояния объекта \(X\). <br /></td></tr>
+<tr class="separator:aa1b5dadc2fce5b598976b453bc9cbc5c inherit pub_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf6ea75989335fe1c2615d1ba1ef5d30 inherit pub_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a id="adf6ea75989335fe1c2615d1ba1ef5d30"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#adf6ea75989335fe1c2615d1ba1ef5d30">dimY</a> () const</td></tr>
+<tr class="memdesc:adf6ea75989335fe1c2615d1ba1ef5d30 inherit pub_methods_class_core_1_1_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает размерность вектора состояния измерителя \(Y\). <br /></td></tr>
+<tr class="separator:adf6ea75989335fe1c2615d1ba1ef5d30 inherit pub_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add33d4a561733297f8e6d6c01ffc3972 inherit pub_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a id="add33d4a561733297f8e6d6c01ffc3972"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#add33d4a561733297f8e6d6c01ffc3972">dimV</a> () const</td></tr>
+<tr class="memdesc:add33d4a561733297f8e6d6c01ffc3972 inherit pub_methods_class_core_1_1_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает размерность вектора шума \(V\). <br /></td></tr>
+<tr class="separator:add33d4a561733297f8e6d6c01ffc3972 inherit pub_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ce119af0f8d7e5a8c8918bd6d10e5cd inherit pub_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a id="a2ce119af0f8d7e5a8c8918bd6d10e5cd"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#a2ce119af0f8d7e5a8c8918bd6d10e5cd">dimW</a> () const</td></tr>
+<tr class="memdesc:a2ce119af0f8d7e5a8c8918bd6d10e5cd inherit pub_methods_class_core_1_1_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает размерность вектора шума \(W\). <br /></td></tr>
+<tr class="separator:a2ce119af0f8d7e5a8c8918bd6d10e5cd inherit pub_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c495dff380a10f63d377410e7a33557 inherit pub_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a id="a0c495dff380a10f63d377410e7a33557"></a>
+const Math::Vector &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#a0c495dff380a10f63d377410e7a33557">meanX0</a> () const</td></tr>
+<tr class="memdesc:a0c495dff380a10f63d377410e7a33557 inherit pub_methods_class_core_1_1_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает начальное математическое ожидание \(M[X_0]\) вектора состояния объекта \(X_0\). <br /></td></tr>
+<tr class="separator:a0c495dff380a10f63d377410e7a33557 inherit pub_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74631619b0e49b30bb37fe7cf7be150 inherit pub_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a id="ab74631619b0e49b30bb37fe7cf7be150"></a>
+const Math::Vector &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#ab74631619b0e49b30bb37fe7cf7be150">meanV</a> () const</td></tr>
+<tr class="memdesc:ab74631619b0e49b30bb37fe7cf7be150 inherit pub_methods_class_core_1_1_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает математическое ожидание \(M[V]\) вектора шума \(V\). <br /></td></tr>
+<tr class="separator:ab74631619b0e49b30bb37fe7cf7be150 inherit pub_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4162f11451f54e4109d336a2ddbc0527 inherit pub_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a id="a4162f11451f54e4109d336a2ddbc0527"></a>
+const Math::Vector &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#a4162f11451f54e4109d336a2ddbc0527">meanW</a> () const</td></tr>
+<tr class="memdesc:a4162f11451f54e4109d336a2ddbc0527 inherit pub_methods_class_core_1_1_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает математическое ожидание \(M[W]\) вектора шума \(W\). <br /></td></tr>
+<tr class="separator:a4162f11451f54e4109d336a2ddbc0527 inherit pub_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c7381e4278d9a94a09c06b97e887ce9 inherit pub_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a id="a2c7381e4278d9a94a09c06b97e887ce9"></a>
+const Math::Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#a2c7381e4278d9a94a09c06b97e887ce9">varX0</a> () const</td></tr>
+<tr class="memdesc:a2c7381e4278d9a94a09c06b97e887ce9 inherit pub_methods_class_core_1_1_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает начальную дисперсию \(D[X_0]\) вектора состояния объекта \(X_0\). <br /></td></tr>
+<tr class="separator:a2c7381e4278d9a94a09c06b97e887ce9 inherit pub_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1f2edae174e815a622182cf82df68e6 inherit pub_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a id="ae1f2edae174e815a622182cf82df68e6"></a>
+const Math::Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#ae1f2edae174e815a622182cf82df68e6">varV</a> () const</td></tr>
+<tr class="memdesc:ae1f2edae174e815a622182cf82df68e6 inherit pub_methods_class_core_1_1_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает дисперсию \(D[V]\) вектора шума \(V\). <br /></td></tr>
+<tr class="separator:ae1f2edae174e815a622182cf82df68e6 inherit pub_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5470510a5879a73ddde3f78ffeefe76f inherit pub_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a id="a5470510a5879a73ddde3f78ffeefe76f"></a>
+const Math::Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#a5470510a5879a73ddde3f78ffeefe76f">varW</a> () const</td></tr>
+<tr class="memdesc:a5470510a5879a73ddde3f78ffeefe76f inherit pub_methods_class_core_1_1_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает дисперсию \(D[W]\) вектора шума \(W\). <br /></td></tr>
+<tr class="separator:a5470510a5879a73ddde3f78ffeefe76f inherit pub_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd5722479df7ff461d797b1b51ee9bf inherit pub_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a id="afdd5722479df7ff461d797b1b51ee9bf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#afdd5722479df7ff461d797b1b51ee9bf">setMeanX0</a> (const Math::Vector &amp;m)</td></tr>
+<tr class="memdesc:afdd5722479df7ff461d797b1b51ee9bf inherit pub_methods_class_core_1_1_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает начальное математическое ожидание \(M[X_0]\) вектора состояния объекта \(X_0\). <br /></td></tr>
+<tr class="separator:afdd5722479df7ff461d797b1b51ee9bf inherit pub_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb608e7039dcf6058b1e6146ea51f87c inherit pub_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a id="abb608e7039dcf6058b1e6146ea51f87c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#abb608e7039dcf6058b1e6146ea51f87c">setMeanV</a> (const Math::Vector &amp;m)</td></tr>
+<tr class="memdesc:abb608e7039dcf6058b1e6146ea51f87c inherit pub_methods_class_core_1_1_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает математическое ожидание \(M[V]\) вектора шума \(V\). <br /></td></tr>
+<tr class="separator:abb608e7039dcf6058b1e6146ea51f87c inherit pub_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf2c30082db74d2643ed382a92d3faf0 inherit pub_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a id="aaf2c30082db74d2643ed382a92d3faf0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#aaf2c30082db74d2643ed382a92d3faf0">setMeanW</a> (const Math::Vector &amp;m)</td></tr>
+<tr class="memdesc:aaf2c30082db74d2643ed382a92d3faf0 inherit pub_methods_class_core_1_1_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает математическое ожидание \(M[W]\) вектора шума \(W\). <br /></td></tr>
+<tr class="separator:aaf2c30082db74d2643ed382a92d3faf0 inherit pub_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a206375f8b4993105a0edf965199e6f39 inherit pub_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a id="a206375f8b4993105a0edf965199e6f39"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#a206375f8b4993105a0edf965199e6f39">setVarX0</a> (const Math::Matrix &amp;D)</td></tr>
+<tr class="memdesc:a206375f8b4993105a0edf965199e6f39 inherit pub_methods_class_core_1_1_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает начальную дисперсию \(D[X_0]\) вектора состояния объекта \(X_0\). <br /></td></tr>
+<tr class="separator:a206375f8b4993105a0edf965199e6f39 inherit pub_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5fcf63bba5f0391e1bc932aec238a6e inherit pub_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a id="ae5fcf63bba5f0391e1bc932aec238a6e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#ae5fcf63bba5f0391e1bc932aec238a6e">setVarV</a> (const Math::Matrix &amp;D)</td></tr>
+<tr class="memdesc:ae5fcf63bba5f0391e1bc932aec238a6e inherit pub_methods_class_core_1_1_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает дисперсию \(D[V]\) вектора шума \(V\). <br /></td></tr>
+<tr class="separator:ae5fcf63bba5f0391e1bc932aec238a6e inherit pub_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad326146b1416656c3e42138f0f7cadac inherit pub_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a id="ad326146b1416656c3e42138f0f7cadac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#ad326146b1416656c3e42138f0f7cadac">setVarW</a> (const Math::Matrix &amp;D)</td></tr>
+<tr class="memdesc:ad326146b1416656c3e42138f0f7cadac inherit pub_methods_class_core_1_1_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает дисперсию \(D[W]\) вектора шума \(W\). <br /></td></tr>
+<tr class="separator:ad326146b1416656c3e42138f0f7cadac inherit pub_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8b451d78816e62347954452b7ace250 inherit pub_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#ac8b451d78816e62347954452b7ace250">changeParameter</a> (const std::string &amp;key, double value)</td></tr>
+<tr class="memdesc:ac8b451d78816e62347954452b7ace250 inherit pub_methods_class_core_1_1_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменяет значение параметра.  <a href="class_core_1_1_task.html#ac8b451d78816e62347954452b7ace250">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac8b451d78816e62347954452b7ace250 inherit pub_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_core_1_1_function_time"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_core_1_1_function_time')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_core_1_1_function_time.html">Core::FunctionTime</a></td></tr>
+<tr class="memitem:a7d2987678c02b38563cd21261884d679 inherit pub_methods_class_core_1_1_function_time"><td class="memItemLeft" align="right" valign="top"><a id="a7d2987678c02b38563cd21261884d679"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_function_time.html#a7d2987678c02b38563cd21261884d679">FunctionTime</a> (double initialTime=0.0, double initialStep=0.001)</td></tr>
+<tr class="memdesc:a7d2987678c02b38563cd21261884d679 inherit pub_methods_class_core_1_1_function_time"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. <br /></td></tr>
+<tr class="separator:a7d2987678c02b38563cd21261884d679 inherit pub_methods_class_core_1_1_function_time"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35d2db55f45326b660b9831c6e9ac5c6 inherit pub_methods_class_core_1_1_function_time"><td class="memItemLeft" align="right" valign="top"><a id="a35d2db55f45326b660b9831c6e9ac5c6"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_function_time.html#a35d2db55f45326b660b9831c6e9ac5c6">~FunctionTime</a> ()</td></tr>
+<tr class="memdesc:a35d2db55f45326b660b9831c6e9ac5c6 inherit pub_methods_class_core_1_1_function_time"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:a35d2db55f45326b660b9831c6e9ac5c6 inherit pub_methods_class_core_1_1_function_time"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdba9d0552e571c23f28335e67cf7f41 inherit pub_methods_class_core_1_1_function_time"><td class="memItemLeft" align="right" valign="top"><a id="abdba9d0552e571c23f28335e67cf7f41"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_function_time.html#abdba9d0552e571c23f28335e67cf7f41">time</a> () const</td></tr>
+<tr class="memdesc:abdba9d0552e571c23f28335e67cf7f41 inherit pub_methods_class_core_1_1_function_time"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает текущее значение времени. <br /></td></tr>
+<tr class="separator:abdba9d0552e571c23f28335e67cf7f41 inherit pub_methods_class_core_1_1_function_time"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c3dfc0d8d69c83c162c42435fa13cb9 inherit pub_methods_class_core_1_1_function_time"><td class="memItemLeft" align="right" valign="top"><a id="a7c3dfc0d8d69c83c162c42435fa13cb9"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_function_time.html#a7c3dfc0d8d69c83c162c42435fa13cb9">step</a> () const</td></tr>
+<tr class="memdesc:a7c3dfc0d8d69c83c162c42435fa13cb9 inherit pub_methods_class_core_1_1_function_time"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает шаг на который увеличивается значение времени. <br /></td></tr>
+<tr class="separator:a7c3dfc0d8d69c83c162c42435fa13cb9 inherit pub_methods_class_core_1_1_function_time"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0db96b8aff83af1339e08425fe4fd80b inherit pub_methods_class_core_1_1_function_time"><td class="memItemLeft" align="right" valign="top"><a id="a0db96b8aff83af1339e08425fe4fd80b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_function_time.html#a0db96b8aff83af1339e08425fe4fd80b">setTime</a> (double newTime)</td></tr>
+<tr class="memdesc:a0db96b8aff83af1339e08425fe4fd80b inherit pub_methods_class_core_1_1_function_time"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает новое значение времени. <br /></td></tr>
+<tr class="separator:a0db96b8aff83af1339e08425fe4fd80b inherit pub_methods_class_core_1_1_function_time"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a60dab2d7d8a046893751843c13208 inherit pub_methods_class_core_1_1_function_time"><td class="memItemLeft" align="right" valign="top"><a id="ad1a60dab2d7d8a046893751843c13208"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_function_time.html#ad1a60dab2d7d8a046893751843c13208">setStep</a> (double newStep)</td></tr>
+<tr class="memdesc:ad1a60dab2d7d8a046893751843c13208 inherit pub_methods_class_core_1_1_function_time"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает шаг на который увеличивается значение времени. <br /></td></tr>
+<tr class="separator:ad1a60dab2d7d8a046893751843c13208 inherit pub_methods_class_core_1_1_function_time"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f1674cdfd0a24f69934467369e30267 inherit pub_methods_class_core_1_1_function_time"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_function_time.html#a1f1674cdfd0a24f69934467369e30267">advanceTime</a> (double <a class="el" href="class_core_1_1_function_time.html#a7c3dfc0d8d69c83c162c42435fa13cb9">step</a>)</td></tr>
+<tr class="memdesc:a1f1674cdfd0a24f69934467369e30267 inherit pub_methods_class_core_1_1_function_time"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличивает значение времни на step.  <a href="class_core_1_1_function_time.html#a1f1674cdfd0a24f69934467369e30267">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1f1674cdfd0a24f69934467369e30267 inherit pub_methods_class_core_1_1_function_time"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2b13d7c42f8a52c2f4ae58efb88ef73 inherit pub_methods_class_core_1_1_function_time"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_function_time.html#ab2b13d7c42f8a52c2f4ae58efb88ef73">advanceTime</a> ()</td></tr>
+<tr class="memdesc:ab2b13d7c42f8a52c2f4ae58efb88ef73 inherit pub_methods_class_core_1_1_function_time"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличивает значение времени на величину шага по-умолчанию.  <a href="class_core_1_1_function_time.html#ab2b13d7c42f8a52c2f4ae58efb88ef73">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab2b13d7c42f8a52c2f4ae58efb88ef73 inherit pub_methods_class_core_1_1_function_time"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pro_methods_class_core_1_1_task"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_core_1_1_task')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="class_core_1_1_task.html">Core::Task</a></td></tr>
+<tr class="memitem:a36027d8797e1bbaac2db06d0dd72aec9 inherit pro_methods_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a id="a36027d8797e1bbaac2db06d0dd72aec9"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#a36027d8797e1bbaac2db06d0dd72aec9">loadParams</a> ()</td></tr>
+<tr class="memdesc:a36027d8797e1bbaac2db06d0dd72aec9 inherit pro_methods_class_core_1_1_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загружает данные в локальные переменные после изменения параметров. <br /></td></tr>
+<tr class="separator:a36027d8797e1bbaac2db06d0dd72aec9 inherit pro_methods_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_core_1_1_task"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_core_1_1_task')"><img src="closed.png" alt="-"/>&#160;Защищенные данные унаследованные от <a class="el" href="class_core_1_1_task.html">Core::Task</a></td></tr>
+<tr class="memitem:a99bf439867f7a4f38cde5eb142f4414a inherit pro_attribs_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_core.html#a3e0e555656bf795146ebb0882e28da2f">PtrTaskParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#a99bf439867f7a4f38cde5eb142f4414a">m_params</a></td></tr>
+<tr class="separator:a99bf439867f7a4f38cde5eb142f4414a inherit pro_attribs_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1482a9a5e2a70c22fa58d2695a680890 inherit pro_attribs_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_core.html#a3e0e555656bf795146ebb0882e28da2f">PtrTaskParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#a1482a9a5e2a70c22fa58d2695a680890">m_consts</a></td></tr>
+<tr class="separator:a1482a9a5e2a70c22fa58d2695a680890 inherit pro_attribs_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a259973874ba0b34cd7faccfd35dd683f inherit pro_attribs_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_core.html#a647483da8a1266d5bbd3e9bb5cd66d08">PtrInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#a259973874ba0b34cd7faccfd35dd683f">m_info</a></td></tr>
+<tr class="separator:a259973874ba0b34cd7faccfd35dd683f inherit pro_attribs_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3314c516035accea22900aede28ee64b inherit pro_attribs_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#a3314c516035accea22900aede28ee64b">m_dimX</a></td></tr>
+<tr class="separator:a3314c516035accea22900aede28ee64b inherit pro_attribs_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa317bebd7f5dbfa5dc86463cb0377b12 inherit pro_attribs_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#aa317bebd7f5dbfa5dc86463cb0377b12">m_dimY</a></td></tr>
+<tr class="separator:aa317bebd7f5dbfa5dc86463cb0377b12 inherit pro_attribs_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b117926018d3463708aa6e8657766b3 inherit pro_attribs_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#a2b117926018d3463708aa6e8657766b3">m_dimV</a></td></tr>
+<tr class="separator:a2b117926018d3463708aa6e8657766b3 inherit pro_attribs_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a873b2d4f0d94068f327a18483a4c5318 inherit pro_attribs_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#a873b2d4f0d94068f327a18483a4c5318">m_dimW</a></td></tr>
+<tr class="separator:a873b2d4f0d94068f327a18483a4c5318 inherit pro_attribs_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4482edff14b2fca2313e164614bb9693 inherit pro_attribs_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top">Math::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#a4482edff14b2fca2313e164614bb9693">m_meanX0</a></td></tr>
+<tr class="separator:a4482edff14b2fca2313e164614bb9693 inherit pro_attribs_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a420e36c620e30cd0f55689ce481c1391 inherit pro_attribs_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top">Math::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#a420e36c620e30cd0f55689ce481c1391">m_meanV</a></td></tr>
+<tr class="separator:a420e36c620e30cd0f55689ce481c1391 inherit pro_attribs_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3391c29d286ebfae9e77cce5723f2e8c inherit pro_attribs_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top">Math::Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#a3391c29d286ebfae9e77cce5723f2e8c">m_meanW</a></td></tr>
+<tr class="separator:a3391c29d286ebfae9e77cce5723f2e8c inherit pro_attribs_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06a945ef15de5b97494fd20ce88470a6 inherit pro_attribs_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top">Math::Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#a06a945ef15de5b97494fd20ce88470a6">m_varX0</a></td></tr>
+<tr class="separator:a06a945ef15de5b97494fd20ce88470a6 inherit pro_attribs_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af73402499755e2c2931b9d30456fd06a inherit pro_attribs_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top">Math::Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#af73402499755e2c2931b9d30456fd06a">m_varV</a></td></tr>
+<tr class="separator:af73402499755e2c2931b9d30456fd06a inherit pro_attribs_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1239e6079214a8344c44b8ad4c3a23e inherit pro_attribs_class_core_1_1_task"><td class="memItemLeft" align="right" valign="top">Math::Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_task.html#af1239e6079214a8344c44b8ad4c3a23e">m_varW</a></td></tr>
+<tr class="separator:af1239e6079214a8344c44b8ad4c3a23e inherit pro_attribs_class_core_1_1_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_core_1_1_function_time"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_core_1_1_function_time')"><img src="closed.png" alt="-"/>&#160;Защищенные данные унаследованные от <a class="el" href="class_core_1_1_function_time.html">Core::FunctionTime</a></td></tr>
+<tr class="memitem:a12192d0047976f9cd6376e986e43451c inherit pro_attribs_class_core_1_1_function_time"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_function_time.html#a12192d0047976f9cd6376e986e43451c">m_time</a></td></tr>
+<tr class="separator:a12192d0047976f9cd6376e986e43451c inherit pro_attribs_class_core_1_1_function_time"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31d15f7adb8bdecfd22bd35c8fd6eefe inherit pro_attribs_class_core_1_1_function_time"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_function_time.html#a31d15f7adb8bdecfd22bd35c8fd6eefe">m_step</a></td></tr>
+<tr class="separator:a31d15f7adb8bdecfd22bd35c8fd6eefe inherit pro_attribs_class_core_1_1_function_time"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Базовый тип задач для непрерывно-дискретных фильтров оптимальной структуры. </p>
+<p>Описываемая система имеет следующий вид</p>
+<ul>
+<li>Объект: <p class="formulaDsp">
+\[dX_t = a(t, X_t)dt + B(t, X_t)dV_t,\ \ \ X_0 \sim \pi_0(x),\]
+</p>
+</li>
+<li>Измеритель: <p class="formulaDsp">
+\[Y_k = с_k(X_{t_k}, W_k),\ \ \ k = 0, 1, \ldots\]
+</p>
+</li>
+</ul>
+<p>Здесь \(t\) - время, \(t_k\) - моменты измерений, \(X_t = X(t)\) - вектор состояния объекта в момент \(t\), \(Y_k\) - вектор измерения, \(V_t\) - вектор стандартного винеровского процессов, \(W_k\) - вектор дискретного белого шума. </p>
+
+<p>См. определение в файле <a class="el" href="continuous__discrete__task_8h_source.html">continuous_discrete_task.h</a> строка <a class="el" href="continuous__discrete__task_8h_source.html#l00026">26</a></p>
+</div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:Core::ContinuousDiscreteTask:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_core_1_1_continuous_discrete_task__inherit__graph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса Core::ContinuousDiscreteTask:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_core_1_1_continuous_discrete_task__coll__graph.svg" width="210" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<h2 class="groupheader">Методы</h2>
+<a id="a332d99b61aabb919bffe75d0eec05cfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a332d99b61aabb919bffe75d0eec05cfe">&sect;&nbsp;</a></span>A()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Matrix Core::ContinuousDiscreteTask::A </td>
+          <td>(</td>
+          <td class="paramtype">const Vector &amp;&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
+          <td class="paramname"><em>D</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает матрицу якоби \(A(t, m, D)\) для функции \(\tau(t, m, D)\). </p>
+<p>Она имеет следующий вид для</p>
+<ul>
+<li>гауссовского приближения: <p class="formulaDsp">
+\[A(t, m, D) = \frac{d}{dm} \tau(t, m),\]
+</p>
+</li>
+<li>линеаризованного приближения: <p class="formulaDsp">
+\[A(t, m, D) = \frac{d}{dm} a(t, m).\]
+</p>
+ </li>
+</ul>
+
+<p>Замещается в <a class="el" href="class_tasks_1_1_continuous_discrete_1_1_landing_linear.html#ae584bc7b596882f07b18d2a39dcdfa32">Tasks::ContinuousDiscrete::LandingLinear</a>, <a class="el" href="class_tasks_1_1_continuous_discrete_1_1_van_der_pol_linear.html#abc0ead5ddd90702a5bbb93b07c74df85">Tasks::ContinuousDiscrete::VanDerPolLinear</a> и <a class="el" href="class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss.html#acb431d1a24b276610f6b7c7ff343fb9f">Tasks::ContinuousDiscrete::VanDerPolGauss</a>.</p>
+
+</div>
+</div>
+<a id="a64ea27bc1e2a9e6bf1401fc7622c9aea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64ea27bc1e2a9e6bf1401fc7622c9aea">&sect;&nbsp;</a></span>c()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Vector Core::ContinuousDiscreteTask::c </td>
+          <td>(</td>
+          <td class="paramtype">const Vector &amp;&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция измерителя \(c_k(X_k) = c_k(X_k, W_k)\). </p>
+<p>Шум \(W_k\) генерируется внутри. </p>
+
+<p>Замещается в <a class="el" href="class_tasks_1_1_continuous_discrete_1_1_landing_linear.html#aa3bddd1de01a202030bbccc1994e10af">Tasks::ContinuousDiscrete::LandingLinear</a> и <a class="el" href="class_tasks_1_1_continuous_discrete_1_1_van_der_pol_linear.html#af2602ff749602f29f5169ea0e1b391ed">Tasks::ContinuousDiscrete::VanDerPolLinear</a>.</p>
+
+</div>
+</div>
+<a id="a08947ea4d4eb819e0e8530e682a1a377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08947ea4d4eb819e0e8530e682a1a377">&sect;&nbsp;</a></span>F()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Matrix Core::ContinuousDiscreteTask::F </td>
+          <td>(</td>
+          <td class="paramtype">const Vector &amp;&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
+          <td class="paramname"><em>D</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Структурная функция коррекции \(F_k(m, D)\). </p>
+<p>Она имеет следующий вид для</p>
+<ul>
+<li>гауссовского приближения: <p class="formulaDsp">
+\[F_k(m, D) = \int (M[c_k(x,W_k)\cdot c_k^T(x, W_k)] \cdot N(x\ |\ m,D))dx - h_k(m,D)\cdot h_k^T(m,D),\]
+</p>
+</li>
+<li>линеаризованного приближения: <p class="formulaDsp">
+\[F_k(m, D) = C_k^x(m)\cdot D\cdot C_k^{xT}(m) + C_k^w(m)\cdot D[W_k]\cdot C_k^{wT}(m).\]
+</p>
+</li>
+</ul>
+<p>Здесь \(C_k^x(x) = \frac{d}{dx} c_k(x, M[W_k]),\ C_k^w(x) = \frac{d}{dw} c_k(x, M[W_k])\). </p>
+
+<p>Замещается в <a class="el" href="class_tasks_1_1_continuous_discrete_1_1_landing_linear.html#a5b5a327866160bf687dbc6d82a801ce8">Tasks::ContinuousDiscrete::LandingLinear</a>, <a class="el" href="class_tasks_1_1_continuous_discrete_1_1_van_der_pol_linear.html#ac624f91abb5e440d9b05835ca281f53f">Tasks::ContinuousDiscrete::VanDerPolLinear</a> и <a class="el" href="class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss.html#adbd6671eb347348b68db28d899484336">Tasks::ContinuousDiscrete::VanDerPolGauss</a>.</p>
+
+</div>
+</div>
+<a id="a2bc6d34d112ec0999857f7f9e0f67dda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bc6d34d112ec0999857f7f9e0f67dda">&sect;&nbsp;</a></span>G()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Matrix Core::ContinuousDiscreteTask::G </td>
+          <td>(</td>
+          <td class="paramtype">const Vector &amp;&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
+          <td class="paramname"><em>D</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Структурная функция коррекции \(G_k(m, D)\). </p>
+<p>Она имеет следующий вид для</p>
+<ul>
+<li>гауссовского приближения: <p class="formulaDsp">
+\[G_k(m, D) = \frac{d}{dm}h_k(m,D),\]
+</p>
+</li>
+<li>линеаризованного приближения: <p class="formulaDsp">
+\[G_k(m, D) = \frac{d}{dm}c_k(m,M[W_k]).\]
+</p>
+ </li>
+</ul>
+
+<p>Замещается в <a class="el" href="class_tasks_1_1_continuous_discrete_1_1_landing_linear.html#a3b589b0ac53f7fe936438bc7c82f5c3d">Tasks::ContinuousDiscrete::LandingLinear</a>, <a class="el" href="class_tasks_1_1_continuous_discrete_1_1_van_der_pol_linear.html#aad1f3c80a043157b90ba0b55ba2390b1">Tasks::ContinuousDiscrete::VanDerPolLinear</a> и <a class="el" href="class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss.html#a757eb311b72b3cabcee59eab9d732de5">Tasks::ContinuousDiscrete::VanDerPolGauss</a>.</p>
+
+</div>
+</div>
+<a id="a25e88b71eb477d99bad66a66c982af6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25e88b71eb477d99bad66a66c982af6f">&sect;&nbsp;</a></span>h()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Vector Core::ContinuousDiscreteTask::h </td>
+          <td>(</td>
+          <td class="paramtype">const Vector &amp;&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
+          <td class="paramname"><em>D</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Структурная функция коррекции \(h_k(m, D)\). </p>
+<p>Она имеет следующий вид для</p>
+<ul>
+<li>гауссовского приближения: <p class="formulaDsp">
+\[h_k(m, D) = \int (M[c_k(x, W_k)] \cdot N(x\ |\ m, D))dx,\]
+</p>
+</li>
+<li>линеаризованного приближения: <p class="formulaDsp">
+\[h_k(m, D) = c_k(m, M[W_k]).\]
+</p>
+ </li>
+</ul>
+
+<p>Замещается в <a class="el" href="class_tasks_1_1_continuous_discrete_1_1_landing_linear.html#a66480881fd719faddafe5104b548db78">Tasks::ContinuousDiscrete::LandingLinear</a> и <a class="el" href="class_tasks_1_1_continuous_discrete_1_1_van_der_pol_linear.html#a2a3ca4ebc2e8c458fbea40e854f375ec">Tasks::ContinuousDiscrete::VanDerPolLinear</a>.</p>
+
+</div>
+</div>
+<a id="a491a9dc4463031a6f5f2eeda24d8ba9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a491a9dc4463031a6f5f2eeda24d8ba9c">&sect;&nbsp;</a></span>tau()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Vector Core::ContinuousDiscreteTask::tau </td>
+          <td>(</td>
+          <td class="paramtype">const Vector &amp;&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
+          <td class="paramname"><em>D</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Структурная функция прогноза \(\tau(t, m, D)\). </p>
+<p>Она имеет следующий вид для</p>
+<ul>
+<li>гауссовского приближения: <p class="formulaDsp">
+\[\tau(t, m, D) = \int a(t,x)\cdot N(x\ |\ m, D)dx,\]
+</p>
+</li>
+<li>линеаризованного приближения: <p class="formulaDsp">
+\[\tau(t, m, D) = a(t, m).\]
+</p>
+ </li>
+</ul>
+
+<p>Замещается в <a class="el" href="class_tasks_1_1_continuous_discrete_1_1_landing_linear.html#a1ee11cced65180b2a055b8ca848ef4e0">Tasks::ContinuousDiscrete::LandingLinear</a>, <a class="el" href="class_tasks_1_1_continuous_discrete_1_1_van_der_pol_linear.html#a5b9245d9f403e615a971f2e8009926e6">Tasks::ContinuousDiscrete::VanDerPolLinear</a> и <a class="el" href="class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss.html#acfe935d9f4f452f3e10cb5f41fc8530a">Tasks::ContinuousDiscrete::VanDerPolGauss</a>.</p>
+
+</div>
+</div>
+<a id="a961cc49fd0c72ba0a211bb4913ca3ece"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a961cc49fd0c72ba0a211bb4913ca3ece">&sect;&nbsp;</a></span>Theta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Matrix Core::ContinuousDiscreteTask::Theta </td>
+          <td>(</td>
+          <td class="paramtype">const Vector &amp;&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
+          <td class="paramname"><em>D</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Структурная функция прогноза \(\Theta(t,m,D)\). </p>
+<p>Она имеет следующий вид для</p>
+<ul>
+<li>гауссовского приближения: <p class="formulaDsp">
+\[\Theta(t,m,D) = \int B(t,x)\cdot B^T(t,x)\cdot N(x\ |\ m,D)dx,\]
+</p>
+</li>
+<li>линеаризованного приближения: <p class="formulaDsp">
+\[\Theta(t,m,D) = B(t,m)\cdot B^T(t,m).\]
+</p>
+ </li>
+</ul>
+
+<p>Замещается в <a class="el" href="class_tasks_1_1_continuous_discrete_1_1_landing_linear.html#a783147d41d5d8dff4facd246fc064bb4">Tasks::ContinuousDiscrete::LandingLinear</a>, <a class="el" href="class_tasks_1_1_continuous_discrete_1_1_van_der_pol_linear.html#a6d2f1c4c12551eda7eb97322335960ef">Tasks::ContinuousDiscrete::VanDerPolLinear</a> и <a class="el" href="class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss.html#addb8066d1f4701c0c453d07ffa8631ff">Tasks::ContinuousDiscrete::VanDerPolGauss</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/core/<a class="el" href="continuous__discrete__task_8h_source.html">continuous_discrete_task.h</a></li>
+<li>src/core/<a class="el" href="continuous__discrete__task_8cc_source.html">continuous_discrete_task.cc</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>

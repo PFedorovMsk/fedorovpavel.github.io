@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Optimal Filtering: Исходный файл src/filters/continuous/c_fos.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Optimal Filtering
+   &#160;<span id="projectnumber">v2.6.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_1bc13244e26df1e1f069a1fd18e36da3.html">filters</a></li><li class="navelem"><a class="el" href="dir_be9e800bcca412260e8a76c8f243ac34.html">continuous</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">c_fos.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;c_fos.h&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_filters.html">Filters</a></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_core.html#af88278693f3c866f217da796f4bb9af7a535863a82f163709557e59e2eb8139a7">Continuous</a></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_math_1_1_rand.html#a431a3d55f304ba341c9583bca0848f26">Math::Rand::gaussianVector</a>;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_filters_1_1_continuous_1_1_f_o_s.html#a37bf6963e1fc25a0a709d53299fc2951">   14</a></span>&#160;<a class="code" href="class_filters_1_1_continuous_1_1_f_o_s.html#a37bf6963e1fc25a0a709d53299fc2951">FOS::FOS</a>(<a class="code" href="namespace_core.html#a4811af8148ba137d644b9a61a042cf03">Core::PtrFilterParameters</a> params, <a class="code" href="namespace_core.html#abfda8f69fcacfcea2696549b548ed737">Core::PtrTask</a> task)</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    : ContinuousFilter(params, task)</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_core_1_1_filter.html#a089304c3d1695bd6b47d5bfd8fcfb574">m_info</a>-&gt;setName(<a class="code" href="class_core_1_1_continuous_filter.html#aaea7d47a9d573b9a88007780c4c3a722">m_task</a>-&gt;info()-&gt;type() + <span class="stringliteral">&quot;ФОСн (&quot;</span> + std::to_string(task-&gt;dimX()) + <span class="stringliteral">&quot;)&quot;</span>);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_filters_1_1_continuous_1_1_f_o_s.html#a6db8005b66c345d94cdd4498edad9022">   20</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_filters_1_1_continuous_1_1_f_o_s.html#a6db8005b66c345d94cdd4498edad9022">FOS::algorithm</a>()</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">double</span> sqrtdt = std::sqrt(<a class="code" href="class_core_1_1_filter.html#ae4d42bb0f0e6299d4edbfc310e96d09f">m_params</a>-&gt;integrationStep());</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    Vector dy;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    Matrix Gamma;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// Индекс n соответствует моменту времени tn = t0 + n * dt  (dt - шаг интегрирования):</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> n = 1; n &lt; <a class="code" href="class_core_1_1_filter.html#a1ae638614492df7edeaa2db4f528ad65">m_result</a>.size(); ++n) {</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="class_core_1_1_continuous_filter.html#aaea7d47a9d573b9a88007780c4c3a722">m_task</a>-&gt;setTime(<a class="code" href="class_core_1_1_filter.html#a1ae638614492df7edeaa2db4f528ad65">m_result</a>[n - 1].time);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        Gamma = <a class="code" href="class_core_1_1_filter.html#a1ae638614492df7edeaa2db4f528ad65">m_result</a>[n - 1].varX - <a class="code" href="class_core_1_1_filter.html#a1ae638614492df7edeaa2db4f528ad65">m_result</a>[n - 1].varZ;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="comment">// Индекс s пробегает по всем элементам выборки:</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> s = 0; s &lt; <a class="code" href="class_core_1_1_filter.html#ae4d42bb0f0e6299d4edbfc310e96d09f">m_params</a>-&gt;sampleSize(); ++s) {</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <a class="code" href="class_core_1_1_filter.html#abed73a8bfce99d24418f6dee90c44333">m_sampleX</a>[s] = <a class="code" href="class_core_1_1_filter.html#abed73a8bfce99d24418f6dee90c44333">m_sampleX</a>[s] + <a class="code" href="class_core_1_1_continuous_filter.html#aaea7d47a9d573b9a88007780c4c3a722">m_task</a>-&gt;a(<a class="code" href="class_core_1_1_filter.html#abed73a8bfce99d24418f6dee90c44333">m_sampleX</a>[s]) * <a class="code" href="class_core_1_1_filter.html#ae4d42bb0f0e6299d4edbfc310e96d09f">m_params</a>-&gt;integrationStep() +</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                           <a class="code" href="class_core_1_1_continuous_filter.html#aaea7d47a9d573b9a88007780c4c3a722">m_task</a>-&gt;B(<a class="code" href="class_core_1_1_filter.html#abed73a8bfce99d24418f6dee90c44333">m_sampleX</a>[s]) * gaussianVector(<a class="code" href="class_core_1_1_continuous_filter.html#aaea7d47a9d573b9a88007780c4c3a722">m_task</a>-&gt;dimV(), 0.0, sqrtdt);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            dy = <a class="code" href="class_core_1_1_continuous_filter.html#aaea7d47a9d573b9a88007780c4c3a722">m_task</a>-&gt;c(<a class="code" href="class_core_1_1_filter.html#abed73a8bfce99d24418f6dee90c44333">m_sampleX</a>[s]) * <a class="code" href="class_core_1_1_filter.html#ae4d42bb0f0e6299d4edbfc310e96d09f">m_params</a>-&gt;integrationStep() +</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                 <a class="code" href="class_core_1_1_continuous_filter.html#aaea7d47a9d573b9a88007780c4c3a722">m_task</a>-&gt;D(<a class="code" href="class_core_1_1_filter.html#abed73a8bfce99d24418f6dee90c44333">m_sampleX</a>[s]) * gaussianVector(<a class="code" href="class_core_1_1_continuous_filter.html#aaea7d47a9d573b9a88007780c4c3a722">m_task</a>-&gt;dimW(), 0.0, sqrtdt);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="class_core_1_1_filter.html#a3e2e475b650504bb7c800e3f27364580">m_sampleY</a>[s] = m_sampleY[s] + dy;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="code" href="class_core_1_1_filter.html#af0e905e89bc5db8e07f283b68fb57a60">m_sampleZ</a>[s] =</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <a class="code" href="class_core_1_1_filter.html#af0e905e89bc5db8e07f283b68fb57a60">m_sampleZ</a>[s] + <a class="code" href="class_core_1_1_continuous_filter.html#aaea7d47a9d573b9a88007780c4c3a722">m_task</a>-&gt;a(<a class="code" href="class_core_1_1_filter.html#af0e905e89bc5db8e07f283b68fb57a60">m_sampleZ</a>[s]) * <a class="code" href="class_core_1_1_filter.html#ae4d42bb0f0e6299d4edbfc310e96d09f">m_params</a>-&gt;integrationStep() +</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <a class="code" href="class_core_1_1_continuous_filter.html#aaea7d47a9d573b9a88007780c4c3a722">m_task</a>-&gt;K(<a class="code" href="class_core_1_1_filter.html#af0e905e89bc5db8e07f283b68fb57a60">m_sampleZ</a>[s], Gamma) * (dy - <a class="code" href="class_core_1_1_continuous_filter.html#aaea7d47a9d573b9a88007780c4c3a722">m_task</a>-&gt;c(<a class="code" href="class_core_1_1_filter.html#af0e905e89bc5db8e07f283b68fb57a60">m_sampleZ</a>[s]) * <a class="code" href="class_core_1_1_filter.html#ae4d42bb0f0e6299d4edbfc310e96d09f">m_params</a>-&gt;integrationStep());</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="class_core_1_1_filter.html#a84c7d1ebe3931974c3beccf27f13c1c5">writeResult</a>(n);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <span class="comment">// end Filters::Continuous</span></div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;} <span class="comment">// end Filters</span></div><div class="ttc" id="class_filters_1_1_continuous_1_1_f_o_s_html_a37bf6963e1fc25a0a709d53299fc2951"><div class="ttname"><a href="class_filters_1_1_continuous_1_1_f_o_s.html#a37bf6963e1fc25a0a709d53299fc2951">Filters::Continuous::FOS::FOS</a></div><div class="ttdeci">FOS(Core::PtrFilterParameters params, Core::PtrTask task)</div><div class="ttdoc">Конструктор. </div><div class="ttdef"><b>Definition:</b> <a href="c__fos_8cc_source.html#l00014">c_fos.cc:14</a></div></div>
+<div class="ttc" id="namespace_core_html_af88278693f3c866f217da796f4bb9af7a535863a82f163709557e59e2eb8139a7"><div class="ttname"><a href="namespace_core.html#af88278693f3c866f217da796f4bb9af7a535863a82f163709557e59e2eb8139a7">Core::FILTER_TYPE::Continuous</a></div></div>
+<div class="ttc" id="class_core_1_1_filter_html_abed73a8bfce99d24418f6dee90c44333"><div class="ttname"><a href="class_core_1_1_filter.html#abed73a8bfce99d24418f6dee90c44333">Core::Filter::m_sampleX</a></div><div class="ttdeci">Array&lt; Vector &gt; m_sampleX</div><div class="ttdef"><b>Definition:</b> <a href="filter_8h_source.html#l00116">filter.h:116</a></div></div>
+<div class="ttc" id="class_core_1_1_filter_html_a1ae638614492df7edeaa2db4f528ad65"><div class="ttname"><a href="class_core_1_1_filter.html#a1ae638614492df7edeaa2db4f528ad65">Core::Filter::m_result</a></div><div class="ttdeci">FilterOutput m_result</div><div class="ttdef"><b>Definition:</b> <a href="filter_8h_source.html#l00112">filter.h:112</a></div></div>
+<div class="ttc" id="class_core_1_1_continuous_filter_html_aaea7d47a9d573b9a88007780c4c3a722"><div class="ttname"><a href="class_core_1_1_continuous_filter.html#aaea7d47a9d573b9a88007780c4c3a722">Core::ContinuousFilter::m_task</a></div><div class="ttdeci">PtrCTask m_task</div><div class="ttdef"><b>Definition:</b> <a href="continuous__filter_8h_source.html#l00038">continuous_filter.h:38</a></div></div>
+<div class="ttc" id="class_core_1_1_filter_html_af0e905e89bc5db8e07f283b68fb57a60"><div class="ttname"><a href="class_core_1_1_filter.html#af0e905e89bc5db8e07f283b68fb57a60">Core::Filter::m_sampleZ</a></div><div class="ttdeci">Array&lt; Vector &gt; m_sampleZ</div><div class="ttdef"><b>Definition:</b> <a href="filter_8h_source.html#l00118">filter.h:118</a></div></div>
+<div class="ttc" id="namespace_math_1_1_rand_html_a431a3d55f304ba341c9583bca0848f26"><div class="ttname"><a href="namespace_math_1_1_rand.html#a431a3d55f304ba341c9583bca0848f26">Math::Rand::gaussianVector</a></div><div class="ttdeci">Vector gaussianVector(long n)</div><div class="ttdoc">Возвращает вектор размерности  c независимыми компонентами, распределенными как . ...</div><div class="ttdef"><b>Definition:</b> <a href="random_8cc_source.html#l00086">random.cc:86</a></div></div>
+<div class="ttc" id="class_filters_1_1_continuous_1_1_f_o_s_html_a6db8005b66c345d94cdd4498edad9022"><div class="ttname"><a href="class_filters_1_1_continuous_1_1_f_o_s.html#a6db8005b66c345d94cdd4498edad9022">Filters::Continuous::FOS::algorithm</a></div><div class="ttdeci">void algorithm() override</div><div class="ttdoc">Выполняет алгоритм. </div><div class="ttdef"><b>Definition:</b> <a href="c__fos_8cc_source.html#l00020">c_fos.cc:20</a></div></div>
+<div class="ttc" id="class_core_1_1_filter_html_ae4d42bb0f0e6299d4edbfc310e96d09f"><div class="ttname"><a href="class_core_1_1_filter.html#ae4d42bb0f0e6299d4edbfc310e96d09f">Core::Filter::m_params</a></div><div class="ttdeci">PtrFilterParameters m_params</div><div class="ttdef"><b>Definition:</b> <a href="filter_8h_source.html#l00113">filter.h:113</a></div></div>
+<div class="ttc" id="namespace_core_html_abfda8f69fcacfcea2696549b548ed737"><div class="ttname"><a href="namespace_core.html#abfda8f69fcacfcea2696549b548ed737">Core::PtrTask</a></div><div class="ttdeci">std::shared_ptr&lt; Task &gt; PtrTask</div><div class="ttdoc">Тип умного указателя на Task. </div><div class="ttdef"><b>Definition:</b> <a href="task_8h_source.html#l00154">task.h:154</a></div></div>
+<div class="ttc" id="namespace_filters_html"><div class="ttname"><a href="namespace_filters.html">Filters</a></div><div class="ttdoc">Модуль, содержащий реализации конкретных алгоритмов фильтрации. </div><div class="ttdef"><b>Definition:</b> <a href="c__aof_8cc_source.html#l00007">c_aof.cc:7</a></div></div>
+<div class="ttc" id="class_core_1_1_filter_html_a84c7d1ebe3931974c3beccf27f13c1c5"><div class="ttname"><a href="class_core_1_1_filter.html#a84c7d1ebe3931974c3beccf27f13c1c5">Core::Filter::writeResult</a></div><div class="ttdeci">void writeResult(size_t n, bool copy=false)</div><div class="ttdoc">Вычисляет и записывает результаты для времени . </div><div class="ttdef"><b>Definition:</b> <a href="filter_8cc_source.html#l00065">filter.cc:65</a></div></div>
+<div class="ttc" id="class_core_1_1_filter_html_a089304c3d1695bd6b47d5bfd8fcfb574"><div class="ttname"><a href="class_core_1_1_filter.html#a089304c3d1695bd6b47d5bfd8fcfb574">Core::Filter::m_info</a></div><div class="ttdeci">PtrInfo m_info</div><div class="ttdef"><b>Definition:</b> <a href="filter_8h_source.html#l00114">filter.h:114</a></div></div>
+<div class="ttc" id="namespace_core_html_a4811af8148ba137d644b9a61a042cf03"><div class="ttname"><a href="namespace_core.html#a4811af8148ba137d644b9a61a042cf03">Core::PtrFilterParameters</a></div><div class="ttdeci">std::shared_ptr&lt; FilterParameters &gt; PtrFilterParameters</div><div class="ttdoc">Тип умного указателя на FilterParameters. </div><div class="ttdef"><b>Definition:</b> <a href="filter__parameters_8h_source.html#l00137">filter_parameters.h:137</a></div></div>
+<div class="ttc" id="class_core_1_1_filter_html_a3e2e475b650504bb7c800e3f27364580"><div class="ttname"><a href="class_core_1_1_filter.html#a3e2e475b650504bb7c800e3f27364580">Core::Filter::m_sampleY</a></div><div class="ttdeci">Array&lt; Vector &gt; m_sampleY</div><div class="ttdef"><b>Definition:</b> <a href="filter_8h_source.html#l00117">filter.h:117</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>

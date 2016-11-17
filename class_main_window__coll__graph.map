@@ -1,0 +1,11 @@
+<map id="MainWindow" name="MainWindow">
+<area shape="rect" id="node8" href="$class_graph_window.html" title="Класс, реализующий окно для просмотра графиков. " alt="" coords="747,64,849,91"/>
+<area shape="rect" id="node3" href="$class_task_widget.html" title="Виджет для работы с задачами для фильтров. " alt="" coords="753,216,843,243"/>
+<area shape="rect" id="node11" href="$class_filter_start_buttons_box.html" title="Класс виджета, содержащего только кнопки для запуска того или иного фильтра. " alt="" coords="725,166,871,192"/>
+<area shape="rect" id="node12" href="$class_filter_parameters_widget.html" title="Класс виджета, предаставляющего элементы управления параметрами фильтрации. " alt="" coords="719,115,877,142"/>
+<area shape="rect" id="node5" href="$class_task_parameters_widget.html" title="Класс виджета, предаставляющего возможность работы с параметрами задач. " alt="" coords="384,231,543,258"/>
+<area shape="rect" id="node7" href="$class_matrix_widget.html" title="Класс для отображения / изменения матриц (или векторов). " alt="" coords="127,260,225,287"/>
+<area shape="rect" id="node9" href="$class_graph_sheet.html" title="Класс, реализующий &quot;страницу&quot; окна графиков. " alt="" coords="418,82,509,108"/>
+<area shape="rect" id="node10" href="$struct_g_axis_range.html" title="Структура для хранения границ осей координат. " alt="" coords="129,82,223,108"/>
+<area shape="rect" id="node13" href="$class_color_manager.html" title="Класс для управления набором цветов. " alt="" coords="747,267,849,294"/>
+</map>

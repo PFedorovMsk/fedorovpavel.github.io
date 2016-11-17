@@ -1,0 +1,560 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Optimal Filtering: Класс Core::FilterParameters</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Optimal Filtering
+   &#160;<span id="projectnumber">v2.6.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_core.html">Core</a></li><li class="navelem"><a class="el" href="class_core_1_1_filter_parameters.html">FilterParameters</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_core_1_1_filter_parameters-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс Core::FilterParameters</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для работы с параметрами фильтра.  
+ <a href="class_core_1_1_filter_parameters.html#details">Подробнее...</a></p>
+
+<p><code>#include &quot;<a class="el" href="filter__parameters_8h_source.html">filter_parameters.h</a>&quot;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aac0d147953f2293a426cd25e031016f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#aac0d147953f2293a426cd25e031016f2">FilterParameters</a> (double <a class="el" href="class_core_1_1_filter_parameters.html#a6062feeacb3cd85306e13b90da8fee9b">maxTime</a>, double <a class="el" href="class_core_1_1_filter_parameters.html#a1e868b7a370df88dbd65c1ffe22e1f32">measurementStep</a>, double <a class="el" href="class_core_1_1_filter_parameters.html#a944d97bb305c33fd713c47948030976b">predictionStep</a>, double <a class="el" href="class_core_1_1_filter_parameters.html#afec430374fa0ee07f6960a6b42fb85d0">integrationStep</a>, ulong <a class="el" href="class_core_1_1_filter_parameters.html#a93198cf1f29d223fb645be16e91a52fe">sampleSize</a>, ulong <a class="el" href="class_core_1_1_filter_parameters.html#a391dbabccc9b3ab8134789eaac8c15c4">orderMult</a>=1)</td></tr>
+<tr class="memdesc:aac0d147953f2293a426cd25e031016f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор.  <a href="#aac0d147953f2293a426cd25e031016f2">Подробнее...</a><br /></td></tr>
+<tr class="separator:aac0d147953f2293a426cd25e031016f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6062feeacb3cd85306e13b90da8fee9b"><td class="memItemLeft" align="right" valign="top"><a id="a6062feeacb3cd85306e13b90da8fee9b"></a>
+const double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#a6062feeacb3cd85306e13b90da8fee9b">maxTime</a> () const</td></tr>
+<tr class="memdesc:a6062feeacb3cd85306e13b90da8fee9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает время \(T_{max}\) окончания фильтрации. <br /></td></tr>
+<tr class="separator:a6062feeacb3cd85306e13b90da8fee9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e868b7a370df88dbd65c1ffe22e1f32"><td class="memItemLeft" align="right" valign="top"><a id="a1e868b7a370df88dbd65c1ffe22e1f32"></a>
+const double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#a1e868b7a370df88dbd65c1ffe22e1f32">measurementStep</a> () const</td></tr>
+<tr class="memdesc:a1e868b7a370df88dbd65c1ffe22e1f32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает интервал \(\delta t\) между измерениями. <br /></td></tr>
+<tr class="separator:a1e868b7a370df88dbd65c1ffe22e1f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a944d97bb305c33fd713c47948030976b"><td class="memItemLeft" align="right" valign="top"><a id="a944d97bb305c33fd713c47948030976b"></a>
+const double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#a944d97bb305c33fd713c47948030976b">predictionStep</a> () const</td></tr>
+<tr class="memdesc:a944d97bb305c33fd713c47948030976b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает интервал \(\delta \tau\) между прогнозами. <br /></td></tr>
+<tr class="separator:a944d97bb305c33fd713c47948030976b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afec430374fa0ee07f6960a6b42fb85d0"><td class="memItemLeft" align="right" valign="top"><a id="afec430374fa0ee07f6960a6b42fb85d0"></a>
+const double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#afec430374fa0ee07f6960a6b42fb85d0">integrationStep</a> () const</td></tr>
+<tr class="memdesc:afec430374fa0ee07f6960a6b42fb85d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает шаг интегрирования \(\Delta t\). <br /></td></tr>
+<tr class="separator:afec430374fa0ee07f6960a6b42fb85d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3db7701620d536221b0d95e29c8d6b39"><td class="memItemLeft" align="right" valign="top"><a id="a3db7701620d536221b0d95e29c8d6b39"></a>
+const ulong &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#a3db7701620d536221b0d95e29c8d6b39">measurementCount</a> () const</td></tr>
+<tr class="memdesc:a3db7701620d536221b0d95e29c8d6b39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает количество \(K\) измерений. <br /></td></tr>
+<tr class="separator:a3db7701620d536221b0d95e29c8d6b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e29aa5b52c75ab0f53ba8f571b98f6a"><td class="memItemLeft" align="right" valign="top"><a id="a4e29aa5b52c75ab0f53ba8f571b98f6a"></a>
+const ulong &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#a4e29aa5b52c75ab0f53ba8f571b98f6a">predictionCount</a> () const</td></tr>
+<tr class="memdesc:a4e29aa5b52c75ab0f53ba8f571b98f6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает количество \(L\) прогнозов между двумя измерениями. <br /></td></tr>
+<tr class="separator:a4e29aa5b52c75ab0f53ba8f571b98f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7471b7b91b3b3388c3ee29d679279c1b"><td class="memItemLeft" align="right" valign="top"><a id="a7471b7b91b3b3388c3ee29d679279c1b"></a>
+const ulong &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#a7471b7b91b3b3388c3ee29d679279c1b">integrationCount</a> () const</td></tr>
+<tr class="memdesc:a7471b7b91b3b3388c3ee29d679279c1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает количество \(N\) интегрирований между двумя прогнозами. <br /></td></tr>
+<tr class="separator:a7471b7b91b3b3388c3ee29d679279c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93198cf1f29d223fb645be16e91a52fe"><td class="memItemLeft" align="right" valign="top"><a id="a93198cf1f29d223fb645be16e91a52fe"></a>
+const ulong &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#a93198cf1f29d223fb645be16e91a52fe">sampleSize</a> () const</td></tr>
+<tr class="memdesc:a93198cf1f29d223fb645be16e91a52fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает размер выборок. <br /></td></tr>
+<tr class="separator:a93198cf1f29d223fb645be16e91a52fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a391dbabccc9b3ab8134789eaac8c15c4"><td class="memItemLeft" align="right" valign="top"><a id="a391dbabccc9b3ab8134789eaac8c15c4"></a>
+const ulong &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#a391dbabccc9b3ab8134789eaac8c15c4">orderMult</a> () const</td></tr>
+<tr class="memdesc:a391dbabccc9b3ab8134789eaac8c15c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает кратность порядка фильтра для ФКП (ФОСпп). <br /></td></tr>
+<tr class="separator:a391dbabccc9b3ab8134789eaac8c15c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a649fb04817a251986e9bffb264b3a22a"><td class="memItemLeft" align="right" valign="top"><a id="a649fb04817a251986e9bffb264b3a22a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#a649fb04817a251986e9bffb264b3a22a">setMaxTime</a> (double tmax)</td></tr>
+<tr class="memdesc:a649fb04817a251986e9bffb264b3a22a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает время \(T_{max}\) окончания фильтрации. <br /></td></tr>
+<tr class="separator:a649fb04817a251986e9bffb264b3a22a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a29d979978514b85078f3d7263c947"><td class="memItemLeft" align="right" valign="top"><a id="a53a29d979978514b85078f3d7263c947"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#a53a29d979978514b85078f3d7263c947">setMeasurementStep</a> (double step)</td></tr>
+<tr class="memdesc:a53a29d979978514b85078f3d7263c947"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает интервал \(\delta t\) между измерениями. <br /></td></tr>
+<tr class="separator:a53a29d979978514b85078f3d7263c947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc28925f9ee2213da37a000dc761cb05"><td class="memItemLeft" align="right" valign="top"><a id="abc28925f9ee2213da37a000dc761cb05"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#abc28925f9ee2213da37a000dc761cb05">setPredictionStep</a> (double step)</td></tr>
+<tr class="memdesc:abc28925f9ee2213da37a000dc761cb05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает интервал \(\delta \tau\) между прогнозами. <br /></td></tr>
+<tr class="separator:abc28925f9ee2213da37a000dc761cb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8349d4d94febddd3367865b60b3deed5"><td class="memItemLeft" align="right" valign="top"><a id="a8349d4d94febddd3367865b60b3deed5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#a8349d4d94febddd3367865b60b3deed5">setIntegrationStep</a> (double step)</td></tr>
+<tr class="memdesc:a8349d4d94febddd3367865b60b3deed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает шаг интегрирования \(\Delta t\). <br /></td></tr>
+<tr class="separator:a8349d4d94febddd3367865b60b3deed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b7b8345d450d60f8e4fbe7bbe825fd6"><td class="memItemLeft" align="right" valign="top"><a id="a3b7b8345d450d60f8e4fbe7bbe825fd6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#a3b7b8345d450d60f8e4fbe7bbe825fd6">setSampleSize</a> (ulong size)</td></tr>
+<tr class="memdesc:a3b7b8345d450d60f8e4fbe7bbe825fd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает размер выборок. <br /></td></tr>
+<tr class="separator:a3b7b8345d450d60f8e4fbe7bbe825fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a763a74eb5ae44bfde79110a38bb79867"><td class="memItemLeft" align="right" valign="top"><a id="a763a74eb5ae44bfde79110a38bb79867"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#a763a74eb5ae44bfde79110a38bb79867">setOrderMult</a> (ulong order)</td></tr>
+<tr class="memdesc:a763a74eb5ae44bfde79110a38bb79867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает кратность порядка фильтра для ФКП (ФОСпп). <br /></td></tr>
+<tr class="separator:a763a74eb5ae44bfde79110a38bb79867"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:abd97b1d6389fb381e9808f15a271dfc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#abd97b1d6389fb381e9808f15a271dfc3">correctStepAndCount</a> (const double &amp;intervalLength, double &amp;step, ulong &amp;count)</td></tr>
+<tr class="memdesc:abd97b1d6389fb381e9808f15a271dfc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Корректирует величину шага и количество шагов в данном интервале.  <a href="#abd97b1d6389fb381e9808f15a271dfc3">Подробнее...</a><br /></td></tr>
+<tr class="separator:abd97b1d6389fb381e9808f15a271dfc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a5f906190ee024f4df75f8279e9986f2c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#a5f906190ee024f4df75f8279e9986f2c">m_maxTime</a></td></tr>
+<tr class="separator:a5f906190ee024f4df75f8279e9986f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b0fe638b3a00a16cfa07f7d6a229fb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#a68b0fe638b3a00a16cfa07f7d6a229fb">m_measurementStep</a></td></tr>
+<tr class="separator:a68b0fe638b3a00a16cfa07f7d6a229fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d15be069d981b8f7e1252cb0fd8970d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#a1d15be069d981b8f7e1252cb0fd8970d">m_predictionStep</a></td></tr>
+<tr class="separator:a1d15be069d981b8f7e1252cb0fd8970d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab63c375a5b76a516da339b058af687ae"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#ab63c375a5b76a516da339b058af687ae">m_integrationStep</a></td></tr>
+<tr class="separator:ab63c375a5b76a516da339b058af687ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a931e9e09796c055d6c28d7c93d3121d9"><td class="memItemLeft" align="right" valign="top">ulong&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#a931e9e09796c055d6c28d7c93d3121d9">m_measurementCount</a></td></tr>
+<tr class="separator:a931e9e09796c055d6c28d7c93d3121d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b692ee25b7554649a81c073c009855a"><td class="memItemLeft" align="right" valign="top">ulong&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#a6b692ee25b7554649a81c073c009855a">m_predictionCount</a></td></tr>
+<tr class="separator:a6b692ee25b7554649a81c073c009855a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af28ca1d6c952ad42a5dfbeb6a7e916e5"><td class="memItemLeft" align="right" valign="top">ulong&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#af28ca1d6c952ad42a5dfbeb6a7e916e5">m_integrationCount</a></td></tr>
+<tr class="separator:af28ca1d6c952ad42a5dfbeb6a7e916e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70abc1052c13fe0fb7f971229d7a1316"><td class="memItemLeft" align="right" valign="top">ulong&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#a70abc1052c13fe0fb7f971229d7a1316">m_sampleSize</a></td></tr>
+<tr class="separator:a70abc1052c13fe0fb7f971229d7a1316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbf3de6b71f358870d750c829d1ef4ea"><td class="memItemLeft" align="right" valign="top">ulong&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter_parameters.html#abbf3de6b71f358870d750c829d1ef4ea">m_orderMult</a></td></tr>
+<tr class="separator:abbf3de6b71f358870d750c829d1ef4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс для работы с параметрами фильтра. </p>
+<p>Основное внимание уделено обработке временных интервалов.</p>
+<p>Пусть отрезок времени \(t\), обрабатываемого фильтром, равен \([0, T_{max}]\).</p>
+<p>На этом отрезке времени производятся измерения с шагом \(\delta t\).</p>
+<p>Между измерениями (в фильтрах с дискретными прогнозами) осуществляется прогнозирование. Интервал между прогнозами \(\delta \tau\).</p>
+<p>Шаг интегрирования системы \(\Delta t\).</p>
+<p>Эти величины корректируются (при изменении) так, чтобы количество интегрирований \(N\) между соседними прогнозами, количество прогнозов \(L\) между соседними измерениями и количесвтво измерений \(K\) на всём временном интервале были целыми числами.</p>
+<p>То есть \(\Delta t, \delta \tau, \delta t\) и \(T_{max}\) немного подкручиваются так, что выражения ниже становятся корректными (в смысле делимости нацело) в совокупности:</p>
+<p class="formulaDsp">
+\[K = \frac{T_{max}}{\delta t};\ \ \ L = \frac{\delta t}{\delta \tau};\ \ \ N = \frac{\delta \tau}{\Delta t}\]
+</p>
+ 
+<p>См. определение в файле <a class="el" href="filter__parameters_8h_source.html">filter_parameters.h</a> строка <a class="el" href="filter__parameters_8h_source.html#l00038">38</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="aac0d147953f2293a426cd25e031016f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac0d147953f2293a426cd25e031016f2">&sect;&nbsp;</a></span>FilterParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Core::FilterParameters::FilterParameters </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>maxTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>measurementStep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>predictionStep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>integrationStep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong&#160;</td>
+          <td class="paramname"><em>sampleSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong&#160;</td>
+          <td class="paramname"><em>orderMult</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">maxTime</td><td>- время \(T_{max}\) окончания фильтрации. </td></tr>
+    <tr><td class="paramname">measurementStep</td><td>- интервал \(\delta t\) между измерениями. </td></tr>
+    <tr><td class="paramname">predictionStep</td><td>- интервал \(\delta \tau\) между (дискретными) прогнозами. </td></tr>
+    <tr><td class="paramname">integrationStep</td><td>- шаг интегрирования \(\Delta t\). </td></tr>
+    <tr><td class="paramname">sampleSize</td><td>- размер выборок. </td></tr>
+    <tr><td class="paramname">orderMult</td><td>- кратность порядка фильтра для ФКП (ФОСпп).</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>После автоматической коррекции значения могут несколько отличаться от заданных. </p>
+
+<p>См. определение в файле <a class="el" href="filter__parameters_8cc_source.html">filter_parameters.cc</a> строка <a class="el" href="filter__parameters_8cc_source.html#l00008">8</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="abd97b1d6389fb381e9808f15a271dfc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd97b1d6389fb381e9808f15a271dfc3">&sect;&nbsp;</a></span>correctStepAndCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Core::FilterParameters::correctStepAndCount </td>
+          <td>(</td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>intervalLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>step</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong &amp;&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Корректирует величину шага и количество шагов в данном интервале. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">intervalLength</td><td>- длина \(d\) интервала. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">step</td><td>- шаг \(h\) (корректируется, если необходимо). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">count</td><td>- количиство \(N\) шагов \(h\), укладывающихся в \(d\) (вычисляется).</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Корректировка работает следующим образом:</p>
+<p>Сначала вычисляется целое число \(N&#39; = \frac{d}{h}\) (дробная часть отбрасывается).</p>
+<p>Если \(\frac{d}{h} - N&#39; &gt;= \frac{1}{2}\), то \(N = N&#39; + 1\), иначе \(N = N&#39;\).</p>
+<p>Теперь корректируется шаг: \(h = \frac{d}{N}\). </p>
+
+<p>См. определение в файле <a class="el" href="filter__parameters_8cc_source.html">filter_parameters.cc</a> строка <a class="el" href="filter__parameters_8cc_source.html#l00117">117</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="af28ca1d6c952ad42a5dfbeb6a7e916e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af28ca1d6c952ad42a5dfbeb6a7e916e5">&sect;&nbsp;</a></span>m_integrationCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ulong Core::FilterParameters::m_integrationCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Количество \(N\) интегрирований между двумя прогнозами. </p>
+
+<p>См. определение в файле <a class="el" href="filter__parameters_8h_source.html">filter_parameters.h</a> строка <a class="el" href="filter__parameters_8h_source.html#l00130">130</a></p>
+
+</div>
+</div>
+<a id="ab63c375a5b76a516da339b058af687ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab63c375a5b76a516da339b058af687ae">&sect;&nbsp;</a></span>m_integrationStep</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Core::FilterParameters::m_integrationStep</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Шаг интегрирования \(\Delta t\). </p>
+
+<p>См. определение в файле <a class="el" href="filter__parameters_8h_source.html">filter_parameters.h</a> строка <a class="el" href="filter__parameters_8h_source.html#l00126">126</a></p>
+
+</div>
+</div>
+<a id="a5f906190ee024f4df75f8279e9986f2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f906190ee024f4df75f8279e9986f2c">&sect;&nbsp;</a></span>m_maxTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Core::FilterParameters::m_maxTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Время \(T_{max}\) окончания фильтрации. </p>
+
+<p>См. определение в файле <a class="el" href="filter__parameters_8h_source.html">filter_parameters.h</a> строка <a class="el" href="filter__parameters_8h_source.html#l00123">123</a></p>
+
+</div>
+</div>
+<a id="a931e9e09796c055d6c28d7c93d3121d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a931e9e09796c055d6c28d7c93d3121d9">&sect;&nbsp;</a></span>m_measurementCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ulong Core::FilterParameters::m_measurementCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Количество \(K\) измерений на \([0, T_{max}]\). </p>
+
+<p>См. определение в файле <a class="el" href="filter__parameters_8h_source.html">filter_parameters.h</a> строка <a class="el" href="filter__parameters_8h_source.html#l00128">128</a></p>
+
+</div>
+</div>
+<a id="a68b0fe638b3a00a16cfa07f7d6a229fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68b0fe638b3a00a16cfa07f7d6a229fb">&sect;&nbsp;</a></span>m_measurementStep</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Core::FilterParameters::m_measurementStep</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Интервал \(\delta t\) между измерениями. </p>
+
+<p>См. определение в файле <a class="el" href="filter__parameters_8h_source.html">filter_parameters.h</a> строка <a class="el" href="filter__parameters_8h_source.html#l00124">124</a></p>
+
+</div>
+</div>
+<a id="abbf3de6b71f358870d750c829d1ef4ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbf3de6b71f358870d750c829d1ef4ea">&sect;&nbsp;</a></span>m_orderMult</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ulong Core::FilterParameters::m_orderMult</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Кратность порядка фильтра. </p>
+
+<p>См. определение в файле <a class="el" href="filter__parameters_8h_source.html">filter_parameters.h</a> строка <a class="el" href="filter__parameters_8h_source.html#l00132">132</a></p>
+
+</div>
+</div>
+<a id="a6b692ee25b7554649a81c073c009855a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b692ee25b7554649a81c073c009855a">&sect;&nbsp;</a></span>m_predictionCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ulong Core::FilterParameters::m_predictionCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Количество \(L\) прогнозов между двумя измерениями. </p>
+
+<p>См. определение в файле <a class="el" href="filter__parameters_8h_source.html">filter_parameters.h</a> строка <a class="el" href="filter__parameters_8h_source.html#l00129">129</a></p>
+
+</div>
+</div>
+<a id="a1d15be069d981b8f7e1252cb0fd8970d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d15be069d981b8f7e1252cb0fd8970d">&sect;&nbsp;</a></span>m_predictionStep</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Core::FilterParameters::m_predictionStep</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Интервал \(\delta \tau\) между прогнозами. </p>
+
+<p>См. определение в файле <a class="el" href="filter__parameters_8h_source.html">filter_parameters.h</a> строка <a class="el" href="filter__parameters_8h_source.html#l00125">125</a></p>
+
+</div>
+</div>
+<a id="a70abc1052c13fe0fb7f971229d7a1316"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70abc1052c13fe0fb7f971229d7a1316">&sect;&nbsp;</a></span>m_sampleSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ulong Core::FilterParameters::m_sampleSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Размер выборок. </p>
+
+<p>См. определение в файле <a class="el" href="filter__parameters_8h_source.html">filter_parameters.h</a> строка <a class="el" href="filter__parameters_8h_source.html#l00131">131</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/core/<a class="el" href="filter__parameters_8h_source.html">filter_parameters.h</a></li>
+<li>src/core/<a class="el" href="filter__parameters_8cc_source.html">filter_parameters.cc</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Optimal Filtering: Исходный файл src/math/linear_algebra.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Optimal Filtering
+   &#160;<span id="projectnumber">v2.6.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ae9a93452e2a84339148a16bcf2eb561.html">math</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">linear_algebra.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LINALG_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define LINALG_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;src/math/matrix.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_math.html">Math</a></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>LinAlg</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;Matrix <a class="code" href="namespace_math_1_1_lin_alg.html#ad6053d7dea0e4d128cdcff0d8423708a">LU</a>(<span class="keyword">const</span> Matrix &amp;A, Matrix &amp;L, Matrix &amp;U, Matrix &amp;permutationP, Matrix &amp;permutationQ);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;Matrix <a class="code" href="namespace_math_1_1_lin_alg.html#ad6053d7dea0e4d128cdcff0d8423708a">LU</a>(<span class="keyword">const</span> Matrix &amp;A);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;Matrix <a class="code" href="namespace_math_1_1_lin_alg.html#a63d9cc41c4735dc5cefd2ec8880f432c">Cholesky</a>(<span class="keyword">const</span> Matrix &amp;A, Matrix &amp;L, Matrix &amp;U);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;Matrix <a class="code" href="namespace_math_1_1_lin_alg.html#a63d9cc41c4735dc5cefd2ec8880f432c">Cholesky</a>(<span class="keyword">const</span> Matrix &amp;A);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;Matrix <a class="code" href="namespace_math_1_1_lin_alg.html#adaef1c5da9ab98ab6e106086383e3ed6">PinvSVD</a>(<span class="keyword">const</span> Matrix &amp;A);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;Matrix <a class="code" href="namespace_math_1_1_lin_alg.html#a03abc1453c96f7898d89262f5278aefc">PinvGreville</a>(<span class="keyword">const</span> Matrix &amp;A);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;Vector <a class="code" href="namespace_math_1_1_lin_alg.html#ab6e559246eac7fcd1bb0ef18fc4657ee">SolveSystem</a>(<span class="keyword">const</span> Matrix &amp;A, <span class="keyword">const</span> Vector &amp;b);</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;} <span class="comment">// end LinAlg</span></div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;} <span class="comment">// end Math</span></div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif // LINALG_H</span></div><div class="ttc" id="namespace_math_1_1_lin_alg_html_ab6e559246eac7fcd1bb0ef18fc4657ee"><div class="ttname"><a href="namespace_math_1_1_lin_alg.html#ab6e559246eac7fcd1bb0ef18fc4657ee">Math::LinAlg::SolveSystem</a></div><div class="ttdeci">Vector SolveSystem(const Matrix &amp;A, const Vector &amp;b)</div><div class="ttdoc">Решает СЛАУ . </div><div class="ttdef"><b>Definition:</b> <a href="linear__algebra_8cc_source.html#l00012">linear_algebra.cc:12</a></div></div>
+<div class="ttc" id="namespace_math_1_1_lin_alg_html_adaef1c5da9ab98ab6e106086383e3ed6"><div class="ttname"><a href="namespace_math_1_1_lin_alg.html#adaef1c5da9ab98ab6e106086383e3ed6">Math::LinAlg::PinvSVD</a></div><div class="ttdeci">Matrix PinvSVD(const Matrix &amp;A)</div><div class="ttdoc">Вычисляет псевдообратную матрицу SVD-методом. </div><div class="ttdef"><b>Definition:</b> <a href="linear__algebra_8cc_source.html#l00047">linear_algebra.cc:47</a></div></div>
+<div class="ttc" id="namespace_math_html"><div class="ttname"><a href="namespace_math.html">Math</a></div><div class="ttdoc">Модуль, содержащий описание и реализацию задач математических методов и типов. </div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00007">constants.h:7</a></div></div>
+<div class="ttc" id="namespace_math_1_1_lin_alg_html_a63d9cc41c4735dc5cefd2ec8880f432c"><div class="ttname"><a href="namespace_math_1_1_lin_alg.html#a63d9cc41c4735dc5cefd2ec8880f432c">Math::LinAlg::Cholesky</a></div><div class="ttdeci">Matrix Cholesky(const Matrix &amp;A)</div><div class="ttdef"><b>Definition:</b> <a href="linear__algebra_8cc_source.html#l00034">linear_algebra.cc:34</a></div></div>
+<div class="ttc" id="namespace_math_1_1_lin_alg_html_a03abc1453c96f7898d89262f5278aefc"><div class="ttname"><a href="namespace_math_1_1_lin_alg.html#a03abc1453c96f7898d89262f5278aefc">Math::LinAlg::PinvGreville</a></div><div class="ttdeci">Matrix PinvGreville(const Matrix &amp;A)</div><div class="ttdoc">Вычисляет псевдообратную матрицу методом Гревилля. </div><div class="ttdef"><b>Definition:</b> <a href="linear__algebra_8cc_source.html#l00071">linear_algebra.cc:71</a></div></div>
+<div class="ttc" id="namespace_math_1_1_lin_alg_html_ad6053d7dea0e4d128cdcff0d8423708a"><div class="ttname"><a href="namespace_math_1_1_lin_alg.html#ad6053d7dea0e4d128cdcff0d8423708a">Math::LinAlg::LU</a></div><div class="ttdeci">Matrix LU(const Matrix &amp;A)</div><div class="ttdef"><b>Definition:</b> <a href="linear__algebra_8cc_source.html#l00017">linear_algebra.cc:17</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>

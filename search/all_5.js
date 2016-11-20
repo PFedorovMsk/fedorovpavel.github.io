@@ -13,6 +13,7 @@ var searchData=
   ['filterparameters',['FilterParameters',['../class_core_1_1_filter_parameters.html#aac0d147953f2293a426cd25e031016f2',1,'Core::FilterParameters']]],
   ['filterparameters',['FilterParameters',['../class_core_1_1_filter_parameters.html',1,'Core']]],
   ['filterparameterswidget',['FilterParametersWidget',['../class_filter_parameters_widget.html',1,'FilterParametersWidget'],['../class_filter_parameters_widget.html#ade6b317bb498ff3785cbf380ada8b214',1,'FilterParametersWidget::FilterParametersWidget()']]],
+  ['filterresultstable',['FilterResultsTable',['../class_filter_results_table.html',1,'FilterResultsTable'],['../class_filter_results_table.html#a343f304fd53bc8ed9f680ffb5ac6c8b4',1,'FilterResultsTable::FilterResultsTable()']]],
   ['filters',['Filters',['../namespace_filters.html',1,'']]],
   ['filterstartbuttonsbox',['FilterStartButtonsBox',['../class_filter_start_buttons_box.html',1,'FilterStartButtonsBox'],['../class_filter_start_buttons_box.html#a7e21c8886cd0f711a756b4a1f04c0989',1,'FilterStartButtonsBox::FilterStartButtonsBox()']]],
   ['fishers',['fishers',['../namespace_math_1_1_rand.html#a98f49933c521884e649e999b6a3c9fb6',1,'Math::Rand']]],
@@ -22,6 +23,6 @@ var searchData=
   ['fos',['FOS',['../class_filters_1_1_continuous_discrete_1_1_f_o_s.html',1,'Filters::ContinuousDiscrete']]],
   ['fos',['FOS',['../class_filters_1_1_discrete_1_1_f_o_s.html',1,'Filters::Discrete']]],
   ['fullname',['fullName',['../struct_g_curve.html#ad9ab2e3ed72e50aaf536db8b961987cc',1,'GCurve']]],
-  ['functiontime',['FunctionTime',['../class_core_1_1_function_time.html',1,'Core']]],
-  ['functiontime',['FunctionTime',['../class_core_1_1_function_time.html#a7d2987678c02b38563cd21261884d679',1,'Core::FunctionTime']]]
+  ['functiontime',['FunctionTime',['../class_core_1_1_function_time.html#a7d2987678c02b38563cd21261884d679',1,'Core::FunctionTime']]],
+  ['functiontime',['FunctionTime',['../class_core_1_1_function_time.html',1,'Core']]]
 ];

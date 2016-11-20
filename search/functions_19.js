@@ -7,6 +7,7 @@ var searchData=
   ['_7egraphsheet',['~GraphSheet',['../class_graph_sheet.html#ae4511be48b18851127b544cbf099d8e4',1,'GraphSheet']]],
   ['_7egraphwindow',['~GraphWindow',['../class_graph_window.html#acca1dc8c3eefe6608ae2de3cee2e22ee',1,'GraphWindow']]],
   ['_7emainwindow',['~MainWindow',['../class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7',1,'MainWindow']]],
+  ['_7ematrixwidget',['~MatrixWidget',['../class_matrix_widget.html#a64970508bea25f769ea0e8884985a490',1,'MatrixWidget']]],
   ['_7erangesdialog',['~RangesDialog',['../class_ranges_dialog.html#a0852f0249101bfae86f5b7c037b77f97',1,'RangesDialog']]],
   ['_7etask',['~Task',['../class_core_1_1_task.html#a356b979174846c636ed63a50fab13760',1,'Core::Task']]]
 ];

@@ -1,11 +1,11 @@
 var searchData=
 [
   ['landing',['Landing',['../namespace_tasks.html#acf6b541f8ce51b63eb9fcb8748317707a41bd61e268fedccfb0d91dd571dd28b2',1,'Tasks']]],
+  ['landinggauss',['LandingGauss',['../class_tasks_1_1_continuous_1_1_landing_gauss.html',1,'Tasks::Continuous']]],
   ['landinggauss',['LandingGauss',['../class_tasks_1_1_continuous_discrete_1_1_landing_gauss.html',1,'Tasks::ContinuousDiscrete']]],
   ['landinggauss',['LandingGauss',['../class_tasks_1_1_discrete_1_1_landing_gauss.html',1,'Tasks::Discrete']]],
-  ['landinggauss',['LandingGauss',['../class_tasks_1_1_continuous_1_1_landing_gauss.html',1,'Tasks::Continuous']]],
-  ['landinglinear',['LandingLinear',['../class_tasks_1_1_continuous_1_1_landing_linear.html',1,'Tasks::Continuous']]],
   ['landinglinear',['LandingLinear',['../class_tasks_1_1_continuous_discrete_1_1_landing_linear.html',1,'Tasks::ContinuousDiscrete']]],
+  ['landinglinear',['LandingLinear',['../class_tasks_1_1_continuous_1_1_landing_linear.html',1,'Tasks::Continuous']]],
   ['landinglinear',['LandingLinear',['../class_tasks_1_1_discrete_1_1_landing_linear.html',1,'Tasks::Discrete']]],
   ['landinglinear',['LandingLinear',['../class_tasks_1_1_continuous_1_1_landing_linear.html#a29e44f6089f6ff4ef86bfcacdaefa3fd',1,'Tasks::Continuous::LandingLinear::LandingLinear()'],['../class_tasks_1_1_continuous_discrete_1_1_landing_linear.html#ad474504f9db87de67ebd0d5fb44f35c2',1,'Tasks::ContinuousDiscrete::LandingLinear::LandingLinear()'],['../class_tasks_1_1_discrete_1_1_landing_linear.html#a635a395c8b9ef9bcece3201c26c258bf',1,'Tasks::Discrete::LandingLinear::LandingLinear()']]],
   ['linear',['Linear',['../namespace_core.html#acd67f53ff1d9b21fabb1da4474a8f7d9a32a843da6ea40ab3b17a3421ccdf671b',1,'Core']]],

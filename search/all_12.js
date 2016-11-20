@@ -3,7 +3,7 @@ var searchData=
   ['continuous',['Continuous',['../namespace_tasks_1_1_continuous.html',1,'Tasks']]],
   ['continuousdiscrete',['ContinuousDiscrete',['../namespace_tasks_1_1_continuous_discrete.html',1,'Tasks']]],
   ['discrete',['Discrete',['../namespace_tasks_1_1_discrete.html',1,'Tasks']]],
-  ['task',['task',['../class_task_widget.html#a03ef83e365334749bac31e04d205e3df',1,'TaskWidget::task()'],['../class_core_1_1_task.html#a461b8f90dfed42f5657b927916810e0e',1,'Core::Task::Task()']]],
+  ['task',['Task',['../class_core_1_1_task.html#a461b8f90dfed42f5657b927916810e0e',1,'Core::Task::Task()'],['../class_task_widget.html#a03ef83e365334749bac31e04d205e3df',1,'TaskWidget::task()']]],
   ['task',['Task',['../class_core_1_1_task.html',1,'Core']]],
   ['task_5fid',['TASK_ID',['../namespace_tasks.html#acf6b541f8ce51b63eb9fcb8748317707',1,'Tasks']]],
   ['taskfactory',['TaskFactory',['../class_tasks_1_1_task_factory.html',1,'Tasks']]],

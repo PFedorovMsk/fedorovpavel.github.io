@@ -46,6 +46,7 @@ var searchData=
   ['onselectionchanged',['onSelectionChanged',['../class_graph_window.html#ab41020bb6d02870bd0f2ccca51cb4837',1,'GraphWindow']]],
   ['onsetautoranges',['onSetAutoRanges',['../class_graph_window.html#ac6e6c5f747d9fc8d4f1988262cf12303',1,'GraphWindow']]],
   ['onshowcurve',['onShowCurve',['../class_graph_window.html#a600b5476f121fb83f2d0db599becc73a',1,'GraphWindow']]],
+  ['onshowhidetables',['onShowHideTables',['../class_main_window.html#a2df38aeb37f3c82c5523be3ef2731404',1,'MainWindow']]],
   ['onshowsetrangesdialog',['onShowSetRangesDialog',['../class_graph_window.html#aca7c92575aaed2db319bb86a1e1e36e9',1,'GraphWindow']]],
   ['onstart',['onStart',['../class_main_window.html#a16686da6ed1d113106f9dc24694db2b9',1,'MainWindow']]],
   ['onupdatevalues',['onUpdateValues',['../class_filter_parameters_widget.html#ad952425cf2dabf76a2f28d19caa2641f',1,'FilterParametersWidget']]],

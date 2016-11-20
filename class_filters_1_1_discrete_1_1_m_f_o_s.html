@@ -28,7 +28,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Optimal Filtering
-   &#160;<span id="projectnumber">v2.6.2</span>
+   &#160;<span id="projectnumber">v2.7.0</span>
    </div>
   </td>
  </tr>
@@ -122,9 +122,8 @@ const <a class="el" href="namespace_core.html#a60877581a235fc9566087b54d463ce9c"
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Защищенные члены</h2></td></tr>
-<tr class="memitem:a88e35ad4500d57e81be035959ab9bb5c"><td class="memItemLeft" align="right" valign="top"><a id="a88e35ad4500d57e81be035959ab9bb5c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_filters_1_1_discrete_1_1_m_f_o_s.html#a88e35ad4500d57e81be035959ab9bb5c">algorithm</a> () override</td></tr>
-<tr class="memdesc:a88e35ad4500d57e81be035959ab9bb5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполняет основной алгоритм. <br /></td></tr>
+<tr class="memitem:a88e35ad4500d57e81be035959ab9bb5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_filters_1_1_discrete_1_1_m_f_o_s.html#a88e35ad4500d57e81be035959ab9bb5c">algorithm</a> () override</td></tr>
+<tr class="memdesc:a88e35ad4500d57e81be035959ab9bb5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполняет алгоритм.  <a href="#a88e35ad4500d57e81be035959ab9bb5c">Подробнее...</a><br /></td></tr>
 <tr class="separator:a88e35ad4500d57e81be035959ab9bb5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_core_1_1_discrete_filter"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_core_1_1_discrete_filter')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="class_core_1_1_discrete_filter.html">Core::DiscreteFilter</a></td></tr>
 <tr class="memitem:a658617c64c7067bb6b98b5e9d78f982e inherit pro_methods_class_core_1_1_discrete_filter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_discrete_filter.html#a658617c64c7067bb6b98b5e9d78f982e">zeroIteration</a> () override</td></tr>
@@ -145,9 +144,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Закрытые члены</h2></td></tr>
-<tr class="memitem:aea8bc907d07bcb6069f9151904e25fea"><td class="memItemLeft" align="right" valign="top"><a id="aea8bc907d07bcb6069f9151904e25fea"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>computeParams</b> (size_t n, Array&lt; Math::Vector &gt; &amp;u, Math::Matrix &amp;T)</td></tr>
-<tr class="separator:aea8bc907d07bcb6069f9151904e25fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8e5e6ebd6325efc56ef40a2d72303be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_filters_1_1_discrete_1_1_m_f_o_s.html#aa8e5e6ebd6325efc56ef40a2d72303be">computeParams</a> (size_t n, Array&lt; Math::Vector &gt; &amp;sampleU, Array&lt; Math::Vector &gt; &amp;sampleS, Math::Matrix &amp;T)</td></tr>
+<tr class="memdesc:aa8e5e6ebd6325efc56ef40a2d72303be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет параметры и заполняет массивы \(S_{k}\), \(U_k\).  <a href="#aa8e5e6ebd6325efc56ef40a2d72303be">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa8e5e6ebd6325efc56ef40a2d72303be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23d5c9a20a5eca3b5fd1355359655409"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_filters_1_1_discrete_1_1_m_f_o_s.html#a23d5c9a20a5eca3b5fd1355359655409">computeAdditionParams</a> (size_t nn, const Array&lt; Math::Vector &gt; &amp;sampleS, const Array&lt; Math::Vector &gt; &amp;sampleLambda, const Array&lt; Math::Vector &gt; &amp;sampleSigma, Matrix &amp;L, Matrix &amp;K, Vector &amp;n, Vector &amp;e)</td></tr>
+<tr class="memdesc:a23d5c9a20a5eca3b5fd1355359655409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет дополнительные параметры.  <a href="#a23d5c9a20a5eca3b5fd1355359655409">Подробнее...</a><br /></td></tr>
+<tr class="separator:a23d5c9a20a5eca3b5fd1355359655409"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Дополнительные унаследованные члены</h2></td></tr>
@@ -187,6 +189,234 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>computeParams</b> (si
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_filters_1_1_discrete_1_1_m_f_o_s__coll__graph.svg" width="171" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<h2 class="groupheader">Методы</h2>
+<a id="a88e35ad4500d57e81be035959ab9bb5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88e35ad4500d57e81be035959ab9bb5c">&sect;&nbsp;</a></span>algorithm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Filters::Discrete::MFOS::algorithm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выполняет алгоритм. </p>
+<p>Вектор \(Z_t\) оценки вычисляется следующим образом: </p><p class="formulaDsp">
+\[S_{k} = \tau_{k-1}(U_{k-1}, T_{k-1}),\]
+</p>
+ <p class="formulaDsp">
+\[\Lambda_k = L_{k} \cdot S_{k} + n_{k},\]
+</p>
+ <p class="formulaDsp">
+\[\Psi_k = \Theta_{k-1}(U_{k-1}, T_{k-1}),\]
+</p>
+ <p class="formulaDsp">
+\[\Sigma_k = \Psi_k \cdot G_k^T(\Lambda_k, \Psi_k) \cdot F_k^{-1}(\Lambda_k, \Psi_k) \cdot [Y_k - h_k(\Lambda_k, \Psi_k)],\]
+</p>
+ <p class="formulaDsp">
+\[Z_k = \Lambda_k + K_k \cdot \Sigma_k + e_k.\]
+</p>
+ <p class="formulaDsp">
+\[U_k = \Gamma_k^y \cdot Y_k + \Gamma_k^z \cdot Z_k + \chi_k.\]
+</p>
+<p>Параметры \(\Gamma_k^y,\ \Gamma_k^z,\ T_k,\ \chi_k\) вычисляются в <a class="el" href="class_filters_1_1_discrete_1_1_m_f_o_s.html#aa8e5e6ebd6325efc56ef40a2d72303be" title="Вычисляет параметры и заполняет массивы , . ">computeParams(size_t, Array&lt;Math::Vector&gt; &amp;, Array&lt;Math::Vector&gt; &amp;, Math::Matrix &amp;)</a>.</p>
+<p>Дополнительные параметры \(K_k,\ e_k,\ L_{k},\ n_{k}\) вычисляются в computeAdditionParams(size_t, Array&lt;Math::Vector&gt; &amp;, Matrix &amp;, Matrix &amp;, Vector &amp;, Vector &amp;).</p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="class_core_1_1_discrete_filter.html" title="Базовый класс для всех дискретных фильтров оптимальной структуры. ">Core::DiscreteFilter</a> </dd>
+<dd>
+<a class="el" href="class_core_1_1_discrete_task.html" title="Базовый тип задач для дискретных фильтров оптимальной структуры. ">Core::DiscreteTask</a> </dd></dl>
+
+<p>Замещает <a class="el" href="class_core_1_1_filter.html#a438681ee3e54aba2148042d9f8011ab8">Core::Filter</a>.</p>
+
+<p>См. определение в файле <a class="el" href="d__mfos_8cc_source.html">d_mfos.cc</a> строка <a class="el" href="d__mfos_8cc_source.html#l00029">29</a></p>
+
+</div>
+</div>
+<a id="a23d5c9a20a5eca3b5fd1355359655409"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23d5c9a20a5eca3b5fd1355359655409">&sect;&nbsp;</a></span>computeAdditionParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Filters::Discrete::MFOS::computeAdditionParams </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>nn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Array&lt; Math::Vector &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sampleS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Array&lt; Math::Vector &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sampleLambda</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Array&lt; Math::Vector &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sampleSigma</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Matrix &amp;&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Matrix &amp;&#160;</td>
+          <td class="paramname"><em>K</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector &amp;&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector &amp;&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычисляет дополнительные параметры. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nn</td><td>- индекс, соответствующий времени \(t = nn \cdot \Delta t\). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sampleLambda</td><td>- выборка \(\Lambda_k\). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sampleSigma</td><td>- выборка \(\Sigma_k\). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">L</td><td>- матрица \(L_{k}\). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">K</td><td>- матрица \(K_k\). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">n</td><td>- матрица \(n_{k}\). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">e</td><td>- матрица \(e_k\).</td></tr>
+  </table>
+  </dd>
+</dl>
+<p class="formulaDsp">
+\[K_k = D_{kk}^{e\sigma} \cdot (D_k^\sigma)^{-1},\]
+</p>
+ <p class="formulaDsp">
+\[e_k = m_k^e - K_k \cdot m_k^\sigma,\]
+</p>
+ <p class="formulaDsp">
+\[L_{k} = D_{k, k-1}^{x,s} \cdot (D_{k-1}^s)^{-1},\]
+</p>
+ <p class="formulaDsp">
+\[n_{k} = m_k^x - L_{k}\cdot m_{k-1}^s.\]
+</p>
+ 
+<p>См. определение в файле <a class="el" href="d__mfos_8cc_source.html">d_mfos.cc</a> строка <a class="el" href="d__mfos_8cc_source.html#l00131">131</a></p>
+
+</div>
+</div>
+<a id="aa8e5e6ebd6325efc56ef40a2d72303be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8e5e6ebd6325efc56ef40a2d72303be">&sect;&nbsp;</a></span>computeParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Filters::Discrete::MFOS::computeParams </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Array&lt; Math::Vector &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sampleU</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Array&lt; Math::Vector &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sampleS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Math::Matrix &amp;&#160;</td>
+          <td class="paramname"><em>T</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычисляет параметры и заполняет массивы \(S_{k}\), \(U_k\). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>- индекс, соответствующий времени \(t = n \cdot \Delta t\). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">sampleU</td><td>- масcив под выборку \(U_k\). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">s</td><td>- масcив под выборку \(S_{k}\). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">T</td><td>- матрица \(T_k\).</td></tr>
+  </table>
+  </dd>
+</dl>
+<p class="formulaDsp">
+\[D_k^\delta = cov([Y_k^T\ \ Z_k^T]^T),\]
+</p>
+ <p class="formulaDsp">
+\[[\Gamma_k^y\ \ \Gamma_k^z] = [D_{kk}^{xy}\ \ D_{kk}^{xz}] \cdot (D_k^\delta)^{-1},\]
+</p>
+ <p class="formulaDsp">
+\[\chi_k = m_k^x - \Gamma_k^y \cdot m_k^y - \Gamma_k^z \cdot m_k^z,\]
+</p>
+ <p class="formulaDsp">
+\[T_k = D_k^x - \Gamma_k^y \cdot (D_{kk}^{xy})^T - \Gamma_k^z \cdot (D_{kk}^{xz})^T,\]
+</p>
+ 
+<p>См. определение в файле <a class="el" href="d__mfos_8cc_source.html">d_mfos.cc</a> строка <a class="el" href="d__mfos_8cc_source.html#l00095">95</a></p>
+
+</div>
+</div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
 <li>src/filters/discrete/<a class="el" href="d__mfos_8h_source.html">d_mfos.h</a></li>
 <li>src/filters/discrete/<a class="el" href="d__mfos_8cc_source.html">d_mfos.cc</a></li>

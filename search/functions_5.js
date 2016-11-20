@@ -4,6 +4,7 @@ var searchData=
   ['filter',['Filter',['../class_core_1_1_filter.html#af1ac0dfc8813579e0173b315c5a3fcad',1,'Core::Filter']]],
   ['filterparameters',['FilterParameters',['../class_core_1_1_filter_parameters.html#aac0d147953f2293a426cd25e031016f2',1,'Core::FilterParameters']]],
   ['filterparameterswidget',['FilterParametersWidget',['../class_filter_parameters_widget.html#ade6b317bb498ff3785cbf380ada8b214',1,'FilterParametersWidget']]],
+  ['filterresultstable',['FilterResultsTable',['../class_filter_results_table.html#a343f304fd53bc8ed9f680ffb5ac6c8b4',1,'FilterResultsTable']]],
   ['filterstartbuttonsbox',['FilterStartButtonsBox',['../class_filter_start_buttons_box.html#a7e21c8886cd0f711a756b4a1f04c0989',1,'FilterStartButtonsBox']]],
   ['fishers',['fishers',['../namespace_math_1_1_rand.html#a98f49933c521884e649e999b6a3c9fb6',1,'Math::Rand']]],
   ['fontmanager',['FontManager',['../class_font_manager.html#a2f89acd28b5bd24e747aacd3208131ef',1,'FontManager']]],

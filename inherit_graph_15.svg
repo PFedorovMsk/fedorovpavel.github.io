@@ -9,8 +9,8 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 24)">
 <title>Иерархия классов. Графический вид.</title>
 <polygon fill="white" stroke="none" points="-4,4 -4,-24 168,-24 168,4 -4,4"/>
-<!-- Node14 -->
-<g id="node1" class="node"><title>Node14</title>
+<!-- Node13 -->
+<g id="node1" class="node"><title>Node13</title>
 <polygon fill="white" stroke="#bfbfbf" points="0,-0.5 0,-19.5 51,-19.5 51,-0.5 0,-0.5"/>
 <text text-anchor="middle" x="25.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">QDialog</text>
 </g>
@@ -22,8 +22,8 @@
 </a>
 </g>
 </g>
-<!-- Node14&#45;&gt;Node0 -->
-<g id="edge1" class="edge"><title>Node14&#45;&gt;Node0</title>
+<!-- Node13&#45;&gt;Node0 -->
+<g id="edge1" class="edge"><title>Node13&#45;&gt;Node0</title>
 <path fill="none" stroke="midnightblue" d="M61.2989,-10C69.56,-10 78.4106,-10 86.7946,-10"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="61.2296,-6.5001 51.2295,-10 61.2295,-13.5001 61.2296,-6.5001"/>
 </g>

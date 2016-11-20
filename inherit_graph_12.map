@@ -1,4 +1,3 @@
 <map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
-<area shape="rect" id="node2" href="$class_graph_window.html" title="Класс, реализующий окно для просмотра графиков. " alt="" coords="159,5,261,32"/>
-<area shape="rect" id="node3" href="$class_main_window.html" title="Класс для главного окна приложения. " alt="" coords="163,56,257,83"/>
+<area shape="rect" id="node1" href="$class_graph_sheet.html" title="Класс, реализующий &quot;страницу&quot; окна графиков. " alt="" coords="5,5,96,32"/>
 </map>

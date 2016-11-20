@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Optimal Filtering: Исходный файл src/gui/filter_results_table.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Optimal Filtering
+   &#160;<span id="projectnumber">v2.7.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_99d0482cf009f9d97a0877749b817f19.html">gui</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">filter_results_table.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FILTERRESULTSTABLE_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define FILTERRESULTSTABLE_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;src/core/filter_output.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;src/gui/gui_config.h&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QMainWindow&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QTableWidget&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QTextStream&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_filter_results_table.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_filter_results_table.html">FilterResultsTable</a> : <span class="keyword">public</span> QMainWindow</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_filter_results_table.html#a343f304fd53bc8ed9f680ffb5ac6c8b4">FilterResultsTable</a>(<span class="keyword">const</span> <a class="code" href="namespace_core.html#a60877581a235fc9566087b54d463ce9c">Core::FilterOutput</a> &amp;data, <span class="keyword">const</span> std::string &amp;label, <span class="keyword">const</span> Math::Vector &amp;scale,</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                       QWidget *parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">private</span> slots:</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> onSaveTable();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_filter_results_table.html#a11f5f43cbe98060020a21574be83d37b">initTable</a>(<span class="keyword">const</span> <a class="code" href="namespace_core.html#a60877581a235fc9566087b54d463ce9c">Core::FilterOutput</a> &amp;data, <span class="keyword">const</span> Math::Vector &amp;scale);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_filter_results_table.html#aeb9ac72c2a2ab2fd35e54a4b2cf3d191">initMenu</a>();</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_filter_results_table.html#aa7da6ec37e106e4ce6e9144bfe1c6b38">writeToFile</a>(QTextStream &amp;out);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    QTableWidget *m_table;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif // FILTERRESULTSTABLE_H</span></div><div class="ttc" id="class_filter_results_table_html"><div class="ttname"><a href="class_filter_results_table.html">FilterResultsTable</a></div><div class="ttdoc">Виджет для отображения таблиц. </div><div class="ttdef"><b>Definition:</b> <a href="filter__results__table_8h_source.html#l00015">filter_results_table.h:15</a></div></div>
+<div class="ttc" id="class_filter_results_table_html_a11f5f43cbe98060020a21574be83d37b"><div class="ttname"><a href="class_filter_results_table.html#a11f5f43cbe98060020a21574be83d37b">FilterResultsTable::initTable</a></div><div class="ttdeci">void initTable(const Core::FilterOutput &amp;data, const Math::Vector &amp;scale)</div><div class="ttdoc">Создает таблицу и заполняет ее из data. </div><div class="ttdef"><b>Definition:</b> <a href="filter__results__table_8cc_source.html#l00036">filter_results_table.cc:36</a></div></div>
+<div class="ttc" id="class_filter_results_table_html_aeb9ac72c2a2ab2fd35e54a4b2cf3d191"><div class="ttname"><a href="class_filter_results_table.html#aeb9ac72c2a2ab2fd35e54a4b2cf3d191">FilterResultsTable::initMenu</a></div><div class="ttdeci">void initMenu()</div><div class="ttdoc">Инициализирует меню. </div><div class="ttdef"><b>Definition:</b> <a href="filter__results__table_8cc_source.html#l00104">filter_results_table.cc:104</a></div></div>
+<div class="ttc" id="namespace_core_html_a60877581a235fc9566087b54d463ce9c"><div class="ttname"><a href="namespace_core.html#a60877581a235fc9566087b54d463ce9c">Core::FilterOutput</a></div><div class="ttdeci">Array&lt; SingleFilterOutput &gt; FilterOutput</div><div class="ttdoc">Тип результата работы фильтра. </div><div class="ttdef"><b>Definition:</b> <a href="filter__output_8h_source.html#l00029">filter_output.h:29</a></div></div>
+<div class="ttc" id="class_filter_results_table_html_a343f304fd53bc8ed9f680ffb5ac6c8b4"><div class="ttname"><a href="class_filter_results_table.html#a343f304fd53bc8ed9f680ffb5ac6c8b4">FilterResultsTable::FilterResultsTable</a></div><div class="ttdeci">FilterResultsTable(const Core::FilterOutput &amp;data, const std::string &amp;label, const Math::Vector &amp;scale, QWidget *parent=nullptr)</div><div class="ttdoc">Конструктор. </div><div class="ttdef"><b>Definition:</b> <a href="filter__results__table_8cc_source.html#l00011">filter_results_table.cc:11</a></div></div>
+<div class="ttc" id="class_filter_results_table_html_aa7da6ec37e106e4ce6e9144bfe1c6b38"><div class="ttname"><a href="class_filter_results_table.html#aa7da6ec37e106e4ce6e9144bfe1c6b38">FilterResultsTable::writeToFile</a></div><div class="ttdeci">void writeToFile(QTextStream &amp;out)</div><div class="ttdoc">Форматирует текст и записывает в out. </div><div class="ttdef"><b>Definition:</b> <a href="filter__results__table_8cc_source.html#l00131">filter_results_table.cc:131</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>

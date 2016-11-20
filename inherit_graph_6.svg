@@ -9,8 +9,8 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 100)">
 <title>Иерархия классов. Графический вид.</title>
 <polygon fill="white" stroke="none" points="-4,4 -4,-100 227,-100 227,4 -4,4"/>
-<!-- Node10 -->
-<g id="node1" class="node"><title>Node10</title>
+<!-- Node9 -->
+<g id="node1" class="node"><title>Node9</title>
 <polygon fill="white" stroke="#bfbfbf" points="0,-38.5 0,-57.5 68,-57.5 68,-38.5 0,-38.5"/>
 <text text-anchor="middle" x="34" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">QGroupBox</text>
 </g>
@@ -22,34 +22,34 @@
 </a>
 </g>
 </g>
-<!-- Node10&#45;&gt;Node0 -->
-<g id="edge1" class="edge"><title>Node10&#45;&gt;Node0</title>
+<!-- Node9&#45;&gt;Node0 -->
+<g id="edge1" class="edge"><title>Node9&#45;&gt;Node0</title>
 <path fill="none" stroke="midnightblue" d="M77.0592,-60.5353C94.4041,-65.7048 114.181,-71.5991 130.337,-76.4141"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="77.7568,-57.0911 67.1736,-57.589 75.7574,-63.7995 77.7568,-57.0911"/>
 </g>
-<!-- Node12 -->
-<g id="node3" class="node"><title>Node12</title>
+<!-- Node11 -->
+<g id="node3" class="node"><title>Node11</title>
 <g id="a_node3"><a xlink:href="class_filter_start_buttons_box.html" target="_top" xlink:title="Класс виджета, содержащего только кнопки для запуска того или иного фильтра. ">
 <polygon fill="white" stroke="black" points="108.5,-38.5 108.5,-57.5 218.5,-57.5 218.5,-38.5 108.5,-38.5"/>
 <text text-anchor="middle" x="163.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">FilterStartButtonsBox</text>
 </a>
 </g>
 </g>
-<!-- Node10&#45;&gt;Node12 -->
-<g id="edge2" class="edge"><title>Node10&#45;&gt;Node12</title>
+<!-- Node9&#45;&gt;Node11 -->
+<g id="edge2" class="edge"><title>Node9&#45;&gt;Node11</title>
 <path fill="none" stroke="midnightblue" d="M78.2963,-48C87.9282,-48 98.2568,-48 108.265,-48"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="78.1663,-44.5001 68.1663,-48 78.1663,-51.5001 78.1663,-44.5001"/>
 </g>
-<!-- Node13 -->
-<g id="node4" class="node"><title>Node13</title>
+<!-- Node12 -->
+<g id="node4" class="node"><title>Node12</title>
 <g id="a_node4"><a xlink:href="class_task_widget.html" target="_top" xlink:title="Виджет для работы с задачами для фильтров. ">
 <polygon fill="white" stroke="black" points="129.5,-0.5 129.5,-19.5 197.5,-19.5 197.5,-0.5 129.5,-0.5"/>
 <text text-anchor="middle" x="163.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskWidget</text>
 </a>
 </g>
 </g>
-<!-- Node10&#45;&gt;Node13 -->
-<g id="edge3" class="edge"><title>Node10&#45;&gt;Node13</title>
+<!-- Node9&#45;&gt;Node12 -->
+<g id="edge3" class="edge"><title>Node9&#45;&gt;Node12</title>
 <path fill="none" stroke="midnightblue" d="M77.0592,-35.4647C94.4041,-30.2952 114.181,-24.4009 130.337,-19.5859"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="75.7574,-32.2005 67.1736,-38.411 77.7568,-38.9089 75.7574,-32.2005"/>
 </g>

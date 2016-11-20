@@ -1,3 +1,5 @@
 <map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
-<area shape="rect" id="node1" href="$class_filters_1_1_filter_factory.html" title="Фабричный класс для создания экземпляров классов фильтров. " alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node2" href="$class_filter_results_table.html" title="Виджет для отображения таблиц. " alt="" coords="159,5,285,32"/>
+<area shape="rect" id="node3" href="$class_graph_window.html" title="Класс, реализующий окно для просмотра графиков. " alt="" coords="171,56,273,83"/>
+<area shape="rect" id="node4" href="$class_main_window.html" title="Класс для главного окна приложения. " alt="" coords="175,107,269,133"/>
 </map>

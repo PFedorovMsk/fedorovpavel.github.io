@@ -28,7 +28,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Optimal Filtering
-   &#160;<span id="projectnumber">v2.6.2</span>
+   &#160;<span id="projectnumber">v2.7.0</span>
    </div>
   </td>
  </tr>
@@ -151,9 +151,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a5ba781e8221a8cc8003a950fafed1fc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_filter_parameters_widget.html#a5ba781e8221a8cc8003a950fafed1fc1">setRange</a> (QSpinBox *sb, int min, int max)</td></tr>
 <tr class="memdesc:a5ba781e8221a8cc8003a950fafed1fc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменяет диапозон значений QSpinBox.  <a href="#a5ba781e8221a8cc8003a950fafed1fc1">Подробнее...</a><br /></td></tr>
 <tr class="separator:a5ba781e8221a8cc8003a950fafed1fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8efc68dd4f006fa773873aa6710fbc33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_filter_parameters_widget.html#a8efc68dd4f006fa773873aa6710fbc33">computeSizes</a> (int &amp;w1, int &amp;w2, int &amp;w3, int &amp;w4)</td></tr>
-<tr class="memdesc:a8efc68dd4f006fa773873aa6710fbc33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет размеры для виджетов.  <a href="#a8efc68dd4f006fa773873aa6710fbc33">Подробнее...</a><br /></td></tr>
-<tr class="separator:a8efc68dd4f006fa773873aa6710fbc33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac02d00c8d38c893f046e160765ded10"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_filter_parameters_widget.html#aac02d00c8d38c893f046e160765ded10">computeMinimumWidth</a> ()</td></tr>
+<tr class="memdesc:aac02d00c8d38c893f046e160765ded10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет минимальную ширину виджета.  <a href="#aac02d00c8d38c893f046e160765ded10">Подробнее...</a><br /></td></tr>
+<tr class="separator:aac02d00c8d38c893f046e160765ded10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Закрытые данные</h2></td></tr>
@@ -212,7 +212,7 @@ QFont&#160;</td><td class="memItemRight" valign="bottom"><b>m_spinBoxesFont</b><
 <div class="textblock"><p>Класс виджета, предаставляющего элементы управления параметрами фильтрации. </p>
 <dl class="section see"><dt>См. также</dt><dd><a class="el" href="class_core_1_1_filter_parameters.html" title="Класс для работы с параметрами фильтра. ">Core::FilterParameters</a> </dd></dl>
 
-<p>См. определение в файле <a class="el" href="filter__parameters__widget_8h_source.html">filter_parameters_widget.h</a> строка <a class="el" href="filter__parameters__widget_8h_source.html#l00039">39</a></p>
+<p>См. определение в файле <a class="el" href="filter__parameters__widget_8h_source.html">filter_parameters_widget.h</a> строка <a class="el" href="filter__parameters__widget_8h_source.html#l00025">25</a></p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:FilterParametersWidget:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -228,8 +228,8 @@ QFont&#160;</td><td class="memItemRight" valign="bottom"><b>m_spinBoxesFont</b><
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_filter_parameters_widget__coll__graph.svg" width="170" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
 <h2 class="groupheader">Методы</h2>
-<a id="a8efc68dd4f006fa773873aa6710fbc33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8efc68dd4f006fa773873aa6710fbc33">&sect;&nbsp;</a></span>computeSizes()</h2>
+<a id="aac02d00c8d38c893f046e160765ded10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac02d00c8d38c893f046e160765ded10">&sect;&nbsp;</a></span>computeMinimumWidth()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -238,33 +238,10 @@ QFont&#160;</td><td class="memItemRight" valign="bottom"><b>m_spinBoxesFont</b><
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void FilterParametersWidget::computeSizes </td>
+          <td class="memname">int FilterParametersWidget::computeMinimumWidth </td>
           <td>(</td>
-          <td class="paramtype">int &amp;&#160;</td>
-          <td class="paramname"><em>w1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">int &amp;&#160;</td>
-          <td class="paramname"><em>w2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int &amp;&#160;</td>
-          <td class="paramname"><em>w3</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int &amp;&#160;</td>
-          <td class="paramname"><em>w4</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -274,13 +251,12 @@ QFont&#160;</td><td class="memItemRight" valign="bottom"><b>m_spinBoxesFont</b><
 </table>
 </div><div class="memdoc">
 
-<p>Вычисляет размеры для виджетов. </p>
+<p>Вычисляет минимальную ширину виджета. </p>
 <p>Все элементы расположены на сетке по 4 в одной строке.</p>
 <p>Чтобы всё было "ровно" вычисляются 4 значения, каждое из которых соответствуют самому длинному элементу в соответсвующей колонке.</p>
-<p>Это, в частности, необходимо при изменении шрифтов, так как размеры элементов зависят от них.</p>
-<dl class="section warning"><dt>Предупреждения</dt><dd>В Linux и Windows всё работает как задумано, в MacOS - фигово. Косяк либо тут, либо в <a class="el" href="class_font_manager.html" title="Статический класс для работы с загружаемыми из файлов шрифтами (singleton). ">FontManager</a>. </dd></dl>
+<p>Это, в частности, необходимо при изменении шрифтов, так как размеры элементов зависят от них. </p>
 
-<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00054">54</a></p>
+<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00027">27</a></p>
 
 </div>
 </div>
@@ -310,7 +286,7 @@ QFont&#160;</td><td class="memItemRight" valign="bottom"><b>m_spinBoxesFont</b><
 <p>Загружает шрифты и устанавливает их параметры (начертание, размер и т.д.). </p>
 <dl class="section see"><dt>См. также</dt><dd><a class="el" href="class_font_manager.html" title="Статический класс для работы с загружаемыми из файлов шрифтами (singleton). ">FontManager</a>. </dd></dl>
 
-<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00047">47</a></p>
+<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00020">20</a></p>
 
 </div>
 </div>
@@ -341,7 +317,7 @@ QFont&#160;</td><td class="memItemRight" valign="bottom"><b>m_spinBoxesFont</b><
 <p>Включает / выключает возможность изменять параметры. </p>
 <p>Слот. Реакция на сигнал toggled(bool) элемента m_checkFixAll. </p>
 
-<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00268">268</a></p>
+<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00267">267</a></p>
 
 </div>
 </div>
@@ -378,7 +354,7 @@ QFont&#160;</td><td class="memItemRight" valign="bottom"><b>m_spinBoxesFont</b><
 </dl>
 <p>Слот. Реакция на сигнал valueChanged(double) элемента m_dsbIntegrationStep. </p>
 
-<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00261">261</a></p>
+<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00260">260</a></p>
 
 </div>
 </div>
@@ -415,7 +391,7 @@ QFont&#160;</td><td class="memItemRight" valign="bottom"><b>m_spinBoxesFont</b><
 </dl>
 <p>Слот. Реакция на сигнал valueChanged(double) элемента m_dsbMaxTime. </p>
 
-<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00197">197</a></p>
+<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00196">196</a></p>
 
 </div>
 </div>
@@ -452,7 +428,7 @@ QFont&#160;</td><td class="memItemRight" valign="bottom"><b>m_spinBoxesFont</b><
 </dl>
 <p>Слот. Реакция на сигнал valueChanged(double) элемента m_dsbMeasurementStep. </p>
 
-<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00206">206</a></p>
+<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00205">205</a></p>
 
 </div>
 </div>
@@ -489,7 +465,7 @@ QFont&#160;</td><td class="memItemRight" valign="bottom"><b>m_spinBoxesFont</b><
 </dl>
 <p>Слот. Реакция на сигнал valueChanged(int) элемента m_sbOrderMultiplicity. </p>
 
-<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00290">290</a></p>
+<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00289">289</a></p>
 
 </div>
 </div>
@@ -526,7 +502,7 @@ QFont&#160;</td><td class="memItemRight" valign="bottom"><b>m_spinBoxesFont</b><
 </dl>
 <p>Слот. Реакция на сигнал valueChanged(int) элемента m_sbPredictionCount. </p>
 
-<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00254">254</a></p>
+<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00253">253</a></p>
 
 </div>
 </div>
@@ -557,7 +533,7 @@ QFont&#160;</td><td class="memItemRight" valign="bottom"><b>m_spinBoxesFont</b><
 <p>Вклачает режим изменения интервала между прогнозами по их количеству между соседними измерениями. </p>
 <p>Слот. Реакция на сигнал toggled(bool) элемента m_radioPredictionCount. </p>
 
-<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00286">286</a></p>
+<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00285">285</a></p>
 
 </div>
 </div>
@@ -594,7 +570,7 @@ QFont&#160;</td><td class="memItemRight" valign="bottom"><b>m_spinBoxesFont</b><
 </dl>
 <p>Слот. Реакция на сигнал valueChanged(double) элемента m_dsbPredictionStep. </p>
 
-<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00233">233</a></p>
+<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00232">232</a></p>
 
 </div>
 </div>
@@ -625,7 +601,7 @@ QFont&#160;</td><td class="memItemRight" valign="bottom"><b>m_spinBoxesFont</b><
 <p>Вклачает режим изменения интервала между прогнозами по его значению. </p>
 <p>Слот. Реакция на сигнал toggled(bool) элемента m_radioPredictionStep. </p>
 
-<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00281">281</a></p>
+<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00280">280</a></p>
 
 </div>
 </div>
@@ -662,7 +638,7 @@ QFont&#160;</td><td class="memItemRight" valign="bottom"><b>m_spinBoxesFont</b><
 </dl>
 <p>Слот. Реакция на сигнал valueChanged(int) элемента m_sbSampleSize. </p>
 
-<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00295">295</a></p>
+<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00294">294</a></p>
 
 </div>
 </div>
@@ -694,7 +670,7 @@ QFont&#160;</td><td class="memItemRight" valign="bottom"><b>m_spinBoxesFont</b><
 <p>При клике на кнопку "Обновить" во все элементы загружаются откорректированные актуальные данные.</p>
 <p>Слот. Реакция на сигнал clicked() элемента m_btnUpdate. </p>
 
-<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00300">300</a></p>
+<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00299">299</a></p>
 
 </div>
 </div>
@@ -748,7 +724,7 @@ QFont&#160;</td><td class="memItemRight" valign="bottom"><b>m_spinBoxesFont</b><
   </dd>
 </dl>
 
-<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00071">71</a></p>
+<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00047">47</a></p>
 
 </div>
 </div>
@@ -802,7 +778,7 @@ QFont&#160;</td><td class="memItemRight" valign="bottom"><b>m_spinBoxesFont</b><
   </dd>
 </dl>
 
-<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00078">78</a></p>
+<p>См. определение в файле <a class="el" href="filter__parameters__widget_8cc_source.html">filter_parameters_widget.cc</a> строка <a class="el" href="filter__parameters__widget_8cc_source.html#l00054">54</a></p>
 
 </div>
 </div>
@@ -830,7 +806,7 @@ QFont&#160;</td><td class="memItemRight" valign="bottom"><b>m_spinBoxesFont</b><
 <p>Меньшие интервалы не могут превышать размером бОльшие. Чтобы всегда выполнялось \(T_{max} \geq \delta t \geq \delta \tau \geq \Delta t\) и пользователь не мог ввести явно ошибочное значение, после каждого изменения перевычисляются диапозоны для всех элементов.</p>
 <p>Это может привести к изменению значения элемента, что вызовет соответствующий слот в ненужное время. Чтобы разрулить это и нужна эта переменная. </p>
 
-<p>См. определение в файле <a class="el" href="filter__parameters__widget_8h_source.html">filter_parameters_widget.h</a> строка <a class="el" href="filter__parameters__widget_8h_source.html#l00204">204</a></p>
+<p>См. определение в файле <a class="el" href="filter__parameters__widget_8h_source.html">filter_parameters_widget.h</a> строка <a class="el" href="filter__parameters__widget_8h_source.html#l00188">188</a></p>
 
 </div>
 </div>

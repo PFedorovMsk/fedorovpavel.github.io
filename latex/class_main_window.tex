@@ -36,6 +36,9 @@ void \hyperlink{class_main_window_a38edb88d43e844aca9d2e762c8706565}{close\+Even
 \hypertarget{class_main_window_ab1db88110806edae5fc7a1d7a24267f7}{}\label{class_main_window_ab1db88110806edae5fc7a1d7a24267f7} 
 void \hyperlink{class_main_window_ab1db88110806edae5fc7a1d7a24267f7}{on\+Clear} ()
 \begin{DoxyCompactList}\small\item\em Удаляет все пользовательские данные и возвращает значения по-\/умолчанию. \end{DoxyCompactList}\item 
+\hypertarget{class_main_window_a2df38aeb37f3c82c5523be3ef2731404}{}\label{class_main_window_a2df38aeb37f3c82c5523be3ef2731404} 
+void \hyperlink{class_main_window_a2df38aeb37f3c82c5523be3ef2731404}{on\+Show\+Hide\+Tables} ()
+\begin{DoxyCompactList}\small\item\em Показывает / скрывает таблицы результатов. \end{DoxyCompactList}\item 
 \hypertarget{class_main_window_aa5a210bb2bc29cb3f7d5d205ae215dbf}{}\label{class_main_window_aa5a210bb2bc29cb3f7d5d205ae215dbf} 
 void \hyperlink{class_main_window_aa5a210bb2bc29cb3f7d5d205ae215dbf}{on\+Filter\+Update\+Percent} (int p)
 \begin{DoxyCompactList}\small\item\em Отображает прогресс выполнеия алгоритма (связывается с Filter). \end{DoxyCompactList}\item 
@@ -60,7 +63,10 @@ void \hyperlink{class_main_window_ace6b00b69525fa5b1ce8808c9832dedc}{init\+Graph
 \begin{DoxyCompactList}\small\item\em Создает, настраивает и показывает окно графиков \hyperlink{class_graph_window}{Graph\+Window}. \end{DoxyCompactList}\item 
 \hypertarget{class_main_window_acf98b8c16421088a791c6d3d050ebc2d}{}\label{class_main_window_acf98b8c16421088a791c6d3d050ebc2d} 
 void \hyperlink{class_main_window_acf98b8c16421088a791c6d3d050ebc2d}{show\+Data} (\hyperlink{namespace_core_afba80c2cb714c7d5793d9bcb9591e156}{Core\+::\+Ptr\+Filter} filter)
-\begin{DoxyCompactList}\small\item\em Преобразует результаты работы фильтра в нужный формат и отправляет в окно графиков. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Преобразует результаты работы фильтра в нужный формат и отправляет в окно графиков. \end{DoxyCompactList}\item 
+\hypertarget{class_main_window_a2f45111c96d439beba735cd84e8deda7}{}\label{class_main_window_a2f45111c96d439beba735cd84e8deda7} 
+void \hyperlink{class_main_window_a2f45111c96d439beba735cd84e8deda7}{add\+Table} (const \hyperlink{namespace_core_a60877581a235fc9566087b54d463ce9c}{Core\+::\+Filter\+Output} \&data, const std\+::string \&label, const Vector \&scale)
+\begin{DoxyCompactList}\small\item\em Добавляет новую таблицу и открывает ее окно. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Закрытые данные}
 \begin{DoxyCompactItemize}
 \item 
@@ -69,6 +75,9 @@ void \hyperlink{class_main_window_acf98b8c16421088a791c6d3d050ebc2d}{show\+Data}
 \item 
 \hypertarget{class_main_window_a35d09b312795b853ef4b75508c0c371d}{}\label{class_main_window_a35d09b312795b853ef4b75508c0c371d} 
 int {\bfseries m\+\_\+rand\+Seed}
+\item 
+\hypertarget{class_main_window_a6ea719792b7699a0d5e81181ba6f5b2c}{}\label{class_main_window_a6ea719792b7699a0d5e81181ba6f5b2c} 
+bool {\bfseries m\+\_\+tables\+Is\+Visible}
 \item 
 \hypertarget{class_main_window_a17685071143ec93292f9e6909ab78901}{}\label{class_main_window_a17685071143ec93292f9e6909ab78901} 
 Q\+Progress\+Bar $\ast$ {\bfseries m\+\_\+status\+Progress\+Bar}
@@ -87,13 +96,19 @@ Q\+Progress\+Bar $\ast$ {\bfseries m\+\_\+status\+Progress\+Bar}
 \item 
 \hypertarget{class_main_window_a00b995ad2a53bd276a53fc137048b278}{}\label{class_main_window_a00b995ad2a53bd276a53fc137048b278} 
 Q\+Push\+Button $\ast$ {\bfseries m\+\_\+btn\+Clear}
+\item 
+\hypertarget{class_main_window_a3fd0f094bf729b91405b14deb7ae4c54}{}\label{class_main_window_a3fd0f094bf729b91405b14deb7ae4c54} 
+Q\+Push\+Button $\ast$ {\bfseries m\+\_\+btn\+Show\+Hide\+Tables}
+\item 
+\hypertarget{class_main_window_aab37e47932ec4fc5002724bdef5f959b}{}\label{class_main_window_aab37e47932ec4fc5002724bdef5f959b} 
+Q\+Vector$<$ \hyperlink{class_filter_results_table}{Filter\+Results\+Table} $\ast$ $>$ {\bfseries m\+\_\+tables}
 \end{DoxyCompactItemize}
 
 
 \subsection{Подробное описание}
 Класс для главного окна приложения. 
 
-См. определение в файле main\+\_\+window.\+h строка 25
+См. определение в файле main\+\_\+window.\+h строка 27
 
 
 
@@ -133,7 +148,7 @@ Q\+Push\+Button $\ast$ {\bfseries m\+\_\+btn\+Clear}
 \end{DoxySeeAlso}
 
 
-См. определение в файле main\+\_\+window.\+cc строка 24
+См. определение в файле main\+\_\+window.\+cc строка 26
 
 \hypertarget{class_main_window_a16686da6ed1d113106f9dc24694db2b9}{}\label{class_main_window_a16686da6ed1d113106f9dc24694db2b9} 
 \index{Main\+Window@{Main\+Window}!on\+Start@{on\+Start}}
@@ -156,7 +171,7 @@ Q\+Push\+Button $\ast$ {\bfseries m\+\_\+btn\+Clear}
 \end{DoxyParams}
 
 
-См. определение в файле main\+\_\+window.\+cc строка 121
+См. определение в файле main\+\_\+window.\+cc строка 166
 
 
 

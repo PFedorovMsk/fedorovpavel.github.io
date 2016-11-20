@@ -32,7 +32,6 @@ var searchData=
   ['sheet',['sheet',['../class_graph_window.html#a756c68dacb48b03ac45d457d61a760d8',1,'GraphWindow']]],
   ['showdata',['showData',['../class_main_window.html#acf98b8c16421088a791c6d3d050ebc2d',1,'MainWindow']]],
   ['singlefilteroutput',['SingleFilterOutput',['../struct_core_1_1_single_filter_output.html',1,'Core']]],
-  ['singleparamhbox',['SingleParamHBox',['../class_single_param_h_box.html',1,'SingleParamHBox'],['../class_single_param_h_box.html#abae6cfac3ff7ff9053a6f52772ca15f0',1,'SingleParamHBox::SingleParamHBox()']]],
   ['solvesystem',['SolveSystem',['../namespace_math_1_1_lin_alg.html#ab6e559246eac7fcd1bb0ef18fc4657ee',1,'Math::LinAlg']]],
   ['start',['start',['../class_filter_start_buttons_box.html#ac6e2a6555f1d388391f188f834b8e753',1,'FilterStartButtonsBox']]],
   ['step',['step',['../class_core_1_1_function_time.html#a7c3dfc0d8d69c83c162c42435fa13cb9',1,'Core::FunctionTime']]],

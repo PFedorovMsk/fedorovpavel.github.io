@@ -61,8 +61,8 @@ void \hyperlink{class_filter_parameters_widget_afca68a62342f0aa6be9133df55134993
 \begin{DoxyCompactList}\small\item\em Изменяет диапозон значений Q\+Double\+Spin\+Box. \end{DoxyCompactList}\item 
 void \hyperlink{class_filter_parameters_widget_a5ba781e8221a8cc8003a950fafed1fc1}{set\+Range} (Q\+Spin\+Box $\ast$sb, int min, int max)
 \begin{DoxyCompactList}\small\item\em Изменяет диапозон значений Q\+Spin\+Box. \end{DoxyCompactList}\item 
-void \hyperlink{class_filter_parameters_widget_a8efc68dd4f006fa773873aa6710fbc33}{compute\+Sizes} (int \&w1, int \&w2, int \&w3, int \&w4)
-\begin{DoxyCompactList}\small\item\em Вычисляет размеры для виджетов. \end{DoxyCompactList}\end{DoxyCompactItemize}
+int \hyperlink{class_filter_parameters_widget_aac02d00c8d38c893f046e160765ded10}{compute\+Minimum\+Width} ()
+\begin{DoxyCompactList}\small\item\em Вычисляет минимальную ширину виджета. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Закрытые данные}
 \begin{DoxyCompactItemize}
 \item 
@@ -126,7 +126,7 @@ Q\+Font {\bfseries m\+\_\+spin\+Boxes\+Font}
 \end{DoxySeeAlso}
 
 
-См. определение в файле filter\+\_\+parameters\+\_\+widget.\+h строка 39
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+h строка 25
 
 
 
@@ -151,28 +151,23 @@ Q\+Font {\bfseries m\+\_\+spin\+Boxes\+Font}
 
 
 \subsection{Методы}
-\hypertarget{class_filter_parameters_widget_a8efc68dd4f006fa773873aa6710fbc33}{}\label{class_filter_parameters_widget_a8efc68dd4f006fa773873aa6710fbc33} 
-\index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!compute\+Sizes@{compute\+Sizes}}
-\index{compute\+Sizes@{compute\+Sizes}!Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}}
-\subsubsection{\texorpdfstring{compute\+Sizes()}{computeSizes()}}
-{\footnotesize\ttfamily void Filter\+Parameters\+Widget\+::compute\+Sizes (\begin{DoxyParamCaption}\item[{int \&}]{w1,  }\item[{int \&}]{w2,  }\item[{int \&}]{w3,  }\item[{int \&}]{w4 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+\hypertarget{class_filter_parameters_widget_aac02d00c8d38c893f046e160765ded10}{}\label{class_filter_parameters_widget_aac02d00c8d38c893f046e160765ded10} 
+\index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!compute\+Minimum\+Width@{compute\+Minimum\+Width}}
+\index{compute\+Minimum\+Width@{compute\+Minimum\+Width}!Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}}
+\subsubsection{\texorpdfstring{compute\+Minimum\+Width()}{computeMinimumWidth()}}
+{\footnotesize\ttfamily int Filter\+Parameters\+Widget\+::compute\+Minimum\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Вычисляет размеры для виджетов. 
+Вычисляет минимальную ширину виджета. 
 
 Все элементы расположены на сетке по 4 в одной строке.
 
 Чтобы всё было \char`\"{}ровно\char`\"{} вычисляются 4 значения, каждое из которых соответствуют самому длинному элементу в соответсвующей колонке.
 
-Это, в частности, необходимо при изменении шрифтов, так как размеры элементов зависят от них.
+Это, в частности, необходимо при изменении шрифтов, так как размеры элементов зависят от них. 
 
-\begin{DoxyWarning}{Предупреждения}
-В Linux и Windows всё работает как задумано, в Mac\+OS -\/ фигово. Косяк либо тут, либо в \hyperlink{class_font_manager}{Font\+Manager}. 
-\end{DoxyWarning}
-
-
-См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 54
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 27
 
 \hypertarget{class_filter_parameters_widget_aeadea883731fe8ef61b3577319578e02}{}\label{class_filter_parameters_widget_aeadea883731fe8ef61b3577319578e02} 
 \index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!load\+Fonts@{load\+Fonts}}
@@ -189,7 +184,7 @@ Q\+Font {\bfseries m\+\_\+spin\+Boxes\+Font}
 \end{DoxySeeAlso}
 
 
-См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 47
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 20
 
 \hypertarget{class_filter_parameters_widget_a6d01e0b6bdb2b38f03a6935fac62a31c}{}\label{class_filter_parameters_widget_a6d01e0b6bdb2b38f03a6935fac62a31c} 
 \index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!on\+Fix\+All\+Toggled@{on\+Fix\+All\+Toggled}}
@@ -203,7 +198,7 @@ Q\+Font {\bfseries m\+\_\+spin\+Boxes\+Font}
 
 Слот. Реакция на сигнал toggled(bool) элемента m\+\_\+check\+Fix\+All. 
 
-См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 268
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 267
 
 \hypertarget{class_filter_parameters_widget_a8461deaa884f5615241d6730b73f9d7b}{}\label{class_filter_parameters_widget_a8461deaa884f5615241d6730b73f9d7b} 
 \index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!on\+Integration\+Step\+Changed@{on\+Integration\+Step\+Changed}}
@@ -222,7 +217,7 @@ Q\+Font {\bfseries m\+\_\+spin\+Boxes\+Font}
 \end{DoxyParams}
 Слот. Реакция на сигнал value\+Changed(double) элемента m\+\_\+dsb\+Integration\+Step. 
 
-См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 261
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 260
 
 \hypertarget{class_filter_parameters_widget_a80199438a8dededc61f17d7acd0e2487}{}\label{class_filter_parameters_widget_a80199438a8dededc61f17d7acd0e2487} 
 \index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!on\+Max\+Time\+Changed@{on\+Max\+Time\+Changed}}
@@ -241,7 +236,7 @@ Q\+Font {\bfseries m\+\_\+spin\+Boxes\+Font}
 \end{DoxyParams}
 Слот. Реакция на сигнал value\+Changed(double) элемента m\+\_\+dsb\+Max\+Time. 
 
-См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 197
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 196
 
 \hypertarget{class_filter_parameters_widget_afdabd842b69fd6a4b65b4d44a5c81c55}{}\label{class_filter_parameters_widget_afdabd842b69fd6a4b65b4d44a5c81c55} 
 \index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!on\+Measurement\+Step\+Changed@{on\+Measurement\+Step\+Changed}}
@@ -260,7 +255,7 @@ Q\+Font {\bfseries m\+\_\+spin\+Boxes\+Font}
 \end{DoxyParams}
 Слот. Реакция на сигнал value\+Changed(double) элемента m\+\_\+dsb\+Measurement\+Step. 
 
-См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 206
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 205
 
 \hypertarget{class_filter_parameters_widget_adacd531098565f7b21bd8d958a35fa74}{}\label{class_filter_parameters_widget_adacd531098565f7b21bd8d958a35fa74} 
 \index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!on\+Order\+Mult\+Changed@{on\+Order\+Mult\+Changed}}
@@ -279,7 +274,7 @@ Q\+Font {\bfseries m\+\_\+spin\+Boxes\+Font}
 \end{DoxyParams}
 Слот. Реакция на сигнал value\+Changed(int) элемента m\+\_\+sb\+Order\+Multiplicity. 
 
-См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 290
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 289
 
 \hypertarget{class_filter_parameters_widget_a4c0b14d9be53fd4b45179037e09c33b3}{}\label{class_filter_parameters_widget_a4c0b14d9be53fd4b45179037e09c33b3} 
 \index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!on\+Prediction\+Count\+Changed@{on\+Prediction\+Count\+Changed}}
@@ -298,7 +293,7 @@ Q\+Font {\bfseries m\+\_\+spin\+Boxes\+Font}
 \end{DoxyParams}
 Слот. Реакция на сигнал value\+Changed(int) элемента m\+\_\+sb\+Prediction\+Count. 
 
-См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 254
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 253
 
 \hypertarget{class_filter_parameters_widget_af00a1550252f080c7647f3fbf684587b}{}\label{class_filter_parameters_widget_af00a1550252f080c7647f3fbf684587b} 
 \index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!on\+Prediction\+Count\+Toggled@{on\+Prediction\+Count\+Toggled}}
@@ -312,7 +307,7 @@ Q\+Font {\bfseries m\+\_\+spin\+Boxes\+Font}
 
 Слот. Реакция на сигнал toggled(bool) элемента m\+\_\+radio\+Prediction\+Count. 
 
-См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 286
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 285
 
 \hypertarget{class_filter_parameters_widget_aa78cbb97c3a70babc20c35cf0e6f346a}{}\label{class_filter_parameters_widget_aa78cbb97c3a70babc20c35cf0e6f346a} 
 \index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!on\+Prediction\+Step\+Changed@{on\+Prediction\+Step\+Changed}}
@@ -331,7 +326,7 @@ Q\+Font {\bfseries m\+\_\+spin\+Boxes\+Font}
 \end{DoxyParams}
 Слот. Реакция на сигнал value\+Changed(double) элемента m\+\_\+dsb\+Prediction\+Step. 
 
-См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 233
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 232
 
 \hypertarget{class_filter_parameters_widget_aa5168232b5731eafd599c451fd9a54f9}{}\label{class_filter_parameters_widget_aa5168232b5731eafd599c451fd9a54f9} 
 \index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!on\+Prediction\+Step\+Toggled@{on\+Prediction\+Step\+Toggled}}
@@ -345,7 +340,7 @@ Q\+Font {\bfseries m\+\_\+spin\+Boxes\+Font}
 
 Слот. Реакция на сигнал toggled(bool) элемента m\+\_\+radio\+Prediction\+Step. 
 
-См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 281
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 280
 
 \hypertarget{class_filter_parameters_widget_afc9adb2c97bb297c29a86c2e9ee123b5}{}\label{class_filter_parameters_widget_afc9adb2c97bb297c29a86c2e9ee123b5} 
 \index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!on\+Sample\+Size\+Changed@{on\+Sample\+Size\+Changed}}
@@ -364,7 +359,7 @@ Q\+Font {\bfseries m\+\_\+spin\+Boxes\+Font}
 \end{DoxyParams}
 Слот. Реакция на сигнал value\+Changed(int) элемента m\+\_\+sb\+Sample\+Size. 
 
-См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 295
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 294
 
 \hypertarget{class_filter_parameters_widget_ad952425cf2dabf76a2f28d19caa2641f}{}\label{class_filter_parameters_widget_ad952425cf2dabf76a2f28d19caa2641f} 
 \index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!on\+Update\+Values@{on\+Update\+Values}}
@@ -383,7 +378,7 @@ Q\+Font {\bfseries m\+\_\+spin\+Boxes\+Font}
 
 Слот. Реакция на сигнал clicked() элемента m\+\_\+btn\+Update. 
 
-См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 300
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 299
 
 \hypertarget{class_filter_parameters_widget_afca68a62342f0aa6be9133df55134993}{}\label{class_filter_parameters_widget_afca68a62342f0aa6be9133df55134993} 
 \index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!set\+Range@{set\+Range}}
@@ -406,7 +401,7 @@ Q\+Font {\bfseries m\+\_\+spin\+Boxes\+Font}
 \end{DoxyParams}
 
 
-См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 71
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 47
 
 \hypertarget{class_filter_parameters_widget_a5ba781e8221a8cc8003a950fafed1fc1}{}\label{class_filter_parameters_widget_a5ba781e8221a8cc8003a950fafed1fc1} 
 \index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!set\+Range@{set\+Range}}
@@ -429,7 +424,7 @@ Q\+Font {\bfseries m\+\_\+spin\+Boxes\+Font}
 \end{DoxyParams}
 
 
-См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 78
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 54
 
 
 
@@ -446,7 +441,7 @@ Q\+Font {\bfseries m\+\_\+spin\+Boxes\+Font}
 
 Это может привести к изменению значения элемента, что вызовет соответствующий слот в ненужное время. Чтобы разрулить это и нужна эта переменная. 
 
-См. определение в файле filter\+\_\+parameters\+\_\+widget.\+h строка 204
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+h строка 188
 
 
 

@@ -12,12 +12,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -140,7 +134,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:ae8bb3b004400941317a1e9fdc1ca2c58 inherit pro_methods_class_core_1_1_filter"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализирует массивы по входным данным. <br /></td></tr>
 <tr class="separator:ae8bb3b004400941317a1e9fdc1ca2c58 inherit pro_methods_class_core_1_1_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84c7d1ebe3931974c3beccf27f13c1c5 inherit pro_methods_class_core_1_1_filter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter.html#a84c7d1ebe3931974c3beccf27f13c1c5">writeResult</a> (size_t n, bool copy=false)</td></tr>
-<tr class="memdesc:a84c7d1ebe3931974c3beccf27f13c1c5 inherit pro_methods_class_core_1_1_filter"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет и записывает результаты для времени \(t_n\).  <a href="class_core_1_1_filter.html#a84c7d1ebe3931974c3beccf27f13c1c5">Подробнее...</a><br /></td></tr>
+<tr class="memdesc:a84c7d1ebe3931974c3beccf27f13c1c5 inherit pro_methods_class_core_1_1_filter"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет и записывает результаты для времени <img class="formulaInl" alt="$t_n$" src="form_75.png"/>.  <a href="class_core_1_1_filter.html#a84c7d1ebe3931974c3beccf27f13c1c5">Подробнее...</a><br /></td></tr>
 <tr class="separator:a84c7d1ebe3931974c3beccf27f13c1c5 inherit pro_methods_class_core_1_1_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78692f8ecdfe6e2170a5d5acb0f69210 inherit pro_methods_class_core_1_1_filter"><td class="memItemLeft" align="right" valign="top"><a id="a78692f8ecdfe6e2170a5d5acb0f69210"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter.html#a78692f8ecdfe6e2170a5d5acb0f69210">updatePercent</a> (int p) const</td></tr>
@@ -179,16 +173,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_filters_1_1_continuous_discrete_1_1_d_f_o_s_b_o__inherit__graph.svg" width="190" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_filters_1_1_continuous_discrete_1_1_d_f_o_s_b_o__inherit__graph.svg" width="190" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса Filters::ContinuousDiscrete::DFOSBO:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_filters_1_1_continuous_discrete_1_1_d_f_o_s_b_o__coll__graph.svg" width="190" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_filters_1_1_continuous_discrete_1_1_d_f_o_s_b_o__coll__graph.svg" width="190" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
 <h2 class="groupheader">Методы</h2>
 <a id="ab911983ab9ff8e22dc68e33fdb4601b6"></a>
@@ -216,27 +208,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Выполняет алгоритм. </p>
 <p>Алгоритм схож с <a class="el" href="class_filters_1_1_continuous_discrete_1_1_d_f_o_s.html" title="Класс, реализующий непрерывно-дискретный фильтр оптимальной структуры с дискретным прогнозом...">DFOS</a>. Отличие в вычислении вектора состояния между измерениями (прогнозы).</p>
-<p>Вводится расширенный вектор состояния \(S_k\): </p><p class="formulaDsp">
-\[ S_k = [Y_k^T\ \ Y_{k-1}^T\ \cdots Y_{k-l+1}^T]^T,\]
+<p>Вводится расширенный вектор состояния <img class="formulaInl" alt="$S_k$" src="form_135.png"/>: </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[ S_k = [Y_k^T\ \ Y_{k-1}^T\ \cdots Y_{k-l+1}^T]^T,\]" src="form_136.png"/>
 </p>
-<p> где \(l\) - кратность порядка \(p = l \cdot dim(Y)\) фильтра.</p>
-<p>Вектор \(Z_t\) оценки между измерениями (прогнозирование) вычисляется следующим образом: </p><p class="formulaDsp">
-\[Z_{\tau_k^i} = \Gamma_k^i \cdot S_k + \kappa_k^i,\ \ \ i = 1 \ldots L,\]
+<p> где <img class="formulaInl" alt="$l$" src="form_137.png"/> - кратность порядка <img class="formulaInl" alt="$p = l \cdot dim(Y)$" src="form_138.png"/> фильтра.</p>
+<p>Вектор <img class="formulaInl" alt="$Z_t$" src="form_118.png"/> оценки между измерениями (прогнозирование) вычисляется следующим образом: </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[Z_{\tau_k^i} = \Gamma_k^i \cdot S_k + \kappa_k^i,\ \ \ i = 1 \ldots L,\]" src="form_139.png"/>
 </p>
 <p>В моменты измерений: </p><p class="formulaDsp">
-\[\Lambda_k = \Gamma_k \cdot Z_{k-1} + \kappa_k,\]
+<img class="formulaDsp" alt="\[\Lambda_k = \Gamma_k \cdot Z_{k-1} + \kappa_k,\]" src="form_140.png"/>
 </p>
  <p class="formulaDsp">
-\[Z_{\tau_k^0} = \Lambda_k + T_k \cdot G_k^T(\Lambda_k, T_k) \cdot F_k^{-1}(\Lambda_k, T_k) \cdot [Y_k - h_k(\Lambda_k, T_k)],\]
+<img class="formulaDsp" alt="\[Z_{\tau_k^0} = \Lambda_k + T_k \cdot G_k^T(\Lambda_k, T_k) \cdot F_k^{-1}(\Lambda_k, T_k) \cdot [Y_k - h_k(\Lambda_k, T_k)],\]" src="form_131.png"/>
 </p>
 <p>Параметры вычисляется так: </p><p class="formulaDsp">
-\[\Gamma_k^i = D_{\tau_k^i,k}^{x,s} \cdot (D_k^s)^{-1},\ \ \kappa_k^i = m_{\tau_k^i}^x - \Gamma_k^i \cdot m_k^s,\]
+<img class="formulaDsp" alt="\[\Gamma_k^i = D_{\tau_k^i,k}^{x,s} \cdot (D_k^s)^{-1},\ \ \kappa_k^i = m_{\tau_k^i}^x - \Gamma_k^i \cdot m_k^s,\]" src="form_141.png"/>
 </p>
  <p class="formulaDsp">
-\[\Gamma_k = D_{\tau_k^0,k-1}^{x,s} \cdot (D_{k-1}^s)^{-1},\ \ \kappa_k = m_{\tau_k^0}^x - \Gamma_k \cdot m_{k-1}^s,\]
+<img class="formulaDsp" alt="\[\Gamma_k = D_{\tau_k^0,k-1}^{x,s} \cdot (D_{k-1}^s)^{-1},\ \ \kappa_k = m_{\tau_k^0}^x - \Gamma_k \cdot m_{k-1}^s,\]" src="form_142.png"/>
 </p>
  <p class="formulaDsp">
-\[T_k = D_{\tau_k^0}^x - \Gamma_k \cdot (D_{\tau_k^0,k-1}^{x,s})^T.\]
+<img class="formulaDsp" alt="\[T_k = D_{\tau_k^0}^x - \Gamma_k \cdot (D_{\tau_k^0,k-1}^{x,s})^T.\]" src="form_143.png"/>
 </p>
 <dl class="section see"><dt>См. также</dt><dd><a class="el" href="class_core_1_1_continuous_discrete_filter.html" title="Базовый класс для всех непрерывно-дискретных фильтров оптимальной структуры. ">Core::ContinuousDiscreteFilter</a> </dd>
 <dd>
@@ -273,16 +265,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Нулевая итерация алгоритма (инициализирует начальные состояния). </p>
 <p>Практически для всех дискретных фильтров оптимальной структуры имеет вид: </p><p class="formulaDsp">
-\[Z_0 = H_0 \cdot Y_0 + e_0,\]
+<img class="formulaDsp" alt="\[Z_0 = H_0 \cdot Y_0 + e_0,\]" src="form_0.png"/>
 </p>
  <p class="formulaDsp">
-\[H_0 = D_{00}^{xy} \cdot (D_{00}^{xy})^{-1},\]
+<img class="formulaDsp" alt="\[H_0 = D_{00}^{xy} \cdot (D_{00}^{xy})^{-1},\]" src="form_1.png"/>
 </p>
  <p class="formulaDsp">
-\[e_0 = m_0^x - H_0 \cdot m_0^y.\]
+<img class="formulaDsp" alt="\[e_0 = m_0^x - H_0 \cdot m_0^y.\]" src="form_2.png"/>
 </p>
 <p>В гауссовском АОФ (ФНА) добавляется уравнение для апостериорной ковариации объекта: </p><p class="formulaDsp">
-\[P_0 = D_0^x - H_0 \cdot (D_{00}^{xy})^T.\]
+<img class="formulaDsp" alt="\[P_0 = D_0^x - H_0 \cdot (D_{00}^{xy})^T.\]" src="form_3.png"/>
 </p>
  
 <p>Переопределяет метод предка <a class="el" href="class_core_1_1_continuous_discrete_filter.html#acc9b18241a13d46dc92ef1f02ec13e53">Core::ContinuousDiscreteFilter</a>.</p>
@@ -311,7 +303,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Массив для хранения расширенных векторов состояния \(S_k\). </p>
+<p>Массив для хранения расширенных векторов состояния <img class="formulaInl" alt="$S_k$" src="form_135.png"/>. </p>
 
 <p>См. определение в файле <a class="el" href="cd__dfosbo_8h_source.html">cd_dfosbo.h</a> строка <a class="el" href="cd__dfosbo_8h_source.html#l00058">58</a></p>
 

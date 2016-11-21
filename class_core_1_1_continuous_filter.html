@@ -12,12 +12,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -136,7 +130,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:a438681ee3e54aba2148042d9f8011ab8 inherit pro_methods_class_core_1_1_filter"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполняет основной алгоритм. <br /></td></tr>
 <tr class="separator:a438681ee3e54aba2148042d9f8011ab8 inherit pro_methods_class_core_1_1_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84c7d1ebe3931974c3beccf27f13c1c5 inherit pro_methods_class_core_1_1_filter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter.html#a84c7d1ebe3931974c3beccf27f13c1c5">writeResult</a> (size_t n, bool copy=false)</td></tr>
-<tr class="memdesc:a84c7d1ebe3931974c3beccf27f13c1c5 inherit pro_methods_class_core_1_1_filter"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет и записывает результаты для времени \(t_n\).  <a href="class_core_1_1_filter.html#a84c7d1ebe3931974c3beccf27f13c1c5">Подробнее...</a><br /></td></tr>
+<tr class="memdesc:a84c7d1ebe3931974c3beccf27f13c1c5 inherit pro_methods_class_core_1_1_filter"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет и записывает результаты для времени <img class="formulaInl" alt="$t_n$" src="form_75.png"/>.  <a href="class_core_1_1_filter.html#a84c7d1ebe3931974c3beccf27f13c1c5">Подробнее...</a><br /></td></tr>
 <tr class="separator:a84c7d1ebe3931974c3beccf27f13c1c5 inherit pro_methods_class_core_1_1_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78692f8ecdfe6e2170a5d5acb0f69210 inherit pro_methods_class_core_1_1_filter"><td class="memItemLeft" align="right" valign="top"><a id="a78692f8ecdfe6e2170a5d5acb0f69210"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter.html#a78692f8ecdfe6e2170a5d5acb0f69210">updatePercent</a> (int p) const</td></tr>
@@ -173,16 +167,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_core_1_1_continuous_filter__inherit__graph.svg" width="368" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_core_1_1_continuous_filter__inherit__graph.svg" width="368" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса Core::ContinuousFilter:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_core_1_1_continuous_filter__coll__graph.svg" width="162" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_core_1_1_continuous_filter__coll__graph.svg" width="162" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
 <h2 class="groupheader">Методы</h2>
 <a id="a4c30983f9354344717538f807855f2ae"></a>
@@ -210,10 +202,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Нулевая итерация алгоритма (инициализирует начальные состояния). </p>
 <p>Практически для всех дискретных фильтров оптимальной структуры имеет вид: </p><p class="formulaDsp">
-\[Z_0 = m_0^x = M[X_0],\]
+<img class="formulaDsp" alt="\[Z_0 = m_0^x = M[X_0],\]" src="form_34.png"/>
 </p>
 <p>В гауссовском АОФ (ФНА) добавляется уравнение для апостериорной ковариации объекта: </p><p class="formulaDsp">
-\[P_0 = D_0^x = D[X_0].\]
+<img class="formulaDsp" alt="\[P_0 = D_0^x = D[X_0].\]" src="form_35.png"/>
 </p>
  
 <p>Замещает <a class="el" href="class_core_1_1_filter.html#af95880b734c4b8dc3d8c02f222b32506">Core::Filter</a>.</p>

@@ -1,0 +1,121 @@
+\hypertarget{class_filters_1_1_continuous_1_1_a_o_f}{}\section{Класс Filters\+:\+:Continuous\+:\+:A\+OF}
+\label{class_filters_1_1_continuous_1_1_a_o_f}\index{Filters\+::\+Continuous\+::\+A\+OF@{Filters\+::\+Continuous\+::\+A\+OF}}
+
+
+Класс, реализующий непрерывный абсолютно оптимальный фильтр.  
+
+
+
+
+{\ttfamily \#include \char`\"{}c\+\_\+aof.\+h\char`\"{}}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_filters_1_1_continuous_1_1_a_o_f_a92b07f56c7e0254c635404f0d1d04fa3}{}\label{class_filters_1_1_continuous_1_1_a_o_f_a92b07f56c7e0254c635404f0d1d04fa3} 
+\hyperlink{class_filters_1_1_continuous_1_1_a_o_f_a92b07f56c7e0254c635404f0d1d04fa3}{A\+OF} (\hyperlink{namespace_core_a4811af8148ba137d644b9a61a042cf03}{Core\+::\+Ptr\+Filter\+Parameters} \hyperlink{class_core_1_1_filter_a44aa749b49ba46256975ce545531ecf7}{params}, \hyperlink{namespace_core_abfda8f69fcacfcea2696549b548ed737}{Core\+::\+Ptr\+Task} task)
+\begin{DoxyCompactList}\small\item\em Конструктор. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_filters_1_1_continuous_1_1_a_o_f_ab416b56dbeb26366f495f03b3c08ad5e}{zero\+Iteration} () override
+\begin{DoxyCompactList}\small\item\em Нулевая итерация алгоритма (инициализирует начальные состояния). \end{DoxyCompactList}\item 
+void \hyperlink{class_filters_1_1_continuous_1_1_a_o_f_af25cf723db57bba9d52173b27f960170}{algorithm} () override
+\begin{DoxyCompactList}\small\item\em Выполняет алгоритм. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+Array$<$ Math\+::\+Matrix $>$ \hyperlink{class_filters_1_1_continuous_1_1_a_o_f_a3cff90f7e12e677f04102f1717ef7a49}{m\+\_\+sampleP}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Класс, реализующий непрерывный абсолютно оптимальный фильтр. 
+
+См. определение в файле c\+\_\+aof.\+h строка 18
+
+
+
+Граф наследования\+:Filters\+:\+:Continuous\+:\+:A\+OF\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_filters_1_1_continuous_1_1_a_o_f__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Filters\+:\+:Continuous\+:\+:A\+OF\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_filters_1_1_continuous_1_1_a_o_f__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Методы}
+\hypertarget{class_filters_1_1_continuous_1_1_a_o_f_af25cf723db57bba9d52173b27f960170}{}\label{class_filters_1_1_continuous_1_1_a_o_f_af25cf723db57bba9d52173b27f960170} 
+\index{Filters\+::\+Continuous\+::\+A\+OF@{Filters\+::\+Continuous\+::\+A\+OF}!algorithm@{algorithm}}
+\index{algorithm@{algorithm}!Filters\+::\+Continuous\+::\+A\+OF@{Filters\+::\+Continuous\+::\+A\+OF}}
+\subsubsection{\texorpdfstring{algorithm()}{algorithm()}}
+{\footnotesize\ttfamily void Filters\+::\+Continuous\+::\+A\+O\+F\+::algorithm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Выполняет алгоритм. 
+
+Вектор $Z_t$ оценки вычисляется следующим образом\+: \[dZ_t = a(t,Z_t)dt + K(t,Z_t, P_t)\cdot [ dY_t - c(t,Z_t)dt],\] \[dP_t = \Psi(t,Z_t,P_t)dt.\]
+
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{class_core_1_1_continuous_filter}{Core\+::\+Continuous\+Filter} 
+
+\hyperlink{class_core_1_1_continuous_task}{Core\+::\+Continuous\+Task} 
+\end{DoxySeeAlso}
+
+
+Замещает \hyperlink{class_core_1_1_filter_a438681ee3e54aba2148042d9f8011ab8}{Core\+::\+Filter}.
+
+
+
+См. определение в файле c\+\_\+aof.\+cc строка 31
+
+\hypertarget{class_filters_1_1_continuous_1_1_a_o_f_ab416b56dbeb26366f495f03b3c08ad5e}{}\label{class_filters_1_1_continuous_1_1_a_o_f_ab416b56dbeb26366f495f03b3c08ad5e} 
+\index{Filters\+::\+Continuous\+::\+A\+OF@{Filters\+::\+Continuous\+::\+A\+OF}!zero\+Iteration@{zero\+Iteration}}
+\index{zero\+Iteration@{zero\+Iteration}!Filters\+::\+Continuous\+::\+A\+OF@{Filters\+::\+Continuous\+::\+A\+OF}}
+\subsubsection{\texorpdfstring{zero\+Iteration()}{zeroIteration()}}
+{\footnotesize\ttfamily void Filters\+::\+Continuous\+::\+A\+O\+F\+::zero\+Iteration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Нулевая итерация алгоритма (инициализирует начальные состояния). 
+
+Практически для всех дискретных фильтров оптимальной структуры имеет вид\+: \[Z_0 = m_0^x = M[X_0],\]
+
+В гауссовском АОФ (ФНА) добавляется уравнение для апостериорной ковариации объекта\+: \[P_0 = D_0^x = D[X_0].\] 
+
+Переопределяет метод предка \hyperlink{class_core_1_1_continuous_filter_a4c30983f9354344717538f807855f2ae}{Core\+::\+Continuous\+Filter}.
+
+
+
+См. определение в файле c\+\_\+aof.\+cc строка 21
+
+
+
+\subsection{Данные класса}
+\hypertarget{class_filters_1_1_continuous_1_1_a_o_f_a3cff90f7e12e677f04102f1717ef7a49}{}\label{class_filters_1_1_continuous_1_1_a_o_f_a3cff90f7e12e677f04102f1717ef7a49} 
+\index{Filters\+::\+Continuous\+::\+A\+OF@{Filters\+::\+Continuous\+::\+A\+OF}!m\+\_\+sampleP@{m\+\_\+sampleP}}
+\index{m\+\_\+sampleP@{m\+\_\+sampleP}!Filters\+::\+Continuous\+::\+A\+OF@{Filters\+::\+Continuous\+::\+A\+OF}}
+\subsubsection{\texorpdfstring{m\+\_\+sampleP}{m\_sampleP}}
+{\footnotesize\ttfamily Array$<$Math\+::\+Matrix$>$ Filters\+::\+Continuous\+::\+A\+O\+F\+::m\+\_\+sampleP\hspace{0.3cm}{\ttfamily [protected]}}
+
+Массив апостериорных ковариаций $P$. 
+
+См. определение в файле c\+\_\+aof.\+h строка 43
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/filters/continuous/c\+\_\+aof.\+h\item 
+src/filters/continuous/c\+\_\+aof.\+cc\end{DoxyCompactItemize}

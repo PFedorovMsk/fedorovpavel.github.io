@@ -1,0 +1,270 @@
+\hypertarget{class_tasks_1_1_discrete_1_1_landing_linear}{}\section{Класс Tasks\+:\+:Discrete\+:\+:Landing\+Linear}
+\label{class_tasks_1_1_discrete_1_1_landing_linear}\index{Tasks\+::\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Discrete\+::\+Landing\+Linear}}
+
+
+Задача спуска ЛА на планету (дискретная, линеаризованная) для фильтров оптимальной структуры.  
+
+
+
+
+{\ttfamily \#include \char`\"{}d\+\_\+landing\+\_\+linear.\+h\char`\"{}}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tasks_1_1_discrete_1_1_landing_linear_a635a395c8b9ef9bcece3201c26c258bf}{}\label{class_tasks_1_1_discrete_1_1_landing_linear_a635a395c8b9ef9bcece3201c26c258bf} 
+\hyperlink{class_tasks_1_1_discrete_1_1_landing_linear_a635a395c8b9ef9bcece3201c26c258bf}{Landing\+Linear} ()
+\begin{DoxyCompactList}\small\item\em Конструктор. \end{DoxyCompactList}\item 
+Vector \hyperlink{class_tasks_1_1_discrete_1_1_landing_linear_af0c0c48603fc226055ee233f93fa21fc}{a} (const Vector \&x) const override
+\begin{DoxyCompactList}\small\item\em Функция объекта $a_k(X_k) = a_k(X_k, V_k)$. \end{DoxyCompactList}\item 
+Vector \hyperlink{class_tasks_1_1_discrete_1_1_landing_linear_a599d3491da6d84ba68c43433235e9980}{b} (const Vector \&x) const override
+\begin{DoxyCompactList}\small\item\em Функция измерителя $b(X_k) = b_k(X_k, W_k)$. \end{DoxyCompactList}\item 
+Vector \hyperlink{class_tasks_1_1_discrete_1_1_landing_linear_a8f2022967fae3dde3e7d2df3f7fa98f8}{tau} (const Vector \&z, const Matrix \&P) const override
+\begin{DoxyCompactList}\small\item\em Структурная функция прогноза $\tau_k(m, D)$. \end{DoxyCompactList}\item 
+Matrix \hyperlink{class_tasks_1_1_discrete_1_1_landing_linear_a88dda707914dea5698748f445563400f}{Theta} (const Vector \&z, const Matrix \&P) const override
+\begin{DoxyCompactList}\small\item\em Структурная функция прогноза $\Theta_k(m, D)$. \end{DoxyCompactList}\item 
+Vector \hyperlink{class_tasks_1_1_discrete_1_1_landing_linear_a9b1f90547fca3b460b48693b2e16219a}{h} (const Vector \&m, const Matrix \&D) const override
+\begin{DoxyCompactList}\small\item\em Структурная функция коррекции $h_k(m, D)$. \end{DoxyCompactList}\item 
+Matrix \hyperlink{class_tasks_1_1_discrete_1_1_landing_linear_a290890c1d3a91803249a1f5d62bc658f}{G} (const Vector \&m, const Matrix \&D) const override
+\begin{DoxyCompactList}\small\item\em Структурная функция коррекции $G_k(m, D)$. \end{DoxyCompactList}\item 
+Matrix \hyperlink{class_tasks_1_1_discrete_1_1_landing_linear_abb4e2b054240cf909f0128721237334c}{F} (const Vector \&m, const Matrix \&D) const override
+\begin{DoxyCompactList}\small\item\em Структурная функция коррекции $F_k(m, D)$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tasks_1_1_discrete_1_1_landing_linear_a8d1a37601f2184254e8ff8f97e026756}{}\label{class_tasks_1_1_discrete_1_1_landing_linear_a8d1a37601f2184254e8ff8f97e026756} 
+Matrix \hyperlink{class_tasks_1_1_discrete_1_1_landing_linear_a8d1a37601f2184254e8ff8f97e026756}{dadx} (const Vector \&x) const override
+\begin{DoxyCompactList}\small\item\em Вспомогательная функция, вычисляет $\nabla_x a_k(x,v)$. \end{DoxyCompactList}\item 
+\hypertarget{class_tasks_1_1_discrete_1_1_landing_linear_aa72d305c7731e8972d99c04ef034ee22}{}\label{class_tasks_1_1_discrete_1_1_landing_linear_aa72d305c7731e8972d99c04ef034ee22} 
+Matrix \hyperlink{class_tasks_1_1_discrete_1_1_landing_linear_aa72d305c7731e8972d99c04ef034ee22}{dadv} (const Vector \&x) const override
+\begin{DoxyCompactList}\small\item\em Вспомогательная функция, вычисляет $\nabla_v a_k(x,v)$. \end{DoxyCompactList}\item 
+\hypertarget{class_tasks_1_1_discrete_1_1_landing_linear_a7db5ae69d850f20d01efd665906b5b83}{}\label{class_tasks_1_1_discrete_1_1_landing_linear_a7db5ae69d850f20d01efd665906b5b83} 
+Matrix \hyperlink{class_tasks_1_1_discrete_1_1_landing_linear_a7db5ae69d850f20d01efd665906b5b83}{dbdx} (const Vector \&x) const override
+\begin{DoxyCompactList}\small\item\em Вспомогательная функция, вычисляет $\nabla_x b_k(x,w)$. \end{DoxyCompactList}\item 
+\hypertarget{class_tasks_1_1_discrete_1_1_landing_linear_a25be613741f960811d693852d230a3eb}{}\label{class_tasks_1_1_discrete_1_1_landing_linear_a25be613741f960811d693852d230a3eb} 
+Matrix \hyperlink{class_tasks_1_1_discrete_1_1_landing_linear_a25be613741f960811d693852d230a3eb}{dbdw} (const Vector \&x) const override
+\begin{DoxyCompactList}\small\item\em Вспомогательная функция, вычисляет $\nabla_w b_k(x,w)$. \end{DoxyCompactList}\item 
+\hypertarget{class_tasks_1_1_discrete_1_1_landing_linear_a955c4de6dbe0a71bc97d0bf39f695054}{}\label{class_tasks_1_1_discrete_1_1_landing_linear_a955c4de6dbe0a71bc97d0bf39f695054} 
+void \hyperlink{class_tasks_1_1_discrete_1_1_landing_linear_a955c4de6dbe0a71bc97d0bf39f695054}{load\+Params} () override
+\begin{DoxyCompactList}\small\item\em Загружает данные в локальные переменные после изменения параметров. \end{DoxyCompactList}\item 
+\hypertarget{class_tasks_1_1_discrete_1_1_landing_linear_a8e641e61f366d3f4145a9b0c3b53b37e}{}\label{class_tasks_1_1_discrete_1_1_landing_linear_a8e641e61f366d3f4145a9b0c3b53b37e} 
+double {\bfseries k} (double t) const
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tasks_1_1_discrete_1_1_landing_linear_a95cd1d6b8774484348cf21842bc1ab82}{}\label{class_tasks_1_1_discrete_1_1_landing_linear_a95cd1d6b8774484348cf21842bc1ab82} 
+double {\bfseries m\+\_\+turn\+Time}
+\end{DoxyCompactItemize}
+\subsection*{Статические защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tasks_1_1_discrete_1_1_landing_linear_ab62185db94c68bc2ea5449b455b71ca9}{}\label{class_tasks_1_1_discrete_1_1_landing_linear_ab62185db94c68bc2ea5449b455b71ca9} 
+static constexpr double {\bfseries KB} = 0.\+3
+\item 
+\hypertarget{class_tasks_1_1_discrete_1_1_landing_linear_a27e46b3c8f6359b7fe37205fe6d4b009}{}\label{class_tasks_1_1_discrete_1_1_landing_linear_a27e46b3c8f6359b7fe37205fe6d4b009} 
+static constexpr double {\bfseries BB} = 0.\+09
+\item 
+\hypertarget{class_tasks_1_1_discrete_1_1_landing_linear_ae2d5423e0cc942b236f97b55d16070b2}{}\label{class_tasks_1_1_discrete_1_1_landing_linear_ae2d5423e0cc942b236f97b55d16070b2} 
+static constexpr double {\bfseries CC} = 0.\+043333333333333333333333333333333333333333333333333
+\item 
+\hypertarget{class_tasks_1_1_discrete_1_1_landing_linear_a54a6e7e6668dae1ba3e700f633031b34}{}\label{class_tasks_1_1_discrete_1_1_landing_linear_a54a6e7e6668dae1ba3e700f633031b34} 
+static constexpr double {\bfseries GG} = 3.\+711\+E-\/3
+\item 
+\hypertarget{class_tasks_1_1_discrete_1_1_landing_linear_a5de434a509158bf23cb5fba7445b2e2d}{}\label{class_tasks_1_1_discrete_1_1_landing_linear_a5de434a509158bf23cb5fba7445b2e2d} 
+static constexpr double {\bfseries RR} = 3390.\+0
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Задача спуска ЛА на планету (дискретная, линеаризованная) для фильтров оптимальной структуры. 
+
+См. определение в файле d\+\_\+landing\+\_\+linear.\+h строка 21
+
+
+
+Граф наследования\+:Tasks\+:\+:Discrete\+:\+:Landing\+Linear\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_tasks_1_1_discrete_1_1_landing_linear__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Tasks\+:\+:Discrete\+:\+:Landing\+Linear\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_tasks_1_1_discrete_1_1_landing_linear__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Методы}
+\hypertarget{class_tasks_1_1_discrete_1_1_landing_linear_af0c0c48603fc226055ee233f93fa21fc}{}\label{class_tasks_1_1_discrete_1_1_landing_linear_af0c0c48603fc226055ee233f93fa21fc} 
+\index{Tasks\+::\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Discrete\+::\+Landing\+Linear}!a@{a}}
+\index{a@{a}!Tasks\+::\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Discrete\+::\+Landing\+Linear}}
+\subsubsection{\texorpdfstring{a()}{a()}}
+{\footnotesize\ttfamily Vector Tasks\+::\+Discrete\+::\+Landing\+Linear\+::a (\begin{DoxyParamCaption}\item[{const Vector \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Функция объекта $a_k(X_k) = a_k(X_k, V_k)$. 
+
+Шум $V_k$ генерируется внутри. 
+
+Замещает \hyperlink{class_core_1_1_discrete_task_a49d377fa365d5ec3e05962ee751f2d9e}{Core\+::\+Discrete\+Task}.
+
+
+
+См. определение в файле d\+\_\+landing\+\_\+linear.\+cc строка 69
+
+\hypertarget{class_tasks_1_1_discrete_1_1_landing_linear_a599d3491da6d84ba68c43433235e9980}{}\label{class_tasks_1_1_discrete_1_1_landing_linear_a599d3491da6d84ba68c43433235e9980} 
+\index{Tasks\+::\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Discrete\+::\+Landing\+Linear}!b@{b}}
+\index{b@{b}!Tasks\+::\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Discrete\+::\+Landing\+Linear}}
+\subsubsection{\texorpdfstring{b()}{b()}}
+{\footnotesize\ttfamily Vector Tasks\+::\+Discrete\+::\+Landing\+Linear\+::b (\begin{DoxyParamCaption}\item[{const Vector \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Функция измерителя $b(X_k) = b_k(X_k, W_k)$. 
+
+Шум $W_k$ генерируется внутри. 
+
+Замещает \hyperlink{class_core_1_1_discrete_task_a82c1aa8100dd9211739f8fd9f7d52c81}{Core\+::\+Discrete\+Task}.
+
+
+
+См. определение в файле d\+\_\+landing\+\_\+linear.\+cc строка 81
+
+\hypertarget{class_tasks_1_1_discrete_1_1_landing_linear_abb4e2b054240cf909f0128721237334c}{}\label{class_tasks_1_1_discrete_1_1_landing_linear_abb4e2b054240cf909f0128721237334c} 
+\index{Tasks\+::\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Discrete\+::\+Landing\+Linear}!F@{F}}
+\index{F@{F}!Tasks\+::\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Discrete\+::\+Landing\+Linear}}
+\subsubsection{\texorpdfstring{F()}{F()}}
+{\footnotesize\ttfamily Matrix Tasks\+::\+Discrete\+::\+Landing\+Linear\+::F (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Структурная функция коррекции $F_k(m, D)$. 
+
+Она имеет следующий вид для
+
+
+\begin{DoxyItemize}
+\item гауссовского приближения\+: \[F_k(m, D) = M_N[M[b_k(m, W_k)\cdot b_k^T(m, W_k)] \ |\ m, D] - h_k(m,D) \cdot h_k^T(m, D),\]
+\item линеаризованного приближения\+: \[F_k(m, D) = B_k^x(m) \cdot D \cdot B_k^{xT}(m) + B_k^w(m) \cdot D[W_k] \cdot B_k^{wT}(m).\]
+\end{DoxyItemize}
+
+Здесь $B_k^x(x) = \nabla_x b_k(x, M[W_k]),\ B_k^w(x) = \nabla_w b_k(x, M[W_k])$. 
+
+Замещает \hyperlink{class_core_1_1_discrete_task_ac55ca2cd47f0c9f7e5d3d3704becee46}{Core\+::\+Discrete\+Task}.
+
+
+
+См. определение в файле d\+\_\+landing\+\_\+linear.\+cc строка 124
+
+\hypertarget{class_tasks_1_1_discrete_1_1_landing_linear_a290890c1d3a91803249a1f5d62bc658f}{}\label{class_tasks_1_1_discrete_1_1_landing_linear_a290890c1d3a91803249a1f5d62bc658f} 
+\index{Tasks\+::\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Discrete\+::\+Landing\+Linear}!G@{G}}
+\index{G@{G}!Tasks\+::\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Discrete\+::\+Landing\+Linear}}
+\subsubsection{\texorpdfstring{G()}{G()}}
+{\footnotesize\ttfamily Matrix Tasks\+::\+Discrete\+::\+Landing\+Linear\+::G (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Структурная функция коррекции $G_k(m, D)$. 
+
+Она имеет следующий вид для
+
+
+\begin{DoxyItemize}
+\item гауссовского приближения\+: \[G_k(m, D) = \nabla_m h_k(m,D),\]
+\item линеаризованного приближения\+: \[G_k(m, D) = \nabla_m b_k(m, M[W_k]).\] 
+\end{DoxyItemize}
+
+Замещает \hyperlink{class_core_1_1_discrete_task_a5fd0bac544a6e124ad071043a37881c3}{Core\+::\+Discrete\+Task}.
+
+
+
+См. определение в файле d\+\_\+landing\+\_\+linear.\+cc строка 119
+
+\hypertarget{class_tasks_1_1_discrete_1_1_landing_linear_a9b1f90547fca3b460b48693b2e16219a}{}\label{class_tasks_1_1_discrete_1_1_landing_linear_a9b1f90547fca3b460b48693b2e16219a} 
+\index{Tasks\+::\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Discrete\+::\+Landing\+Linear}!h@{h}}
+\index{h@{h}!Tasks\+::\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Discrete\+::\+Landing\+Linear}}
+\subsubsection{\texorpdfstring{h()}{h()}}
+{\footnotesize\ttfamily Vector Tasks\+::\+Discrete\+::\+Landing\+Linear\+::h (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Структурная функция коррекции $h_k(m, D)$. 
+
+Она имеет следующий вид для
+
+
+\begin{DoxyItemize}
+\item гауссовского приближения\+: \[h_k(m, D) = M_N[M[b_k(m, W_k)] \ |\ m, D],\]
+\item линеаризованного приближения\+: \[h_k(m, D) = b_k(m, M[W_k]).\] 
+\end{DoxyItemize}
+
+Замещает \hyperlink{class_core_1_1_discrete_task_a09eb964bfe445c1905758bfff4fc1537}{Core\+::\+Discrete\+Task}.
+
+
+
+См. определение в файле d\+\_\+landing\+\_\+linear.\+cc строка 108
+
+\hypertarget{class_tasks_1_1_discrete_1_1_landing_linear_a8f2022967fae3dde3e7d2df3f7fa98f8}{}\label{class_tasks_1_1_discrete_1_1_landing_linear_a8f2022967fae3dde3e7d2df3f7fa98f8} 
+\index{Tasks\+::\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Discrete\+::\+Landing\+Linear}!tau@{tau}}
+\index{tau@{tau}!Tasks\+::\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Discrete\+::\+Landing\+Linear}}
+\subsubsection{\texorpdfstring{tau()}{tau()}}
+{\footnotesize\ttfamily Vector Tasks\+::\+Discrete\+::\+Landing\+Linear\+::tau (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Структурная функция прогноза $\tau_k(m, D)$. 
+
+Она имеет следующий вид для
+
+
+\begin{DoxyItemize}
+\item гауссовского приближения\+: \[\tau_k(m, D) = M_N[M[a_k(m, V_k)] \ |\ m, D],\]
+\item линеаризованного приближения\+: \[\tau_k(m, D) = a_k(m, M[V_k]).\] 
+\end{DoxyItemize}
+
+Замещает \hyperlink{class_core_1_1_discrete_task_aed780d7286bc88d0a2debb585601b3ca}{Core\+::\+Discrete\+Task}.
+
+
+
+См. определение в файле d\+\_\+landing\+\_\+linear.\+cc строка 93
+
+\hypertarget{class_tasks_1_1_discrete_1_1_landing_linear_a88dda707914dea5698748f445563400f}{}\label{class_tasks_1_1_discrete_1_1_landing_linear_a88dda707914dea5698748f445563400f} 
+\index{Tasks\+::\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Discrete\+::\+Landing\+Linear}!Theta@{Theta}}
+\index{Theta@{Theta}!Tasks\+::\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Discrete\+::\+Landing\+Linear}}
+\subsubsection{\texorpdfstring{Theta()}{Theta()}}
+{\footnotesize\ttfamily Matrix Tasks\+::\+Discrete\+::\+Landing\+Linear\+::\+Theta (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Структурная функция прогноза $\Theta_k(m, D)$. 
+
+Она имеет следующий вид для
+
+
+\begin{DoxyItemize}
+\item гауссовского приближения\+: \[\Theta_k(m, D) = M_N[M[a_k(m, V_k)\cdot a_k^T(m, V_k)]\ |\ m, D] - \tau_k(m,D) \cdot \tau_k^T(m, D),\]
+\item линеаризованного приближения\+: \[\Theta_k(m, D) = A_k^x(m) \cdot D \cdot A_k^{xT}(m) + A_k^v(m) \cdot D[V_k] \cdot A_k^{v T}(m)\]
+\end{DoxyItemize}
+
+Здесь $A_k^x(x) = \nabla_x a_k(x,M[V_k]),\ A_k^v(x) = \nabla_v a_k(x,M[V_k])$. 
+
+Замещает \hyperlink{class_core_1_1_discrete_task_a18906155257c5febd937f2f0c633e5ed}{Core\+::\+Discrete\+Task}.
+
+
+
+См. определение в файле d\+\_\+landing\+\_\+linear.\+cc строка 98
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/tasks/discrete/d\+\_\+landing\+\_\+linear.\+h\item 
+src/tasks/discrete/d\+\_\+landing\+\_\+linear.\+cc\end{DoxyCompactItemize}

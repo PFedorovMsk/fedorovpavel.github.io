@@ -1,0 +1,82 @@
+\hypertarget{class_filters_1_1_continuous_1_1_f_o_s}{}\section{Класс Filters\+:\+:Continuous\+:\+:F\+OS}
+\label{class_filters_1_1_continuous_1_1_f_o_s}\index{Filters\+::\+Continuous\+::\+F\+OS@{Filters\+::\+Continuous\+::\+F\+OS}}
+
+
+Класс, реализующий непрерывный фильтр оптимальной структуры.  
+
+
+
+
+{\ttfamily \#include \char`\"{}c\+\_\+fos.\+h\char`\"{}}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_filters_1_1_continuous_1_1_f_o_s_a37bf6963e1fc25a0a709d53299fc2951}{}\label{class_filters_1_1_continuous_1_1_f_o_s_a37bf6963e1fc25a0a709d53299fc2951} 
+\hyperlink{class_filters_1_1_continuous_1_1_f_o_s_a37bf6963e1fc25a0a709d53299fc2951}{F\+OS} (\hyperlink{namespace_core_a4811af8148ba137d644b9a61a042cf03}{Core\+::\+Ptr\+Filter\+Parameters} \hyperlink{class_core_1_1_filter_a44aa749b49ba46256975ce545531ecf7}{params}, \hyperlink{namespace_core_abfda8f69fcacfcea2696549b548ed737}{Core\+::\+Ptr\+Task} task)
+\begin{DoxyCompactList}\small\item\em Конструктор. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_filters_1_1_continuous_1_1_f_o_s_a6db8005b66c345d94cdd4498edad9022}{algorithm} () override
+\begin{DoxyCompactList}\small\item\em Выполняет алгоритм. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Дополнительные унаследованные члены}
+
+
+\subsection{Подробное описание}
+Класс, реализующий непрерывный фильтр оптимальной структуры. 
+
+См. определение в файле c\+\_\+fos.\+h строка 16
+
+
+
+Граф наследования\+:Filters\+:\+:Continuous\+:\+:F\+OS\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_filters_1_1_continuous_1_1_f_o_s__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Filters\+:\+:Continuous\+:\+:F\+OS\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_filters_1_1_continuous_1_1_f_o_s__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Методы}
+\hypertarget{class_filters_1_1_continuous_1_1_f_o_s_a6db8005b66c345d94cdd4498edad9022}{}\label{class_filters_1_1_continuous_1_1_f_o_s_a6db8005b66c345d94cdd4498edad9022} 
+\index{Filters\+::\+Continuous\+::\+F\+OS@{Filters\+::\+Continuous\+::\+F\+OS}!algorithm@{algorithm}}
+\index{algorithm@{algorithm}!Filters\+::\+Continuous\+::\+F\+OS@{Filters\+::\+Continuous\+::\+F\+OS}}
+\subsubsection{\texorpdfstring{algorithm()}{algorithm()}}
+{\footnotesize\ttfamily void Filters\+::\+Continuous\+::\+F\+O\+S\+::algorithm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Выполняет алгоритм. 
+
+Вектор $Z_t$ оценки вычисляется следующим образом\+: \[dZ_t = a(t,Z_t)dt + K(t,Z_t, \Gamma_t)\cdot [ dY_t - c(t,Z_t)dt],\] \[\Gamma_t = D_t^x - D_t^z,\]
+
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{class_core_1_1_continuous_filter}{Core\+::\+Continuous\+Filter} 
+
+\hyperlink{class_core_1_1_continuous_task}{Core\+::\+Continuous\+Task} 
+\end{DoxySeeAlso}
+
+
+Замещает \hyperlink{class_core_1_1_filter_a438681ee3e54aba2148042d9f8011ab8}{Core\+::\+Filter}.
+
+
+
+См. определение в файле c\+\_\+fos.\+cc строка 20
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/filters/continuous/c\+\_\+fos.\+h\item 
+src/filters/continuous/c\+\_\+fos.\+cc\end{DoxyCompactItemize}

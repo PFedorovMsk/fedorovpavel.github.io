@@ -12,12 +12,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -140,7 +134,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:ae8bb3b004400941317a1e9fdc1ca2c58 inherit pro_methods_class_core_1_1_filter"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализирует массивы по входным данным. <br /></td></tr>
 <tr class="separator:ae8bb3b004400941317a1e9fdc1ca2c58 inherit pro_methods_class_core_1_1_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84c7d1ebe3931974c3beccf27f13c1c5 inherit pro_methods_class_core_1_1_filter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter.html#a84c7d1ebe3931974c3beccf27f13c1c5">writeResult</a> (size_t n, bool copy=false)</td></tr>
-<tr class="memdesc:a84c7d1ebe3931974c3beccf27f13c1c5 inherit pro_methods_class_core_1_1_filter"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет и записывает результаты для времени \(t_n\).  <a href="class_core_1_1_filter.html#a84c7d1ebe3931974c3beccf27f13c1c5">Подробнее...</a><br /></td></tr>
+<tr class="memdesc:a84c7d1ebe3931974c3beccf27f13c1c5 inherit pro_methods_class_core_1_1_filter"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет и записывает результаты для времени <img class="formulaInl" alt="$t_n$" src="form_75.png"/>.  <a href="class_core_1_1_filter.html#a84c7d1ebe3931974c3beccf27f13c1c5">Подробнее...</a><br /></td></tr>
 <tr class="separator:a84c7d1ebe3931974c3beccf27f13c1c5 inherit pro_methods_class_core_1_1_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78692f8ecdfe6e2170a5d5acb0f69210 inherit pro_methods_class_core_1_1_filter"><td class="memItemLeft" align="right" valign="top"><a id="a78692f8ecdfe6e2170a5d5acb0f69210"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_core_1_1_filter.html#a78692f8ecdfe6e2170a5d5acb0f69210">updatePercent</a> (int p) const</td></tr>
@@ -177,16 +171,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_filters_1_1_continuous_1_1_f_o_s__inherit__graph.svg" width="178" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_filters_1_1_continuous_1_1_f_o_s__inherit__graph.svg" width="178" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса Filters::Continuous::FOS:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_filters_1_1_continuous_1_1_f_o_s__coll__graph.svg" width="178" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_filters_1_1_continuous_1_1_f_o_s__coll__graph.svg" width="178" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
 <h2 class="groupheader">Методы</h2>
 <a id="a6db8005b66c345d94cdd4498edad9022"></a>
@@ -213,11 +205,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><div class="memdoc">
 
 <p>Выполняет алгоритм. </p>
-<p>Вектор \(Z_t\) оценки вычисляется следующим образом: </p><p class="formulaDsp">
-\[dZ_t = a(t,Z_t)dt + K(t,Z_t, \Gamma_t)\cdot [ dY_t - c(t,Z_t)dt],\]
+<p>Вектор <img class="formulaInl" alt="$Z_t$" src="form_118.png"/> оценки вычисляется следующим образом: </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[dZ_t = a(t,Z_t)dt + K(t,Z_t, \Gamma_t)\cdot [ dY_t - c(t,Z_t)dt],\]" src="form_122.png"/>
 </p>
  <p class="formulaDsp">
-\[\Gamma_t = D_t^x - D_t^z,\]
+<img class="formulaDsp" alt="\[\Gamma_t = D_t^x - D_t^z,\]" src="form_123.png"/>
 </p>
 <dl class="section see"><dt>См. также</dt><dd><a class="el" href="class_core_1_1_continuous_filter.html" title="Базовый класс для всех непрерывныз фильтров оптимальной структуры. ">Core::ContinuousFilter</a> </dd>
 <dd>

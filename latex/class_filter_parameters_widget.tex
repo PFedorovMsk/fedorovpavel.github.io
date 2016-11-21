@@ -1,0 +1,449 @@
+\hypertarget{class_filter_parameters_widget}{}\section{Класс Filter\+Parameters\+Widget}
+\label{class_filter_parameters_widget}\index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}}
+
+
+Класс виджета, предаставляющего элементы управления параметрами фильтрации.  
+
+
+
+
+{\ttfamily \#include \char`\"{}filter\+\_\+parameters\+\_\+widget.\+h\char`\"{}}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_filter_parameters_widget_ade6b317bb498ff3785cbf380ada8b214}{}\label{class_filter_parameters_widget_ade6b317bb498ff3785cbf380ada8b214} 
+\hyperlink{class_filter_parameters_widget_ade6b317bb498ff3785cbf380ada8b214}{Filter\+Parameters\+Widget} (Q\+Widget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Конструктор. \end{DoxyCompactList}\item 
+\hypertarget{class_filter_parameters_widget_ab3394a4f66caf8faa7886b55bba647e1}{}\label{class_filter_parameters_widget_ab3394a4f66caf8faa7886b55bba647e1} 
+\hyperlink{class_filter_parameters_widget_ab3394a4f66caf8faa7886b55bba647e1}{$\sim$\+Filter\+Parameters\+Widget} ()
+\begin{DoxyCompactList}\small\item\em Деструктор. \end{DoxyCompactList}\item 
+\hypertarget{class_filter_parameters_widget_a39ed363f640272273b3e4eb82bc75a21}{}\label{class_filter_parameters_widget_a39ed363f640272273b3e4eb82bc75a21} 
+\hyperlink{namespace_core_a4811af8148ba137d644b9a61a042cf03}{Core\+::\+Ptr\+Filter\+Parameters} \hyperlink{class_filter_parameters_widget_a39ed363f640272273b3e4eb82bc75a21}{parameters} ()
+\begin{DoxyCompactList}\small\item\em Возвращает указатель на текущий набор параметров. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Закрытые слоты}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_filter_parameters_widget_a80199438a8dededc61f17d7acd0e2487}{on\+Max\+Time\+Changed} (double value)
+\begin{DoxyCompactList}\small\item\em Устанавливает новое значение времени окончания фильтрации. \end{DoxyCompactList}\item 
+void \hyperlink{class_filter_parameters_widget_afdabd842b69fd6a4b65b4d44a5c81c55}{on\+Measurement\+Step\+Changed} (double value)
+\begin{DoxyCompactList}\small\item\em Устанавливает новое значение интервала между измерениями. \end{DoxyCompactList}\item 
+void \hyperlink{class_filter_parameters_widget_aa78cbb97c3a70babc20c35cf0e6f346a}{on\+Prediction\+Step\+Changed} (double value)
+\begin{DoxyCompactList}\small\item\em Устанавливает новое значение интервала между прогнозами. \end{DoxyCompactList}\item 
+void \hyperlink{class_filter_parameters_widget_a4c0b14d9be53fd4b45179037e09c33b3}{on\+Prediction\+Count\+Changed} (int value)
+\begin{DoxyCompactList}\small\item\em Устанавливает новое значение интервала между прогнозами (по их количеству). \end{DoxyCompactList}\item 
+void \hyperlink{class_filter_parameters_widget_a8461deaa884f5615241d6730b73f9d7b}{on\+Integration\+Step\+Changed} (double value)
+\begin{DoxyCompactList}\small\item\em Устанавливает новое значение шага интегрирования. \end{DoxyCompactList}\item 
+void \hyperlink{class_filter_parameters_widget_a6d01e0b6bdb2b38f03a6935fac62a31c}{on\+Fix\+All\+Toggled} (bool checked)
+\begin{DoxyCompactList}\small\item\em Включает / выключает возможность изменять параметры. \end{DoxyCompactList}\item 
+void \hyperlink{class_filter_parameters_widget_aa5168232b5731eafd599c451fd9a54f9}{on\+Prediction\+Step\+Toggled} (bool checked)
+\begin{DoxyCompactList}\small\item\em Вклачает режим изменения интервала между прогнозами по его значению. \end{DoxyCompactList}\item 
+void \hyperlink{class_filter_parameters_widget_af00a1550252f080c7647f3fbf684587b}{on\+Prediction\+Count\+Toggled} (bool checked)
+\begin{DoxyCompactList}\small\item\em Вклачает режим изменения интервала между прогнозами по их количеству между соседними измерениями. \end{DoxyCompactList}\item 
+void \hyperlink{class_filter_parameters_widget_adacd531098565f7b21bd8d958a35fa74}{on\+Order\+Mult\+Changed} (int value)
+\begin{DoxyCompactList}\small\item\em Устанавливает новое значение кратности порядка фильтра. \end{DoxyCompactList}\item 
+void \hyperlink{class_filter_parameters_widget_afc9adb2c97bb297c29a86c2e9ee123b5}{on\+Sample\+Size\+Changed} (int value)
+\begin{DoxyCompactList}\small\item\em Устанавливает новый размер (объём) выборок для метода Монте-\/Карло. \end{DoxyCompactList}\item 
+void \hyperlink{class_filter_parameters_widget_ad952425cf2dabf76a2f28d19caa2641f}{on\+Update\+Values} ()
+\begin{DoxyCompactList}\small\item\em Обновляет значения во всех элементах. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_filter_parameters_widget_aeadea883731fe8ef61b3577319578e02}{load\+Fonts} ()
+\begin{DoxyCompactList}\small\item\em Загружает шрифты и устанавливает их параметры (начертание, размер и т.\+д.). \end{DoxyCompactList}\item 
+\hypertarget{class_filter_parameters_widget_a4f05c0618d6e1f55521da3390266821f}{}\label{class_filter_parameters_widget_a4f05c0618d6e1f55521da3390266821f} 
+void \hyperlink{class_filter_parameters_widget_a4f05c0618d6e1f55521da3390266821f}{init\+Controls} ()
+\begin{DoxyCompactList}\small\item\em Инициализирует управляющие элементы и связывает их сигналы с нужными слотами. \end{DoxyCompactList}\item 
+\hypertarget{class_filter_parameters_widget_a2381f9066d935a3e140d29e785d23f80}{}\label{class_filter_parameters_widget_a2381f9066d935a3e140d29e785d23f80} 
+void \hyperlink{class_filter_parameters_widget_a2381f9066d935a3e140d29e785d23f80}{init\+Layouts} ()
+\begin{DoxyCompactList}\small\item\em Устанавливает расположение всех элементов на виджете. \end{DoxyCompactList}\item 
+void \hyperlink{class_filter_parameters_widget_afca68a62342f0aa6be9133df55134993}{set\+Range} (Q\+Double\+Spin\+Box $\ast$dsb, double min, double max)
+\begin{DoxyCompactList}\small\item\em Изменяет диапозон значений Q\+Double\+Spin\+Box. \end{DoxyCompactList}\item 
+void \hyperlink{class_filter_parameters_widget_a5ba781e8221a8cc8003a950fafed1fc1}{set\+Range} (Q\+Spin\+Box $\ast$sb, int min, int max)
+\begin{DoxyCompactList}\small\item\em Изменяет диапозон значений Q\+Spin\+Box. \end{DoxyCompactList}\item 
+int \hyperlink{class_filter_parameters_widget_aac02d00c8d38c893f046e160765ded10}{compute\+Minimum\+Width} ()
+\begin{DoxyCompactList}\small\item\em Вычисляет минимальную ширину виджета. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_filter_parameters_widget_ae3037e7e6848fc749764de820841b7fb}{}\label{class_filter_parameters_widget_ae3037e7e6848fc749764de820841b7fb} 
+Q\+Double\+Spin\+Box $\ast$ {\bfseries m\+\_\+dsb\+Max\+Time}
+\item 
+\hypertarget{class_filter_parameters_widget_a7d317d8c6f92d6249cbdc67d6b626393}{}\label{class_filter_parameters_widget_a7d317d8c6f92d6249cbdc67d6b626393} 
+Q\+Double\+Spin\+Box $\ast$ {\bfseries m\+\_\+dsb\+Measurement\+Step}
+\item 
+\hypertarget{class_filter_parameters_widget_ab24d59b054e38f00b958beca7d4e96ad}{}\label{class_filter_parameters_widget_ab24d59b054e38f00b958beca7d4e96ad} 
+Q\+Double\+Spin\+Box $\ast$ {\bfseries m\+\_\+dsb\+Prediction\+Step}
+\item 
+\hypertarget{class_filter_parameters_widget_a3cf102cc0aa0e1fd396d2292a1521dd9}{}\label{class_filter_parameters_widget_a3cf102cc0aa0e1fd396d2292a1521dd9} 
+Q\+Spin\+Box $\ast$ {\bfseries m\+\_\+sb\+Prediction\+Count}
+\item 
+\hypertarget{class_filter_parameters_widget_ab4b05c04ba0281a8ead5f20e1b836519}{}\label{class_filter_parameters_widget_ab4b05c04ba0281a8ead5f20e1b836519} 
+Q\+Double\+Spin\+Box $\ast$ {\bfseries m\+\_\+dsb\+Integration\+Step}
+\item 
+\hypertarget{class_filter_parameters_widget_a0e9f6b5eb0b6b0e7674ce233d04adcfd}{}\label{class_filter_parameters_widget_a0e9f6b5eb0b6b0e7674ce233d04adcfd} 
+Q\+Spin\+Box $\ast$ {\bfseries m\+\_\+sb\+Order\+Multiplicity}
+\item 
+\hypertarget{class_filter_parameters_widget_abe75d5ab706fb03c369040b9f59a7f20}{}\label{class_filter_parameters_widget_abe75d5ab706fb03c369040b9f59a7f20} 
+Q\+Spin\+Box $\ast$ {\bfseries m\+\_\+sb\+Sample\+Size}
+\item 
+\hypertarget{class_filter_parameters_widget_a6bd5092ef008cb0cf761b508d37930e9}{}\label{class_filter_parameters_widget_a6bd5092ef008cb0cf761b508d37930e9} 
+Q\+Radio\+Button $\ast$ {\bfseries m\+\_\+radio\+Prediction\+Step}
+\item 
+\hypertarget{class_filter_parameters_widget_a1adc83583bc0c0a3aa5d39aa7643c3bc}{}\label{class_filter_parameters_widget_a1adc83583bc0c0a3aa5d39aa7643c3bc} 
+Q\+Radio\+Button $\ast$ {\bfseries m\+\_\+radio\+Prediction\+Count}
+\item 
+\hypertarget{class_filter_parameters_widget_a0309087dfdcd0b9266fda00298aa8497}{}\label{class_filter_parameters_widget_a0309087dfdcd0b9266fda00298aa8497} 
+Q\+Check\+Box $\ast$ {\bfseries m\+\_\+check\+Fix\+All}
+\item 
+\hypertarget{class_filter_parameters_widget_a1df61481716842b7b816a147590573f7}{}\label{class_filter_parameters_widget_a1df61481716842b7b816a147590573f7} 
+Q\+Push\+Button $\ast$ {\bfseries m\+\_\+btn\+Update}
+\item 
+bool \hyperlink{class_filter_parameters_widget_a972435cbd7b57d2c3de2f933e7616c1c}{m\+\_\+update\+On}
+\item 
+\hypertarget{class_filter_parameters_widget_a55cf14ba922106b95c07267afb79d92a}{}\label{class_filter_parameters_widget_a55cf14ba922106b95c07267afb79d92a} 
+\hyperlink{namespace_core_a4811af8148ba137d644b9a61a042cf03}{Core\+::\+Ptr\+Filter\+Parameters} {\bfseries m\+\_\+parameters}
+\item 
+\hypertarget{class_filter_parameters_widget_a9275e817244203bb801a4fdd7be409cf}{}\label{class_filter_parameters_widget_a9275e817244203bb801a4fdd7be409cf} 
+Q\+Font {\bfseries m\+\_\+regular\+Font}
+\item 
+\hypertarget{class_filter_parameters_widget_a5b2a163e0343bc8005a1574bbe2904ad}{}\label{class_filter_parameters_widget_a5b2a163e0343bc8005a1574bbe2904ad} 
+Q\+Font {\bfseries m\+\_\+monotype\+Font}
+\item 
+\hypertarget{class_filter_parameters_widget_a64b06f79e5dea28727141deacd44e9fb}{}\label{class_filter_parameters_widget_a64b06f79e5dea28727141deacd44e9fb} 
+Q\+Font {\bfseries m\+\_\+labels\+Font}
+\item 
+\hypertarget{class_filter_parameters_widget_a008425a55ae4ad995ae6560e37479fee}{}\label{class_filter_parameters_widget_a008425a55ae4ad995ae6560e37479fee} 
+Q\+Font {\bfseries m\+\_\+spin\+Boxes\+Font}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Класс виджета, предаставляющего элементы управления параметрами фильтрации. 
+
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{class_core_1_1_filter_parameters}{Core\+::\+Filter\+Parameters} 
+\end{DoxySeeAlso}
+
+
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+h строка 25
+
+
+
+Граф наследования\+:Filter\+Parameters\+Widget\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_filter_parameters_widget__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Filter\+Parameters\+Widget\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_filter_parameters_widget__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Методы}
+\hypertarget{class_filter_parameters_widget_aac02d00c8d38c893f046e160765ded10}{}\label{class_filter_parameters_widget_aac02d00c8d38c893f046e160765ded10} 
+\index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!compute\+Minimum\+Width@{compute\+Minimum\+Width}}
+\index{compute\+Minimum\+Width@{compute\+Minimum\+Width}!Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}}
+\subsubsection{\texorpdfstring{compute\+Minimum\+Width()}{computeMinimumWidth()}}
+{\footnotesize\ttfamily int Filter\+Parameters\+Widget\+::compute\+Minimum\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Вычисляет минимальную ширину виджета. 
+
+Все элементы расположены на сетке по 4 в одной строке.
+
+Чтобы всё было \char`\"{}ровно\char`\"{} вычисляются 4 значения, каждое из которых соответствуют самому длинному элементу в соответсвующей колонке.
+
+Это, в частности, необходимо при изменении шрифтов, так как размеры элементов зависят от них. 
+
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 27
+
+\hypertarget{class_filter_parameters_widget_aeadea883731fe8ef61b3577319578e02}{}\label{class_filter_parameters_widget_aeadea883731fe8ef61b3577319578e02} 
+\index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!load\+Fonts@{load\+Fonts}}
+\index{load\+Fonts@{load\+Fonts}!Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}}
+\subsubsection{\texorpdfstring{load\+Fonts()}{loadFonts()}}
+{\footnotesize\ttfamily void Filter\+Parameters\+Widget\+::load\+Fonts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Загружает шрифты и устанавливает их параметры (начертание, размер и т.\+д.). 
+
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{class_font_manager}{Font\+Manager}. 
+\end{DoxySeeAlso}
+
+
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 20
+
+\hypertarget{class_filter_parameters_widget_a6d01e0b6bdb2b38f03a6935fac62a31c}{}\label{class_filter_parameters_widget_a6d01e0b6bdb2b38f03a6935fac62a31c} 
+\index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!on\+Fix\+All\+Toggled@{on\+Fix\+All\+Toggled}}
+\index{on\+Fix\+All\+Toggled@{on\+Fix\+All\+Toggled}!Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}}
+\subsubsection{\texorpdfstring{on\+Fix\+All\+Toggled}{onFixAllToggled}}
+{\footnotesize\ttfamily void Filter\+Parameters\+Widget\+::on\+Fix\+All\+Toggled (\begin{DoxyParamCaption}\item[{bool}]{checked }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Включает / выключает возможность изменять параметры. 
+
+Слот. Реакция на сигнал toggled(bool) элемента m\+\_\+check\+Fix\+All. 
+
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 267
+
+\hypertarget{class_filter_parameters_widget_a8461deaa884f5615241d6730b73f9d7b}{}\label{class_filter_parameters_widget_a8461deaa884f5615241d6730b73f9d7b} 
+\index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!on\+Integration\+Step\+Changed@{on\+Integration\+Step\+Changed}}
+\index{on\+Integration\+Step\+Changed@{on\+Integration\+Step\+Changed}!Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}}
+\subsubsection{\texorpdfstring{on\+Integration\+Step\+Changed}{onIntegrationStepChanged}}
+{\footnotesize\ttfamily void Filter\+Parameters\+Widget\+::on\+Integration\+Step\+Changed (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Устанавливает новое значение шага интегрирования. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em value} & -\/ величина шага $\Delta t$.\\
+\hline
+\end{DoxyParams}
+Слот. Реакция на сигнал value\+Changed(double) элемента m\+\_\+dsb\+Integration\+Step. 
+
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 260
+
+\hypertarget{class_filter_parameters_widget_a80199438a8dededc61f17d7acd0e2487}{}\label{class_filter_parameters_widget_a80199438a8dededc61f17d7acd0e2487} 
+\index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!on\+Max\+Time\+Changed@{on\+Max\+Time\+Changed}}
+\index{on\+Max\+Time\+Changed@{on\+Max\+Time\+Changed}!Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}}
+\subsubsection{\texorpdfstring{on\+Max\+Time\+Changed}{onMaxTimeChanged}}
+{\footnotesize\ttfamily void Filter\+Parameters\+Widget\+::on\+Max\+Time\+Changed (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Устанавливает новое значение времени окончания фильтрации. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em value} & -\/ время $T_{max}$.\\
+\hline
+\end{DoxyParams}
+Слот. Реакция на сигнал value\+Changed(double) элемента m\+\_\+dsb\+Max\+Time. 
+
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 196
+
+\hypertarget{class_filter_parameters_widget_afdabd842b69fd6a4b65b4d44a5c81c55}{}\label{class_filter_parameters_widget_afdabd842b69fd6a4b65b4d44a5c81c55} 
+\index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!on\+Measurement\+Step\+Changed@{on\+Measurement\+Step\+Changed}}
+\index{on\+Measurement\+Step\+Changed@{on\+Measurement\+Step\+Changed}!Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}}
+\subsubsection{\texorpdfstring{on\+Measurement\+Step\+Changed}{onMeasurementStepChanged}}
+{\footnotesize\ttfamily void Filter\+Parameters\+Widget\+::on\+Measurement\+Step\+Changed (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Устанавливает новое значение интервала между измерениями. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em value} & -\/ величина интервала $\delta t$.\\
+\hline
+\end{DoxyParams}
+Слот. Реакция на сигнал value\+Changed(double) элемента m\+\_\+dsb\+Measurement\+Step. 
+
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 205
+
+\hypertarget{class_filter_parameters_widget_adacd531098565f7b21bd8d958a35fa74}{}\label{class_filter_parameters_widget_adacd531098565f7b21bd8d958a35fa74} 
+\index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!on\+Order\+Mult\+Changed@{on\+Order\+Mult\+Changed}}
+\index{on\+Order\+Mult\+Changed@{on\+Order\+Mult\+Changed}!Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}}
+\subsubsection{\texorpdfstring{on\+Order\+Mult\+Changed}{onOrderMultChanged}}
+{\footnotesize\ttfamily void Filter\+Parameters\+Widget\+::on\+Order\+Mult\+Changed (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Устанавливает новое значение кратности порядка фильтра. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em value} & -\/ новое значение кратности $l$ порядка $p = l\cdot dim(Y)$.\\
+\hline
+\end{DoxyParams}
+Слот. Реакция на сигнал value\+Changed(int) элемента m\+\_\+sb\+Order\+Multiplicity. 
+
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 289
+
+\hypertarget{class_filter_parameters_widget_a4c0b14d9be53fd4b45179037e09c33b3}{}\label{class_filter_parameters_widget_a4c0b14d9be53fd4b45179037e09c33b3} 
+\index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!on\+Prediction\+Count\+Changed@{on\+Prediction\+Count\+Changed}}
+\index{on\+Prediction\+Count\+Changed@{on\+Prediction\+Count\+Changed}!Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}}
+\subsubsection{\texorpdfstring{on\+Prediction\+Count\+Changed}{onPredictionCountChanged}}
+{\footnotesize\ttfamily void Filter\+Parameters\+Widget\+::on\+Prediction\+Count\+Changed (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Устанавливает новое значение интервала между прогнозами (по их количеству). 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em value} & -\/ количество прогнозов $L$ на интервале $\delta t$.\\
+\hline
+\end{DoxyParams}
+Слот. Реакция на сигнал value\+Changed(int) элемента m\+\_\+sb\+Prediction\+Count. 
+
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 253
+
+\hypertarget{class_filter_parameters_widget_af00a1550252f080c7647f3fbf684587b}{}\label{class_filter_parameters_widget_af00a1550252f080c7647f3fbf684587b} 
+\index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!on\+Prediction\+Count\+Toggled@{on\+Prediction\+Count\+Toggled}}
+\index{on\+Prediction\+Count\+Toggled@{on\+Prediction\+Count\+Toggled}!Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}}
+\subsubsection{\texorpdfstring{on\+Prediction\+Count\+Toggled}{onPredictionCountToggled}}
+{\footnotesize\ttfamily void Filter\+Parameters\+Widget\+::on\+Prediction\+Count\+Toggled (\begin{DoxyParamCaption}\item[{bool}]{checked }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Вклачает режим изменения интервала между прогнозами по их количеству между соседними измерениями. 
+
+Слот. Реакция на сигнал toggled(bool) элемента m\+\_\+radio\+Prediction\+Count. 
+
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 285
+
+\hypertarget{class_filter_parameters_widget_aa78cbb97c3a70babc20c35cf0e6f346a}{}\label{class_filter_parameters_widget_aa78cbb97c3a70babc20c35cf0e6f346a} 
+\index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!on\+Prediction\+Step\+Changed@{on\+Prediction\+Step\+Changed}}
+\index{on\+Prediction\+Step\+Changed@{on\+Prediction\+Step\+Changed}!Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}}
+\subsubsection{\texorpdfstring{on\+Prediction\+Step\+Changed}{onPredictionStepChanged}}
+{\footnotesize\ttfamily void Filter\+Parameters\+Widget\+::on\+Prediction\+Step\+Changed (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Устанавливает новое значение интервала между прогнозами. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em value} & -\/ величина интервала $\delta \tau$.\\
+\hline
+\end{DoxyParams}
+Слот. Реакция на сигнал value\+Changed(double) элемента m\+\_\+dsb\+Prediction\+Step. 
+
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 232
+
+\hypertarget{class_filter_parameters_widget_aa5168232b5731eafd599c451fd9a54f9}{}\label{class_filter_parameters_widget_aa5168232b5731eafd599c451fd9a54f9} 
+\index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!on\+Prediction\+Step\+Toggled@{on\+Prediction\+Step\+Toggled}}
+\index{on\+Prediction\+Step\+Toggled@{on\+Prediction\+Step\+Toggled}!Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}}
+\subsubsection{\texorpdfstring{on\+Prediction\+Step\+Toggled}{onPredictionStepToggled}}
+{\footnotesize\ttfamily void Filter\+Parameters\+Widget\+::on\+Prediction\+Step\+Toggled (\begin{DoxyParamCaption}\item[{bool}]{checked }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Вклачает режим изменения интервала между прогнозами по его значению. 
+
+Слот. Реакция на сигнал toggled(bool) элемента m\+\_\+radio\+Prediction\+Step. 
+
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 280
+
+\hypertarget{class_filter_parameters_widget_afc9adb2c97bb297c29a86c2e9ee123b5}{}\label{class_filter_parameters_widget_afc9adb2c97bb297c29a86c2e9ee123b5} 
+\index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!on\+Sample\+Size\+Changed@{on\+Sample\+Size\+Changed}}
+\index{on\+Sample\+Size\+Changed@{on\+Sample\+Size\+Changed}!Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}}
+\subsubsection{\texorpdfstring{on\+Sample\+Size\+Changed}{onSampleSizeChanged}}
+{\footnotesize\ttfamily void Filter\+Parameters\+Widget\+::on\+Sample\+Size\+Changed (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Устанавливает новый размер (объём) выборок для метода Монте-\/Карло. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em value} & -\/ новое значение размера выборок.\\
+\hline
+\end{DoxyParams}
+Слот. Реакция на сигнал value\+Changed(int) элемента m\+\_\+sb\+Sample\+Size. 
+
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 294
+
+\hypertarget{class_filter_parameters_widget_ad952425cf2dabf76a2f28d19caa2641f}{}\label{class_filter_parameters_widget_ad952425cf2dabf76a2f28d19caa2641f} 
+\index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!on\+Update\+Values@{on\+Update\+Values}}
+\index{on\+Update\+Values@{on\+Update\+Values}!Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}}
+\subsubsection{\texorpdfstring{on\+Update\+Values}{onUpdateValues}}
+{\footnotesize\ttfamily void Filter\+Parameters\+Widget\+::on\+Update\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Обновляет значения во всех элементах. 
+
+\begin{DoxyNote}{Заметки}
+Параметры хранятся в экземпляре класса \hyperlink{class_core_1_1_filter_parameters}{Core\+::\+Filter\+Parameters}. При изменении какого-\/либо параметра его значение предварительно корректируется внутри \hyperlink{class_core_1_1_filter_parameters}{Core\+::\+Filter\+Parameters}. Поэтому реально используемые в фильтре значения могут отличаться от тех, что пользователь видит на экране.
+\end{DoxyNote}
+При клике на кнопку \char`\"{}Обновить\char`\"{} во все элементы загружаются откорректированные актуальные данные.
+
+Слот. Реакция на сигнал clicked() элемента m\+\_\+btn\+Update. 
+
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 299
+
+\hypertarget{class_filter_parameters_widget_afca68a62342f0aa6be9133df55134993}{}\label{class_filter_parameters_widget_afca68a62342f0aa6be9133df55134993} 
+\index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!set\+Range@{set\+Range}}
+\index{set\+Range@{set\+Range}!Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}}
+\subsubsection{\texorpdfstring{set\+Range()}{setRange()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Filter\+Parameters\+Widget\+::set\+Range (\begin{DoxyParamCaption}\item[{Q\+Double\+Spin\+Box $\ast$}]{dsb,  }\item[{double}]{min,  }\item[{double}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Изменяет диапозон значений Q\+Double\+Spin\+Box. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em dsb} & -\/ указатель на элемент. \\
+\hline
+{\em min} & -\/ минимальное значение. \\
+\hline
+{\em max} & -\/ максимальное значение. \\
+\hline
+\end{DoxyParams}
+
+
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 47
+
+\hypertarget{class_filter_parameters_widget_a5ba781e8221a8cc8003a950fafed1fc1}{}\label{class_filter_parameters_widget_a5ba781e8221a8cc8003a950fafed1fc1} 
+\index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!set\+Range@{set\+Range}}
+\index{set\+Range@{set\+Range}!Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}}
+\subsubsection{\texorpdfstring{set\+Range()}{setRange()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Filter\+Parameters\+Widget\+::set\+Range (\begin{DoxyParamCaption}\item[{Q\+Spin\+Box $\ast$}]{sb,  }\item[{int}]{min,  }\item[{int}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Изменяет диапозон значений Q\+Spin\+Box. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em dsb} & -\/ указатель на элемент. \\
+\hline
+{\em min} & -\/ минимальное значение. \\
+\hline
+{\em max} & -\/ максимальное значение. \\
+\hline
+\end{DoxyParams}
+
+
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+cc строка 54
+
+
+
+\subsection{Данные класса}
+\hypertarget{class_filter_parameters_widget_a972435cbd7b57d2c3de2f933e7616c1c}{}\label{class_filter_parameters_widget_a972435cbd7b57d2c3de2f933e7616c1c} 
+\index{Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}!m\+\_\+update\+On@{m\+\_\+update\+On}}
+\index{m\+\_\+update\+On@{m\+\_\+update\+On}!Filter\+Parameters\+Widget@{Filter\+Parameters\+Widget}}
+\subsubsection{\texorpdfstring{m\+\_\+update\+On}{m\_updateOn}}
+{\footnotesize\ttfamily bool Filter\+Parameters\+Widget\+::m\+\_\+update\+On\hspace{0.3cm}{\ttfamily [private]}}
+
+Если true, то запрещает виджетам изменяться.
+
+Меньшие интервалы не могут превышать размером бОльшие. Чтобы всегда выполнялось $T_{max} \geq \delta t \geq \delta \tau \geq \Delta t$ и пользователь не мог ввести явно ошибочное значение, после каждого изменения перевычисляются диапозоны для всех элементов.
+
+Это может привести к изменению значения элемента, что вызовет соответствующий слот в ненужное время. Чтобы разрулить это и нужна эта переменная. 
+
+См. определение в файле filter\+\_\+parameters\+\_\+widget.\+h строка 188
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/gui/filter\+\_\+parameters\+\_\+widget.\+h\item 
+src/gui/filter\+\_\+parameters\+\_\+widget.\+cc\end{DoxyCompactItemize}

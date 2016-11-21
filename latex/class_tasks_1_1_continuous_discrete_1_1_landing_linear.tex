@@ -1,0 +1,268 @@
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_landing_linear}{}\section{Класс Tasks\+:\+:Continuous\+Discrete\+:\+:Landing\+Linear}
+\label{class_tasks_1_1_continuous_discrete_1_1_landing_linear}\index{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear}}
+
+
+Задача спуска ЛА на планету (непрерывно-\/дискретная, линеаризованная) для фильтров оптимальной структуры.  
+
+
+
+
+{\ttfamily \#include \char`\"{}cd\+\_\+landing\+\_\+linear.\+h\char`\"{}}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_landing_linear_ad474504f9db87de67ebd0d5fb44f35c2}{}\label{class_tasks_1_1_continuous_discrete_1_1_landing_linear_ad474504f9db87de67ebd0d5fb44f35c2} 
+\hyperlink{class_tasks_1_1_continuous_discrete_1_1_landing_linear_ad474504f9db87de67ebd0d5fb44f35c2}{Landing\+Linear} ()
+\begin{DoxyCompactList}\small\item\em Конструктор. \end{DoxyCompactList}\item 
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a8cd42e44fb7b1aec6e972230d50d23c3}{}\label{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a8cd42e44fb7b1aec6e972230d50d23c3} 
+Vector \hyperlink{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a8cd42e44fb7b1aec6e972230d50d23c3}{a} (const Vector \&x) const override
+\begin{DoxyCompactList}\small\item\em Функция сноса объекта $a(t,x)$. \end{DoxyCompactList}\item 
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a84cc48724e8d220d6c22c5750a2397d1}{}\label{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a84cc48724e8d220d6c22c5750a2397d1} 
+Matrix \hyperlink{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a84cc48724e8d220d6c22c5750a2397d1}{B} (const Vector \&x) const override
+\begin{DoxyCompactList}\small\item\em Функция диффузии объекта $B(t,x)$. \end{DoxyCompactList}\item 
+Vector \hyperlink{class_tasks_1_1_continuous_discrete_1_1_landing_linear_aa3bddd1de01a202030bbccc1994e10af}{c} (const Vector \&x) const override
+\begin{DoxyCompactList}\small\item\em Функция измерителя $c_k(X_k) = c_k(X_k, W_k)$. \end{DoxyCompactList}\item 
+Vector \hyperlink{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a1ee11cced65180b2a055b8ca848ef4e0}{tau} (const Vector \&m, const Matrix \&D) const override
+\begin{DoxyCompactList}\small\item\em Структурная функция прогноза $\tau(t, m, D)$. \end{DoxyCompactList}\item 
+Matrix \hyperlink{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a783147d41d5d8dff4facd246fc064bb4}{Theta} (const Vector \&m, const Matrix \&D) const override
+\begin{DoxyCompactList}\small\item\em Структурная функция прогноза $\Theta(t,m,D)$. \end{DoxyCompactList}\item 
+Matrix \hyperlink{class_tasks_1_1_continuous_discrete_1_1_landing_linear_ae584bc7b596882f07b18d2a39dcdfa32}{A} (const Vector \&m, const Matrix \&D) const override
+\begin{DoxyCompactList}\small\item\em Возвращает матрицу якоби $A(t, m, D)$ для функции $\tau(t, m, D)$. \end{DoxyCompactList}\item 
+Vector \hyperlink{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a66480881fd719faddafe5104b548db78}{h} (const Vector \&m, const Matrix \&D) const override
+\begin{DoxyCompactList}\small\item\em Структурная функция коррекции $h_k(m, D)$. \end{DoxyCompactList}\item 
+Matrix \hyperlink{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a3b589b0ac53f7fe936438bc7c82f5c3d}{G} (const Vector \&m, const Matrix \&D) const override
+\begin{DoxyCompactList}\small\item\em Структурная функция коррекции $G_k(m, D)$. \end{DoxyCompactList}\item 
+Matrix \hyperlink{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a5b5a327866160bf687dbc6d82a801ce8}{F} (const Vector \&m, const Matrix \&D) const override
+\begin{DoxyCompactList}\small\item\em Структурная функция коррекции $F_k(m, D)$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a1845731f06868b6a22cbd7184e0358ff}{}\label{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a1845731f06868b6a22cbd7184e0358ff} 
+void \hyperlink{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a1845731f06868b6a22cbd7184e0358ff}{load\+Params} () override
+\begin{DoxyCompactList}\small\item\em Загружает данные в локальные переменные после изменения параметров. \end{DoxyCompactList}\item 
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a4ff79b608d0ae91f8b01c9e938eb51f2}{}\label{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a4ff79b608d0ae91f8b01c9e938eb51f2} 
+double {\bfseries k} (double t) const
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a838994e67eb175e03da8e736d5c00910}{}\label{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a838994e67eb175e03da8e736d5c00910} 
+double {\bfseries m\+\_\+turn\+Time}
+\end{DoxyCompactItemize}
+\subsection*{Статические защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a475a823bed7fe3574009ed1c1308cafe}{}\label{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a475a823bed7fe3574009ed1c1308cafe} 
+static constexpr double {\bfseries KB} = 0.\+3
+\item 
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_landing_linear_ae874fa8bea9b4af9cdbabf3e69ef09f5}{}\label{class_tasks_1_1_continuous_discrete_1_1_landing_linear_ae874fa8bea9b4af9cdbabf3e69ef09f5} 
+static constexpr double {\bfseries BB} = 0.\+09
+\item 
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_landing_linear_ae4c050a50e6c6a62faf559c887f1d78e}{}\label{class_tasks_1_1_continuous_discrete_1_1_landing_linear_ae4c050a50e6c6a62faf559c887f1d78e} 
+static constexpr double {\bfseries CC} = 0.\+043333333333333333333333333333333333333333333333333
+\item 
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_landing_linear_ab0db010f0473b66dff76da034fc9d690}{}\label{class_tasks_1_1_continuous_discrete_1_1_landing_linear_ab0db010f0473b66dff76da034fc9d690} 
+static constexpr double {\bfseries GG} = 3.\+711\+E-\/3
+\item 
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a623317fbb8c161c556d5557b4fb91832}{}\label{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a623317fbb8c161c556d5557b4fb91832} 
+static constexpr double {\bfseries RR} = 3390.\+0
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Задача спуска ЛА на планету (непрерывно-\/дискретная, линеаризованная) для фильтров оптимальной структуры. 
+
+См. определение в файле cd\+\_\+landing\+\_\+linear.\+h строка 21
+
+
+
+Граф наследования\+:Tasks\+:\+:Continuous\+Discrete\+:\+:Landing\+Linear\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{class_tasks_1_1_continuous_discrete_1_1_landing_linear__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Tasks\+:\+:Continuous\+Discrete\+:\+:Landing\+Linear\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{class_tasks_1_1_continuous_discrete_1_1_landing_linear__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Методы}
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_landing_linear_ae584bc7b596882f07b18d2a39dcdfa32}{}\label{class_tasks_1_1_continuous_discrete_1_1_landing_linear_ae584bc7b596882f07b18d2a39dcdfa32} 
+\index{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear}!A@{A}}
+\index{A@{A}!Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear}}
+\subsubsection{\texorpdfstring{A()}{A()}}
+{\footnotesize\ttfamily Matrix Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear\+::A (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Возвращает матрицу якоби $A(t, m, D)$ для функции $\tau(t, m, D)$. 
+
+Она имеет следующий вид для
+
+
+\begin{DoxyItemize}
+\item гауссовского приближения\+: \[A(t, m, D) = \frac{d}{dm} \tau(t, m),\]
+\item линеаризованного приближения\+: \[A(t, m, D) = \frac{d}{dm} a(t, m).\] 
+\end{DoxyItemize}
+
+Замещает \hyperlink{class_core_1_1_continuous_discrete_task_a332d99b61aabb919bffe75d0eec05cfe}{Core\+::\+Continuous\+Discrete\+Task}.
+
+
+
+См. определение в файле cd\+\_\+landing\+\_\+linear.\+cc строка 97
+
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_landing_linear_aa3bddd1de01a202030bbccc1994e10af}{}\label{class_tasks_1_1_continuous_discrete_1_1_landing_linear_aa3bddd1de01a202030bbccc1994e10af} 
+\index{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear}!c@{c}}
+\index{c@{c}!Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear}}
+\subsubsection{\texorpdfstring{c()}{c()}}
+{\footnotesize\ttfamily Vector Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear\+::c (\begin{DoxyParamCaption}\item[{const Vector \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Функция измерителя $c_k(X_k) = c_k(X_k, W_k)$. 
+
+Шум $W_k$ генерируется внутри. 
+
+Замещает \hyperlink{class_core_1_1_continuous_discrete_task_a64ea27bc1e2a9e6bf1401fc7622c9aea}{Core\+::\+Continuous\+Discrete\+Task}.
+
+
+
+См. определение в файле cd\+\_\+landing\+\_\+linear.\+cc строка 118
+
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a5b5a327866160bf687dbc6d82a801ce8}{}\label{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a5b5a327866160bf687dbc6d82a801ce8} 
+\index{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear}!F@{F}}
+\index{F@{F}!Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear}}
+\subsubsection{\texorpdfstring{F()}{F()}}
+{\footnotesize\ttfamily Matrix Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear\+::F (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Структурная функция коррекции $F_k(m, D)$. 
+
+Она имеет следующий вид для
+
+
+\begin{DoxyItemize}
+\item гауссовского приближения\+: \[F_k(m, D) = \int (M[c_k(x,W_k)\cdot c_k^T(x, W_k)] \cdot N(x\ |\ m,D))dx - h_k(m,D)\cdot h_k^T(m,D),\]
+\item линеаризованного приближения\+: \[F_k(m, D) = C_k^x(m)\cdot D\cdot C_k^{xT}(m) + C_k^w(m)\cdot D[W_k]\cdot C_k^{wT}(m).\]
+\end{DoxyItemize}
+
+Здесь $C_k^x(x) = \frac{d}{dx} c_k(x, M[W_k]),\ C_k^w(x) = \frac{d}{dw} c_k(x, M[W_k])$. 
+
+Замещает \hyperlink{class_core_1_1_continuous_discrete_task_a08947ea4d4eb819e0e8530e682a1a377}{Core\+::\+Continuous\+Discrete\+Task}.
+
+
+
+См. определение в файле cd\+\_\+landing\+\_\+linear.\+cc строка 158
+
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a3b589b0ac53f7fe936438bc7c82f5c3d}{}\label{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a3b589b0ac53f7fe936438bc7c82f5c3d} 
+\index{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear}!G@{G}}
+\index{G@{G}!Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear}}
+\subsubsection{\texorpdfstring{G()}{G()}}
+{\footnotesize\ttfamily Matrix Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear\+::G (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Структурная функция коррекции $G_k(m, D)$. 
+
+Она имеет следующий вид для
+
+
+\begin{DoxyItemize}
+\item гауссовского приближения\+: \[G_k(m, D) = \frac{d}{dm}h_k(m,D),\]
+\item линеаризованного приближения\+: \[G_k(m, D) = \frac{d}{dm}c_k(m,M[W_k]).\] 
+\end{DoxyItemize}
+
+Замещает \hyperlink{class_core_1_1_continuous_discrete_task_a2bc6d34d112ec0999857f7f9e0f67dda}{Core\+::\+Continuous\+Discrete\+Task}.
+
+
+
+См. определение в файле cd\+\_\+landing\+\_\+linear.\+cc строка 141
+
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a66480881fd719faddafe5104b548db78}{}\label{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a66480881fd719faddafe5104b548db78} 
+\index{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear}!h@{h}}
+\index{h@{h}!Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear}}
+\subsubsection{\texorpdfstring{h()}{h()}}
+{\footnotesize\ttfamily Vector Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear\+::h (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Структурная функция коррекции $h_k(m, D)$. 
+
+Она имеет следующий вид для
+
+
+\begin{DoxyItemize}
+\item гауссовского приближения\+: \[h_k(m, D) = \int (M[c_k(x, W_k)] \cdot N(x\ |\ m, D))dx,\]
+\item линеаризованного приближения\+: \[h_k(m, D) = c_k(m, M[W_k]).\] 
+\end{DoxyItemize}
+
+Замещает \hyperlink{class_core_1_1_continuous_discrete_task_a25e88b71eb477d99bad66a66c982af6f}{Core\+::\+Continuous\+Discrete\+Task}.
+
+
+
+См. определение в файле cd\+\_\+landing\+\_\+linear.\+cc строка 130
+
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a1ee11cced65180b2a055b8ca848ef4e0}{}\label{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a1ee11cced65180b2a055b8ca848ef4e0} 
+\index{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear}!tau@{tau}}
+\index{tau@{tau}!Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear}}
+\subsubsection{\texorpdfstring{tau()}{tau()}}
+{\footnotesize\ttfamily Vector Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear\+::tau (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Структурная функция прогноза $\tau(t, m, D)$. 
+
+Она имеет следующий вид для
+
+
+\begin{DoxyItemize}
+\item гауссовского приближения\+: \[\tau(t, m, D) = \int a(t,x)\cdot N(x\ |\ m, D)dx,\]
+\item линеаризованного приближения\+: \[\tau(t, m, D) = a(t, m).\] 
+\end{DoxyItemize}
+
+Замещает \hyperlink{class_core_1_1_continuous_discrete_task_a491a9dc4463031a6f5f2eeda24d8ba9c}{Core\+::\+Continuous\+Discrete\+Task}.
+
+
+
+См. определение в файле cd\+\_\+landing\+\_\+linear.\+cc строка 86
+
+\hypertarget{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a783147d41d5d8dff4facd246fc064bb4}{}\label{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a783147d41d5d8dff4facd246fc064bb4} 
+\index{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear}!Theta@{Theta}}
+\index{Theta@{Theta}!Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear@{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear}}
+\subsubsection{\texorpdfstring{Theta()}{Theta()}}
+{\footnotesize\ttfamily Matrix Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear\+::\+Theta (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Структурная функция прогноза $\Theta(t,m,D)$. 
+
+Она имеет следующий вид для
+
+
+\begin{DoxyItemize}
+\item гауссовского приближения\+: \[\Theta(t,m,D) = \int B(t,x)\cdot B^T(t,x)\cdot N(x\ |\ m,D)dx,\]
+\item линеаризованного приближения\+: \[\Theta(t,m,D) = B(t,m)\cdot B^T(t,m).\] 
+\end{DoxyItemize}
+
+Замещает \hyperlink{class_core_1_1_continuous_discrete_task_a961cc49fd0c72ba0a211bb4913ca3ece}{Core\+::\+Continuous\+Discrete\+Task}.
+
+
+
+См. определение в файле cd\+\_\+landing\+\_\+linear.\+cc строка 92
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/tasks/continuous\+\_\+discrete/cd\+\_\+landing\+\_\+linear.\+h\item 
+src/tasks/continuous\+\_\+discrete/cd\+\_\+landing\+\_\+linear.\+cc\end{DoxyCompactItemize}

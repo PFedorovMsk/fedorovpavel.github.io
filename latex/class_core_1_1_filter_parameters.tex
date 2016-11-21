@@ -1,0 +1,273 @@
+\hypertarget{class_core_1_1_filter_parameters}{}\section{Класс Core\+:\+:Filter\+Parameters}
+\label{class_core_1_1_filter_parameters}\index{Core\+::\+Filter\+Parameters@{Core\+::\+Filter\+Parameters}}
+
+
+Класс для работы с параметрами фильтра.  
+
+
+
+
+{\ttfamily \#include \char`\"{}filter\+\_\+parameters.\+h\char`\"{}}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_core_1_1_filter_parameters_aac0d147953f2293a426cd25e031016f2}{Filter\+Parameters} (double \hyperlink{class_core_1_1_filter_parameters_a6062feeacb3cd85306e13b90da8fee9b}{max\+Time}, double \hyperlink{class_core_1_1_filter_parameters_a1e868b7a370df88dbd65c1ffe22e1f32}{measurement\+Step}, double \hyperlink{class_core_1_1_filter_parameters_a944d97bb305c33fd713c47948030976b}{prediction\+Step}, double \hyperlink{class_core_1_1_filter_parameters_afec430374fa0ee07f6960a6b42fb85d0}{integration\+Step}, ulong \hyperlink{class_core_1_1_filter_parameters_a93198cf1f29d223fb645be16e91a52fe}{sample\+Size}, ulong \hyperlink{class_core_1_1_filter_parameters_a391dbabccc9b3ab8134789eaac8c15c4}{order\+Mult}=1)
+\begin{DoxyCompactList}\small\item\em Конструктор. \end{DoxyCompactList}\item 
+\hypertarget{class_core_1_1_filter_parameters_a6062feeacb3cd85306e13b90da8fee9b}{}\label{class_core_1_1_filter_parameters_a6062feeacb3cd85306e13b90da8fee9b} 
+const double \& \hyperlink{class_core_1_1_filter_parameters_a6062feeacb3cd85306e13b90da8fee9b}{max\+Time} () const
+\begin{DoxyCompactList}\small\item\em Возвращает время $T_{max}$ окончания фильтрации. \end{DoxyCompactList}\item 
+\hypertarget{class_core_1_1_filter_parameters_a1e868b7a370df88dbd65c1ffe22e1f32}{}\label{class_core_1_1_filter_parameters_a1e868b7a370df88dbd65c1ffe22e1f32} 
+const double \& \hyperlink{class_core_1_1_filter_parameters_a1e868b7a370df88dbd65c1ffe22e1f32}{measurement\+Step} () const
+\begin{DoxyCompactList}\small\item\em Возвращает интервал $\delta t$ между измерениями. \end{DoxyCompactList}\item 
+\hypertarget{class_core_1_1_filter_parameters_a944d97bb305c33fd713c47948030976b}{}\label{class_core_1_1_filter_parameters_a944d97bb305c33fd713c47948030976b} 
+const double \& \hyperlink{class_core_1_1_filter_parameters_a944d97bb305c33fd713c47948030976b}{prediction\+Step} () const
+\begin{DoxyCompactList}\small\item\em Возвращает интервал $\delta \tau$ между прогнозами. \end{DoxyCompactList}\item 
+\hypertarget{class_core_1_1_filter_parameters_afec430374fa0ee07f6960a6b42fb85d0}{}\label{class_core_1_1_filter_parameters_afec430374fa0ee07f6960a6b42fb85d0} 
+const double \& \hyperlink{class_core_1_1_filter_parameters_afec430374fa0ee07f6960a6b42fb85d0}{integration\+Step} () const
+\begin{DoxyCompactList}\small\item\em Возвращает шаг интегрирования $\Delta t$. \end{DoxyCompactList}\item 
+\hypertarget{class_core_1_1_filter_parameters_a3db7701620d536221b0d95e29c8d6b39}{}\label{class_core_1_1_filter_parameters_a3db7701620d536221b0d95e29c8d6b39} 
+const ulong \& \hyperlink{class_core_1_1_filter_parameters_a3db7701620d536221b0d95e29c8d6b39}{measurement\+Count} () const
+\begin{DoxyCompactList}\small\item\em Возвращает количество $K$ измерений. \end{DoxyCompactList}\item 
+\hypertarget{class_core_1_1_filter_parameters_a4e29aa5b52c75ab0f53ba8f571b98f6a}{}\label{class_core_1_1_filter_parameters_a4e29aa5b52c75ab0f53ba8f571b98f6a} 
+const ulong \& \hyperlink{class_core_1_1_filter_parameters_a4e29aa5b52c75ab0f53ba8f571b98f6a}{prediction\+Count} () const
+\begin{DoxyCompactList}\small\item\em Возвращает количество $L$ прогнозов между двумя измерениями. \end{DoxyCompactList}\item 
+\hypertarget{class_core_1_1_filter_parameters_a7471b7b91b3b3388c3ee29d679279c1b}{}\label{class_core_1_1_filter_parameters_a7471b7b91b3b3388c3ee29d679279c1b} 
+const ulong \& \hyperlink{class_core_1_1_filter_parameters_a7471b7b91b3b3388c3ee29d679279c1b}{integration\+Count} () const
+\begin{DoxyCompactList}\small\item\em Возвращает количество $N$ интегрирований между двумя прогнозами. \end{DoxyCompactList}\item 
+\hypertarget{class_core_1_1_filter_parameters_a93198cf1f29d223fb645be16e91a52fe}{}\label{class_core_1_1_filter_parameters_a93198cf1f29d223fb645be16e91a52fe} 
+const ulong \& \hyperlink{class_core_1_1_filter_parameters_a93198cf1f29d223fb645be16e91a52fe}{sample\+Size} () const
+\begin{DoxyCompactList}\small\item\em Возвращает размер выборок. \end{DoxyCompactList}\item 
+\hypertarget{class_core_1_1_filter_parameters_a391dbabccc9b3ab8134789eaac8c15c4}{}\label{class_core_1_1_filter_parameters_a391dbabccc9b3ab8134789eaac8c15c4} 
+const ulong \& \hyperlink{class_core_1_1_filter_parameters_a391dbabccc9b3ab8134789eaac8c15c4}{order\+Mult} () const
+\begin{DoxyCompactList}\small\item\em Возвращает кратность порядка фильтра для ФКП (ФОСпп). \end{DoxyCompactList}\item 
+\hypertarget{class_core_1_1_filter_parameters_a649fb04817a251986e9bffb264b3a22a}{}\label{class_core_1_1_filter_parameters_a649fb04817a251986e9bffb264b3a22a} 
+void \hyperlink{class_core_1_1_filter_parameters_a649fb04817a251986e9bffb264b3a22a}{set\+Max\+Time} (double tmax)
+\begin{DoxyCompactList}\small\item\em Устанавливает время $T_{max}$ окончания фильтрации. \end{DoxyCompactList}\item 
+\hypertarget{class_core_1_1_filter_parameters_a53a29d979978514b85078f3d7263c947}{}\label{class_core_1_1_filter_parameters_a53a29d979978514b85078f3d7263c947} 
+void \hyperlink{class_core_1_1_filter_parameters_a53a29d979978514b85078f3d7263c947}{set\+Measurement\+Step} (double step)
+\begin{DoxyCompactList}\small\item\em Устанавливает интервал $\delta t$ между измерениями. \end{DoxyCompactList}\item 
+\hypertarget{class_core_1_1_filter_parameters_abc28925f9ee2213da37a000dc761cb05}{}\label{class_core_1_1_filter_parameters_abc28925f9ee2213da37a000dc761cb05} 
+void \hyperlink{class_core_1_1_filter_parameters_abc28925f9ee2213da37a000dc761cb05}{set\+Prediction\+Step} (double step)
+\begin{DoxyCompactList}\small\item\em Устанавливает интервал $\delta \tau$ между прогнозами. \end{DoxyCompactList}\item 
+\hypertarget{class_core_1_1_filter_parameters_a8349d4d94febddd3367865b60b3deed5}{}\label{class_core_1_1_filter_parameters_a8349d4d94febddd3367865b60b3deed5} 
+void \hyperlink{class_core_1_1_filter_parameters_a8349d4d94febddd3367865b60b3deed5}{set\+Integration\+Step} (double step)
+\begin{DoxyCompactList}\small\item\em Устанавливает шаг интегрирования $\Delta t$. \end{DoxyCompactList}\item 
+\hypertarget{class_core_1_1_filter_parameters_a3b7b8345d450d60f8e4fbe7bbe825fd6}{}\label{class_core_1_1_filter_parameters_a3b7b8345d450d60f8e4fbe7bbe825fd6} 
+void \hyperlink{class_core_1_1_filter_parameters_a3b7b8345d450d60f8e4fbe7bbe825fd6}{set\+Sample\+Size} (ulong size)
+\begin{DoxyCompactList}\small\item\em Устанавливает размер выборок. \end{DoxyCompactList}\item 
+\hypertarget{class_core_1_1_filter_parameters_a763a74eb5ae44bfde79110a38bb79867}{}\label{class_core_1_1_filter_parameters_a763a74eb5ae44bfde79110a38bb79867} 
+void \hyperlink{class_core_1_1_filter_parameters_a763a74eb5ae44bfde79110a38bb79867}{set\+Order\+Mult} (ulong order)
+\begin{DoxyCompactList}\small\item\em Устанавливает кратность порядка фильтра для ФКП (ФОСпп). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_core_1_1_filter_parameters_abd97b1d6389fb381e9808f15a271dfc3}{correct\+Step\+And\+Count} (const double \&interval\+Length, double \&step, ulong \&count)
+\begin{DoxyCompactList}\small\item\em Корректирует величину шага и количество шагов в данном интервале. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_core_1_1_filter_parameters_a5f906190ee024f4df75f8279e9986f2c}{m\+\_\+max\+Time}
+\item 
+double \hyperlink{class_core_1_1_filter_parameters_a68b0fe638b3a00a16cfa07f7d6a229fb}{m\+\_\+measurement\+Step}
+\item 
+double \hyperlink{class_core_1_1_filter_parameters_a1d15be069d981b8f7e1252cb0fd8970d}{m\+\_\+prediction\+Step}
+\item 
+double \hyperlink{class_core_1_1_filter_parameters_ab63c375a5b76a516da339b058af687ae}{m\+\_\+integration\+Step}
+\item 
+ulong \hyperlink{class_core_1_1_filter_parameters_a931e9e09796c055d6c28d7c93d3121d9}{m\+\_\+measurement\+Count}
+\item 
+ulong \hyperlink{class_core_1_1_filter_parameters_a6b692ee25b7554649a81c073c009855a}{m\+\_\+prediction\+Count}
+\item 
+ulong \hyperlink{class_core_1_1_filter_parameters_af28ca1d6c952ad42a5dfbeb6a7e916e5}{m\+\_\+integration\+Count}
+\item 
+ulong \hyperlink{class_core_1_1_filter_parameters_a70abc1052c13fe0fb7f971229d7a1316}{m\+\_\+sample\+Size}
+\item 
+ulong \hyperlink{class_core_1_1_filter_parameters_abbf3de6b71f358870d750c829d1ef4ea}{m\+\_\+order\+Mult}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Класс для работы с параметрами фильтра. 
+
+Основное внимание уделено обработке временных интервалов.
+
+Пусть отрезок времени $t$, обрабатываемого фильтром, равен $[0, T_{max}]$.
+
+На этом отрезке времени производятся измерения с шагом $\delta t$.
+
+Между измерениями (в фильтрах с дискретными прогнозами) осуществляется прогнозирование. Интервал между прогнозами $\delta \tau$.
+
+Шаг интегрирования системы $\Delta t$.
+
+Эти величины корректируются (при изменении) так, чтобы количество интегрирований $N$ между соседними прогнозами, количество прогнозов $L$ между соседними измерениями и количесвтво измерений $K$ на всём временном интервале были целыми числами.
+
+То есть $\Delta t, \delta \tau, \delta t$ и $T_{max}$ немного подкручиваются так, что выражения ниже становятся корректными (в смысле делимости нацело) в совокупности\+:
+
+\[K = \frac{T_{max}}{\delta t};\ \ \ L = \frac{\delta t}{\delta \tau};\ \ \ N = \frac{\delta \tau}{\Delta t}\] 
+
+См. определение в файле filter\+\_\+parameters.\+h строка 38
+
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_core_1_1_filter_parameters_aac0d147953f2293a426cd25e031016f2}{}\label{class_core_1_1_filter_parameters_aac0d147953f2293a426cd25e031016f2} 
+\index{Core\+::\+Filter\+Parameters@{Core\+::\+Filter\+Parameters}!Filter\+Parameters@{Filter\+Parameters}}
+\index{Filter\+Parameters@{Filter\+Parameters}!Core\+::\+Filter\+Parameters@{Core\+::\+Filter\+Parameters}}
+\subsubsection{\texorpdfstring{Filter\+Parameters()}{FilterParameters()}}
+{\footnotesize\ttfamily Core\+::\+Filter\+Parameters\+::\+Filter\+Parameters (\begin{DoxyParamCaption}\item[{double}]{max\+Time,  }\item[{double}]{measurement\+Step,  }\item[{double}]{prediction\+Step,  }\item[{double}]{integration\+Step,  }\item[{ulong}]{sample\+Size,  }\item[{ulong}]{order\+Mult = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Конструктор. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em max\+Time} & -\/ время $T_{max}$ окончания фильтрации. \\
+\hline
+{\em measurement\+Step} & -\/ интервал $\delta t$ между измерениями. \\
+\hline
+{\em prediction\+Step} & -\/ интервал $\delta \tau$ между (дискретными) прогнозами. \\
+\hline
+{\em integration\+Step} & -\/ шаг интегрирования $\Delta t$. \\
+\hline
+{\em sample\+Size} & -\/ размер выборок. \\
+\hline
+{\em order\+Mult} & -\/ кратность порядка фильтра для ФКП (ФОСпп).\\
+\hline
+\end{DoxyParams}
+После автоматической коррекции значения могут несколько отличаться от заданных. 
+
+См. определение в файле filter\+\_\+parameters.\+cc строка 8
+
+
+
+\subsection{Методы}
+\hypertarget{class_core_1_1_filter_parameters_abd97b1d6389fb381e9808f15a271dfc3}{}\label{class_core_1_1_filter_parameters_abd97b1d6389fb381e9808f15a271dfc3} 
+\index{Core\+::\+Filter\+Parameters@{Core\+::\+Filter\+Parameters}!correct\+Step\+And\+Count@{correct\+Step\+And\+Count}}
+\index{correct\+Step\+And\+Count@{correct\+Step\+And\+Count}!Core\+::\+Filter\+Parameters@{Core\+::\+Filter\+Parameters}}
+\subsubsection{\texorpdfstring{correct\+Step\+And\+Count()}{correctStepAndCount()}}
+{\footnotesize\ttfamily void Core\+::\+Filter\+Parameters\+::correct\+Step\+And\+Count (\begin{DoxyParamCaption}\item[{const double \&}]{interval\+Length,  }\item[{double \&}]{step,  }\item[{ulong \&}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Корректирует величину шага и количество шагов в данном интервале. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em interval\+Length} & -\/ длина $d$ интервала. \\
+\hline
+\mbox{\tt in,out}  & {\em step} & -\/ шаг $h$ (корректируется, если необходимо). \\
+\hline
+\mbox{\tt out}  & {\em count} & -\/ количиство $N$ шагов $h$, укладывающихся в $d$ (вычисляется).\\
+\hline
+\end{DoxyParams}
+Корректировка работает следующим образом\+:
+
+Сначала вычисляется целое число $N' = \frac{d}{h}$ (дробная часть отбрасывается).
+
+Если $\frac{d}{h} - N' >= \frac{1}{2}$, то $N = N' + 1$, иначе $N = N'$.
+
+Теперь корректируется шаг\+: $h = \frac{d}{N}$. 
+
+См. определение в файле filter\+\_\+parameters.\+cc строка 117
+
+
+
+\subsection{Данные класса}
+\hypertarget{class_core_1_1_filter_parameters_af28ca1d6c952ad42a5dfbeb6a7e916e5}{}\label{class_core_1_1_filter_parameters_af28ca1d6c952ad42a5dfbeb6a7e916e5} 
+\index{Core\+::\+Filter\+Parameters@{Core\+::\+Filter\+Parameters}!m\+\_\+integration\+Count@{m\+\_\+integration\+Count}}
+\index{m\+\_\+integration\+Count@{m\+\_\+integration\+Count}!Core\+::\+Filter\+Parameters@{Core\+::\+Filter\+Parameters}}
+\subsubsection{\texorpdfstring{m\+\_\+integration\+Count}{m\_integrationCount}}
+{\footnotesize\ttfamily ulong Core\+::\+Filter\+Parameters\+::m\+\_\+integration\+Count\hspace{0.3cm}{\ttfamily [private]}}
+
+Количество $N$ интегрирований между двумя прогнозами. 
+
+См. определение в файле filter\+\_\+parameters.\+h строка 130
+
+\hypertarget{class_core_1_1_filter_parameters_ab63c375a5b76a516da339b058af687ae}{}\label{class_core_1_1_filter_parameters_ab63c375a5b76a516da339b058af687ae} 
+\index{Core\+::\+Filter\+Parameters@{Core\+::\+Filter\+Parameters}!m\+\_\+integration\+Step@{m\+\_\+integration\+Step}}
+\index{m\+\_\+integration\+Step@{m\+\_\+integration\+Step}!Core\+::\+Filter\+Parameters@{Core\+::\+Filter\+Parameters}}
+\subsubsection{\texorpdfstring{m\+\_\+integration\+Step}{m\_integrationStep}}
+{\footnotesize\ttfamily double Core\+::\+Filter\+Parameters\+::m\+\_\+integration\+Step\hspace{0.3cm}{\ttfamily [private]}}
+
+Шаг интегрирования $\Delta t$. 
+
+См. определение в файле filter\+\_\+parameters.\+h строка 126
+
+\hypertarget{class_core_1_1_filter_parameters_a5f906190ee024f4df75f8279e9986f2c}{}\label{class_core_1_1_filter_parameters_a5f906190ee024f4df75f8279e9986f2c} 
+\index{Core\+::\+Filter\+Parameters@{Core\+::\+Filter\+Parameters}!m\+\_\+max\+Time@{m\+\_\+max\+Time}}
+\index{m\+\_\+max\+Time@{m\+\_\+max\+Time}!Core\+::\+Filter\+Parameters@{Core\+::\+Filter\+Parameters}}
+\subsubsection{\texorpdfstring{m\+\_\+max\+Time}{m\_maxTime}}
+{\footnotesize\ttfamily double Core\+::\+Filter\+Parameters\+::m\+\_\+max\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+Время $T_{max}$ окончания фильтрации. 
+
+См. определение в файле filter\+\_\+parameters.\+h строка 123
+
+\hypertarget{class_core_1_1_filter_parameters_a931e9e09796c055d6c28d7c93d3121d9}{}\label{class_core_1_1_filter_parameters_a931e9e09796c055d6c28d7c93d3121d9} 
+\index{Core\+::\+Filter\+Parameters@{Core\+::\+Filter\+Parameters}!m\+\_\+measurement\+Count@{m\+\_\+measurement\+Count}}
+\index{m\+\_\+measurement\+Count@{m\+\_\+measurement\+Count}!Core\+::\+Filter\+Parameters@{Core\+::\+Filter\+Parameters}}
+\subsubsection{\texorpdfstring{m\+\_\+measurement\+Count}{m\_measurementCount}}
+{\footnotesize\ttfamily ulong Core\+::\+Filter\+Parameters\+::m\+\_\+measurement\+Count\hspace{0.3cm}{\ttfamily [private]}}
+
+Количество $K$ измерений на $[0, T_{max}]$. 
+
+См. определение в файле filter\+\_\+parameters.\+h строка 128
+
+\hypertarget{class_core_1_1_filter_parameters_a68b0fe638b3a00a16cfa07f7d6a229fb}{}\label{class_core_1_1_filter_parameters_a68b0fe638b3a00a16cfa07f7d6a229fb} 
+\index{Core\+::\+Filter\+Parameters@{Core\+::\+Filter\+Parameters}!m\+\_\+measurement\+Step@{m\+\_\+measurement\+Step}}
+\index{m\+\_\+measurement\+Step@{m\+\_\+measurement\+Step}!Core\+::\+Filter\+Parameters@{Core\+::\+Filter\+Parameters}}
+\subsubsection{\texorpdfstring{m\+\_\+measurement\+Step}{m\_measurementStep}}
+{\footnotesize\ttfamily double Core\+::\+Filter\+Parameters\+::m\+\_\+measurement\+Step\hspace{0.3cm}{\ttfamily [private]}}
+
+Интервал $\delta t$ между измерениями. 
+
+См. определение в файле filter\+\_\+parameters.\+h строка 124
+
+\hypertarget{class_core_1_1_filter_parameters_abbf3de6b71f358870d750c829d1ef4ea}{}\label{class_core_1_1_filter_parameters_abbf3de6b71f358870d750c829d1ef4ea} 
+\index{Core\+::\+Filter\+Parameters@{Core\+::\+Filter\+Parameters}!m\+\_\+order\+Mult@{m\+\_\+order\+Mult}}
+\index{m\+\_\+order\+Mult@{m\+\_\+order\+Mult}!Core\+::\+Filter\+Parameters@{Core\+::\+Filter\+Parameters}}
+\subsubsection{\texorpdfstring{m\+\_\+order\+Mult}{m\_orderMult}}
+{\footnotesize\ttfamily ulong Core\+::\+Filter\+Parameters\+::m\+\_\+order\+Mult\hspace{0.3cm}{\ttfamily [private]}}
+
+Кратность порядка фильтра. 
+
+См. определение в файле filter\+\_\+parameters.\+h строка 132
+
+\hypertarget{class_core_1_1_filter_parameters_a6b692ee25b7554649a81c073c009855a}{}\label{class_core_1_1_filter_parameters_a6b692ee25b7554649a81c073c009855a} 
+\index{Core\+::\+Filter\+Parameters@{Core\+::\+Filter\+Parameters}!m\+\_\+prediction\+Count@{m\+\_\+prediction\+Count}}
+\index{m\+\_\+prediction\+Count@{m\+\_\+prediction\+Count}!Core\+::\+Filter\+Parameters@{Core\+::\+Filter\+Parameters}}
+\subsubsection{\texorpdfstring{m\+\_\+prediction\+Count}{m\_predictionCount}}
+{\footnotesize\ttfamily ulong Core\+::\+Filter\+Parameters\+::m\+\_\+prediction\+Count\hspace{0.3cm}{\ttfamily [private]}}
+
+Количество $L$ прогнозов между двумя измерениями. 
+
+См. определение в файле filter\+\_\+parameters.\+h строка 129
+
+\hypertarget{class_core_1_1_filter_parameters_a1d15be069d981b8f7e1252cb0fd8970d}{}\label{class_core_1_1_filter_parameters_a1d15be069d981b8f7e1252cb0fd8970d} 
+\index{Core\+::\+Filter\+Parameters@{Core\+::\+Filter\+Parameters}!m\+\_\+prediction\+Step@{m\+\_\+prediction\+Step}}
+\index{m\+\_\+prediction\+Step@{m\+\_\+prediction\+Step}!Core\+::\+Filter\+Parameters@{Core\+::\+Filter\+Parameters}}
+\subsubsection{\texorpdfstring{m\+\_\+prediction\+Step}{m\_predictionStep}}
+{\footnotesize\ttfamily double Core\+::\+Filter\+Parameters\+::m\+\_\+prediction\+Step\hspace{0.3cm}{\ttfamily [private]}}
+
+Интервал $\delta \tau$ между прогнозами. 
+
+См. определение в файле filter\+\_\+parameters.\+h строка 125
+
+\hypertarget{class_core_1_1_filter_parameters_a70abc1052c13fe0fb7f971229d7a1316}{}\label{class_core_1_1_filter_parameters_a70abc1052c13fe0fb7f971229d7a1316} 
+\index{Core\+::\+Filter\+Parameters@{Core\+::\+Filter\+Parameters}!m\+\_\+sample\+Size@{m\+\_\+sample\+Size}}
+\index{m\+\_\+sample\+Size@{m\+\_\+sample\+Size}!Core\+::\+Filter\+Parameters@{Core\+::\+Filter\+Parameters}}
+\subsubsection{\texorpdfstring{m\+\_\+sample\+Size}{m\_sampleSize}}
+{\footnotesize\ttfamily ulong Core\+::\+Filter\+Parameters\+::m\+\_\+sample\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+Размер выборок. 
+
+См. определение в файле filter\+\_\+parameters.\+h строка 131
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/core/filter\+\_\+parameters.\+h\item 
+src/core/filter\+\_\+parameters.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,121 @@
+\hypertarget{class_filters_1_1_discrete_1_1_a_o_f}{}\section{Класс Filters\+:\+:Discrete\+:\+:A\+OF}
+\label{class_filters_1_1_discrete_1_1_a_o_f}\index{Filters\+::\+Discrete\+::\+A\+OF@{Filters\+::\+Discrete\+::\+A\+OF}}
+
+
+Класс, реализующий дискретный абсолютно оптимальной фильтр.  
+
+
+
+
+{\ttfamily \#include \char`\"{}d\+\_\+aof.\+h\char`\"{}}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_filters_1_1_discrete_1_1_a_o_f_a2df66ff12a7b327da999b0fd1dc82759}{}\label{class_filters_1_1_discrete_1_1_a_o_f_a2df66ff12a7b327da999b0fd1dc82759} 
+\hyperlink{class_filters_1_1_discrete_1_1_a_o_f_a2df66ff12a7b327da999b0fd1dc82759}{A\+OF} (\hyperlink{namespace_core_a4811af8148ba137d644b9a61a042cf03}{Core\+::\+Ptr\+Filter\+Parameters} \hyperlink{class_core_1_1_filter_a44aa749b49ba46256975ce545531ecf7}{params}, \hyperlink{namespace_core_abfda8f69fcacfcea2696549b548ed737}{Core\+::\+Ptr\+Task} task)
+\begin{DoxyCompactList}\small\item\em Конструктор. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_filters_1_1_discrete_1_1_a_o_f_aa822fe74d7ca160f898db1c1289e17f7}{zero\+Iteration} () override
+\begin{DoxyCompactList}\small\item\em Нулевая итерация алгоритма (инициализирует начальные состояния). \end{DoxyCompactList}\item 
+void \hyperlink{class_filters_1_1_discrete_1_1_a_o_f_a22cbbf1054a17045c5e91ed7c5cba387}{algorithm} () override
+\begin{DoxyCompactList}\small\item\em Выполняет алгоритм. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+Array$<$ Matrix $>$ \hyperlink{class_filters_1_1_discrete_1_1_a_o_f_aef55ce0cf7129bb7090f8e470bcfbc1f}{m\+\_\+sampleP}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Класс, реализующий дискретный абсолютно оптимальной фильтр. 
+
+См. определение в файле d\+\_\+aof.\+h строка 18
+
+
+
+Граф наследования\+:Filters\+:\+:Discrete\+:\+:A\+OF\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{class_filters_1_1_discrete_1_1_a_o_f__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Filters\+:\+:Discrete\+:\+:A\+OF\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{class_filters_1_1_discrete_1_1_a_o_f__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Методы}
+\hypertarget{class_filters_1_1_discrete_1_1_a_o_f_a22cbbf1054a17045c5e91ed7c5cba387}{}\label{class_filters_1_1_discrete_1_1_a_o_f_a22cbbf1054a17045c5e91ed7c5cba387} 
+\index{Filters\+::\+Discrete\+::\+A\+OF@{Filters\+::\+Discrete\+::\+A\+OF}!algorithm@{algorithm}}
+\index{algorithm@{algorithm}!Filters\+::\+Discrete\+::\+A\+OF@{Filters\+::\+Discrete\+::\+A\+OF}}
+\subsubsection{\texorpdfstring{algorithm()}{algorithm()}}
+{\footnotesize\ttfamily void Filters\+::\+Discrete\+::\+A\+O\+F\+::algorithm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Выполняет алгоритм. 
+
+Вектор $Z_t$ оценки вычисляется следующим образом\+: \[\Lambda_k = \tau_{k-1}(Z_{k-1}, P_{k-1}),\] \[\Psi_k = \Theta_{k-1}(Z_{k-1}, P_{k-1}),\] \[H_k = \Psi_k \cdot G_k^T(\Lambda_k, \Psi_k) \cdot F_k^{-1}(\Lambda_k, \Psi_k),\] \[Z_k = \Lambda_k + H_k \cdot [Y_k - h_k(\Lambda_k, \Psi_k)],\] \[P_k = \Psi_k - H_k \cdot G_k(\Lambda_k, \Psi_k) \cdot \Psi_k.\]
+
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{class_core_1_1_discrete_filter}{Core\+::\+Discrete\+Filter} 
+
+\hyperlink{class_core_1_1_discrete_task}{Core\+::\+Discrete\+Task} 
+\end{DoxySeeAlso}
+
+
+Замещает \hyperlink{class_core_1_1_filter_a438681ee3e54aba2148042d9f8011ab8}{Core\+::\+Filter}.
+
+
+
+См. определение в файле d\+\_\+aof.\+cc строка 37
+
+\hypertarget{class_filters_1_1_discrete_1_1_a_o_f_aa822fe74d7ca160f898db1c1289e17f7}{}\label{class_filters_1_1_discrete_1_1_a_o_f_aa822fe74d7ca160f898db1c1289e17f7} 
+\index{Filters\+::\+Discrete\+::\+A\+OF@{Filters\+::\+Discrete\+::\+A\+OF}!zero\+Iteration@{zero\+Iteration}}
+\index{zero\+Iteration@{zero\+Iteration}!Filters\+::\+Discrete\+::\+A\+OF@{Filters\+::\+Discrete\+::\+A\+OF}}
+\subsubsection{\texorpdfstring{zero\+Iteration()}{zeroIteration()}}
+{\footnotesize\ttfamily void Filters\+::\+Discrete\+::\+A\+O\+F\+::zero\+Iteration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Нулевая итерация алгоритма (инициализирует начальные состояния). 
+
+Практически для всех дискретных фильтров оптимальной структуры имеет вид\+: \[Z_0 = H_0 \cdot Y_0 + e_0,\] \[H_0 = D_{00}^{xy} \cdot (D_{00}^{xy})^{-1},\] \[e_0 = m_0^x - H_0 \cdot m_0^y.\]
+
+В гауссовском АОФ (ФНА) добавляется уравнение для апостериорной ковариации объекта\+: \[P_0 = D_0^x - H_0 \cdot (D_{00}^{xy})^T.\] 
+
+Переопределяет метод предка \hyperlink{class_core_1_1_discrete_filter_a658617c64c7067bb6b98b5e9d78f982e}{Core\+::\+Discrete\+Filter}.
+
+
+
+См. определение в файле d\+\_\+aof.\+cc строка 22
+
+
+
+\subsection{Данные класса}
+\hypertarget{class_filters_1_1_discrete_1_1_a_o_f_aef55ce0cf7129bb7090f8e470bcfbc1f}{}\label{class_filters_1_1_discrete_1_1_a_o_f_aef55ce0cf7129bb7090f8e470bcfbc1f} 
+\index{Filters\+::\+Discrete\+::\+A\+OF@{Filters\+::\+Discrete\+::\+A\+OF}!m\+\_\+sampleP@{m\+\_\+sampleP}}
+\index{m\+\_\+sampleP@{m\+\_\+sampleP}!Filters\+::\+Discrete\+::\+A\+OF@{Filters\+::\+Discrete\+::\+A\+OF}}
+\subsubsection{\texorpdfstring{m\+\_\+sampleP}{m\_sampleP}}
+{\footnotesize\ttfamily Array$<$Matrix$>$ Filters\+::\+Discrete\+::\+A\+O\+F\+::m\+\_\+sampleP\hspace{0.3cm}{\ttfamily [protected]}}
+
+Массив апостериорных ковариаций $P$. 
+
+См. определение в файле d\+\_\+aof.\+h строка 46
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/filters/discrete/d\+\_\+aof.\+h\item 
+src/filters/discrete/d\+\_\+aof.\+cc\end{DoxyCompactItemize}

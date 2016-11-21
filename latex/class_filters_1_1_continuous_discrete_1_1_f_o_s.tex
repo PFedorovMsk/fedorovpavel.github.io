@@ -1,0 +1,86 @@
+\hypertarget{class_filters_1_1_continuous_discrete_1_1_f_o_s}{}\section{Класс Filters\+:\+:Continuous\+Discrete\+:\+:F\+OS}
+\label{class_filters_1_1_continuous_discrete_1_1_f_o_s}\index{Filters\+::\+Continuous\+Discrete\+::\+F\+OS@{Filters\+::\+Continuous\+Discrete\+::\+F\+OS}}
+
+
+Класс, реализующий непрерывно-\/дискретный фильтр оптимальной структуры с непрерывным прогнозом.  
+
+
+
+
+{\ttfamily \#include \char`\"{}cd\+\_\+fos.\+h\char`\"{}}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_filters_1_1_continuous_discrete_1_1_f_o_s_a969ba843b1c5df806d4eb1054d16f4f9}{}\label{class_filters_1_1_continuous_discrete_1_1_f_o_s_a969ba843b1c5df806d4eb1054d16f4f9} 
+\hyperlink{class_filters_1_1_continuous_discrete_1_1_f_o_s_a969ba843b1c5df806d4eb1054d16f4f9}{F\+OS} (\hyperlink{namespace_core_a4811af8148ba137d644b9a61a042cf03}{Core\+::\+Ptr\+Filter\+Parameters} \hyperlink{class_core_1_1_filter_a44aa749b49ba46256975ce545531ecf7}{params}, \hyperlink{namespace_core_abfda8f69fcacfcea2696549b548ed737}{Core\+::\+Ptr\+Task} task)
+\begin{DoxyCompactList}\small\item\em Конструктор. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_filters_1_1_continuous_discrete_1_1_f_o_s_a1e3d6f40678f13a33971bc7bceb45496}{algorithm} () override
+\begin{DoxyCompactList}\small\item\em Выполняет алгоритм. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Дополнительные унаследованные члены}
+
+
+\subsection{Подробное описание}
+Класс, реализующий непрерывно-\/дискретный фильтр оптимальной структуры с непрерывным прогнозом. 
+
+См. определение в файле cd\+\_\+fos.\+h строка 16
+
+
+
+Граф наследования\+:Filters\+:\+:Continuous\+Discrete\+:\+:F\+OS\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{class_filters_1_1_continuous_discrete_1_1_f_o_s__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Filters\+:\+:Continuous\+Discrete\+:\+:F\+OS\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{class_filters_1_1_continuous_discrete_1_1_f_o_s__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Методы}
+\hypertarget{class_filters_1_1_continuous_discrete_1_1_f_o_s_a1e3d6f40678f13a33971bc7bceb45496}{}\label{class_filters_1_1_continuous_discrete_1_1_f_o_s_a1e3d6f40678f13a33971bc7bceb45496} 
+\index{Filters\+::\+Continuous\+Discrete\+::\+F\+OS@{Filters\+::\+Continuous\+Discrete\+::\+F\+OS}!algorithm@{algorithm}}
+\index{algorithm@{algorithm}!Filters\+::\+Continuous\+Discrete\+::\+F\+OS@{Filters\+::\+Continuous\+Discrete\+::\+F\+OS}}
+\subsubsection{\texorpdfstring{algorithm()}{algorithm()}}
+{\footnotesize\ttfamily void Filters\+::\+Continuous\+Discrete\+::\+F\+O\+S\+::algorithm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Выполняет алгоритм. 
+
+Вектор $Z_t$ оценки между измерениями вычисляется из уравнения\+: \[\frac{d}{dt}Z_t = \tau(t,Z_t, \Gamma_t).\]
+
+В моменты измерений\+: \[Z_{t_k^+} = Z_{t_k} + \Gamma_{t_k} \cdot G_k^T(Z_{t_k}, \Gamma_{t_k}) \cdot F_k^{-1}(Z_{t_k}, \Gamma_{t_k}) \cdot [Y_k - h_k(Z_{t_k}, \Gamma_{t_k})].\]
+
+Параметр $\Gamma_t$ вычисляется так\+: \[\Gamma_t = D_t^x - D_t^z\]
+
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{class_core_1_1_continuous_discrete_filter}{Core\+::\+Continuous\+Discrete\+Filter} 
+
+\hyperlink{class_core_1_1_continuous_discrete_task}{Core\+::\+Continuous\+Discrete\+Task} 
+\end{DoxySeeAlso}
+
+
+Замещает \hyperlink{class_core_1_1_filter_a438681ee3e54aba2148042d9f8011ab8}{Core\+::\+Filter}.
+
+
+
+См. определение в файле cd\+\_\+fos.\+cc строка 24
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/filters/continuous\+\_\+discrete/cd\+\_\+fos.\+h\item 
+src/filters/continuous\+\_\+discrete/cd\+\_\+fos.\+cc\end{DoxyCompactItemize}

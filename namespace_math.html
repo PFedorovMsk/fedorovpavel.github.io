@@ -12,12 +12,6 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -268,7 +262,7 @@ constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>sign</b> (do
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">mat1</td><td>- первая матрица. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mat2</td><td>- вторая матрица. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">blockMat</td><td>- результат \( b = (m_1\ m_2)\), при vertical == true: \( b = (m_1\ m_2)^T\). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">blockMat</td><td>- результат <img class="formulaInl" alt="$ b = (m_1\ m_2)$" src="form_203.png"/>, при vertical == true: <img class="formulaInl" alt="$ b = (m_1\ m_2)^T$" src="form_204.png"/>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">vertical</td><td>- если true, то m1 и m2 выстроятся вертикально, иначе - горизонтально (по-умолчанию). </td></tr>
   </table>
   </dd>
@@ -315,7 +309,7 @@ constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>sign</b> (do
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">vec1</td><td>- верхний вектор. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">vec2</td><td>- нижний вектор. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">blockVec</td><td>- результат \( b = (v_1\ v_2)^T\). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">blockVec</td><td>- результат <img class="formulaInl" alt="$ b = (v_1\ v_2)^T$" src="form_202.png"/>. </td></tr>
   </table>
   </dd>
 </dl>

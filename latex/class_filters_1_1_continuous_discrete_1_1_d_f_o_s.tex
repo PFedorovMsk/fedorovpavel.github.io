@@ -1,0 +1,86 @@
+\hypertarget{class_filters_1_1_continuous_discrete_1_1_d_f_o_s}{}\section{Класс Filters\+:\+:Continuous\+Discrete\+:\+:D\+F\+OS}
+\label{class_filters_1_1_continuous_discrete_1_1_d_f_o_s}\index{Filters\+::\+Continuous\+Discrete\+::\+D\+F\+OS@{Filters\+::\+Continuous\+Discrete\+::\+D\+F\+OS}}
+
+
+Класс, реализующий непрерывно-\/дискретный фильтр оптимальной структуры с дискретным прогнозом.  
+
+
+
+
+{\ttfamily \#include \char`\"{}cd\+\_\+dfos.\+h\char`\"{}}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_filters_1_1_continuous_discrete_1_1_d_f_o_s_a962505dc3f59ef8b68cb228b1cf481f1}{}\label{class_filters_1_1_continuous_discrete_1_1_d_f_o_s_a962505dc3f59ef8b68cb228b1cf481f1} 
+\hyperlink{class_filters_1_1_continuous_discrete_1_1_d_f_o_s_a962505dc3f59ef8b68cb228b1cf481f1}{D\+F\+OS} (\hyperlink{namespace_core_a4811af8148ba137d644b9a61a042cf03}{Core\+::\+Ptr\+Filter\+Parameters} \hyperlink{class_core_1_1_filter_a44aa749b49ba46256975ce545531ecf7}{params}, \hyperlink{namespace_core_abfda8f69fcacfcea2696549b548ed737}{Core\+::\+Ptr\+Task} task)
+\begin{DoxyCompactList}\small\item\em Конструктор. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_filters_1_1_continuous_discrete_1_1_d_f_o_s_a532847e55043544b0ea50fd5744939c1}{algorithm} () override
+\begin{DoxyCompactList}\small\item\em Выполняет алгоритм. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Дополнительные унаследованные члены}
+
+
+\subsection{Подробное описание}
+Класс, реализующий непрерывно-\/дискретный фильтр оптимальной структуры с дискретным прогнозом. 
+
+См. определение в файле cd\+\_\+dfos.\+h строка 16
+
+
+
+Граф наследования\+:Filters\+:\+:Continuous\+Discrete\+:\+:D\+F\+OS\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_filters_1_1_continuous_discrete_1_1_d_f_o_s__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Filters\+:\+:Continuous\+Discrete\+:\+:D\+F\+OS\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_filters_1_1_continuous_discrete_1_1_d_f_o_s__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Методы}
+\hypertarget{class_filters_1_1_continuous_discrete_1_1_d_f_o_s_a532847e55043544b0ea50fd5744939c1}{}\label{class_filters_1_1_continuous_discrete_1_1_d_f_o_s_a532847e55043544b0ea50fd5744939c1} 
+\index{Filters\+::\+Continuous\+Discrete\+::\+D\+F\+OS@{Filters\+::\+Continuous\+Discrete\+::\+D\+F\+OS}!algorithm@{algorithm}}
+\index{algorithm@{algorithm}!Filters\+::\+Continuous\+Discrete\+::\+D\+F\+OS@{Filters\+::\+Continuous\+Discrete\+::\+D\+F\+OS}}
+\subsubsection{\texorpdfstring{algorithm()}{algorithm()}}
+{\footnotesize\ttfamily void Filters\+::\+Continuous\+Discrete\+::\+D\+F\+O\+S\+::algorithm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Выполняет алгоритм. 
+
+Вектор $Z_t$ оценки между измерениями (прогнозирование) вычисляется следующим образом\+: \[Z_{\tau_k^i} = \Gamma_k^i \cdot Z_{\tau_k^{i-1}} + \kappa_k^i,\ \ \ i = 1 \ldots L,\]
+
+В моменты измерений\+: \[\Lambda_k = \Gamma_k \cdot Z_{\tau_{k-1}^L} + \kappa_k,\] \[Z_{\tau_k^0} = \Lambda_k + T_k \cdot G_k^T(\Lambda_k, T_k) \cdot F_k^{-1}(\Lambda_k, T_k) \cdot [Y_k - h_k(\Lambda_k, T_k)],\]
+
+Параметры вычисляется так\+: \[\Gamma_k^i = D_{\tau_k^i,\tau_k^{i-1}}^{x,z} \cdot (D_{\tau_k^{i-1}}^z)^{-1},\ \ \kappa_k^i = m_{\tau_k^i}^x - \Gamma_k^i \cdot m_{\tau_k^{i-1}}^z,\] \[\Gamma_k = D_{t_k,\tau_{k-1}^L}^{x,z} \cdot (D_{\tau_{k-1}^L}^z)^{-1},\ \ \kappa_k = m_{t_k}^x - \Gamma_k \cdot m_{\tau_{k-1}^L}^z,\] \[T_k = D_{t_k}^x - \Gamma_k \cdot (D_{t_k,\tau_{k-1}^L}^{x,z})^T.\]
+
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{class_core_1_1_continuous_discrete_filter}{Core\+::\+Continuous\+Discrete\+Filter} 
+
+\hyperlink{class_core_1_1_continuous_discrete_task}{Core\+::\+Continuous\+Discrete\+Task} 
+\end{DoxySeeAlso}
+
+
+Замещает \hyperlink{class_core_1_1_filter_a438681ee3e54aba2148042d9f8011ab8}{Core\+::\+Filter}.
+
+
+
+См. определение в файле cd\+\_\+dfos.\+cc строка 22
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/filters/continuous\+\_\+discrete/cd\+\_\+dfos.\+h\item 
+src/filters/continuous\+\_\+discrete/cd\+\_\+dfos.\+cc\end{DoxyCompactItemize}

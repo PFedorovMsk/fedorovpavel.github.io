@@ -1,0 +1,219 @@
+\form#0:\[Z_0 = H_0 \cdot Y_0 + e_0,\]
+\form#1:\[H_0 = D_{00}^{xy} \cdot (D_{00}^{xy})^{-1},\]
+\form#2:\[e_0 = m_0^x - H_0 \cdot m_0^y.\]
+\form#3:\[P_0 = D_0^x - H_0 \cdot (D_{00}^{xy})^T.\]
+\form#4:\[dX_t = a(t, X_t)dt + B(t, X_t)dV_t,\ \ \ X_0 \sim \pi_0(x),\]
+\form#5:\[Y_k = с_k(X_{t_k}, W_k),\ \ \ k = 0, 1, \ldots\]
+\form#6:$t$
+\form#7:$t_k$
+\form#8:$X_t = X(t)$
+\form#9:$Y_k$
+\form#10:$V_t$
+\form#11:$W_k$
+\form#12:$a(t,x)$
+\form#13:$B(t,x)$
+\form#14:$c_k(X_k) = c_k(X_k, W_k)$
+\form#15:$\tau(t, m, D)$
+\form#16:\[\tau(t, m, D) = \int a(t,x)\cdot N(x\ |\ m, D)dx,\]
+\form#17:\[\tau(t, m, D) = a(t, m).\]
+\form#18:$\Theta(t,m,D)$
+\form#19:\[\Theta(t,m,D) = \int B(t,x)\cdot B^T(t,x)\cdot N(x\ |\ m,D)dx,\]
+\form#20:\[\Theta(t,m,D) = B(t,m)\cdot B^T(t,m).\]
+\form#21:$A(t, m, D)$
+\form#22:\[A(t, m, D) = \frac{d}{dm} \tau(t, m),\]
+\form#23:\[A(t, m, D) = \frac{d}{dm} a(t, m).\]
+\form#24:$h_k(m, D)$
+\form#25:\[h_k(m, D) = \int (M[c_k(x, W_k)] \cdot N(x\ |\ m, D))dx,\]
+\form#26:\[h_k(m, D) = c_k(m, M[W_k]).\]
+\form#27:$G_k(m, D)$
+\form#28:\[G_k(m, D) = \frac{d}{dm}h_k(m,D),\]
+\form#29:\[G_k(m, D) = \frac{d}{dm}c_k(m,M[W_k]).\]
+\form#30:$F_k(m, D)$
+\form#31:\[F_k(m, D) = \int (M[c_k(x,W_k)\cdot c_k^T(x, W_k)] \cdot N(x\ |\ m,D))dx - h_k(m,D)\cdot h_k^T(m,D),\]
+\form#32:\[F_k(m, D) = C_k^x(m)\cdot D\cdot C_k^{xT}(m) + C_k^w(m)\cdot D[W_k]\cdot C_k^{wT}(m).\]
+\form#33:$C_k^x(x) = \frac{d}{dx} c_k(x, M[W_k]),\ C_k^w(x) = \frac{d}{dw} c_k(x, M[W_k])$
+\form#34:\[Z_0 = m_0^x = M[X_0],\]
+\form#35:\[P_0 = D_0^x = D[X_0].\]
+\form#36:\[dY_t = c_k(t, X_t) + D(t, X_t)dW_t,\ \ \ Y_0 = 0.\]
+\form#37:$Y_t$
+\form#38:$V_t, W_t$
+\form#39:$с(t,x)$
+\form#40:$D(t,x)$
+\form#41:$G(t, m, D)$
+\form#42:\[G(t, m, D) = \frac{d}{dm} c(t, m).\]
+\form#43:$K(t, m, D)$
+\form#44:\[K(t, m, D) = [D \cdot G^T(t,m) + S(t,m)] \cdot R^{-1}(t, m).\]
+\form#45:$\Psi(t, m, D)$
+\form#46:\[\Psi(t, m, D) = A(t,m)\cdot D + D \cdot A^T(t,m) + Q(t,m) - K(t,m,D) \cdot R(t,m) \cdot K^T(t,m,D).\]
+\form#47:$Q(\cdot) = B(\cdot) \cdot B^T(\cdot)$
+\form#48:$S(\cdot) = B(\cdot) \cdot D^T(\cdot)$
+\form#49:$R(\cdot) = D(\cdot) \cdot D^T(\cdot)$
+\form#50:\[X_{k+1} = a_k(X_k, V_k),\ \ \ k = 0, 1, \ldots\]
+\form#51:\[Y_k = b_k(X_k, W_k),\ \ \ k = 0, 1, \ldots\]
+\form#52:$X_k$
+\form#53:$V_k, W_k$
+\form#54:$a_k(X_k) = a_k(X_k, V_k)$
+\form#55:$V_k$
+\form#56:$b(X_k) = b_k(X_k, W_k)$
+\form#57:$\tau_k(m, D)$
+\form#58:\[\tau_k(m, D) = M_N[M[a_k(m, V_k)] \ |\ m, D],\]
+\form#59:\[\tau_k(m, D) = a_k(m, M[V_k]).\]
+\form#60:$\Theta_k(m, D)$
+\form#61:\[\Theta_k(m, D) = M_N[M[a_k(m, V_k)\cdot a_k^T(m, V_k)]\ |\ m, D] - \tau_k(m,D) \cdot \tau_k^T(m, D),\]
+\form#62:\[\Theta_k(m, D) = A_k^x(m) \cdot D \cdot A_k^{xT}(m) + A_k^v(m) \cdot D[V_k] \cdot A_k^{v T}(m)\]
+\form#63:$A_k^x(x) = \nabla_x a_k(x,M[V_k]),\ A_k^v(x) = \nabla_v a_k(x,M[V_k])$
+\form#64:\[h_k(m, D) = M_N[M[b_k(m, W_k)] \ |\ m, D],\]
+\form#65:\[h_k(m, D) = b_k(m, M[W_k]).\]
+\form#66:\[G_k(m, D) = \nabla_m h_k(m,D),\]
+\form#67:\[G_k(m, D) = \nabla_m b_k(m, M[W_k]).\]
+\form#68:\[F_k(m, D) = M_N[M[b_k(m, W_k)\cdot b_k^T(m, W_k)] \ |\ m, D] - h_k(m,D) \cdot h_k^T(m, D),\]
+\form#69:\[F_k(m, D) = B_k^x(m) \cdot D \cdot B_k^{xT}(m) + B_k^w(m) \cdot D[W_k] \cdot B_k^{wT}(m).\]
+\form#70:$B_k^x(x) = \nabla_x b_k(x, M[W_k]),\ B_k^w(x) = \nabla_w b_k(x, M[W_k])$
+\form#71:$\nabla_x a_k(x,v)$
+\form#72:$\nabla_v a_k(x,v)$
+\form#73:$\nabla_x b_k(x,w)$
+\form#74:$\nabla_w b_k(x,w)$
+\form#75:$t_n$
+\form#76:$x_{t_n}$
+\form#77:$X$
+\form#78:$Y$
+\form#79:$Z$
+\form#80:$E$
+\form#81:$M[X]$
+\form#82:$M[Z]$
+\form#83:$M[E]$
+\form#84:$\sqrt{D[X]}$
+\form#85:$\sqrt{D[Z]}$
+\form#86:$\sqrt{D[E]}$
+\form#87:$M[X_t]$
+\form#88:$M[Z_t]$
+\form#89:$M[E_t], E_t = |X_t - Z_t|$
+\form#90:$[0, T_{max}]$
+\form#91:$\delta t$
+\form#92:$\delta \tau$
+\form#93:$\Delta t$
+\form#94:$N$
+\form#95:$L$
+\form#96:$K$
+\form#97:$\Delta t, \delta \tau, \delta t$
+\form#98:$T_{max}$
+\form#99:\[K = \frac{T_{max}}{\delta t};\ \ \ L = \frac{\delta t}{\delta \tau};\ \ \ N = \frac{\delta \tau}{\Delta t}\]
+\form#100:$d$
+\form#101:$h$
+\form#102:$N' = \frac{d}{h}$
+\form#103:$\frac{d}{h} - N' >= \frac{1}{2}$
+\form#104:$N = N' + 1$
+\form#105:$N = N'$
+\form#106:$h = \frac{d}{N}$
+\form#107:$x_0 \sim \pi(\cdot)$
+\form#108:$\pi(\cdot) = N(m_0, s_0^2)$
+\form#109:$V$
+\form#110:$W$
+\form#111:$M[X_0]$
+\form#112:$X_0$
+\form#113:$M[V]$
+\form#114:$M[W]$
+\form#115:$D[X_0]$
+\form#116:$D[V]$
+\form#117:$D[W]$
+\form#118:$Z_t$
+\form#119:\[dZ_t = a(t,Z_t)dt + K(t,Z_t, P_t)\cdot [ dY_t - c(t,Z_t)dt],\]
+\form#120:\[dP_t = \Psi(t,Z_t,P_t)dt.\]
+\form#121:$P$
+\form#122:\[dZ_t = a(t,Z_t)dt + K(t,Z_t, \Gamma_t)\cdot [ dY_t - c(t,Z_t)dt],\]
+\form#123:\[\Gamma_t = D_t^x - D_t^z,\]
+\form#124:\[\frac{d}{dt}Z_t = \tau(t,Z_t, P_t),\]
+\form#125:\[\frac{d}{dt}P_t = A(t,Z_t, P_t) \cdot P_t + P_t \cdot A^T(t,Z_t, P_t) + \Theta(t,Z_t,P_t).\]
+\form#126:\[K_k = P_{t_k} \cdot G_k^T(Z_{t_k}, P_{t_k}) \cdot F_k^{-1}(Z_{t_k}, P_{t_k}),\]
+\form#127:\[Z_{t_k^+} = Z_{t_k} + K_k \cdot [Y_k - h_k(Z_{t_k}, P_{t_k})],\]
+\form#128:\[P_{t_k^+} = P_{t_k} - K_k \cdot G_k(Z_{t_k},P_{t_k}) \cdot P_{t_k}.\]
+\form#129:\[Z_{\tau_k^i} = \Gamma_k^i \cdot Z_{\tau_k^{i-1}} + \kappa_k^i,\ \ \ i = 1 \ldots L,\]
+\form#130:\[\Lambda_k = \Gamma_k \cdot Z_{\tau_{k-1}^L} + \kappa_k,\]
+\form#131:\[Z_{\tau_k^0} = \Lambda_k + T_k \cdot G_k^T(\Lambda_k, T_k) \cdot F_k^{-1}(\Lambda_k, T_k) \cdot [Y_k - h_k(\Lambda_k, T_k)],\]
+\form#132:\[\Gamma_k^i = D_{\tau_k^i,\tau_k^{i-1}}^{x,z} \cdot (D_{\tau_k^{i-1}}^z)^{-1},\ \ \kappa_k^i = m_{\tau_k^i}^x - \Gamma_k^i \cdot m_{\tau_k^{i-1}}^z,\]
+\form#133:\[\Gamma_k = D_{t_k,\tau_{k-1}^L}^{x,z} \cdot (D_{\tau_{k-1}^L}^z)^{-1},\ \ \kappa_k = m_{t_k}^x - \Gamma_k \cdot m_{\tau_{k-1}^L}^z,\]
+\form#134:\[T_k = D_{t_k}^x - \Gamma_k \cdot (D_{t_k,\tau_{k-1}^L}^{x,z})^T.\]
+\form#135:$S_k$
+\form#136:\[ S_k = [Y_k^T\ \ Y_{k-1}^T\ \cdots Y_{k-l+1}^T]^T,\]
+\form#137:$l$
+\form#138:$p = l \cdot dim(Y)$
+\form#139:\[Z_{\tau_k^i} = \Gamma_k^i \cdot S_k + \kappa_k^i,\ \ \ i = 1 \ldots L,\]
+\form#140:\[\Lambda_k = \Gamma_k \cdot Z_{k-1} + \kappa_k,\]
+\form#141:\[\Gamma_k^i = D_{\tau_k^i,k}^{x,s} \cdot (D_k^s)^{-1},\ \ \kappa_k^i = m_{\tau_k^i}^x - \Gamma_k^i \cdot m_k^s,\]
+\form#142:\[\Gamma_k = D_{\tau_k^0,k-1}^{x,s} \cdot (D_{k-1}^s)^{-1},\ \ \kappa_k = m_{\tau_k^0}^x - \Gamma_k \cdot m_{k-1}^s,\]
+\form#143:\[T_k = D_{\tau_k^0}^x - \Gamma_k \cdot (D_{\tau_k^0,k-1}^{x,s})^T.\]
+\form#144:\[\frac{d}{dt}Z_t = \tau(t,Z_t, \Gamma_t).\]
+\form#145:\[Z_{t_k^+} = Z_{t_k} + \Gamma_{t_k} \cdot G_k^T(Z_{t_k}, \Gamma_{t_k}) \cdot F_k^{-1}(Z_{t_k}, \Gamma_{t_k}) \cdot [Y_k - h_k(Z_{t_k}, \Gamma_{t_k})].\]
+\form#146:$\Gamma_t$
+\form#147:\[\Gamma_t = D_t^x - D_t^z\]
+\form#148:\[\Lambda_k = \tau_{k-1}(Z_{k-1}, P_{k-1}),\]
+\form#149:\[\Psi_k = \Theta_{k-1}(Z_{k-1}, P_{k-1}),\]
+\form#150:\[H_k = \Psi_k \cdot G_k^T(\Lambda_k, \Psi_k) \cdot F_k^{-1}(\Lambda_k, \Psi_k),\]
+\form#151:\[Z_k = \Lambda_k + H_k \cdot [Y_k - h_k(\Lambda_k, \Psi_k)],\]
+\form#152:\[P_k = \Psi_k - H_k \cdot G_k(\Lambda_k, \Psi_k) \cdot \Psi_k.\]
+\form#153:\[\Lambda_k = \tau_{k-1}(U_{k-1}, T_{k-1}),\]
+\form#154:\[\Psi_k = \Theta_{k-1}(U_{k-1}, T_{k-1}),\]
+\form#155:\[Z_k = \Lambda_k + \Psi_k \cdot G_k^T(\Lambda_k, \Psi_k) \cdot F_k^{-1}(\Lambda_k, \Psi_k) \cdot [Y_k - h_k(\Lambda_k, \Psi_k)].\]
+\form#156:\[U_k = \Gamma_k^y \cdot Y_k + \Gamma_k^z \cdot Z_k + \chi_k.\]
+\form#157:$\Gamma_k^y,\ \Gamma_k^z,\ T_k,\ \chi_k$
+\form#158:$U_k$
+\form#159:$t = n \cdot \Delta t$
+\form#160:$T_k$
+\form#161:\[D_k^\delta = cov([Y_k^T\ \ Z_k^T]^T),\]
+\form#162:\[[\Gamma_k^y\ \ \Gamma_k^z] = [D_{kk}^{xy}\ \ D_{kk}^{xz}] \cdot (D_k^\delta)^{-1},\]
+\form#163:\[\chi_k = m_k^x - \Gamma_k^y \cdot m_k^y - \Gamma_k^z \cdot m_k^z,\]
+\form#164:\[T_k = D_k^x - \Gamma_k^y \cdot (D_{kk}^{xy})^T - \Gamma_k^z \cdot (D_{kk}^{xz})^T.\]
+\form#165:\[S_{k} = \tau_{k-1}(U_{k-1}, T_{k-1}),\]
+\form#166:\[\Lambda_k = L_{k} \cdot S_{k} + n_{k},\]
+\form#167:\[\Sigma_k = \Psi_k \cdot G_k^T(\Lambda_k, \Psi_k) \cdot F_k^{-1}(\Lambda_k, \Psi_k) \cdot [Y_k - h_k(\Lambda_k, \Psi_k)],\]
+\form#168:\[Z_k = \Lambda_k + K_k \cdot \Sigma_k + e_k.\]
+\form#169:$K_k,\ e_k,\ L_{k},\ n_{k}$
+\form#170:$S_{k}$
+\form#171:\[T_k = D_k^x - \Gamma_k^y \cdot (D_{kk}^{xy})^T - \Gamma_k^z \cdot (D_{kk}^{xz})^T,\]
+\form#172:$t = nn \cdot \Delta t$
+\form#173:$\Lambda_k$
+\form#174:$\Sigma_k$
+\form#175:$L_{k}$
+\form#176:$K_k$
+\form#177:$n_{k}$
+\form#178:$e_k$
+\form#179:\[K_k = D_{kk}^{e\sigma} \cdot (D_k^\sigma)^{-1},\]
+\form#180:\[e_k = m_k^e - K_k \cdot m_k^\sigma,\]
+\form#181:\[L_{k} = D_{k, k-1}^{x,s} \cdot (D_{k-1}^s)^{-1},\]
+\form#182:\[n_{k} = m_k^x - L_{k}\cdot m_{k-1}^s.\]
+\form#183:$p = l\cdot dim(Y)$
+\form#184:$T_{max} \geq \delta t \geq \delta \tau \geq \Delta t$
+\form#185:$x$
+\form#186:$p = (x,y)$
+\form#187:$y$
+\form#188:$\pi$
+\form#189:$e$
+\form#190:$\gamma$
+\form#191:$\epsilon$
+\form#192:$LU$
+\form#193:$A$
+\form#194:$U$
+\form#195:$Q$
+\form#196:$A = P^{-1} \cdot L\cdot U \cdot Q^{-1}$
+\form#197:$R$
+\form#198:\[ R = L + U = \begin{bmatrix} u_{11} & u_{12} & u_{13} & \dots & u_{1n} \\ l_{21} & u_{22} & u_{23} & \dots & u_{2n} \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ l_{d1} & l_{d2} & l_{d3} & \dots & u_{dn} \end{bmatrix}, \]
+\form#199:$A = L \cdot L^{T} = U^{T} \cdot U$
+\form#200:$A^{-1}$
+\form#201:$ A \cdot x = b$
+\form#202:$ b = (v_1\ v_2)^T$
+\form#203:$ b = (m_1\ m_2)$
+\form#204:$ b = (m_1\ m_2)^T$
+\form#205:$ x \sim U(0,1)$
+\form#206:$ x \sim U(a,b)$
+\form#207:$ x \sim N(0,1)$
+\form#208:$ x \sim N(m,s^2)$
+\form#209:$ x \sim lnN(m,s^2)$
+\form#210:$ x \sim \chi^2(k)$
+\form#211:$ x \sim t(n)$
+\form#212:$ x \sim F(n_1,n_2)$
+\form#213:$ x \sim R(s)$
+\form#214:$ x \sim Exp(l)$
+\form#215:$n$
+\form#216:$x_i \sim N(0,1)$
+\form#217:$x_i \sim N(m,s^2)$
+\form#218:$D$

@@ -1,0 +1,138 @@
+\hypertarget{class_task_widget}{}\section{Класс Task\+Widget}
+\label{class_task_widget}\index{Task\+Widget@{Task\+Widget}}
+
+
+Виджет для работы с задачами для фильтров.  
+
+
+
+
+{\ttfamily \#include \char`\"{}task\+\_\+widget.\+h\char`\"{}}
+
+\subsection*{Сигналы}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_task_widget_a881ad67de3b3b2171820b7068fc97714}{}\label{class_task_widget_a881ad67de3b3b2171820b7068fc97714} 
+void \hyperlink{class_task_widget_a881ad67de3b3b2171820b7068fc97714}{changed} ()
+\begin{DoxyCompactList}\small\item\em Сигнал. Сообщает о том, что пользователь изменил текущую задачу. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_task_widget_a31d14904360a3ecc57057aea4b606001}{}\label{class_task_widget_a31d14904360a3ecc57057aea4b606001} 
+\hyperlink{class_task_widget_a31d14904360a3ecc57057aea4b606001}{Task\+Widget} (Q\+Widget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Конструктор. \end{DoxyCompactList}\item 
+\hyperlink{namespace_core_abfda8f69fcacfcea2696549b548ed737}{Core\+::\+Ptr\+Task} \hyperlink{class_task_widget_a03ef83e365334749bac31e04d205e3df}{task} (\hyperlink{namespace_core_af88278693f3c866f217da796f4bb9af7}{Core\+::\+F\+I\+L\+T\+E\+R\+\_\+\+T\+Y\+PE} ftype, \hyperlink{namespace_core_acd67f53ff1d9b21fabb1da4474a8f7d9}{Core\+::\+A\+P\+P\+R\+O\+X\+\_\+\+T\+Y\+PE} atype)
+\begin{DoxyCompactList}\small\item\em Создает экземпляр задачи. \end{DoxyCompactList}\item 
+\hypertarget{class_task_widget_a9105eac610d20165304b42105d16267f}{}\label{class_task_widget_a9105eac610d20165304b42105d16267f} 
+\hyperlink{namespace_tasks_acf6b541f8ce51b63eb9fcb8748317707}{Tasks\+::\+T\+A\+S\+K\+\_\+\+ID} \hyperlink{class_task_widget_a9105eac610d20165304b42105d16267f}{id} () const
+\begin{DoxyCompactList}\small\item\em Возвращает идентификатор выбранной в данный момент задачи. \end{DoxyCompactList}\item 
+\hypertarget{class_task_widget_a809b88d7b0a7ecdfc7ae64df1f7d2b2f}{}\label{class_task_widget_a809b88d7b0a7ecdfc7ae64df1f7d2b2f} 
+const Q\+String \hyperlink{class_task_widget_a809b88d7b0a7ecdfc7ae64df1f7d2b2f}{name} () const
+\begin{DoxyCompactList}\small\item\em Возвращает название выбранной в данный момент задачи. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Закрытые слоты}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_task_widget_a72a39f8729f530685d0cb2042e1dc142}{}\label{class_task_widget_a72a39f8729f530685d0cb2042e1dc142} 
+void \hyperlink{class_task_widget_a72a39f8729f530685d0cb2042e1dc142}{on\+Btn\+Parameters\+Clicked} ()
+\begin{DoxyCompactList}\small\item\em Открывает окно работы с параметрами задачи. \end{DoxyCompactList}\item 
+\hypertarget{class_task_widget_afb4933c6c55916e161ab614c26c88975}{}\label{class_task_widget_afb4933c6c55916e161ab614c26c88975} 
+void \hyperlink{class_task_widget_afb4933c6c55916e161ab614c26c88975}{on\+Cb\+Task\+Changed} (int)
+\begin{DoxyCompactList}\small\item\em Изменяет окно работы с параметрами, а так же испускает сигнал \hyperlink{class_task_widget_a881ad67de3b3b2171820b7068fc97714}{changed()}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_task_widget_a941ea41fcf94ff21f2b28e1ad61c8f02}{load\+Fonts} ()
+\begin{DoxyCompactList}\small\item\em Загружает шрифты и устанавливает их параметры (начертание, размер и т.\+д.). \end{DoxyCompactList}\item 
+\hypertarget{class_task_widget_a4611aec0bce1869e7920f5cf7d1f7ac5}{}\label{class_task_widget_a4611aec0bce1869e7920f5cf7d1f7ac5} 
+void \hyperlink{class_task_widget_a4611aec0bce1869e7920f5cf7d1f7ac5}{init\+Controls} ()
+\begin{DoxyCompactList}\small\item\em Инициализирует управляющие элементы и связывает их сигналы с нужными слотами. \end{DoxyCompactList}\item 
+\hypertarget{class_task_widget_a99a9b36d3fc9e0d43507242f79bcccb5}{}\label{class_task_widget_a99a9b36d3fc9e0d43507242f79bcccb5} 
+void \hyperlink{class_task_widget_a99a9b36d3fc9e0d43507242f79bcccb5}{init\+Layouts} ()
+\begin{DoxyCompactList}\small\item\em Устанавливает расположение всех элементов на виджете. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_task_widget_afbdad5a3494264c0edcd3fc2444bb5bb}{}\label{class_task_widget_afbdad5a3494264c0edcd3fc2444bb5bb} 
+Q\+Combo\+Box $\ast$ {\bfseries m\+\_\+cb\+Task}
+\item 
+\hypertarget{class_task_widget_a150a4b841480dcce86914f04635812ef}{}\label{class_task_widget_a150a4b841480dcce86914f04635812ef} 
+Q\+Push\+Button $\ast$ {\bfseries m\+\_\+btn\+Parameters}
+\item 
+\hypertarget{class_task_widget_a5feaeeed716a49df8022b6b712c69840}{}\label{class_task_widget_a5feaeeed716a49df8022b6b712c69840} 
+\hyperlink{class_task_parameters_widget}{Task\+Parameters\+Widget} $\ast$ {\bfseries m\+\_\+parameters\+Widget}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Виджет для работы с задачами для фильтров. 
+
+См. определение в файле task\+\_\+widget.\+h строка 19
+
+
+
+Граф наследования\+:Task\+Widget\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{class_task_widget__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Task\+Widget\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{class_task_widget__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Методы}
+\hypertarget{class_task_widget_a941ea41fcf94ff21f2b28e1ad61c8f02}{}\label{class_task_widget_a941ea41fcf94ff21f2b28e1ad61c8f02} 
+\index{Task\+Widget@{Task\+Widget}!load\+Fonts@{load\+Fonts}}
+\index{load\+Fonts@{load\+Fonts}!Task\+Widget@{Task\+Widget}}
+\subsubsection{\texorpdfstring{load\+Fonts()}{loadFonts()}}
+{\footnotesize\ttfamily void Task\+Widget\+::load\+Fonts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Загружает шрифты и устанавливает их параметры (начертание, размер и т.\+д.). 
+
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{class_font_manager}{Font\+Manager}. 
+\end{DoxySeeAlso}
+
+
+См. определение в файле task\+\_\+widget.\+cc строка 18
+
+\hypertarget{class_task_widget_a03ef83e365334749bac31e04d205e3df}{}\label{class_task_widget_a03ef83e365334749bac31e04d205e3df} 
+\index{Task\+Widget@{Task\+Widget}!task@{task}}
+\index{task@{task}!Task\+Widget@{Task\+Widget}}
+\subsubsection{\texorpdfstring{task()}{task()}}
+{\footnotesize\ttfamily \hyperlink{namespace_core_abfda8f69fcacfcea2696549b548ed737}{Core\+::\+Ptr\+Task} Task\+Widget\+::task (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_core_af88278693f3c866f217da796f4bb9af7}{Core\+::\+F\+I\+L\+T\+E\+R\+\_\+\+T\+Y\+PE}}]{ftype,  }\item[{\hyperlink{namespace_core_acd67f53ff1d9b21fabb1da4474a8f7d9}{Core\+::\+A\+P\+P\+R\+O\+X\+\_\+\+T\+Y\+PE}}]{atype }\end{DoxyParamCaption})}
+
+
+
+Создает экземпляр задачи. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em ftype} & -\/ идентификатор типа фильтра (непрерывный, дискретный, ...). \\
+\hline
+{\em atype} & -\/ идентификатор типа приближения (аппроксимации). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+указатель на экземпляр задачи. 
+\end{DoxyReturn}
+
+
+См. определение в файле task\+\_\+widget.\+cc строка 91
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/gui/task\+\_\+widget.\+h\item 
+src/gui/task\+\_\+widget.\+cc\end{DoxyCompactItemize}

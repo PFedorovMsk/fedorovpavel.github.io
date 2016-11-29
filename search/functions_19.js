@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['_7eadditionalsettingswidget',['~AdditionalSettingsWidget',['../class_additional_settings_widget.html#a375c84f23821d01d91289b57daa098a5',1,'AdditionalSettingsWidget']]],
   ['_7efilter',['~Filter',['../class_core_1_1_filter.html#a38353602e4df00367d49263dc6368268',1,'Core::Filter']]],
   ['_7efilterparameterswidget',['~FilterParametersWidget',['../class_filter_parameters_widget.html#ab3394a4f66caf8faa7886b55bba647e1',1,'FilterParametersWidget']]],
   ['_7efilterstartbuttonsbox',['~FilterStartButtonsBox',['../class_filter_start_buttons_box.html#a26579dc4b7375d2fc37c0693a4684057',1,'FilterStartButtonsBox']]],

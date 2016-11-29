@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 736;
+var viewWidth = 781;
 var viewHeight = 88;
 var sectionId = 'dynsection-0';
 </script>
@@ -54,93 +54,93 @@ var sectionId = 'dynsection-0';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>Core::ContinuousDiscreteTask</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-84 732,-84 732,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-84 777,-84 777,4 -4,4"/>
 <!-- Node0 -->
 <g id="node1" class="node"><title>Node0</title>
-<polygon fill="#bfbfbf" stroke="black" points="239,-30 239,-49 388,-49 388,-30 239,-30"/>
-<text text-anchor="middle" x="313.5" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">Core::ContinuousDiscreteTask</text>
+<polygon fill="#bfbfbf" stroke="black" points="249,-30 249,-49 411,-49 411,-30 249,-30"/>
+<text text-anchor="middle" x="330" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">Core::ContinuousDiscreteTask</text>
 </g>
 <!-- Node3 -->
 <g id="node4" class="node"><title>Node3</title>
 <g id="a_node4"><a xlink:href="class_tasks_1_1_continuous_discrete_1_1_landing_linear.html" target="_top" xlink:title="Задача спуска ЛА на планету (непрерывно&#45;дискретная, линеаризованная) для фильтров оптимальной структу...">
-<polygon fill="white" stroke="black" points="424,-49.5 424,-79.5 558,-79.5 558,-49.5 424,-49.5"/>
-<text text-anchor="start" x="432" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">Tasks::ContinuousDiscrete</text>
-<text text-anchor="middle" x="491" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">::LandingLinear</text>
+<polygon fill="white" stroke="black" points="447,-49.5 447,-79.5 592,-79.5 592,-49.5 447,-49.5"/>
+<text text-anchor="start" x="455" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">Tasks::ContinuousDiscrete</text>
+<text text-anchor="middle" x="519.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">::LandingLinear</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node3 -->
 <g id="edge3" class="edge"><title>Node0&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M391.261,-50.4346C402.145,-51.9851 413.258,-53.5682 423.917,-55.0864"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="391.743,-46.9681 381.35,-49.0227 390.756,-53.8981 391.743,-46.9681"/>
+<path fill="none" stroke="midnightblue" d="M412.439,-50.3585C423.933,-51.8911 435.678,-53.4571 446.968,-54.9623"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="412.795,-46.8752 402.421,-49.0227 411.87,-53.8138 412.795,-46.8752"/>
 </g>
 <!-- Node5 -->
 <g id="node6" class="node"><title>Node5</title>
 <g id="a_node6"><a xlink:href="class_tasks_1_1_continuous_discrete_1_1_van_der_pol_linear.html" target="_top" xlink:title="Осциллятор Ван&#45;дер&#45;Поля (непрерывно&#45;дискретный, линеаризованный) для фильтров оптимальной структуры...">
-<polygon fill="white" stroke="black" points="424,-0.5 424,-30.5 558,-30.5 558,-0.5 424,-0.5"/>
-<text text-anchor="start" x="432" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Tasks::ContinuousDiscrete</text>
-<text text-anchor="middle" x="491" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::VanDerPolLinear</text>
+<polygon fill="white" stroke="black" points="447,-0.5 447,-30.5 592,-30.5 592,-0.5 447,-0.5"/>
+<text text-anchor="start" x="455" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Tasks::ContinuousDiscrete</text>
+<text text-anchor="middle" x="519.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::VanDerPolLinear</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node5 -->
 <g id="edge5" class="edge"><title>Node0&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M394.034,-28.6236C404.021,-27.2578 414.151,-25.8725 423.901,-24.5392"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="393.548,-25.1574 384.114,-29.9801 394.496,-32.0928 393.548,-25.1574"/>
+<path fill="none" stroke="midnightblue" d="M415.413,-28.6952C425.952,-27.3462 436.65,-25.9768 446.968,-24.6562"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="414.849,-25.2387 405.374,-29.9801 415.738,-32.182 414.849,-25.2387"/>
 </g>
 <!-- Node1 -->
 <g id="node2" class="node"><title>Node1</title>
 <g id="a_node2"><a xlink:href="class_core_1_1_task.html" target="_top" xlink:title="Базовый класс для всех задач ">
-<polygon fill="white" stroke="black" points="138,-30 138,-49 203,-49 203,-30 138,-30"/>
-<text text-anchor="middle" x="170.5" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">Core::Task</text>
+<polygon fill="white" stroke="black" points="146,-30 146,-49 213,-49 213,-30 146,-30"/>
+<text text-anchor="middle" x="179.5" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">Core::Task</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node0 -->
 <g id="edge1" class="edge"><title>Node1&#45;&gt;Node0</title>
-<path fill="none" stroke="midnightblue" d="M213.379,-39.5C221.466,-39.5 230.157,-39.5 238.912,-39.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="213.143,-36.0001 203.143,-39.5 213.143,-43.0001 213.143,-36.0001"/>
+<path fill="none" stroke="midnightblue" d="M223.275,-39.5C231.321,-39.5 239.971,-39.5 248.734,-39.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="223.089,-36.0001 213.089,-39.5 223.089,-43.0001 223.089,-36.0001"/>
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
 <g id="a_node3"><a xlink:href="class_core_1_1_function_time.html" target="_top" xlink:title="Базовый класс для классов, представляющих собой функции времени. ">
-<polygon fill="white" stroke="black" points="0,-30 0,-49 102,-49 102,-30 0,-30"/>
-<text text-anchor="middle" x="51" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">Core::FunctionTime</text>
+<polygon fill="white" stroke="black" points="0,-30 0,-49 110,-49 110,-30 0,-30"/>
+<text text-anchor="middle" x="55" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">Core::FunctionTime</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge2" class="edge"><title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M112.452,-39.5C121.23,-39.5 129.957,-39.5 137.849,-39.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="112.171,-36.0001 102.171,-39.5 112.171,-43.0001 112.171,-36.0001"/>
+<path fill="none" stroke="midnightblue" d="M120.122,-39.5C129.016,-39.5 137.829,-39.5 145.808,-39.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="120.087,-36.0001 110.087,-39.5 120.087,-43.0001 120.087,-36.0001"/>
 </g>
 <!-- Node4 -->
 <g id="node5" class="node"><title>Node4</title>
 <g id="a_node5"><a xlink:href="class_tasks_1_1_continuous_discrete_1_1_landing_gauss.html" target="_top" xlink:title="Tasks::ContinuousDiscrete\l::LandingGauss">
-<polygon fill="white" stroke="black" points="594,-49.5 594,-79.5 728,-79.5 728,-49.5 594,-49.5"/>
-<text text-anchor="start" x="602" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">Tasks::ContinuousDiscrete</text>
-<text text-anchor="middle" x="661" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">::LandingGauss</text>
+<polygon fill="white" stroke="black" points="628,-49.5 628,-79.5 773,-79.5 773,-49.5 628,-49.5"/>
+<text text-anchor="start" x="636" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">Tasks::ContinuousDiscrete</text>
+<text text-anchor="middle" x="700.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">::LandingGauss</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge4" class="edge"><title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M568.595,-64.5C577.013,-64.5 585.532,-64.5 593.809,-64.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="568.398,-61.0001 558.398,-64.5 568.398,-68.0001 568.398,-61.0001"/>
+<path fill="none" stroke="midnightblue" d="M602.043,-64.5C610.638,-64.5 619.332,-64.5 627.804,-64.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="602.017,-61.0001 592.017,-64.5 602.017,-68.0001 602.017,-61.0001"/>
 </g>
 <!-- Node6 -->
 <g id="node7" class="node"><title>Node6</title>
 <g id="a_node7"><a xlink:href="class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss.html" target="_top" xlink:title="Осциллятор Ван&#45;дер&#45;Поля (непрерывно&#45;дискретный, гауссовский) для фильтров оптимальной структуры...">
-<polygon fill="white" stroke="black" points="594,-0.5 594,-30.5 728,-30.5 728,-0.5 594,-0.5"/>
-<text text-anchor="start" x="602" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Tasks::ContinuousDiscrete</text>
-<text text-anchor="middle" x="661" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::VanDerPolGauss</text>
+<polygon fill="white" stroke="black" points="628,-0.5 628,-30.5 773,-30.5 773,-0.5 628,-0.5"/>
+<text text-anchor="start" x="636" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Tasks::ContinuousDiscrete</text>
+<text text-anchor="middle" x="700.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::VanDerPolGauss</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge6" class="edge"><title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M568.595,-15.5C577.013,-15.5 585.532,-15.5 593.809,-15.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="568.398,-12.0001 558.398,-15.5 568.398,-19.0001 568.398,-12.0001"/>
+<path fill="none" stroke="midnightblue" d="M602.043,-15.5C610.638,-15.5 619.332,-15.5 627.804,-15.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="602.017,-12.0001 592.017,-15.5 602.017,-19.0001 602.017,-12.0001"/>
 </g>
 </g>
 </svg>

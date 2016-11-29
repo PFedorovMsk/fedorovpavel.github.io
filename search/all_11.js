@@ -32,9 +32,9 @@ var searchData=
   ['sheet',['sheet',['../class_graph_window.html#a756c68dacb48b03ac45d457d61a760d8',1,'GraphWindow']]],
   ['showdata',['showData',['../class_main_window.html#acf98b8c16421088a791c6d3d050ebc2d',1,'MainWindow']]],
   ['singlefilteroutput',['SingleFilterOutput',['../struct_core_1_1_single_filter_output.html',1,'Core']]],
-  ['solvesystem',['SolveSystem',['../namespace_math_1_1_lin_alg.html#ab6e559246eac7fcd1bb0ef18fc4657ee',1,'Math::LinAlg']]],
   ['start',['start',['../class_filter_start_buttons_box.html#ac6e2a6555f1d388391f188f834b8e753',1,'FilterStartButtonsBox']]],
   ['step',['step',['../class_core_1_1_function_time.html#a7c3dfc0d8d69c83c162c42435fa13cb9',1,'Core::FunctionTime']]],
   ['students',['students',['../namespace_math_1_1_rand.html#a9734bfad6fcbf96582aaa3e9cf9aab02',1,'Math::Rand']]],
-  ['subtitlelabel',['subTitleLabel',['../class_graph_sheet.html#a6adc16508129da20d14cea23b289d99c',1,'GraphSheet']]]
+  ['subtitlelabel',['subTitleLabel',['../class_graph_sheet.html#a6adc16508129da20d14cea23b289d99c',1,'GraphSheet']]],
+  ['svd',['SVD',['../namespace_math_1_1_lin_alg.html#a34ee452c5d64eeb10e1bb63cf887af17a595e2d2f1a68ede96e96f849a85370bc',1,'Math::LinAlg']]]
 ];

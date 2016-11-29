@@ -1,5 +1,5 @@
 \form#0:\[Z_0 = H_0 \cdot Y_0 + e_0,\]
-\form#1:\[H_0 = D_{00}^{xy} \cdot (D_{00}^{xy})^{-1},\]
+\form#1:\[H_0 = D_{00}^{xy} \cdot (D_0^y)^{-1},\]
 \form#2:\[e_0 = m_0^x - H_0 \cdot m_0^y.\]
 \form#3:\[P_0 = D_0^x - H_0 \cdot (D_{00}^{xy})^T.\]
 \form#4:\[dX_t = a(t, X_t)dt + B(t, X_t)dV_t,\ \ \ X_0 \sim \pi_0(x),\]

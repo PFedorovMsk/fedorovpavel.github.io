@@ -31,7 +31,6 @@ var searchData=
   ['setylabel',['setYLabel',['../class_graph_sheet.html#a121f2bf52435af3924a5fe813456638e',1,'GraphSheet']]],
   ['sheet',['sheet',['../class_graph_window.html#a756c68dacb48b03ac45d457d61a760d8',1,'GraphWindow']]],
   ['showdata',['showData',['../class_main_window.html#acf98b8c16421088a791c6d3d050ebc2d',1,'MainWindow']]],
-  ['solvesystem',['SolveSystem',['../namespace_math_1_1_lin_alg.html#ab6e559246eac7fcd1bb0ef18fc4657ee',1,'Math::LinAlg']]],
   ['start',['start',['../class_filter_start_buttons_box.html#ac6e2a6555f1d388391f188f834b8e753',1,'FilterStartButtonsBox']]],
   ['step',['step',['../class_core_1_1_function_time.html#a7c3dfc0d8d69c83c162c42435fa13cb9',1,'Core::FunctionTime']]],
   ['students',['students',['../namespace_math_1_1_rand.html#a9734bfad6fcbf96582aaa3e9cf9aab02',1,'Math::Rand']]],

@@ -1,5 +1,3 @@
 <map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
-<area shape="rect" id="node2" href="$class_filter_parameters_widget.html" title="Класс виджета, предаставляющего элементы управления параметрами фильтрации. " alt="" coords="144,5,303,32"/>
-<area shape="rect" id="node3" href="$class_filter_start_buttons_box.html" title="Класс виджета, содержащего только кнопки для запуска того или иного фильтра. " alt="" coords="150,56,297,83"/>
-<area shape="rect" id="node4" href="$class_task_widget.html" title="Виджет для работы с задачами для фильтров. " alt="" coords="178,107,269,133"/>
+<area shape="rect" id="node1" href="$struct_core_1_1_single_filter_output.html" title="Структура, хранящая значение времени и моментные характеристики, соответствующие ему. " alt="" coords="5,5,181,32"/>
 </map>

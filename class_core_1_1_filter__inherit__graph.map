@@ -1,14 +1,14 @@
 <map id="Core::Filter" name="Core::Filter">
-<area shape="rect" id="node2" href="$class_core_1_1_continuous_discrete_filter.html" title="Базовый класс для всех непрерывно&#45;дискретных фильтров оптимальной структуры. " alt="" coords="140,122,311,163"/>
-<area shape="rect" id="node7" href="$class_core_1_1_continuous_filter.html" title="Базовый класс для всех непрерывныз фильтров оптимальной структуры. " alt="" coords="150,277,301,304"/>
-<area shape="rect" id="node10" href="$class_core_1_1_discrete_filter.html" title="Базовый класс для всех дискретных фильтров оптимальной структуры. " alt="" coords="158,353,293,380"/>
-<area shape="rect" id="node3" href="$class_filters_1_1_continuous_discrete_1_1_a_o_f.html" title="Класс, реализующий непрерывно&#45;дискретный абсолютно оптимальной фильтр. " alt="" coords="359,5,573,32"/>
-<area shape="rect" id="node4" href="$class_filters_1_1_continuous_discrete_1_1_d_f_o_s.html" title="Класс, реализующий непрерывно&#45;дискретный фильтр оптимальной структуры с дискретным прогнозом..." alt="" coords="377,57,555,98"/>
-<area shape="rect" id="node5" href="$class_filters_1_1_continuous_discrete_1_1_d_f_o_s_b_o.html" title="Класс, реализующий непрерывно&#45;дискретный фильтр оптимальной структуры повышеного порядка. " alt="" coords="377,122,555,163"/>
-<area shape="rect" id="node6" href="$class_filters_1_1_continuous_discrete_1_1_f_o_s.html" title="Класс, реализующий непрерывно&#45;дискретный фильтр оптимальной структуры с непрерывным прогнозом..." alt="" coords="359,188,573,215"/>
-<area shape="rect" id="node8" href="$class_filters_1_1_continuous_1_1_a_o_f.html" title="Класс, реализующий непрерывный абсолютно оптимальный фильтр. " alt="" coords="383,239,549,265"/>
-<area shape="rect" id="node9" href="$class_filters_1_1_continuous_1_1_f_o_s.html" title="Класс, реализующий непрерывный фильтр оптимальной структуры. " alt="" coords="383,289,549,316"/>
-<area shape="rect" id="node11" href="$class_filters_1_1_discrete_1_1_a_o_f.html" title="Класс, реализующий дискретный абсолютно оптимальной фильтр. " alt="" coords="391,340,541,367"/>
-<area shape="rect" id="node12" href="$class_filters_1_1_discrete_1_1_f_o_s.html" title="Класс, реализующий дискретный фильтр оптимальной структуры. " alt="" coords="391,391,541,417"/>
-<area shape="rect" id="node13" href="$class_filters_1_1_discrete_1_1_m_f_o_s.html" title="Filters::Discrete::MFOS" alt="" coords="386,441,546,468"/>
+<area shape="rect" id="node2" href="$class_core_1_1_continuous_discrete_filter.html" title="Базовый класс для всех непрерывно&#45;дискретных фильтров оптимальной структуры. " alt="" coords="145,122,332,163"/>
+<area shape="rect" id="node7" href="$class_core_1_1_continuous_filter.html" title="Базовый класс для всех непрерывныз фильтров оптимальной структуры. " alt="" coords="156,277,321,304"/>
+<area shape="rect" id="node10" href="$class_core_1_1_discrete_filter.html" title="Базовый класс для всех дискретных фильтров оптимальной структуры. " alt="" coords="165,353,312,380"/>
+<area shape="rect" id="node3" href="$class_filters_1_1_continuous_discrete_1_1_a_o_f.html" title="Класс, реализующий непрерывно&#45;дискретный абсолютно оптимальной фильтр. " alt="" coords="380,5,611,32"/>
+<area shape="rect" id="node4" href="$class_filters_1_1_continuous_discrete_1_1_d_f_o_s.html" title="Класс, реализующий непрерывно&#45;дискретный фильтр оптимальной структуры с дискретным прогнозом..." alt="" coords="397,57,593,98"/>
+<area shape="rect" id="node5" href="$class_filters_1_1_continuous_discrete_1_1_d_f_o_s_b_o.html" title="Класс, реализующий непрерывно&#45;дискретный фильтр оптимальной структуры повышеного порядка. " alt="" coords="397,122,593,163"/>
+<area shape="rect" id="node6" href="$class_filters_1_1_continuous_discrete_1_1_f_o_s.html" title="Класс, реализующий непрерывно&#45;дискретный фильтр оптимальной структуры с непрерывным прогнозом..." alt="" coords="381,188,610,215"/>
+<area shape="rect" id="node8" href="$class_filters_1_1_continuous_1_1_a_o_f.html" title="Класс, реализующий непрерывный абсолютно оптимальный фильтр. " alt="" coords="407,239,583,265"/>
+<area shape="rect" id="node9" href="$class_filters_1_1_continuous_1_1_f_o_s.html" title="Класс, реализующий непрерывный фильтр оптимальной структуры. " alt="" coords="408,289,583,316"/>
+<area shape="rect" id="node11" href="$class_filters_1_1_discrete_1_1_a_o_f.html" title="Класс, реализующий дискретный абсолютно оптимальной фильтр. " alt="" coords="417,340,574,367"/>
+<area shape="rect" id="node12" href="$class_filters_1_1_discrete_1_1_f_o_s.html" title="Класс, реализующий дискретный фильтр оптимальной структуры. " alt="" coords="417,391,573,417"/>
+<area shape="rect" id="node13" href="$class_filters_1_1_discrete_1_1_m_f_o_s.html" title="Filters::Discrete::MFOS" alt="" coords="412,441,579,468"/>
 </map>

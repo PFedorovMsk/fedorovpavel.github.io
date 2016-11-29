@@ -35,6 +35,8 @@ var searchData=
   ['onmousewheel',['onMouseWheel',['../class_graph_window.html#a1731d19496de65b3b1a3e125afa8a41a',1,'GraphWindow']]],
   ['onmovelegend',['onMoveLegend',['../class_graph_window.html#ac8a8d86f74361c73bf0a75254e7ee069',1,'GraphWindow']]],
   ['onordermultchanged',['onOrderMultChanged',['../class_filter_parameters_widget.html#adacd531098565f7b21bd8d958a35fa74',1,'FilterParametersWidget']]],
+  ['onpinvgrevilletoggled',['onPinvGrevilleToggled',['../class_additional_settings_widget.html#ae1174df17848122030d877a75ce5dd7d',1,'AdditionalSettingsWidget']]],
+  ['onpinvsvdtoggled',['onPinvSvdToggled',['../class_additional_settings_widget.html#a18833f1a993762babf170e952074cf50',1,'AdditionalSettingsWidget']]],
   ['onpredictioncountchanged',['onPredictionCountChanged',['../class_filter_parameters_widget.html#a4c0b14d9be53fd4b45179037e09c33b3',1,'FilterParametersWidget']]],
   ['onpredictioncounttoggled',['onPredictionCountToggled',['../class_filter_parameters_widget.html#af00a1550252f080c7647f3fbf684587b',1,'FilterParametersWidget']]],
   ['onpredictionstepchanged',['onPredictionStepChanged',['../class_filter_parameters_widget.html#aa78cbb97c3a70babc20c35cf0e6f346a',1,'FilterParametersWidget']]],

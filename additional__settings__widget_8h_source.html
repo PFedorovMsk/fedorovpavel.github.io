@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Optimal Filtering: Исходный файл src/gui/additional_settings_widget.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Optimal Filtering
+   &#160;<span id="projectnumber">v2.7.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_99d0482cf009f9d97a0877749b817f19.html">gui</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">additional_settings_widget.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ADDITIONAL_SETTINGS_WIDGET_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ADDITIONAL_SETTINGS_WIDGET_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;src/math/linear_algebra.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QGroupBox&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QRadioButton&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QVBoxLayout&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_additional_settings_widget.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_additional_settings_widget.html">AdditionalSettingsWidget</a> : <span class="keyword">public</span> QGroupBox</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_additional_settings_widget.html#a77a6ec05e073b3710fd6dd3651c5ba2c">AdditionalSettingsWidget</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_additional_settings_widget.html#a375c84f23821d01d91289b57daa098a5">~AdditionalSettingsWidget</a>();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">private</span> slots:</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_additional_settings_widget.html#a18833f1a993762babf170e952074cf50">onPinvSvdToggled</a>(<span class="keywordtype">bool</span> checked);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_additional_settings_widget.html#ae1174df17848122030d877a75ce5dd7d">onPinvGrevilleToggled</a>(<span class="keywordtype">bool</span> checked);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_additional_settings_widget.html#aaa678b544facc924f555b15e5640b21a">loadFonts</a>();</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_additional_settings_widget.html#a19a4de8c860475245e1719e0bdf20a4f">initControls</a>();</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_additional_settings_widget.html#a60b77ac98c1d0737876007c01473badd">initLayouts</a>();</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    QRadioButton *m_radioPinvSvd;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    QRadioButton *m_radioPinvGreville;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif // ADDITIONAL_SETTINGS_WIDGET_H</span></div><div class="ttc" id="class_additional_settings_widget_html_ae1174df17848122030d877a75ce5dd7d"><div class="ttname"><a href="class_additional_settings_widget.html#ae1174df17848122030d877a75ce5dd7d">AdditionalSettingsWidget::onPinvGrevilleToggled</a></div><div class="ttdeci">void onPinvGrevilleToggled(bool checked)</div><div class="ttdoc">Задействует метод Гревиля для псевдообращения матриц. </div><div class="ttdef"><b>Definition:</b> <a href="additional__settings__widget_8cc_source.html#l00060">additional_settings_widget.cc:60</a></div></div>
+<div class="ttc" id="class_additional_settings_widget_html_a18833f1a993762babf170e952074cf50"><div class="ttname"><a href="class_additional_settings_widget.html#a18833f1a993762babf170e952074cf50">AdditionalSettingsWidget::onPinvSvdToggled</a></div><div class="ttdeci">void onPinvSvdToggled(bool checked)</div><div class="ttdoc">Задействует метод SVD для псевдообращения матриц. </div><div class="ttdef"><b>Definition:</b> <a href="additional__settings__widget_8cc_source.html#l00053">additional_settings_widget.cc:53</a></div></div>
+<div class="ttc" id="class_additional_settings_widget_html_aaa678b544facc924f555b15e5640b21a"><div class="ttname"><a href="class_additional_settings_widget.html#aaa678b544facc924f555b15e5640b21a">AdditionalSettingsWidget::loadFonts</a></div><div class="ttdeci">void loadFonts()</div><div class="ttdoc">Загружает шрифты и устанавливает их параметры (начертание, размер и т.д.). </div><div class="ttdef"><b>Definition:</b> <a href="additional__settings__widget_8cc_source.html#l00022">additional_settings_widget.cc:22</a></div></div>
+<div class="ttc" id="class_additional_settings_widget_html"><div class="ttname"><a href="class_additional_settings_widget.html">AdditionalSettingsWidget</a></div><div class="ttdoc">Класс виджета, предаставляющего дополнительные настройки для численных методов. </div><div class="ttdef"><b>Definition:</b> <a href="additional__settings__widget_8h_source.html#l00014">additional_settings_widget.h:14</a></div></div>
+<div class="ttc" id="class_additional_settings_widget_html_a77a6ec05e073b3710fd6dd3651c5ba2c"><div class="ttname"><a href="class_additional_settings_widget.html#a77a6ec05e073b3710fd6dd3651c5ba2c">AdditionalSettingsWidget::AdditionalSettingsWidget</a></div><div class="ttdeci">AdditionalSettingsWidget(QWidget *parent=nullptr)</div><div class="ttdoc">Конструктор. </div><div class="ttdef"><b>Definition:</b> <a href="additional__settings__widget_8cc_source.html#l00009">additional_settings_widget.cc:9</a></div></div>
+<div class="ttc" id="class_additional_settings_widget_html_a19a4de8c860475245e1719e0bdf20a4f"><div class="ttname"><a href="class_additional_settings_widget.html#a19a4de8c860475245e1719e0bdf20a4f">AdditionalSettingsWidget::initControls</a></div><div class="ttdeci">void initControls()</div><div class="ttdoc">Инициализирует управляющие элементы и связывает их сигналы с нужными слотами. </div><div class="ttdef"><b>Definition:</b> <a href="additional__settings__widget_8cc_source.html#l00030">additional_settings_widget.cc:30</a></div></div>
+<div class="ttc" id="class_additional_settings_widget_html_a60b77ac98c1d0737876007c01473badd"><div class="ttname"><a href="class_additional_settings_widget.html#a60b77ac98c1d0737876007c01473badd">AdditionalSettingsWidget::initLayouts</a></div><div class="ttdeci">void initLayouts()</div><div class="ttdoc">Устанавливает расположение всех элементов на виджете. </div><div class="ttdef"><b>Definition:</b> <a href="additional__settings__widget_8cc_source.html#l00041">additional_settings_widget.cc:41</a></div></div>
+<div class="ttc" id="class_additional_settings_widget_html_a375c84f23821d01d91289b57daa098a5"><div class="ttname"><a href="class_additional_settings_widget.html#a375c84f23821d01d91289b57daa098a5">AdditionalSettingsWidget::~AdditionalSettingsWidget</a></div><div class="ttdeci">~AdditionalSettingsWidget()</div><div class="ttdoc">Деструктор. </div><div class="ttdef"><b>Definition:</b> <a href="additional__settings__widget_8cc_source.html#l00018">additional_settings_widget.cc:18</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vanderpol',['VanDerPol',['../namespace_tasks.html#acf6b541f8ce51b63eb9fcb8748317707a7d65b6ff850300fd593c198f76e32d99',1,'Tasks']]]
+  ['svd',['SVD',['../namespace_math_1_1_lin_alg.html#a34ee452c5d64eeb10e1bb63cf887af17a595e2d2f1a68ede96e96f849a85370bc',1,'Math::LinAlg']]]
 ];

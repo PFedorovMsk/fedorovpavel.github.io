@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['task_5fid',['TASK_ID',['../namespace_tasks.html#acf6b541f8ce51b63eb9fcb8748317707',1,'Tasks']]]
+  ['pseudoinversemethods',['PseudoinverseMethods',['../namespace_math_1_1_lin_alg.html#a34ee452c5d64eeb10e1bb63cf887af17',1,'Math::LinAlg']]]
 ];

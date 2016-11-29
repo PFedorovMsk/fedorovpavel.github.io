@@ -64,7 +64,9 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Функции</a>  </div>
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
   <div class="headertitle">
 <div class="title">Пространство имен Math::LinAlg</div>  </div>
 </div><!--header-->
@@ -73,10 +75,18 @@ $(function() {
 <p>Модуль, содержащий описание и реализацию методов линейной алгебры.  
 <a href="#details">Подробнее...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:a34ee452c5d64eeb10e1bb63cf887af17"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_math_1_1_lin_alg.html#a34ee452c5d64eeb10e1bb63cf887af17">PseudoinverseMethods</a> { <a class="el" href="namespace_math_1_1_lin_alg.html#a34ee452c5d64eeb10e1bb63cf887af17a9febc190323c06d33ae8d8716f98bfe9">PseudoinverseMethods::GREVILLE</a>, 
+<a class="el" href="namespace_math_1_1_lin_alg.html#a34ee452c5d64eeb10e1bb63cf887af17a595e2d2f1a68ede96e96f849a85370bc">PseudoinverseMethods::SVD</a>
+ }<tr class="memdesc:a34ee452c5d64eeb10e1bb63cf887af17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Набор идентификаторов методов псевдообращения матриц.  <a href="namespace_math_1_1_lin_alg.html#a34ee452c5d64eeb10e1bb63cf887af17">Подробнее...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a34ee452c5d64eeb10e1bb63cf887af17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Функции</h2></td></tr>
-<tr class="memitem:ab6e559246eac7fcd1bb0ef18fc4657ee"><td class="memItemLeft" align="right" valign="top">Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_math_1_1_lin_alg.html#ab6e559246eac7fcd1bb0ef18fc4657ee">SolveSystem</a> (const Matrix &amp;A, const Vector &amp;b)</td></tr>
-<tr class="memdesc:ab6e559246eac7fcd1bb0ef18fc4657ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Решает СЛАУ <img class="formulaInl" alt="$ A \cdot x = b$" src="form_201.png"/>.  <a href="#ab6e559246eac7fcd1bb0ef18fc4657ee">Подробнее...</a><br /></td></tr>
+<tr class="memitem:ab6e559246eac7fcd1bb0ef18fc4657ee"><td class="memItemLeft" align="right" valign="top"><a id="ab6e559246eac7fcd1bb0ef18fc4657ee"></a>
+Vector&#160;</td><td class="memItemRight" valign="bottom"><b>SolveSystem</b> (const Matrix &amp;A, const Vector &amp;b)</td></tr>
 <tr class="separator:ab6e559246eac7fcd1bb0ef18fc4657ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6053d7dea0e4d128cdcff0d8423708a"><td class="memItemLeft" align="right" valign="top">Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_math_1_1_lin_alg.html#ad6053d7dea0e4d128cdcff0d8423708a">LU</a> (const Matrix &amp;A)</td></tr>
 <tr class="separator:ad6053d7dea0e4d128cdcff0d8423708a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -94,10 +104,55 @@ $(function() {
 <tr class="memitem:a03abc1453c96f7898d89262f5278aefc"><td class="memItemLeft" align="right" valign="top">Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_math_1_1_lin_alg.html#a03abc1453c96f7898d89262f5278aefc">PinvGreville</a> (const Matrix &amp;A)</td></tr>
 <tr class="memdesc:a03abc1453c96f7898d89262f5278aefc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет псевдообратную матрицу методом Гревилля.  <a href="#a03abc1453c96f7898d89262f5278aefc">Подробнее...</a><br /></td></tr>
 <tr class="separator:a03abc1453c96f7898d89262f5278aefc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad180bcdddb70c04adcd34f8915e2f500"><td class="memItemLeft" align="right" valign="top"><a id="ad180bcdddb70c04adcd34f8915e2f500"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPinvMethod</b> (<a class="el" href="namespace_math_1_1_lin_alg.html#a34ee452c5d64eeb10e1bb63cf887af17">PseudoinverseMethods</a> method)</td></tr>
+<tr class="separator:ad180bcdddb70c04adcd34f8915e2f500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab41fd1a41bd477364edce9085e8d6ac0"><td class="memItemLeft" align="right" valign="top">Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_math_1_1_lin_alg.html#ab41fd1a41bd477364edce9085e8d6ac0">Pinv</a> (const Matrix &amp;A)</td></tr>
+<tr class="memdesc:ab41fd1a41bd477364edce9085e8d6ac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Решает СЛАУ <img class="formulaInl" alt="$ A \cdot x = b$" src="form_201.png"/>.  <a href="#ab41fd1a41bd477364edce9085e8d6ac0">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab41fd1a41bd477364edce9085e8d6ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:aca2f89d498128b0693d089277c2be56f"><td class="memItemLeft" align="right" valign="top"><a id="aca2f89d498128b0693d089277c2be56f"></a>
+static <a class="el" href="namespace_math_1_1_lin_alg.html#a34ee452c5d64eeb10e1bb63cf887af17">PseudoinverseMethods</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_currentPinvMethod</b> = <a class="el" href="namespace_math_1_1_lin_alg.html#a34ee452c5d64eeb10e1bb63cf887af17a595e2d2f1a68ede96e96f849a85370bc">PseudoinverseMethods::SVD</a></td></tr>
+<tr class="separator:aca2f89d498128b0693d089277c2be56f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Модуль, содержащий описание и реализацию методов линейной алгебры. </p>
-</div><h2 class="groupheader">Функции</h2>
+</div><h2 class="groupheader">Перечисления</h2>
+<a id="a34ee452c5d64eeb10e1bb63cf887af17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34ee452c5d64eeb10e1bb63cf887af17">&sect;&nbsp;</a></span>PseudoinverseMethods</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_math_1_1_lin_alg.html#a34ee452c5d64eeb10e1bb63cf887af17">Math::LinAlg::PseudoinverseMethods</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Набор идентификаторов методов псевдообращения матриц. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a34ee452c5d64eeb10e1bb63cf887af17a9febc190323c06d33ae8d8716f98bfe9"></a>GREVILLE&#160;</td><td class="fielddoc"><p>Псевдообращение по методу Гревиля. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a34ee452c5d64eeb10e1bb63cf887af17a595e2d2f1a68ede96e96f849a85370bc"></a>SVD&#160;</td><td class="fielddoc"><p>Псевдообращение с использованием сингулярных значений. </p>
+</td></tr>
+</table>
+
+<p>См. определение в файле <a class="el" href="linear__algebra_8h_source.html">linear_algebra.h</a> строка <a class="el" href="linear__algebra_8h_source.html#l00019">19</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
 <a id="a63d9cc41c4735dc5cefd2ec8880f432c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a63d9cc41c4735dc5cefd2ec8880f432c">&sect;&nbsp;</a></span>Cholesky() <span class="overload">[1/2]</span></h2>
 
@@ -254,6 +309,46 @@ $(function() {
 
 </div>
 </div>
+<a id="ab41fd1a41bd477364edce9085e8d6ac0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab41fd1a41bd477364edce9085e8d6ac0">&sect;&nbsp;</a></span>Pinv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Matrix Math::LinAlg::Pinv </td>
+          <td>(</td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
+          <td class="paramname"><em>A</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Решает СЛАУ <img class="formulaInl" alt="$ A \cdot x = b$" src="form_201.png"/>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">A</td><td>- матрица коэффициентов левой части СЛАУ. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td>- вектор правой части СЛАУ. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>вектор <img class="formulaInl" alt="$x$" src="form_185.png"/>.</dd></dl>
+<p>Вычисляет псевдообратную матрицу методом по-умолчанию. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">A</td><td>- матрица, которую следует обратить. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>псевдообратную матрицу <img class="formulaInl" alt="$A^{-1}$" src="form_200.png"/>. </dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="namespace_math_1_1_lin_alg.html#a34ee452c5d64eeb10e1bb63cf887af17" title="Набор идентификаторов методов псевдообращения матриц. ">PseudoinverseMethods</a> </dd>
+<dd>
+</dd></dl>
+
+<p>См. определение в файле <a class="el" href="linear__algebra_8cc_source.html">linear_algebra.cc</a> строка <a class="el" href="linear__algebra_8cc_source.html#l00123">123</a></p>
+
+</div>
+</div>
 <a id="a03abc1453c96f7898d89262f5278aefc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a03abc1453c96f7898d89262f5278aefc">&sect;&nbsp;</a></span>PinvGreville()</h2>
 
@@ -279,7 +374,7 @@ $(function() {
 </dl>
 <dl class="section return"><dt>Возвращает</dt><dd>псевдообратную матрицу <img class="formulaInl" alt="$A^{-1}$" src="form_200.png"/>. </dd></dl>
 
-<p>См. определение в файле <a class="el" href="linear__algebra_8cc_source.html">linear_algebra.cc</a> строка <a class="el" href="linear__algebra_8cc_source.html#l00071">71</a></p>
+<p>См. определение в файле <a class="el" href="linear__algebra_8cc_source.html">linear_algebra.cc</a> строка <a class="el" href="linear__algebra_8cc_source.html#l00065">65</a></p>
 
 </div>
 </div>
@@ -309,46 +404,6 @@ $(function() {
 <dl class="section return"><dt>Возвращает</dt><dd>псевдообратную матрицу <img class="formulaInl" alt="$A^{-1}$" src="form_200.png"/>. </dd></dl>
 
 <p>См. определение в файле <a class="el" href="linear__algebra_8cc_source.html">linear_algebra.cc</a> строка <a class="el" href="linear__algebra_8cc_source.html#l00047">47</a></p>
-
-</div>
-</div>
-<a id="ab6e559246eac7fcd1bb0ef18fc4657ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6e559246eac7fcd1bb0ef18fc4657ee">&sect;&nbsp;</a></span>SolveSystem()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector Math::LinAlg::SolveSystem </td>
-          <td>(</td>
-          <td class="paramtype">const Matrix &amp;&#160;</td>
-          <td class="paramname"><em>A</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Vector &amp;&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Решает СЛАУ <img class="formulaInl" alt="$ A \cdot x = b$" src="form_201.png"/>. </p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">A</td><td>- матрица коэффициентов левой части СЛАУ. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td>- вектор правой части СЛАУ. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Возвращает</dt><dd>вектор <img class="formulaInl" alt="$x$" src="form_185.png"/>. </dd></dl>
-
-<p>См. определение в файле <a class="el" href="linear__algebra_8cc_source.html">linear_algebra.cc</a> строка <a class="el" href="linear__algebra_8cc_source.html#l00012">12</a></p>
 
 </div>
 </div>

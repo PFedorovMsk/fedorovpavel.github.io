@@ -16,5 +16,6 @@ var searchData=
   ['getstddeviationz',['GetStdDeviationZ',['../namespace_core.html#a5e7b39380b2b293742d5eb0121af9a53',1,'Core']]],
   ['gettime',['GetTime',['../namespace_core.html#a90178bb59f67598c08058ad3910d4e0f',1,'Core']]],
   ['graphsheet',['GraphSheet',['../class_graph_sheet.html',1,'GraphSheet'],['../class_graph_sheet.html#aad9e497cfb489af37227147397ab021b',1,'GraphSheet::GraphSheet()']]],
-  ['graphwindow',['GraphWindow',['../class_graph_window.html',1,'GraphWindow'],['../class_graph_window.html#a68f193cacc0237a41d8c44923b53c11a',1,'GraphWindow::GraphWindow()']]]
+  ['graphwindow',['GraphWindow',['../class_graph_window.html',1,'GraphWindow'],['../class_graph_window.html#a68f193cacc0237a41d8c44923b53c11a',1,'GraphWindow::GraphWindow()']]],
+  ['greville',['GREVILLE',['../namespace_math_1_1_lin_alg.html#a34ee452c5d64eeb10e1bb63cf887af17a9febc190323c06d33ae8d8716f98bfe9',1,'Math::LinAlg']]]
 ];

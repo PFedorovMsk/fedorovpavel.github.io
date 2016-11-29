@@ -32,7 +32,7 @@ void \hyperlink{class_filters_1_1_discrete_1_1_m_f_o_s_a23d5c9a20a5eca3b5fd13553
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=200pt]{class_filters_1_1_discrete_1_1_m_f_o_s__inherit__graph}
+\includegraphics[width=205pt]{class_filters_1_1_discrete_1_1_m_f_o_s__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -41,7 +41,7 @@ void \hyperlink{class_filters_1_1_discrete_1_1_m_f_o_s_a23d5c9a20a5eca3b5fd13553
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=200pt]{class_filters_1_1_discrete_1_1_m_f_o_s__coll__graph}
+\includegraphics[width=205pt]{class_filters_1_1_discrete_1_1_m_f_o_s__coll__graph}
 \end{center}
 \end{figure}
 
@@ -59,9 +59,9 @@ void \hyperlink{class_filters_1_1_discrete_1_1_m_f_o_s_a23d5c9a20a5eca3b5fd13553
 
 Вектор $Z_t$ оценки вычисляется следующим образом\+: \[S_{k} = \tau_{k-1}(U_{k-1}, T_{k-1}),\] \[\Lambda_k = L_{k} \cdot S_{k} + n_{k},\] \[\Psi_k = \Theta_{k-1}(U_{k-1}, T_{k-1}),\] \[\Sigma_k = \Psi_k \cdot G_k^T(\Lambda_k, \Psi_k) \cdot F_k^{-1}(\Lambda_k, \Psi_k) \cdot [Y_k - h_k(\Lambda_k, \Psi_k)],\] \[Z_k = \Lambda_k + K_k \cdot \Sigma_k + e_k.\] \[U_k = \Gamma_k^y \cdot Y_k + \Gamma_k^z \cdot Z_k + \chi_k.\]
 
-Параметры $\Gamma_k^y,\ \Gamma_k^z,\ T_k,\ \chi_k$ вычисляются в \hyperlink{class_filters_1_1_discrete_1_1_m_f_o_s_aa8e5e6ebd6325efc56ef40a2d72303be}{compute\+Params(size\+\_\+t, Array$<$\+Math\+::\+Vector$>$ \&, Array$<$\+Math\+::\+Vector$>$ \&, Math\+::\+Matrix \&)}.
+Параметры $\Gamma_k^y,\ \Gamma_k^z,\ T_k,\ \chi_k$ вычисляются в \hyperlink{class_filters_1_1_discrete_1_1_m_f_o_s_aa8e5e6ebd6325efc56ef40a2d72303be}{compute\+Params()}.
 
-Дополнительные параметры $K_k,\ e_k,\ L_{k},\ n_{k}$ вычисляются в compute\+Addition\+Params(size\+\_\+t, Array$<$\+Math\+::\+Vector$>$ \&, Matrix \&, Matrix \&, Vector \&, Vector \&).
+Дополнительные параметры $K_k,\ e_k,\ L_{k},\ n_{k}$ вычисляются в \hyperlink{class_filters_1_1_discrete_1_1_m_f_o_s_a23d5c9a20a5eca3b5fd1355359655409}{compute\+Addition\+Params()}.
 
 \begin{DoxySeeAlso}{См. также}
 \hyperlink{class_core_1_1_discrete_filter}{Core\+::\+Discrete\+Filter} 

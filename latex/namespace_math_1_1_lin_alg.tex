@@ -5,11 +5,19 @@
 Модуль, содержащий описание и реализацию методов линейной алгебры.  
 
 
+\subsection*{Перечисления}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespace_math_1_1_lin_alg_a34ee452c5d64eeb10e1bb63cf887af17}{Pseudoinverse\+Methods} \{ \hyperlink{namespace_math_1_1_lin_alg_a34ee452c5d64eeb10e1bb63cf887af17a9febc190323c06d33ae8d8716f98bfe9}{Pseudoinverse\+Methods\+::\+G\+R\+E\+V\+I\+L\+LE}, 
+\hyperlink{namespace_math_1_1_lin_alg_a34ee452c5d64eeb10e1bb63cf887af17a595e2d2f1a68ede96e96f849a85370bc}{Pseudoinverse\+Methods\+::\+S\+VD}
+ \}\begin{DoxyCompactList}\small\item\em Набор идентификаторов методов псевдообращения матриц. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
 \subsection*{Функции}
 \begin{DoxyCompactItemize}
 \item 
-Vector \hyperlink{namespace_math_1_1_lin_alg_ab6e559246eac7fcd1bb0ef18fc4657ee}{Solve\+System} (const Matrix \&A, const Vector \&b)
-\begin{DoxyCompactList}\small\item\em Решает СЛАУ $ A \cdot x = b$. \end{DoxyCompactList}\item 
+\hypertarget{namespace_math_1_1_lin_alg_ab6e559246eac7fcd1bb0ef18fc4657ee}{}\label{namespace_math_1_1_lin_alg_ab6e559246eac7fcd1bb0ef18fc4657ee} 
+Vector {\bfseries Solve\+System} (const Matrix \&A, const Vector \&b)
+\item 
 Matrix \hyperlink{namespace_math_1_1_lin_alg_ad6053d7dea0e4d128cdcff0d8423708a}{LU} (const Matrix \&A)
 \item 
 Matrix \hyperlink{namespace_math_1_1_lin_alg_ad84a3dd8b243ffbc96f777aebafcbd8f}{LU} (const Matrix \&A, Matrix \&L, Matrix \&U, Matrix \&permutationP, Matrix \&permutationQ)
@@ -21,11 +29,49 @@ Matrix \hyperlink{namespace_math_1_1_lin_alg_a980590dcd2dcd5557b299e7b5dfc1946}{
 Matrix \hyperlink{namespace_math_1_1_lin_alg_adaef1c5da9ab98ab6e106086383e3ed6}{Pinv\+S\+VD} (const Matrix \&A)
 \begin{DoxyCompactList}\small\item\em Вычисляет псевдообратную матрицу S\+V\+D-\/методом. \end{DoxyCompactList}\item 
 Matrix \hyperlink{namespace_math_1_1_lin_alg_a03abc1453c96f7898d89262f5278aefc}{Pinv\+Greville} (const Matrix \&A)
-\begin{DoxyCompactList}\small\item\em Вычисляет псевдообратную матрицу методом Гревилля. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Вычисляет псевдообратную матрицу методом Гревилля. \end{DoxyCompactList}\item 
+\hypertarget{namespace_math_1_1_lin_alg_ad180bcdddb70c04adcd34f8915e2f500}{}\label{namespace_math_1_1_lin_alg_ad180bcdddb70c04adcd34f8915e2f500} 
+void {\bfseries Set\+Pinv\+Method} (\hyperlink{namespace_math_1_1_lin_alg_a34ee452c5d64eeb10e1bb63cf887af17}{Pseudoinverse\+Methods} method)
+\item 
+Matrix \hyperlink{namespace_math_1_1_lin_alg_ab41fd1a41bd477364edce9085e8d6ac0}{Pinv} (const Matrix \&A)
+\begin{DoxyCompactList}\small\item\em Решает СЛАУ $ A \cdot x = b$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespace_math_1_1_lin_alg_aca2f89d498128b0693d089277c2be56f}{}\label{namespace_math_1_1_lin_alg_aca2f89d498128b0693d089277c2be56f} 
+static \hyperlink{namespace_math_1_1_lin_alg_a34ee452c5d64eeb10e1bb63cf887af17}{Pseudoinverse\+Methods} {\bfseries \+\_\+current\+Pinv\+Method} = \hyperlink{namespace_math_1_1_lin_alg_a34ee452c5d64eeb10e1bb63cf887af17a595e2d2f1a68ede96e96f849a85370bc}{Pseudoinverse\+Methods\+::\+S\+VD}
+\end{DoxyCompactItemize}
 
 
 \subsection{Подробное описание}
 Модуль, содержащий описание и реализацию методов линейной алгебры. 
+
+\subsection{Перечисления}
+\hypertarget{namespace_math_1_1_lin_alg_a34ee452c5d64eeb10e1bb63cf887af17}{}\label{namespace_math_1_1_lin_alg_a34ee452c5d64eeb10e1bb63cf887af17} 
+\index{Math\+::\+Lin\+Alg@{Math\+::\+Lin\+Alg}!Pseudoinverse\+Methods@{Pseudoinverse\+Methods}}
+\index{Pseudoinverse\+Methods@{Pseudoinverse\+Methods}!Math\+::\+Lin\+Alg@{Math\+::\+Lin\+Alg}}
+\subsubsection{\texorpdfstring{Pseudoinverse\+Methods}{PseudoinverseMethods}}
+{\footnotesize\ttfamily enum \hyperlink{namespace_math_1_1_lin_alg_a34ee452c5d64eeb10e1bb63cf887af17}{Math\+::\+Lin\+Alg\+::\+Pseudoinverse\+Methods}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Набор идентификаторов методов псевдообращения матриц. 
+
+\begin{DoxyEnumFields}{Элементы перечислений}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+R\+E\+V\+I\+L\+LE@{G\+R\+E\+V\+I\+L\+LE}!Math\+::\+Lin\+Alg@{Math\+::\+Lin\+Alg}}\index{Math\+::\+Lin\+Alg@{Math\+::\+Lin\+Alg}!G\+R\+E\+V\+I\+L\+LE@{G\+R\+E\+V\+I\+L\+LE}}}\hypertarget{namespace_math_1_1_lin_alg_a34ee452c5d64eeb10e1bb63cf887af17a9febc190323c06d33ae8d8716f98bfe9}{}\label{namespace_math_1_1_lin_alg_a34ee452c5d64eeb10e1bb63cf887af17a9febc190323c06d33ae8d8716f98bfe9} 
+G\+R\+E\+V\+I\+L\+LE&Псевдообращение по методу Гревиля. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+VD@{S\+VD}!Math\+::\+Lin\+Alg@{Math\+::\+Lin\+Alg}}\index{Math\+::\+Lin\+Alg@{Math\+::\+Lin\+Alg}!S\+VD@{S\+VD}}}\hypertarget{namespace_math_1_1_lin_alg_a34ee452c5d64eeb10e1bb63cf887af17a595e2d2f1a68ede96e96f849a85370bc}{}\label{namespace_math_1_1_lin_alg_a34ee452c5d64eeb10e1bb63cf887af17a595e2d2f1a68ede96e96f849a85370bc} 
+S\+VD&Псевдообращение с использованием сингулярных значений. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+См. определение в файле linear\+\_\+algebra.\+h строка 19
+
+
 
 \subsection{Функции}
 \hypertarget{namespace_math_1_1_lin_alg_a63d9cc41c4735dc5cefd2ec8880f432c}{}\label{namespace_math_1_1_lin_alg_a63d9cc41c4735dc5cefd2ec8880f432c} 
@@ -112,6 +158,43 @@ $LU$-\/разложение имеет вид\+: $A = P^{-1} \cdot L\cdot U \cdo
 
 См. определение в файле linear\+\_\+algebra.\+cc строка 22
 
+\hypertarget{namespace_math_1_1_lin_alg_ab41fd1a41bd477364edce9085e8d6ac0}{}\label{namespace_math_1_1_lin_alg_ab41fd1a41bd477364edce9085e8d6ac0} 
+\index{Math\+::\+Lin\+Alg@{Math\+::\+Lin\+Alg}!Pinv@{Pinv}}
+\index{Pinv@{Pinv}!Math\+::\+Lin\+Alg@{Math\+::\+Lin\+Alg}}
+\subsubsection{\texorpdfstring{Pinv()}{Pinv()}}
+{\footnotesize\ttfamily Matrix Math\+::\+Lin\+Alg\+::\+Pinv (\begin{DoxyParamCaption}\item[{const Matrix \&}]{A }\end{DoxyParamCaption})}
+
+
+
+Решает СЛАУ $ A \cdot x = b$. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em A} & -\/ матрица коэффициентов левой части СЛАУ. \\
+\hline
+\mbox{\tt in}  & {\em b} & -\/ вектор правой части СЛАУ. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+вектор $x$.
+\end{DoxyReturn}
+Вычисляет псевдообратную матрицу методом по-\/умолчанию. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em A} & -\/ матрица, которую следует обратить. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+псевдообратную матрицу $A^{-1}$. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{namespace_math_1_1_lin_alg_a34ee452c5d64eeb10e1bb63cf887af17}{Pseudoinverse\+Methods} 
+
+
+\end{DoxySeeAlso}
+
+
+См. определение в файле linear\+\_\+algebra.\+cc строка 123
+
 \hypertarget{namespace_math_1_1_lin_alg_a03abc1453c96f7898d89262f5278aefc}{}\label{namespace_math_1_1_lin_alg_a03abc1453c96f7898d89262f5278aefc} 
 \index{Math\+::\+Lin\+Alg@{Math\+::\+Lin\+Alg}!Pinv\+Greville@{Pinv\+Greville}}
 \index{Pinv\+Greville@{Pinv\+Greville}!Math\+::\+Lin\+Alg@{Math\+::\+Lin\+Alg}}
@@ -132,7 +215,7 @@ $LU$-\/разложение имеет вид\+: $A = P^{-1} \cdot L\cdot U \cdo
 \end{DoxyReturn}
 
 
-См. определение в файле linear\+\_\+algebra.\+cc строка 71
+См. определение в файле linear\+\_\+algebra.\+cc строка 65
 
 \hypertarget{namespace_math_1_1_lin_alg_adaef1c5da9ab98ab6e106086383e3ed6}{}\label{namespace_math_1_1_lin_alg_adaef1c5da9ab98ab6e106086383e3ed6} 
 \index{Math\+::\+Lin\+Alg@{Math\+::\+Lin\+Alg}!Pinv\+S\+VD@{Pinv\+S\+VD}}
@@ -155,28 +238,4 @@ $LU$-\/разложение имеет вид\+: $A = P^{-1} \cdot L\cdot U \cdo
 
 
 См. определение в файле linear\+\_\+algebra.\+cc строка 47
-
-\hypertarget{namespace_math_1_1_lin_alg_ab6e559246eac7fcd1bb0ef18fc4657ee}{}\label{namespace_math_1_1_lin_alg_ab6e559246eac7fcd1bb0ef18fc4657ee} 
-\index{Math\+::\+Lin\+Alg@{Math\+::\+Lin\+Alg}!Solve\+System@{Solve\+System}}
-\index{Solve\+System@{Solve\+System}!Math\+::\+Lin\+Alg@{Math\+::\+Lin\+Alg}}
-\subsubsection{\texorpdfstring{Solve\+System()}{SolveSystem()}}
-{\footnotesize\ttfamily Vector Math\+::\+Lin\+Alg\+::\+Solve\+System (\begin{DoxyParamCaption}\item[{const Matrix \&}]{A,  }\item[{const Vector \&}]{b }\end{DoxyParamCaption})}
-
-
-
-Решает СЛАУ $ A \cdot x = b$. 
-
-
-\begin{DoxyParams}[1]{Аргументы}
-\mbox{\tt in}  & {\em A} & -\/ матрица коэффициентов левой части СЛАУ. \\
-\hline
-\mbox{\tt in}  & {\em b} & -\/ вектор правой части СЛАУ. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Возвращает}
-вектор $x$. 
-\end{DoxyReturn}
-
-
-См. определение в файле linear\+\_\+algebra.\+cc строка 12
 

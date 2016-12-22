@@ -1,8 +1,8 @@
 <map id="Core::ContinuousDiscreteTask" name="Core::ContinuousDiscreteTask">
-<area shape="rect" id="node4" href="$class_tasks_1_1_continuous_discrete_1_1_landing_linear.html" title="Задача спуска ЛА на планету (непрерывно&#45;дискретная, линеаризованная) для фильтров оптимальной структу..." alt="" coords="576,5,757,47"/>
-<area shape="rect" id="node6" href="$class_tasks_1_1_continuous_discrete_1_1_van_der_pol_linear.html" title="Осциллятор Ван&#45;дер&#45;Поля (непрерывно&#45;дискретный, линеаризованный) для фильтров оптимальной структуры..." alt="" coords="576,71,757,112"/>
-<area shape="rect" id="node2" href="$class_core_1_1_task.html" title="Базовый класс для всех задач " alt="" coords="191,46,277,73"/>
-<area shape="rect" id="node3" href="$class_core_1_1_function_time.html" title="Базовый класс для классов, представляющих собой функции времени. " alt="" coords="5,46,143,73"/>
-<area shape="rect" id="node5" href="$class_tasks_1_1_continuous_discrete_1_1_landing_gauss.html" title="Tasks::ContinuousDiscrete\l::LandingGauss" alt="" coords="805,5,987,47"/>
-<area shape="rect" id="node7" href="$class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss.html" title="Осциллятор Ван&#45;дер&#45;Поля (непрерывно&#45;дискретный, гауссовский) для фильтров оптимальной структуры..." alt="" coords="805,71,987,112"/>
+<area shape="rect" id="node4" href="$class_tasks_1_1_continuous_discrete_1_1_landing_linear.html" title="Задача спуска ЛА на планету (непрерывно&#45;дискретная, линеаризованная) для фильтров оптимальной структу..." alt="" coords="601,5,795,47"/>
+<area shape="rect" id="node6" href="$class_tasks_1_1_continuous_discrete_1_1_van_der_pol_linear.html" title="Осциллятор Ван&#45;дер&#45;Поля (непрерывно&#45;дискретный, линеаризованный) для фильтров оптимальной структуры..." alt="" coords="601,71,795,112"/>
+<area shape="rect" id="node2" href="$class_core_1_1_task.html" title="Базовый класс для всех задач " alt="" coords="200,46,289,73"/>
+<area shape="rect" id="node3" href="$class_core_1_1_function_time.html" title="Базовый класс для классов, представляющих собой функции времени. " alt="" coords="5,46,152,73"/>
+<area shape="rect" id="node5" href="$class_tasks_1_1_continuous_discrete_1_1_landing_gauss.html" title="Tasks::ContinuousDiscrete\l::LandingGauss" alt="" coords="843,5,1036,47"/>
+<area shape="rect" id="node7" href="$class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss.html" title="Осциллятор Ван&#45;дер&#45;Поля (непрерывно&#45;дискретный, гауссовский) для фильтров оптимальной структуры..." alt="" coords="843,71,1036,112"/>
 </map>

@@ -12,14 +12,14 @@
 \subsection*{Открытые члены}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_core_1_1_continuous_discrete_task_a56d51edff4050c662197a16df126ca14}{Continuous\+Discrete\+Task} ()\hypertarget{class_core_1_1_continuous_discrete_task_a56d51edff4050c662197a16df126ca14}{}\label{class_core_1_1_continuous_discrete_task_a56d51edff4050c662197a16df126ca14}
-
+\hypertarget{class_core_1_1_continuous_discrete_task_a56d51edff4050c662197a16df126ca14}{}\label{class_core_1_1_continuous_discrete_task_a56d51edff4050c662197a16df126ca14} 
+\hyperlink{class_core_1_1_continuous_discrete_task_a56d51edff4050c662197a16df126ca14}{Continuous\+Discrete\+Task} ()
 \begin{DoxyCompactList}\small\item\em Конструктор. \end{DoxyCompactList}\item 
-virtual Vector \hyperlink{class_core_1_1_continuous_discrete_task_a478f440555e63f6b14090637a6df46d9}{a} (const Vector \&x) const =0\hypertarget{class_core_1_1_continuous_discrete_task_a478f440555e63f6b14090637a6df46d9}{}\label{class_core_1_1_continuous_discrete_task_a478f440555e63f6b14090637a6df46d9}
-
+\hypertarget{class_core_1_1_continuous_discrete_task_a478f440555e63f6b14090637a6df46d9}{}\label{class_core_1_1_continuous_discrete_task_a478f440555e63f6b14090637a6df46d9} 
+virtual Vector \hyperlink{class_core_1_1_continuous_discrete_task_a478f440555e63f6b14090637a6df46d9}{a} (const Vector \&x) const =0
 \begin{DoxyCompactList}\small\item\em Функция сноса объекта $a(t,x)$. \end{DoxyCompactList}\item 
-virtual Matrix \hyperlink{class_core_1_1_continuous_discrete_task_acdecff4711bae9decda2931343929fae}{B} (const Vector \&x) const =0\hypertarget{class_core_1_1_continuous_discrete_task_acdecff4711bae9decda2931343929fae}{}\label{class_core_1_1_continuous_discrete_task_acdecff4711bae9decda2931343929fae}
-
+\hypertarget{class_core_1_1_continuous_discrete_task_acdecff4711bae9decda2931343929fae}{}\label{class_core_1_1_continuous_discrete_task_acdecff4711bae9decda2931343929fae} 
+virtual Matrix \hyperlink{class_core_1_1_continuous_discrete_task_acdecff4711bae9decda2931343929fae}{B} (const Vector \&x) const =0
 \begin{DoxyCompactList}\small\item\em Функция диффузии объекта $B(t,x)$. \end{DoxyCompactList}\item 
 virtual Vector \hyperlink{class_core_1_1_continuous_discrete_task_a64ea27bc1e2a9e6bf1401fc7622c9aea}{c} (const Vector \&x) const =0
 \begin{DoxyCompactList}\small\item\em Функция измерителя $c_k(X_k) = c_k(X_k, W_k)$. \end{DoxyCompactList}\item 
@@ -70,20 +70,18 @@ virtual Matrix \hyperlink{class_core_1_1_continuous_discrete_task_a08947ea4d4eb8
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=328pt]{class_core_1_1_continuous_discrete_task__coll__graph}
+\includegraphics[width=350pt]{class_core_1_1_continuous_discrete_task__coll__graph}
 \end{center}
 \end{figure}
 
 
 \subsection{Методы}
+\hypertarget{class_core_1_1_continuous_discrete_task_a332d99b61aabb919bffe75d0eec05cfe}{}\label{class_core_1_1_continuous_discrete_task_a332d99b61aabb919bffe75d0eec05cfe} 
 \index{Core\+::\+Continuous\+Discrete\+Task@{Core\+::\+Continuous\+Discrete\+Task}!A@{A}}
 \index{A@{A}!Core\+::\+Continuous\+Discrete\+Task@{Core\+::\+Continuous\+Discrete\+Task}}
-\subsubsection[{\texorpdfstring{A(const Vector \&m, const Matrix \&\+D) const =0}{A(const Vector &m, const Matrix &D) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Matrix Core\+::\+Continuous\+Discrete\+Task\+::A (
-\begin{DoxyParamCaption}
-\item[{const Vector \&}]{m, }
-\item[{const Matrix \&}]{D}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_core_1_1_continuous_discrete_task_a332d99b61aabb919bffe75d0eec05cfe}{}\label{class_core_1_1_continuous_discrete_task_a332d99b61aabb919bffe75d0eec05cfe}
+\subsubsection{\texorpdfstring{A()}{A()}}
+{\footnotesize\ttfamily virtual Matrix Core\+::\+Continuous\+Discrete\+Task\+::A (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
 
 
 Возвращает матрицу якоби $A(t, m, D)$ для функции $\tau(t, m, D)$. 
@@ -98,13 +96,12 @@ virtual Matrix \hyperlink{class_core_1_1_continuous_discrete_task_a08947ea4d4eb8
 
 Замещается в \hyperlink{class_tasks_1_1_continuous_discrete_1_1_landing_linear_ae584bc7b596882f07b18d2a39dcdfa32}{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear}, \hyperlink{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_linear_abc0ead5ddd90702a5bbb93b07c74df85}{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Linear} и \hyperlink{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss_acb431d1a24b276610f6b7c7ff343fb9f}{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss}.
 
+\hypertarget{class_core_1_1_continuous_discrete_task_a64ea27bc1e2a9e6bf1401fc7622c9aea}{}\label{class_core_1_1_continuous_discrete_task_a64ea27bc1e2a9e6bf1401fc7622c9aea} 
 \index{Core\+::\+Continuous\+Discrete\+Task@{Core\+::\+Continuous\+Discrete\+Task}!c@{c}}
 \index{c@{c}!Core\+::\+Continuous\+Discrete\+Task@{Core\+::\+Continuous\+Discrete\+Task}}
-\subsubsection[{\texorpdfstring{c(const Vector \&x) const =0}{c(const Vector &x) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Vector Core\+::\+Continuous\+Discrete\+Task\+::c (
-\begin{DoxyParamCaption}
-\item[{const Vector \&}]{x}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_core_1_1_continuous_discrete_task_a64ea27bc1e2a9e6bf1401fc7622c9aea}{}\label{class_core_1_1_continuous_discrete_task_a64ea27bc1e2a9e6bf1401fc7622c9aea}
+\subsubsection{\texorpdfstring{c()}{c()}}
+{\footnotesize\ttfamily virtual Vector Core\+::\+Continuous\+Discrete\+Task\+::c (\begin{DoxyParamCaption}\item[{const Vector \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
 
 
 Функция измерителя $c_k(X_k) = c_k(X_k, W_k)$. 
@@ -113,14 +110,12 @@ virtual Matrix \hyperlink{class_core_1_1_continuous_discrete_task_a08947ea4d4eb8
 
 Замещается в \hyperlink{class_tasks_1_1_continuous_discrete_1_1_landing_linear_aa3bddd1de01a202030bbccc1994e10af}{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear} и \hyperlink{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_linear_af2602ff749602f29f5169ea0e1b391ed}{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Linear}.
 
+\hypertarget{class_core_1_1_continuous_discrete_task_a08947ea4d4eb819e0e8530e682a1a377}{}\label{class_core_1_1_continuous_discrete_task_a08947ea4d4eb819e0e8530e682a1a377} 
 \index{Core\+::\+Continuous\+Discrete\+Task@{Core\+::\+Continuous\+Discrete\+Task}!F@{F}}
 \index{F@{F}!Core\+::\+Continuous\+Discrete\+Task@{Core\+::\+Continuous\+Discrete\+Task}}
-\subsubsection[{\texorpdfstring{F(const Vector \&m, const Matrix \&\+D) const =0}{F(const Vector &m, const Matrix &D) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Matrix Core\+::\+Continuous\+Discrete\+Task\+::F (
-\begin{DoxyParamCaption}
-\item[{const Vector \&}]{m, }
-\item[{const Matrix \&}]{D}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_core_1_1_continuous_discrete_task_a08947ea4d4eb819e0e8530e682a1a377}{}\label{class_core_1_1_continuous_discrete_task_a08947ea4d4eb819e0e8530e682a1a377}
+\subsubsection{\texorpdfstring{F()}{F()}}
+{\footnotesize\ttfamily virtual Matrix Core\+::\+Continuous\+Discrete\+Task\+::F (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
 
 
 Структурная функция коррекции $F_k(m, D)$. 
@@ -137,14 +132,12 @@ virtual Matrix \hyperlink{class_core_1_1_continuous_discrete_task_a08947ea4d4eb8
 
 Замещается в \hyperlink{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a5b5a327866160bf687dbc6d82a801ce8}{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear}, \hyperlink{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_linear_ac624f91abb5e440d9b05835ca281f53f}{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Linear} и \hyperlink{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss_adbd6671eb347348b68db28d899484336}{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss}.
 
+\hypertarget{class_core_1_1_continuous_discrete_task_a2bc6d34d112ec0999857f7f9e0f67dda}{}\label{class_core_1_1_continuous_discrete_task_a2bc6d34d112ec0999857f7f9e0f67dda} 
 \index{Core\+::\+Continuous\+Discrete\+Task@{Core\+::\+Continuous\+Discrete\+Task}!G@{G}}
 \index{G@{G}!Core\+::\+Continuous\+Discrete\+Task@{Core\+::\+Continuous\+Discrete\+Task}}
-\subsubsection[{\texorpdfstring{G(const Vector \&m, const Matrix \&\+D) const =0}{G(const Vector &m, const Matrix &D) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Matrix Core\+::\+Continuous\+Discrete\+Task\+::G (
-\begin{DoxyParamCaption}
-\item[{const Vector \&}]{m, }
-\item[{const Matrix \&}]{D}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_core_1_1_continuous_discrete_task_a2bc6d34d112ec0999857f7f9e0f67dda}{}\label{class_core_1_1_continuous_discrete_task_a2bc6d34d112ec0999857f7f9e0f67dda}
+\subsubsection{\texorpdfstring{G()}{G()}}
+{\footnotesize\ttfamily virtual Matrix Core\+::\+Continuous\+Discrete\+Task\+::G (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
 
 
 Структурная функция коррекции $G_k(m, D)$. 
@@ -159,14 +152,12 @@ virtual Matrix \hyperlink{class_core_1_1_continuous_discrete_task_a08947ea4d4eb8
 
 Замещается в \hyperlink{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a3b589b0ac53f7fe936438bc7c82f5c3d}{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear}, \hyperlink{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_linear_aad1f3c80a043157b90ba0b55ba2390b1}{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Linear} и \hyperlink{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss_a757eb311b72b3cabcee59eab9d732de5}{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss}.
 
+\hypertarget{class_core_1_1_continuous_discrete_task_a25e88b71eb477d99bad66a66c982af6f}{}\label{class_core_1_1_continuous_discrete_task_a25e88b71eb477d99bad66a66c982af6f} 
 \index{Core\+::\+Continuous\+Discrete\+Task@{Core\+::\+Continuous\+Discrete\+Task}!h@{h}}
 \index{h@{h}!Core\+::\+Continuous\+Discrete\+Task@{Core\+::\+Continuous\+Discrete\+Task}}
-\subsubsection[{\texorpdfstring{h(const Vector \&m, const Matrix \&\+D) const =0}{h(const Vector &m, const Matrix &D) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Vector Core\+::\+Continuous\+Discrete\+Task\+::h (
-\begin{DoxyParamCaption}
-\item[{const Vector \&}]{m, }
-\item[{const Matrix \&}]{D}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_core_1_1_continuous_discrete_task_a25e88b71eb477d99bad66a66c982af6f}{}\label{class_core_1_1_continuous_discrete_task_a25e88b71eb477d99bad66a66c982af6f}
+\subsubsection{\texorpdfstring{h()}{h()}}
+{\footnotesize\ttfamily virtual Vector Core\+::\+Continuous\+Discrete\+Task\+::h (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
 
 
 Структурная функция коррекции $h_k(m, D)$. 
@@ -181,14 +172,12 @@ virtual Matrix \hyperlink{class_core_1_1_continuous_discrete_task_a08947ea4d4eb8
 
 Замещается в \hyperlink{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a66480881fd719faddafe5104b548db78}{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear} и \hyperlink{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_linear_a2a3ca4ebc2e8c458fbea40e854f375ec}{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Linear}.
 
+\hypertarget{class_core_1_1_continuous_discrete_task_a491a9dc4463031a6f5f2eeda24d8ba9c}{}\label{class_core_1_1_continuous_discrete_task_a491a9dc4463031a6f5f2eeda24d8ba9c} 
 \index{Core\+::\+Continuous\+Discrete\+Task@{Core\+::\+Continuous\+Discrete\+Task}!tau@{tau}}
 \index{tau@{tau}!Core\+::\+Continuous\+Discrete\+Task@{Core\+::\+Continuous\+Discrete\+Task}}
-\subsubsection[{\texorpdfstring{tau(const Vector \&m, const Matrix \&\+D) const =0}{tau(const Vector &m, const Matrix &D) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Vector Core\+::\+Continuous\+Discrete\+Task\+::tau (
-\begin{DoxyParamCaption}
-\item[{const Vector \&}]{m, }
-\item[{const Matrix \&}]{D}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_core_1_1_continuous_discrete_task_a491a9dc4463031a6f5f2eeda24d8ba9c}{}\label{class_core_1_1_continuous_discrete_task_a491a9dc4463031a6f5f2eeda24d8ba9c}
+\subsubsection{\texorpdfstring{tau()}{tau()}}
+{\footnotesize\ttfamily virtual Vector Core\+::\+Continuous\+Discrete\+Task\+::tau (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
 
 
 Структурная функция прогноза $\tau(t, m, D)$. 
@@ -203,14 +192,12 @@ virtual Matrix \hyperlink{class_core_1_1_continuous_discrete_task_a08947ea4d4eb8
 
 Замещается в \hyperlink{class_tasks_1_1_continuous_discrete_1_1_landing_linear_a1ee11cced65180b2a055b8ca848ef4e0}{Tasks\+::\+Continuous\+Discrete\+::\+Landing\+Linear}, \hyperlink{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_linear_a5b9245d9f403e615a971f2e8009926e6}{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Linear} и \hyperlink{class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss_acfe935d9f4f452f3e10cb5f41fc8530a}{Tasks\+::\+Continuous\+Discrete\+::\+Van\+Der\+Pol\+Gauss}.
 
+\hypertarget{class_core_1_1_continuous_discrete_task_a961cc49fd0c72ba0a211bb4913ca3ece}{}\label{class_core_1_1_continuous_discrete_task_a961cc49fd0c72ba0a211bb4913ca3ece} 
 \index{Core\+::\+Continuous\+Discrete\+Task@{Core\+::\+Continuous\+Discrete\+Task}!Theta@{Theta}}
 \index{Theta@{Theta}!Core\+::\+Continuous\+Discrete\+Task@{Core\+::\+Continuous\+Discrete\+Task}}
-\subsubsection[{\texorpdfstring{Theta(const Vector \&m, const Matrix \&\+D) const =0}{Theta(const Vector &m, const Matrix &D) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Matrix Core\+::\+Continuous\+Discrete\+Task\+::\+Theta (
-\begin{DoxyParamCaption}
-\item[{const Vector \&}]{m, }
-\item[{const Matrix \&}]{D}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_core_1_1_continuous_discrete_task_a961cc49fd0c72ba0a211bb4913ca3ece}{}\label{class_core_1_1_continuous_discrete_task_a961cc49fd0c72ba0a211bb4913ca3ece}
+\subsubsection{\texorpdfstring{Theta()}{Theta()}}
+{\footnotesize\ttfamily virtual Matrix Core\+::\+Continuous\+Discrete\+Task\+::\+Theta (\begin{DoxyParamCaption}\item[{const Vector \&}]{m,  }\item[{const Matrix \&}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
 
 
 Структурная функция прогноза $\Theta(t,m,D)$. 

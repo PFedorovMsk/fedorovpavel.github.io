@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ylabel',['yLabel',['../class_graph_sheet.html#ad3fc3d583c9550f85ef53abf0897b10d',1,'GraphSheet']]]
+  ['ylabel',['yLabel',['../class_graph_sheet.html#aaa6ab077b521dbf9e1d7f9fd67f239ac',1,'GraphSheet']]]
 ];

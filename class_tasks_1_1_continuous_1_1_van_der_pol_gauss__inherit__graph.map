@@ -1,6 +1,6 @@
 <map id="Tasks::Continuous::VanDerPolGauss" name="Tasks::Continuous::VanDerPolGauss">
-<area shape="rect" id="node2" href="$class_tasks_1_1_continuous_1_1_van_der_pol_linear.html" title="Осциллятор Ван&#45;дер&#45;Поля (непрерывный, линеаризованный) для фильтров оптимальной структуры. " alt="" coords="12,229,152,271"/>
-<area shape="rect" id="node3" href="$class_core_1_1_continuous_task.html" title="Базовый тип задач для непрерывных фильтров оптимальной структуры. " alt="" coords="5,155,159,181"/>
-<area shape="rect" id="node4" href="$class_core_1_1_task.html" title="Базовый класс для всех задач " alt="" coords="39,80,125,107"/>
-<area shape="rect" id="node5" href="$class_core_1_1_function_time.html" title="Базовый класс для классов, представляющих собой функции времени. " alt="" coords="13,5,151,32"/>
+<area shape="rect" id="node2" href="$class_tasks_1_1_continuous_1_1_van_der_pol_linear.html" title="Осциллятор Ван&#45;дер&#45;Поля (непрерывный, линеаризованный) для фильтров оптимальной структуры. " alt="" coords="13,229,160,271"/>
+<area shape="rect" id="node3" href="$class_core_1_1_continuous_task.html" title="Базовый тип задач для непрерывных фильтров оптимальной структуры. " alt="" coords="5,155,168,181"/>
+<area shape="rect" id="node4" href="$class_core_1_1_task.html" title="Базовый класс для всех задач " alt="" coords="42,80,131,107"/>
+<area shape="rect" id="node5" href="$class_core_1_1_function_time.html" title="Базовый класс для классов, представляющих собой функции времени. " alt="" coords="13,5,160,32"/>
 </map>

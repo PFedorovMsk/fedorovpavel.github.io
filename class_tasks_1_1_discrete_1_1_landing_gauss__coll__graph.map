@@ -1,7 +1,7 @@
 <map id="Tasks::Discrete::LandingGauss" name="Tasks::Discrete::LandingGauss">
-<area shape="rect" id="node2" href="$class_tasks_1_1_discrete_1_1_landing_linear.html" title="Задача спуска ЛА на планету (дискретная, линеаризованная) для фильтров оптимальной структуры..." alt="" coords="78,261,246,303"/>
-<area shape="rect" id="node3" href="$class_core_1_1_discrete_task.html" title="Базовый тип задач для дискретных фильтров оптимальной структуры. " alt="" coords="94,185,230,212"/>
-<area shape="rect" id="node4" href="$class_core_1_1_task.html" title="Базовый класс для всех задач " alt="" coords="119,109,205,136"/>
-<area shape="rect" id="node5" href="$class_core_1_1_function_time.html" title="Базовый класс для классов, представляющих собой функции времени. " alt="" coords="5,13,143,39"/>
-<area shape="rect" id="node6" href="$class_math_1_1_multivariate_normal_distribution.html" title="Класс&#45;генератор случайных нормальных(гауссовских) векторов. " alt="" coords="167,5,335,47"/>
+<area shape="rect" id="node2" href="$class_tasks_1_1_discrete_1_1_landing_linear.html" title="Задача спуска ЛА на планету (дискретная, линеаризованная) для фильтров оптимальной структуры..." alt="" coords="85,261,264,303"/>
+<area shape="rect" id="node3" href="$class_core_1_1_discrete_task.html" title="Базовый тип задач для дискретных фильтров оптимальной структуры. " alt="" coords="103,185,246,212"/>
+<area shape="rect" id="node4" href="$class_core_1_1_task.html" title="Базовый класс для всех задач " alt="" coords="130,109,219,136"/>
+<area shape="rect" id="node5" href="$class_core_1_1_function_time.html" title="Базовый класс для классов, представляющих собой функции времени. " alt="" coords="5,13,152,39"/>
+<area shape="rect" id="node6" href="$class_math_1_1_multivariate_normal_distribution.html" title="Класс&#45;генератор случайных нормальных(гауссовских) векторов. " alt="" coords="177,5,365,47"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="Core::ContinuousFilter" name="Core::ContinuousFilter">
-<area shape="rect" id="node3" href="$class_filters_1_1_continuous_1_1_a_o_f.html" title="Класс, реализующий непрерывный абсолютно оптимальный фильтр. " alt="" coords="5,155,172,181"/>
-<area shape="rect" id="node4" href="$class_filters_1_1_continuous_1_1_f_o_s.html" title="Класс, реализующий непрерывный фильтр оптимальной структуры. " alt="" coords="196,155,363,181"/>
-<area shape="rect" id="node2" href="$class_core_1_1_filter.html" title="Базовый класс для всех фильтров. " alt="" coords="140,5,227,32"/>
+<area shape="rect" id="node3" href="$class_filters_1_1_continuous_1_1_a_o_f.html" title="Класс, реализующий непрерывный абсолютно оптимальный фильтр. " alt="" coords="5,155,181,181"/>
+<area shape="rect" id="node4" href="$class_filters_1_1_continuous_1_1_f_o_s.html" title="Класс, реализующий непрерывный фильтр оптимальной структуры. " alt="" coords="206,155,381,181"/>
+<area shape="rect" id="node2" href="$class_core_1_1_filter.html" title="Базовый класс для всех фильтров. " alt="" coords="147,5,239,32"/>
 </map>

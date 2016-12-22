@@ -1,7 +1,7 @@
 var searchData=
 [
   ['s',['S',['../class_core_1_1_continuous_task.html#aa6d652b655628586aeeda03348f633c5',1,'Core::ContinuousTask::S()'],['../class_tasks_1_1_continuous_1_1_landing_linear.html#a886bc6dd08e4355ab0c491d48f9de002',1,'Tasks::Continuous::LandingLinear::S()'],['../class_tasks_1_1_continuous_1_1_van_der_pol_linear.html#aa6cb67403faa3c2f894988aead527234',1,'Tasks::Continuous::VanDerPolLinear::S()']]],
-  ['samplesize',['sampleSize',['../class_core_1_1_filter_parameters.html#a879401aa0aa48b363fd35b3d85eced43',1,'Core::FilterParameters']]],
+  ['samplesize',['sampleSize',['../class_core_1_1_filter_parameters.html#a93198cf1f29d223fb645be16e91a52fe',1,'Core::FilterParameters']]],
   ['set',['set',['../class_math_1_1_lin_alg_1_1_current_pinv_method.html#ade16b67d5062f609bb8488f2ed78f0f3',1,'Math::LinAlg::CurrentPinvMethod']]],
   ['setautocalcranges',['setAutoCalcRanges',['../class_graph_sheet.html#a5ac1eac707300dc2e8d856e49bd797f3',1,'GraphSheet']]],
   ['setaxisrange',['setAxisRange',['../class_graph_sheet.html#ae37cc5b56c35ae34ced47c6f21eebf45',1,'GraphSheet']]],
@@ -33,6 +33,6 @@ var searchData=
   ['showdata',['showData',['../class_main_window.html#acf98b8c16421088a791c6d3d050ebc2d',1,'MainWindow']]],
   ['solvesystem',['SolveSystem',['../namespace_math_1_1_lin_alg.html#ab6e559246eac7fcd1bb0ef18fc4657ee',1,'Math::LinAlg']]],
   ['start',['start',['../class_filter_start_buttons_box.html#ac6e2a6555f1d388391f188f834b8e753',1,'FilterStartButtonsBox']]],
-  ['step',['step',['../class_core_1_1_function_time.html#afd6e77dd05e9f0d6377a29084ce41b75',1,'Core::FunctionTime']]],
-  ['subtitlelabel',['subTitleLabel',['../class_graph_sheet.html#a0c2e11b986ff4f6e98f664f25a69d0f2',1,'GraphSheet']]]
+  ['step',['step',['../class_core_1_1_function_time.html#a7c3dfc0d8d69c83c162c42435fa13cb9',1,'Core::FunctionTime']]],
+  ['subtitlelabel',['subTitleLabel',['../class_graph_sheet.html#a6adc16508129da20d14cea23b289d99c',1,'GraphSheet']]]
 ];

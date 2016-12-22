@@ -9,10 +9,10 @@ var searchData=
   ['degtorad',['DegToRad',['../namespace_math_1_1_convert.html#a09e8179fe960a2e0776ca3c12bd47ecd',1,'Math::Convert']]],
   ['dfos',['DFOS',['../class_filters_1_1_continuous_discrete_1_1_d_f_o_s.html#a962505dc3f59ef8b68cb228b1cf481f1',1,'Filters::ContinuousDiscrete::DFOS']]],
   ['dfosbo',['DFOSBO',['../class_filters_1_1_continuous_discrete_1_1_d_f_o_s_b_o.html#acadfa83ce71342e673d5cf954bda3cdc',1,'Filters::ContinuousDiscrete::DFOSBO']]],
-  ['dimv',['dimV',['../class_core_1_1_task.html#a3efe253308c9128a1476cf178d789327',1,'Core::Task']]],
-  ['dimw',['dimW',['../class_core_1_1_task.html#a31388d5efc8299d3728e85f1e2b72153',1,'Core::Task']]],
-  ['dimx',['dimX',['../class_core_1_1_task.html#ad3679ffe75d4149a223d378071587281',1,'Core::Task']]],
-  ['dimy',['dimY',['../class_core_1_1_task.html#afb53a5d106a715f521d3bf0815835c76',1,'Core::Task']]],
+  ['dimv',['dimV',['../class_core_1_1_task.html#add33d4a561733297f8e6d6c01ffc3972',1,'Core::Task']]],
+  ['dimw',['dimW',['../class_core_1_1_task.html#a2ce119af0f8d7e5a8c8918bd6d10e5cd',1,'Core::Task']]],
+  ['dimx',['dimX',['../class_core_1_1_task.html#aa1b5dadc2fce5b598976b453bc9cbc5c',1,'Core::Task']]],
+  ['dimy',['dimY',['../class_core_1_1_task.html#adf6ea75989335fe1c2615d1ba1ef5d30',1,'Core::Task']]],
   ['discretefilter',['DiscreteFilter',['../class_core_1_1_discrete_filter.html#a87399ba405c2dfe8037191fe907df141',1,'Core::DiscreteFilter']]],
   ['discretetask',['DiscreteTask',['../class_core_1_1_discrete_task.html#adee71fa5aa876df16d0585bdf66cd26e',1,'Core::DiscreteTask']]]
 ];

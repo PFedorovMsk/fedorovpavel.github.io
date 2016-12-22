@@ -1,7 +1,7 @@
 <map id="Core::ContinuousDiscreteFilter" name="Core::ContinuousDiscreteFilter">
-<area shape="rect" id="node3" href="$class_filters_1_1_continuous_discrete_1_1_a_o_f.html" title="Класс, реализующий непрерывно&#45;дискретный абсолютно оптимальной фильтр. " alt="" coords="361,5,577,32"/>
-<area shape="rect" id="node4" href="$class_filters_1_1_continuous_discrete_1_1_d_f_o_s.html" title="Класс, реализующий непрерывно&#45;дискретный фильтр оптимальной структуры с дискретным прогнозом..." alt="" coords="379,57,560,98"/>
-<area shape="rect" id="node5" href="$class_filters_1_1_continuous_discrete_1_1_d_f_o_s_b_o.html" title="Класс, реализующий непрерывно&#45;дискретный фильтр оптимальной структуры повышеного порядка. " alt="" coords="379,122,560,163"/>
-<area shape="rect" id="node6" href="$class_filters_1_1_continuous_discrete_1_1_f_o_s.html" title="Класс, реализующий непрерывно&#45;дискретный фильтр оптимальной структуры с непрерывным прогнозом..." alt="" coords="361,188,577,215"/>
-<area shape="rect" id="node2" href="$class_core_1_1_filter.html" title="Базовый класс для всех фильтров. " alt="" coords="5,97,92,124"/>
+<area shape="rect" id="node3" href="$class_filters_1_1_continuous_discrete_1_1_a_o_f.html" title="Класс, реализующий непрерывно&#45;дискретный абсолютно оптимальной фильтр. " alt="" coords="380,5,611,32"/>
+<area shape="rect" id="node4" href="$class_filters_1_1_continuous_discrete_1_1_d_f_o_s.html" title="Класс, реализующий непрерывно&#45;дискретный фильтр оптимальной структуры с дискретным прогнозом..." alt="" coords="397,57,593,98"/>
+<area shape="rect" id="node5" href="$class_filters_1_1_continuous_discrete_1_1_d_f_o_s_b_o.html" title="Класс, реализующий непрерывно&#45;дискретный фильтр оптимальной структуры повышеного порядка. " alt="" coords="397,122,593,163"/>
+<area shape="rect" id="node6" href="$class_filters_1_1_continuous_discrete_1_1_f_o_s.html" title="Класс, реализующий непрерывно&#45;дискретный фильтр оптимальной структуры с непрерывным прогнозом..." alt="" coords="381,188,610,215"/>
+<area shape="rect" id="node2" href="$class_core_1_1_filter.html" title="Базовый класс для всех фильтров. " alt="" coords="5,97,97,124"/>
 </map>

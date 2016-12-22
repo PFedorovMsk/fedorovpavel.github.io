@@ -5,7 +5,7 @@ var searchData=
   ['gauss',['Gauss',['../namespace_core.html#acd67f53ff1d9b21fabb1da4474a8f7d9aedc41fb7bf8bdac012523d1bcd949a4f',1,'Core']]],
   ['gaxisrange',['GAxisRange',['../struct_g_axis_range.html',1,'']]],
   ['gcurve',['GCurve',['../struct_g_curve.html',1,'GCurve'],['../struct_g_curve.html#aac51f0bf1cb305e7872d94ee88eef9ba',1,'GCurve::GCurve()']]],
-  ['get',['get',['../class_math_1_1_lin_alg_1_1_current_pinv_method.html#ad5d0948cdceee5f04825bac5e0a1a119',1,'Math::LinAlg::CurrentPinvMethod']]],
+  ['get',['get',['../class_math_1_1_lin_alg_1_1_current_pinv_method.html#a6259004ad1c0c80f5798a3e7c12cf342',1,'Math::LinAlg::CurrentPinvMethod']]],
   ['getfont',['getFont',['../class_font_manager.html#a4b31083bd250791a4a8de80b028b825d',1,'FontManager']]],
   ['getmeane',['GetMeanE',['../namespace_core.html#a6b98497b842c1cf15b87ed8d1f839148',1,'Core']]],
   ['getmeanx',['GetMeanX',['../namespace_core.html#ae517af0378ac2d5c70c78693f30a49f9',1,'Core']]],

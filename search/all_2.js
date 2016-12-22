@@ -12,7 +12,7 @@ var searchData=
   ['computeminimumwidth',['computeMinimumWidth',['../class_filter_parameters_widget.html#aac02d00c8d38c893f046e160765ded10',1,'FilterParametersWidget']]],
   ['computeparams',['computeParams',['../class_filters_1_1_discrete_1_1_f_o_s.html#a2bf612c50a41e892050593ba705c3b79',1,'Filters::Discrete::FOS::computeParams()'],['../class_filters_1_1_discrete_1_1_m_f_o_s.html#afb92a54a0aa1a7ecdcf527095849d123',1,'Filters::Discrete::MFOS::computeParams()']]],
   ['const',['Const',['../class_math_1_1_const.html',1,'Math']]],
-  ['consts',['consts',['../class_core_1_1_task.html#ae9d1b95f45779f5c4f1d96c3bf35a495',1,'Core::Task']]],
+  ['consts',['consts',['../class_core_1_1_task.html#aaf441bb60b373d5b8ffb852215b0318e',1,'Core::Task']]],
   ['continuous',['Continuous',['../namespace_core.html#af88278693f3c866f217da796f4bb9af7a535863a82f163709557e59e2eb8139a7',1,'Core']]],
   ['continuousdiscrete',['ContinuousDiscrete',['../namespace_core.html#af88278693f3c866f217da796f4bb9af7a986671423496acc1540269149da34418',1,'Core']]],
   ['continuousdiscretefilter',['ContinuousDiscreteFilter',['../class_core_1_1_continuous_discrete_filter.html#a07811c4d421be2383961078cd07e6d96',1,'Core::ContinuousDiscreteFilter']]],
@@ -25,7 +25,7 @@ var searchData=
   ['continuoustask',['ContinuousTask',['../class_core_1_1_continuous_task.html',1,'Core']]],
   ['core',['Core',['../namespace_core.html',1,'']]],
   ['correctstepandcount',['correctStepAndCount',['../class_core_1_1_filter_parameters.html#abd97b1d6389fb381e9808f15a271dfc3',1,'Core::FilterParameters']]],
-  ['countsheets',['countSheets',['../class_graph_window.html#a5a433ecbf8a3b30292de59955c5fa4ff',1,'GraphWindow']]],
+  ['countsheets',['countSheets',['../class_graph_window.html#ab98c88684db794aa596c3af2dfe79b18',1,'GraphWindow']]],
   ['cov',['Cov',['../namespace_math_1_1_statistic.html#a82c94ccceb182ae0c07623a0d3e07269',1,'Math::Statistic::Cov(const Array&lt; double &gt; &amp;sampleX, const Array&lt; double &gt; &amp;sampleY)'],['../namespace_math_1_1_statistic.html#a10cb1e6659e27127bd4b7d2ca19deb37',1,'Math::Statistic::Cov(const Array&lt; Vector &gt; &amp;sampleX, const Array&lt; Vector &gt; &amp;sampleY)']]],
   ['create',['create',['../class_filters_1_1_filter_factory.html#a404c33c0459c3997d4ad7d488580f404',1,'Filters::FilterFactory::create()'],['../class_tasks_1_1_task_factory.html#a9ee3c973c991afc1882edb7fe4eb4c63',1,'Tasks::TaskFactory::create()']]],
   ['createcontinuous',['createContinuous',['../class_filters_1_1_filter_factory.html#a0c5ef077dc893e280e0fe63a42d7d84f',1,'Filters::FilterFactory::createContinuous()'],['../class_tasks_1_1_task_factory.html#aa8c79efba82e51c6cf6e75b8cdb94066',1,'Tasks::TaskFactory::createContinuous()']]],
@@ -34,5 +34,5 @@ var searchData=
   ['currentpinvmethod',['CurrentPinvMethod',['../class_math_1_1_lin_alg_1_1_current_pinv_method.html',1,'Math::LinAlg']]],
   ['currentpinvmethod',['CurrentPinvMethod',['../class_math_1_1_lin_alg_1_1_current_pinv_method.html#a21292458d8909e25f2c38999de7f07c3',1,'Math::LinAlg::CurrentPinvMethod']]],
   ['currentsheet',['currentSheet',['../class_graph_window.html#a1e2ba902888b95d5fef9dfe081bac90b',1,'GraphWindow']]],
-  ['curves',['curves',['../class_graph_sheet.html#a863720d302b57ea86e5f78fe23fe7a6b',1,'GraphSheet']]]
+  ['curves',['curves',['../class_graph_sheet.html#a31e3bbc91be8169bf5014601cea0cf54',1,'GraphSheet']]]
 ];

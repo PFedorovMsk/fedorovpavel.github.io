@@ -58,6 +58,6 @@ var searchData=
   ['onxminchanged',['onXMinChanged',['../class_ranges_dialog.html#a64b596bcf23ba7e4bc1b94b60e0b64d0',1,'RangesDialog']]],
   ['onymaxchanged',['onYMaxChanged',['../class_ranges_dialog.html#a4b7d45fb0b5f225da1305ef8ce80ad6e',1,'RangesDialog']]],
   ['onyminchanged',['onYMinChanged',['../class_ranges_dialog.html#a8f9567a3bc26d5e75c17a0eb85298869',1,'RangesDialog']]],
-  ['operator_28_29',['operator()',['../class_math_1_1_multivariate_normal_distribution.html#a362bfdc2a3150f18f5a8f0fd6c0b9716',1,'Math::MultivariateNormalDistribution::operator()(long dim) const '],['../class_math_1_1_multivariate_normal_distribution.html#a15ad0690b6434b8baeefaaf325fb1b8e',1,'Math::MultivariateNormalDistribution::operator()(const Vector &amp;mean, const Matrix &amp;var) const ']]],
-  ['ordermult',['orderMult',['../class_core_1_1_filter_parameters.html#a4294f7904cbaaac16768cbb8c2a9e40c',1,'Core::FilterParameters']]]
+  ['operator_28_29',['operator()',['../class_math_1_1_multivariate_normal_distribution.html#a1bb4c395fd64bf1ce393d8eaf3fb981b',1,'Math::MultivariateNormalDistribution::operator()(long dim) const'],['../class_math_1_1_multivariate_normal_distribution.html#aeedc94bd79f9798ffedf86851b76de47',1,'Math::MultivariateNormalDistribution::operator()(const Vector &amp;mean, const Matrix &amp;var) const']]],
+  ['ordermult',['orderMult',['../class_core_1_1_filter_parameters.html#a391dbabccc9b3ab8134789eaac8c15c4',1,'Core::FilterParameters']]]
 ];

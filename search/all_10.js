@@ -6,11 +6,11 @@ var searchData=
   ['randomseed',['randomSeed',['../class_math_1_1_random_properties.html#a94bd24abcba2d281ea50dce34a0a9ac4',1,'Math::RandomProperties']]],
   ['rangeschanged',['rangesChanged',['../class_ranges_dialog.html#a8d4fb1f4d8bd2e5e3d0bc36f390e4974',1,'RangesDialog']]],
   ['rangesdialog',['RangesDialog',['../class_ranges_dialog.html',1,'RangesDialog'],['../class_ranges_dialog.html#a029bf2335408c07771d67c5875433214',1,'RangesDialog::RangesDialog()']]],
-  ['regular',['regular',['../class_font_manager.html#aafa7a1714d7024ad5385e40464957ce5',1,'FontManager']]],
-  ['regularbold',['regularBold',['../class_font_manager.html#a32f305f74db5b3c59afdffc69b225cd3',1,'FontManager']]],
-  ['regularbolditalic',['regularBoldItalic',['../class_font_manager.html#aeca024424eee18e70cbb8582e30241ae',1,'FontManager']]],
-  ['regularitalic',['regularItalic',['../class_font_manager.html#af984399a96a201c53a0b05b371ad63f9',1,'FontManager']]],
+  ['regular',['regular',['../class_font_manager.html#ada97aa5e52356da1bc5e8ac73678d9b2',1,'FontManager']]],
+  ['regularbold',['regularBold',['../class_font_manager.html#aaefa52fc7e009d7395f0984df0067789',1,'FontManager']]],
+  ['regularbolditalic',['regularBoldItalic',['../class_font_manager.html#af67c9b0a46ba532a363893102a5ceb38',1,'FontManager']]],
+  ['regularitalic',['regularItalic',['../class_font_manager.html#a2c5f2de0025fb15b0d3c2420eb7a1146',1,'FontManager']]],
   ['reset',['reset',['../class_color_manager.html#ae32d588a9d0144e2d55408c29f2f11ef',1,'ColorManager']]],
-  ['result',['result',['../class_core_1_1_filter.html#a3a95474d7ad7933c3cfed7078a9873c3',1,'Core::Filter']]],
+  ['result',['result',['../class_core_1_1_filter.html#a40f9629b2d882f9b49745f97d98d1dd0',1,'Core::Filter']]],
   ['run',['run',['../class_core_1_1_filter.html#ad5070e695763edc66d211651b98c09f1',1,'Core::Filter']]]
 ];

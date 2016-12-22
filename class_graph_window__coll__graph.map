@@ -1,4 +1,4 @@
 <map id="GraphWindow" name="GraphWindow">
-<area shape="rect" id="node3" href="$class_graph_sheet.html" title="Класс, реализующий &quot;страницу&quot; окна графиков. " alt="" coords="136,109,227,136"/>
-<area shape="rect" id="node4" href="$struct_g_axis_range.html" title="Структура для хранения границ осей координат. " alt="" coords="133,5,229,32"/>
+<area shape="rect" id="node3" href="$class_graph_sheet.html" title="Класс, реализующий &quot;страницу&quot; окна графиков. " alt="" coords="144,109,243,136"/>
+<area shape="rect" id="node4" href="$struct_g_axis_range.html" title="Структура для хранения границ осей координат. " alt="" coords="143,5,244,32"/>
 </map>

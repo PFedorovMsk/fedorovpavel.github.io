@@ -9,10 +9,10 @@ var searchData=
   ['vanderpollinear',['VanDerPolLinear',['../class_tasks_1_1_continuous_1_1_van_der_pol_linear.html',1,'Tasks::Continuous']]],
   ['var',['Var',['../namespace_math_1_1_statistic.html#a456a80dd9114c6ee20b8c46ac6e73537',1,'Math::Statistic::Var(const Array&lt; double &gt; &amp;sampleX, double meanX)'],['../namespace_math_1_1_statistic.html#a4fa57184d4396f0f85cf07d8d1f80d19',1,'Math::Statistic::Var(const Array&lt; double &gt; &amp;sampleX)'],['../namespace_math_1_1_statistic.html#ac7aadd8aab31379cc285d74a5f30e1bf',1,'Math::Statistic::Var(const Array&lt; Vector &gt; &amp;sampleX, const Vector &amp;meanX)'],['../namespace_math_1_1_statistic.html#af18d9a832496607b0be9a47cc2349e00',1,'Math::Statistic::Var(const Array&lt; Vector &gt; &amp;sampleX)']]],
   ['vare',['varE',['../struct_core_1_1_single_filter_output.html#ab89885f694006365cd0f8e4a1bbc6187',1,'Core::SingleFilterOutput']]],
-  ['varv',['varV',['../class_core_1_1_task.html#abff3522c513e054dbd0968a836e254fb',1,'Core::Task']]],
-  ['varw',['varW',['../class_core_1_1_task.html#aa217e300c05f5910cdd0a02a70956900',1,'Core::Task']]],
+  ['varv',['varV',['../class_core_1_1_task.html#ae1f2edae174e815a622182cf82df68e6',1,'Core::Task']]],
+  ['varw',['varW',['../class_core_1_1_task.html#a5470510a5879a73ddde3f78ffeefe76f',1,'Core::Task']]],
   ['varx',['varX',['../struct_core_1_1_single_filter_output.html#a31a2094b47d89df8ffd1befdf43d1f6e',1,'Core::SingleFilterOutput']]],
-  ['varx0',['varX0',['../class_core_1_1_task.html#a84fbdd26fb43668d29fcf631e4bb9c99',1,'Core::Task']]],
+  ['varx0',['varX0',['../class_core_1_1_task.html#a2c7381e4278d9a94a09c06b97e887ce9',1,'Core::Task']]],
   ['varz',['varZ',['../struct_core_1_1_single_filter_output.html#aa0b4c0793c1277fe75e19fd96dc4cde4',1,'Core::SingleFilterOutput']]],
   ['visible',['visible',['../struct_g_curve.html#ac00a68184b569dda559808f50729f96a',1,'GCurve']]]
 ];

@@ -17,6 +17,7 @@ var searchData=
   ['m_5fmeasurementcount',['m_measurementCount',['../class_core_1_1_filter_parameters.html#a931e9e09796c055d6c28d7c93d3121d9',1,'Core::FilterParameters']]],
   ['m_5fmeasurementstep',['m_measurementStep',['../class_core_1_1_filter_parameters.html#a68b0fe638b3a00a16cfa07f7d6a229fb',1,'Core::FilterParameters']]],
   ['m_5fname',['m_name',['../class_core_1_1_info.html#a027464b5db2e89c6c2f48faf99d25b22',1,'Core::Info']]],
+  ['m_5fnormalrand',['m_normalRand',['../class_core_1_1_filter.html#aec144b4ca46b58af15ae602a55312996',1,'Core::Filter::m_normalRand()'],['../class_core_1_1_task.html#a02b059438d2e6adf4a2dc8add17b2d3f',1,'Core::Task::m_normalRand()']]],
   ['m_5fordermult',['m_orderMult',['../class_core_1_1_filter_parameters.html#abbf3de6b71f358870d750c829d1ef4ea',1,'Core::FilterParameters']]],
   ['m_5fparams',['m_params',['../class_core_1_1_filter.html#ae4d42bb0f0e6299d4edbfc310e96d09f',1,'Core::Filter::m_params()'],['../class_core_1_1_task.html#a99bf439867f7a4f38cde5eb142f4414a',1,'Core::Task::m_params()']]],
   ['m_5fpredictioncount',['m_predictionCount',['../class_core_1_1_filter_parameters.html#a6b692ee25b7554649a81c073c009855a',1,'Core::FilterParameters']]],

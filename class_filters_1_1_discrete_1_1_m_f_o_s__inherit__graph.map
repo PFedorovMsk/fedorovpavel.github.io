@@ -1,4 +1,4 @@
 <map id="Filters::Discrete::MFOS" name="Filters::Discrete::MFOS">
-<area shape="rect" id="node2" href="$class_core_1_1_discrete_filter.html" title="Базовый класс для всех дискретных фильтров оптимальной структуры. " alt="" coords="15,80,162,107"/>
-<area shape="rect" id="node3" href="$class_core_1_1_filter.html" title="Базовый класс для всех фильтров. " alt="" coords="43,5,135,32"/>
+<area shape="rect" id="node2" href="$class_core_1_1_discrete_filter.html" title="Базовый класс для всех дискретных фильтров оптимальной структуры. " alt="" coords="18,80,154,107"/>
+<area shape="rect" id="node3" href="$class_core_1_1_filter.html" title="Базовый класс для всех фильтров. " alt="" coords="43,5,129,32"/>
 </map>

@@ -1,6 +1,7 @@
 <map id="Tasks::ContinuousDiscrete::LandingGauss" name="Tasks::ContinuousDiscrete::LandingGauss">
-<area shape="rect" id="node2" href="$class_tasks_1_1_continuous_discrete_1_1_landing_linear.html" title="Задача спуска ЛА на планету (непрерывно&#45;дискретная, линеаризованная) для фильтров оптимальной структу..." alt="" coords="17,229,210,271"/>
-<area shape="rect" id="node3" href="$class_core_1_1_continuous_discrete_task.html" title="Базовый тип задач для непрерывно&#45;дискретных фильтров оптимальной структуры. " alt="" coords="5,155,221,181"/>
-<area shape="rect" id="node4" href="$class_core_1_1_task.html" title="Базовый класс для всех задач " alt="" coords="69,80,158,107"/>
-<area shape="rect" id="node5" href="$class_core_1_1_function_time.html" title="Базовый класс для классов, представляющих собой функции времени. " alt="" coords="40,5,187,32"/>
+<area shape="rect" id="node2" href="$class_tasks_1_1_continuous_discrete_1_1_landing_linear.html" title="Задача спуска ЛА на планету (непрерывно&#45;дискретная, линеаризованная) для фильтров оптимальной структу..." alt="" coords="71,261,253,303"/>
+<area shape="rect" id="node3" href="$class_core_1_1_continuous_discrete_task.html" title="Базовый тип задач для непрерывно&#45;дискретных фильтров оптимальной структуры. " alt="" coords="61,185,263,212"/>
+<area shape="rect" id="node4" href="$class_core_1_1_task.html" title="Базовый класс для всех задач " alt="" coords="119,109,205,136"/>
+<area shape="rect" id="node5" href="$class_core_1_1_function_time.html" title="Базовый класс для классов, представляющих собой функции времени. " alt="" coords="5,13,143,39"/>
+<area shape="rect" id="node6" href="$class_math_1_1_multivariate_normal_distribution.html" title="Класс&#45;генератор случайных нормальных(гауссовских) векторов. " alt="" coords="167,5,335,47"/>
 </map>

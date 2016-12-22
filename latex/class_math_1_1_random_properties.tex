@@ -1,0 +1,64 @@
+\hypertarget{class_math_1_1_random_properties}{}\section{Класс Math\+:\+:Random\+Properties}
+\label{class_math_1_1_random_properties}\index{Math\+::\+Random\+Properties@{Math\+::\+Random\+Properties}}
+
+
+Статический класс, помогающий управлять генератором ПСЧ.  
+
+
+
+
+{\ttfamily \#include \char`\"{}random.\+h\char`\"{}}
+
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static ulong \hyperlink{class_math_1_1_random_properties_a8c37bfae29a4b0d5c012532445dd5d6f}{default\+Seed} ()
+\begin{DoxyCompactList}\small\item\em Возвращает стартовое число ГПСЧ по-\/умолчанию. \end{DoxyCompactList}\item 
+static ulong \hyperlink{class_math_1_1_random_properties_a94bd24abcba2d281ea50dce34a0a9ac4}{random\+Seed} ()
+\begin{DoxyCompactList}\small\item\em Возвращает стартовое число ГПСЧ, которое берется из системного времени. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Статический класс, помогающий управлять генератором ПСЧ. 
+
+См. определение в файле random.\+h строка 17
+
+
+
+\subsection{Методы}
+\index{Math\+::\+Random\+Properties@{Math\+::\+Random\+Properties}!default\+Seed@{default\+Seed}}
+\index{default\+Seed@{default\+Seed}!Math\+::\+Random\+Properties@{Math\+::\+Random\+Properties}}
+\subsubsection[{\texorpdfstring{default\+Seed()}{defaultSeed()}}]{\setlength{\rightskip}{0pt plus 5cm}ulong Math\+::\+Random\+Properties\+::default\+Seed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_math_1_1_random_properties_a8c37bfae29a4b0d5c012532445dd5d6f}{}\label{class_math_1_1_random_properties_a8c37bfae29a4b0d5c012532445dd5d6f}
+
+
+Возвращает стартовое число ГПСЧ по-\/умолчанию. 
+
+Оно равно половине наибольшего unsigned long. 
+
+См. определение в файле random.\+cc строка 9
+
+\index{Math\+::\+Random\+Properties@{Math\+::\+Random\+Properties}!random\+Seed@{random\+Seed}}
+\index{random\+Seed@{random\+Seed}!Math\+::\+Random\+Properties@{Math\+::\+Random\+Properties}}
+\subsubsection[{\texorpdfstring{random\+Seed()}{randomSeed()}}]{\setlength{\rightskip}{0pt plus 5cm}ulong Math\+::\+Random\+Properties\+::random\+Seed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_math_1_1_random_properties_a94bd24abcba2d281ea50dce34a0a9ac4}{}\label{class_math_1_1_random_properties_a94bd24abcba2d281ea50dce34a0a9ac4}
+
+
+Возвращает стартовое число ГПСЧ, которое берется из системного времени. 
+
+Оно равно количеству наносекунд, прошедших с 01.\+01.\+1970. 
+
+См. определение в файле random.\+cc строка 15
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+src/math/random.\+h\item 
+src/math/random.\+cc\end{DoxyCompactItemize}

@@ -157,7 +157,7 @@
 \form#156:\[U_k = \Gamma_k^y \cdot Y_k + \Gamma_k^z \cdot Z_k + \chi_k.\]
 \form#157:$\Gamma_k^y,\ \Gamma_k^z,\ T_k,\ \chi_k$
 \form#158:$U_k$
-\form#159:$t = n \cdot \Delta t$
+\form#159:$t = k \cdot \delta t$
 \form#160:$T_k$
 \form#161:\[D_k^\delta = cov([Y_k^T\ \ Z_k^T]^T),\]
 \form#162:\[[\Gamma_k^y\ \ \Gamma_k^z] = [D_{kk}^{xy}\ \ D_{kk}^{xz}] \cdot (D_k^\delta)^{-1},\]
@@ -170,50 +170,39 @@
 \form#169:$K_k,\ e_k,\ L_{k},\ n_{k}$
 \form#170:$S_{k}$
 \form#171:\[T_k = D_k^x - \Gamma_k^y \cdot (D_{kk}^{xy})^T - \Gamma_k^z \cdot (D_{kk}^{xz})^T,\]
-\form#172:$t = nn \cdot \Delta t$
-\form#173:$\Lambda_k$
-\form#174:$\Sigma_k$
-\form#175:$L_{k}$
-\form#176:$K_k$
-\form#177:$n_{k}$
-\form#178:$e_k$
-\form#179:\[K_k = D_{kk}^{e\sigma} \cdot (D_k^\sigma)^{-1},\]
-\form#180:\[e_k = m_k^e - K_k \cdot m_k^\sigma,\]
-\form#181:\[L_{k} = D_{k, k-1}^{x,s} \cdot (D_{k-1}^s)^{-1},\]
-\form#182:\[n_{k} = m_k^x - L_{k}\cdot m_{k-1}^s.\]
-\form#183:$p = l\cdot dim(Y)$
-\form#184:$T_{max} \geq \delta t \geq \delta \tau \geq \Delta t$
-\form#185:$x$
-\form#186:$p = (x,y)$
-\form#187:$y$
-\form#188:$\pi$
-\form#189:$e$
-\form#190:$\gamma$
-\form#191:$\epsilon$
-\form#192:$LU$
-\form#193:$A$
-\form#194:$U$
-\form#195:$Q$
-\form#196:$A = P^{-1} \cdot L\cdot U \cdot Q^{-1}$
-\form#197:$R$
-\form#198:\[ R = L + U = \begin{bmatrix} u_{11} & u_{12} & u_{13} & \dots & u_{1n} \\ l_{21} & u_{22} & u_{23} & \dots & u_{2n} \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ l_{d1} & l_{d2} & l_{d3} & \dots & u_{dn} \end{bmatrix}, \]
-\form#199:$A = L \cdot L^{T} = U^{T} \cdot U$
-\form#200:$A^{-1}$
-\form#201:$ A \cdot x = b$
-\form#202:$ b = (v_1\ v_2)^T$
-\form#203:$ b = (m_1\ m_2)$
-\form#204:$ b = (m_1\ m_2)^T$
-\form#205:$ x \sim U(0,1)$
-\form#206:$ x \sim U(a,b)$
-\form#207:$ x \sim N(0,1)$
-\form#208:$ x \sim N(m,s^2)$
-\form#209:$ x \sim lnN(m,s^2)$
-\form#210:$ x \sim \chi^2(k)$
-\form#211:$ x \sim t(n)$
-\form#212:$ x \sim F(n_1,n_2)$
-\form#213:$ x \sim R(s)$
-\form#214:$ x \sim Exp(l)$
-\form#215:$n$
-\form#216:$x_i \sim N(0,1)$
-\form#217:$x_i \sim N(m,s^2)$
-\form#218:$D$
+\form#172:$\Lambda_k$
+\form#173:$\Sigma_k$
+\form#174:$L_{k}$
+\form#175:$K_k$
+\form#176:$n_{k}$
+\form#177:$e_k$
+\form#178:\[K_k = D_{kk}^{e\sigma} \cdot (D_k^\sigma)^{-1},\]
+\form#179:\[e_k = m_k^e - K_k \cdot m_k^\sigma,\]
+\form#180:\[L_{k} = D_{k, k-1}^{x,s} \cdot (D_{k-1}^s)^{-1},\]
+\form#181:\[n_{k} = m_k^x - L_{k}\cdot m_{k-1}^s.\]
+\form#182:$p = l\cdot dim(Y)$
+\form#183:$T_{max} \geq \delta t \geq \delta \tau \geq \Delta t$
+\form#184:$x$
+\form#185:$p = (x,y)$
+\form#186:$y$
+\form#187:$\pi$
+\form#188:$e$
+\form#189:$\gamma$
+\form#190:$\epsilon$
+\form#191:$LU$
+\form#192:$A$
+\form#193:$U$
+\form#194:$Q$
+\form#195:$A = P^{-1} \cdot L\cdot U \cdot Q^{-1}$
+\form#196:$A = L \cdot L^{T} = U^{T} \cdot U$
+\form#197:$A^{-1}$
+\form#198:$ A \cdot x = b$
+\form#199:$ b = (v_1\ v_2)^T$
+\form#200:$ b = (m_1\ m_2)$
+\form#201:$ b = (m_1\ m_2)^T$
+\form#202:$x \sim N(m, D)$
+\form#203:$x = m + C * g$
+\form#204:$m$
+\form#205:$C$
+\form#206:$g$
+\form#207:$g_i \sim N(0,1)$

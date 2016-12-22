@@ -11,6 +11,6 @@ var searchData=
   ['aof',['AOF',['../class_filters_1_1_continuous_1_1_a_o_f.html',1,'Filters::Continuous']]],
   ['aof',['AOF',['../class_filters_1_1_continuous_discrete_1_1_a_o_f.html',1,'Filters::ContinuousDiscrete']]],
   ['approx_5ftype',['APPROX_TYPE',['../namespace_core.html#acd67f53ff1d9b21fabb1da4474a8f7d9',1,'Core']]],
-  ['autocalcranges',['autoCalcRanges',['../class_graph_sheet.html#a9f2c2ea18ef1ae736366de52cae6909a',1,'GraphSheet']]],
-  ['axisrange',['axisRange',['../class_graph_sheet.html#ac13787fb3357ea7d4f3ee3aa4351b0d7',1,'GraphSheet']]]
+  ['autocalcranges',['autoCalcRanges',['../class_graph_sheet.html#a445b980e074ef651f816e8094bc0166b',1,'GraphSheet']]],
+  ['axisrange',['axisRange',['../class_graph_sheet.html#a36397b018c3c882a0704f3632eb010c7',1,'GraphSheet']]]
 ];

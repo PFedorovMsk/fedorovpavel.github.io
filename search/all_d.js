@@ -23,6 +23,7 @@ var searchData=
   ['oncbtaskchanged',['onCbTaskChanged',['../class_task_widget.html#afb4933c6c55916e161ab614c26c88975',1,'TaskWidget']]],
   ['onclear',['onClear',['../class_graph_window.html#a6f4268aa4bd0780c0016ed6bb74253d3',1,'GraphWindow::onClear()'],['../class_main_window.html#ab1db88110806edae5fc7a1d7a24267f7',1,'MainWindow::onClear()']]],
   ['oncurrentsheetchanged',['onCurrentSheetChanged',['../class_graph_window.html#ad99844f68aa659cdb599681d3cd231b1',1,'GraphWindow']]],
+  ['onfiltersfamilychanged',['onFiltersFamilyChanged',['../class_filter_parameters_widget.html#a64e5feb9fe8915417d9e753243d74c84',1,'FilterParametersWidget']]],
   ['onfilterupdatepercent',['onFilterUpdatePercent',['../class_main_window.html#aa5a210bb2bc29cb3f7d5d205ae215dbf',1,'MainWindow']]],
   ['onfixalltoggled',['onFixAllToggled',['../class_filter_parameters_widget.html#a6d01e0b6bdb2b38f03a6935fac62a31c',1,'FilterParametersWidget']]],
   ['onhidecurve',['onHideCurve',['../class_graph_window.html#aa5e82d18c3767b11b36b1b76cf989054',1,'GraphWindow']]],
@@ -57,5 +58,6 @@ var searchData=
   ['onxminchanged',['onXMinChanged',['../class_ranges_dialog.html#a64b596bcf23ba7e4bc1b94b60e0b64d0',1,'RangesDialog']]],
   ['onymaxchanged',['onYMaxChanged',['../class_ranges_dialog.html#a4b7d45fb0b5f225da1305ef8ce80ad6e',1,'RangesDialog']]],
   ['onyminchanged',['onYMinChanged',['../class_ranges_dialog.html#a8f9567a3bc26d5e75c17a0eb85298869',1,'RangesDialog']]],
-  ['ordermult',['orderMult',['../class_core_1_1_filter_parameters.html#a391dbabccc9b3ab8134789eaac8c15c4',1,'Core::FilterParameters']]]
+  ['operator_28_29',['operator()',['../class_math_1_1_multivariate_normal_distribution.html#a362bfdc2a3150f18f5a8f0fd6c0b9716',1,'Math::MultivariateNormalDistribution::operator()(long dim) const '],['../class_math_1_1_multivariate_normal_distribution.html#a15ad0690b6434b8baeefaaf325fb1b8e',1,'Math::MultivariateNormalDistribution::operator()(const Vector &amp;mean, const Matrix &amp;var) const ']]],
+  ['ordermult',['orderMult',['../class_core_1_1_filter_parameters.html#a4294f7904cbaaac16768cbb8c2a9e40c',1,'Core::FilterParameters']]]
 ];

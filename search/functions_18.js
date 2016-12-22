@@ -1,4 +1,14 @@
 var searchData=
 [
-  ['zeroiteration',['zeroIteration',['../class_core_1_1_continuous_discrete_filter.html#acc9b18241a13d46dc92ef1f02ec13e53',1,'Core::ContinuousDiscreteFilter::zeroIteration()'],['../class_core_1_1_continuous_filter.html#a4c30983f9354344717538f807855f2ae',1,'Core::ContinuousFilter::zeroIteration()'],['../class_core_1_1_discrete_filter.html#a658617c64c7067bb6b98b5e9d78f982e',1,'Core::DiscreteFilter::zeroIteration()'],['../class_core_1_1_filter.html#af95880b734c4b8dc3d8c02f222b32506',1,'Core::Filter::zeroIteration()'],['../class_filters_1_1_continuous_1_1_a_o_f.html#ab416b56dbeb26366f495f03b3c08ad5e',1,'Filters::Continuous::AOF::zeroIteration()'],['../class_filters_1_1_continuous_discrete_1_1_a_o_f.html#ab350a4de87a9e2c2e8b01e178d61f3b5',1,'Filters::ContinuousDiscrete::AOF::zeroIteration()'],['../class_filters_1_1_continuous_discrete_1_1_d_f_o_s_b_o.html#a958c75df5031558a244d553f13376e75',1,'Filters::ContinuousDiscrete::DFOSBO::zeroIteration()'],['../class_filters_1_1_discrete_1_1_a_o_f.html#aa822fe74d7ca160f898db1c1289e17f7',1,'Filters::Discrete::AOF::zeroIteration()']]]
+  ['_7eadditionalsettingswidget',['~AdditionalSettingsWidget',['../class_additional_settings_widget.html#a375c84f23821d01d91289b57daa098a5',1,'AdditionalSettingsWidget']]],
+  ['_7efilter',['~Filter',['../class_core_1_1_filter.html#a38353602e4df00367d49263dc6368268',1,'Core::Filter']]],
+  ['_7efilterparameterswidget',['~FilterParametersWidget',['../class_filter_parameters_widget.html#ab3394a4f66caf8faa7886b55bba647e1',1,'FilterParametersWidget']]],
+  ['_7efilterstartbuttonsbox',['~FilterStartButtonsBox',['../class_filter_start_buttons_box.html#a26579dc4b7375d2fc37c0693a4684057',1,'FilterStartButtonsBox']]],
+  ['_7efunctiontime',['~FunctionTime',['../class_core_1_1_function_time.html#a35d2db55f45326b660b9831c6e9ac5c6',1,'Core::FunctionTime']]],
+  ['_7egraphsheet',['~GraphSheet',['../class_graph_sheet.html#ae4511be48b18851127b544cbf099d8e4',1,'GraphSheet']]],
+  ['_7egraphwindow',['~GraphWindow',['../class_graph_window.html#acca1dc8c3eefe6608ae2de3cee2e22ee',1,'GraphWindow']]],
+  ['_7emainwindow',['~MainWindow',['../class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7',1,'MainWindow']]],
+  ['_7ematrixwidget',['~MatrixWidget',['../class_matrix_widget.html#a64970508bea25f769ea0e8884985a490',1,'MatrixWidget']]],
+  ['_7erangesdialog',['~RangesDialog',['../class_ranges_dialog.html#a0852f0249101bfae86f5b7c037b77f97',1,'RangesDialog']]],
+  ['_7etask',['~Task',['../class_core_1_1_task.html#a356b979174846c636ed63a50fab13760',1,'Core::Task']]]
 ];

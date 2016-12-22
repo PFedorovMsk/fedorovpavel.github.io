@@ -1,14 +1,16 @@
 var searchData=
 [
-  ['f',['F',['../class_core_1_1_continuous_discrete_task.html#a08947ea4d4eb819e0e8530e682a1a377',1,'Core::ContinuousDiscreteTask::F()'],['../class_core_1_1_discrete_task.html#ac55ca2cd47f0c9f7e5d3d3704becee46',1,'Core::DiscreteTask::F()'],['../class_tasks_1_1_continuous_discrete_1_1_landing_linear.html#a5b5a327866160bf687dbc6d82a801ce8',1,'Tasks::ContinuousDiscrete::LandingLinear::F()'],['../class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss.html#adbd6671eb347348b68db28d899484336',1,'Tasks::ContinuousDiscrete::VanDerPolGauss::F()'],['../class_tasks_1_1_continuous_discrete_1_1_van_der_pol_linear.html#ac624f91abb5e440d9b05835ca281f53f',1,'Tasks::ContinuousDiscrete::VanDerPolLinear::F()'],['../class_tasks_1_1_discrete_1_1_landing_linear.html#abb4e2b054240cf909f0128721237334c',1,'Tasks::Discrete::LandingLinear::F()']]],
-  ['filter',['Filter',['../class_core_1_1_filter.html#af1ac0dfc8813579e0173b315c5a3fcad',1,'Core::Filter']]],
-  ['filterparameters',['FilterParameters',['../class_core_1_1_filter_parameters.html#aac0d147953f2293a426cd25e031016f2',1,'Core::FilterParameters']]],
-  ['filterparameterswidget',['FilterParametersWidget',['../class_filter_parameters_widget.html#ade6b317bb498ff3785cbf380ada8b214',1,'FilterParametersWidget']]],
-  ['filterresultstable',['FilterResultsTable',['../class_filter_results_table.html#a343f304fd53bc8ed9f680ffb5ac6c8b4',1,'FilterResultsTable']]],
-  ['filterstartbuttonsbox',['FilterStartButtonsBox',['../class_filter_start_buttons_box.html#a7e21c8886cd0f711a756b4a1f04c0989',1,'FilterStartButtonsBox']]],
-  ['fishers',['fishers',['../namespace_math_1_1_rand.html#a98f49933c521884e649e999b6a3c9fb6',1,'Math::Rand']]],
-  ['fontmanager',['FontManager',['../class_font_manager.html#a2f89acd28b5bd24e747aacd3208131ef',1,'FontManager']]],
-  ['fos',['FOS',['../class_filters_1_1_continuous_1_1_f_o_s.html#a37bf6963e1fc25a0a709d53299fc2951',1,'Filters::Continuous::FOS::FOS()'],['../class_filters_1_1_continuous_discrete_1_1_f_o_s.html#a969ba843b1c5df806d4eb1054d16f4f9',1,'Filters::ContinuousDiscrete::FOS::FOS()'],['../class_filters_1_1_discrete_1_1_f_o_s.html#a4ccb53bc00846f7ca140b55316241749',1,'Filters::Discrete::FOS::FOS()']]],
-  ['fullname',['fullName',['../struct_g_curve.html#ad9ab2e3ed72e50aaf536db8b961987cc',1,'GCurve']]],
-  ['functiontime',['FunctionTime',['../class_core_1_1_function_time.html#a7d2987678c02b38563cd21261884d679',1,'Core::FunctionTime']]]
+  ['g',['G',['../class_core_1_1_continuous_discrete_task.html#a2bc6d34d112ec0999857f7f9e0f67dda',1,'Core::ContinuousDiscreteTask::G()'],['../class_core_1_1_continuous_task.html#a1b579e183ffa229f97048aadfd834517',1,'Core::ContinuousTask::G()'],['../class_core_1_1_discrete_task.html#a5fd0bac544a6e124ad071043a37881c3',1,'Core::DiscreteTask::G()'],['../class_tasks_1_1_continuous_1_1_landing_linear.html#af5937be9d9010e853956e5dd7ff96e8d',1,'Tasks::Continuous::LandingLinear::G()'],['../class_tasks_1_1_continuous_1_1_van_der_pol_gauss.html#a1b61ca6de96df17b049bc7934a241e47',1,'Tasks::Continuous::VanDerPolGauss::G()'],['../class_tasks_1_1_continuous_1_1_van_der_pol_linear.html#a931ba012a9671d8f522975232b48320f',1,'Tasks::Continuous::VanDerPolLinear::G()'],['../class_tasks_1_1_continuous_discrete_1_1_landing_linear.html#a3b589b0ac53f7fe936438bc7c82f5c3d',1,'Tasks::ContinuousDiscrete::LandingLinear::G()'],['../class_tasks_1_1_continuous_discrete_1_1_van_der_pol_gauss.html#a757eb311b72b3cabcee59eab9d732de5',1,'Tasks::ContinuousDiscrete::VanDerPolGauss::G()'],['../class_tasks_1_1_continuous_discrete_1_1_van_der_pol_linear.html#aad1f3c80a043157b90ba0b55ba2390b1',1,'Tasks::ContinuousDiscrete::VanDerPolLinear::G()'],['../class_tasks_1_1_discrete_1_1_landing_linear.html#a290890c1d3a91803249a1f5d62bc658f',1,'Tasks::Discrete::LandingLinear::G()']]],
+  ['gcurve',['GCurve',['../struct_g_curve.html#aac51f0bf1cb305e7872d94ee88eef9ba',1,'GCurve']]],
+  ['get',['get',['../class_math_1_1_lin_alg_1_1_current_pinv_method.html#ad5d0948cdceee5f04825bac5e0a1a119',1,'Math::LinAlg::CurrentPinvMethod']]],
+  ['getfont',['getFont',['../class_font_manager.html#a4b31083bd250791a4a8de80b028b825d',1,'FontManager']]],
+  ['getmeane',['GetMeanE',['../namespace_core.html#a6b98497b842c1cf15b87ed8d1f839148',1,'Core']]],
+  ['getmeanx',['GetMeanX',['../namespace_core.html#ae517af0378ac2d5c70c78693f30a49f9',1,'Core']]],
+  ['getmeanz',['GetMeanZ',['../namespace_core.html#a865db265ccecab0e64aeb8874d533ff0',1,'Core']]],
+  ['getstddeviatione',['GetStdDeviationE',['../namespace_core.html#af3552a63b749de882ae33dbb57e6bb8c',1,'Core']]],
+  ['getstddeviationx',['GetStdDeviationX',['../namespace_core.html#aec742a92643e69c687aa484cc0c3b0ea',1,'Core']]],
+  ['getstddeviationz',['GetStdDeviationZ',['../namespace_core.html#a5e7b39380b2b293742d5eb0121af9a53',1,'Core']]],
+  ['gettime',['GetTime',['../namespace_core.html#a90178bb59f67598c08058ad3910d4e0f',1,'Core']]],
+  ['graphsheet',['GraphSheet',['../class_graph_sheet.html#aad9e497cfb489af37227147397ab021b',1,'GraphSheet']]],
+  ['graphwindow',['GraphWindow',['../class_graph_window.html#a68f193cacc0237a41d8c44923b53c11a',1,'GraphWindow']]]
 ];

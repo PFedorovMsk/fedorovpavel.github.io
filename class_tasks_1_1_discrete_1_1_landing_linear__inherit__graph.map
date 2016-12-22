@@ -1,6 +1,6 @@
 <map id="Tasks::Discrete::LandingLinear" name="Tasks::Discrete::LandingLinear">
-<area shape="rect" id="node5" href="$class_tasks_1_1_discrete_1_1_landing_gauss.html" title="Tasks::Discrete::Landing\lGauss" alt="" coords="5,319,184,360"/>
-<area shape="rect" id="node2" href="$class_core_1_1_discrete_task.html" title="Базовый тип задач для дискретных фильтров оптимальной структуры. " alt="" coords="23,155,166,181"/>
-<area shape="rect" id="node3" href="$class_core_1_1_task.html" title="Базовый класс для всех задач " alt="" coords="50,80,139,107"/>
-<area shape="rect" id="node4" href="$class_core_1_1_function_time.html" title="Базовый класс для классов, представляющих собой функции времени. " alt="" coords="21,5,168,32"/>
+<area shape="rect" id="node5" href="$class_tasks_1_1_discrete_1_1_landing_gauss.html" title="Tasks::Discrete::Landing\lGauss" alt="" coords="5,319,173,360"/>
+<area shape="rect" id="node2" href="$class_core_1_1_discrete_task.html" title="Базовый тип задач для дискретных фильтров оптимальной структуры. " alt="" coords="21,155,157,181"/>
+<area shape="rect" id="node3" href="$class_core_1_1_task.html" title="Базовый класс для всех задач " alt="" coords="46,80,133,107"/>
+<area shape="rect" id="node4" href="$class_core_1_1_function_time.html" title="Базовый класс для классов, представляющих собой функции времени. " alt="" coords="21,5,158,32"/>
 </map>

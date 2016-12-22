@@ -12,8 +12,8 @@
 \subsection*{Открытые члены}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_filters_1_1_discrete_1_1_f_o_s_a4ccb53bc00846f7ca140b55316241749}{}\label{class_filters_1_1_discrete_1_1_f_o_s_a4ccb53bc00846f7ca140b55316241749} 
-\hyperlink{class_filters_1_1_discrete_1_1_f_o_s_a4ccb53bc00846f7ca140b55316241749}{F\+OS} (\hyperlink{namespace_core_a4811af8148ba137d644b9a61a042cf03}{Core\+::\+Ptr\+Filter\+Parameters} \hyperlink{class_core_1_1_filter_a44aa749b49ba46256975ce545531ecf7}{params}, \hyperlink{namespace_core_abfda8f69fcacfcea2696549b548ed737}{Core\+::\+Ptr\+Task} task)
+\hyperlink{class_filters_1_1_discrete_1_1_f_o_s_a4ccb53bc00846f7ca140b55316241749}{F\+OS} (\hyperlink{namespace_core_a4811af8148ba137d644b9a61a042cf03}{Core\+::\+Ptr\+Filter\+Parameters} \hyperlink{class_core_1_1_filter_a44aa749b49ba46256975ce545531ecf7}{params}, \hyperlink{namespace_core_abfda8f69fcacfcea2696549b548ed737}{Core\+::\+Ptr\+Task} task)\hypertarget{class_filters_1_1_discrete_1_1_f_o_s_a4ccb53bc00846f7ca140b55316241749}{}\label{class_filters_1_1_discrete_1_1_f_o_s_a4ccb53bc00846f7ca140b55316241749}
+
 \begin{DoxyCompactList}\small\item\em Конструктор. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Защищенные члены}
 \begin{DoxyCompactItemize}
@@ -23,7 +23,7 @@ void \hyperlink{class_filters_1_1_discrete_1_1_f_o_s_a66b52dd04e77257393fe156b71
 \subsection*{Закрытые члены}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{class_filters_1_1_discrete_1_1_f_o_s_ac00393ddad3a1ba203e09db8cbc52944}{compute\+Params} (size\+\_\+t n, Array$<$ Math\+::\+Vector $>$ \&u, Math\+::\+Matrix \&T)
+void \hyperlink{class_filters_1_1_discrete_1_1_f_o_s_a2bf612c50a41e892050593ba705c3b79}{compute\+Params} (size\+\_\+t k, Array$<$ Math\+::\+Vector $>$ \&u, Math\+::\+Matrix \&T)
 \begin{DoxyCompactList}\small\item\em Вычисляет параметры и заполняет массив $U_k$. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Дополнительные унаследованные члены}
 
@@ -35,38 +35,41 @@ void \hyperlink{class_filters_1_1_discrete_1_1_f_o_s_ac00393ddad3a1ba203e09db8cb
 
 
 
-Граф наследования\+:Filters\+:\+:Discrete\+:\+:F\+OS\+:\nopagebreak
+Граф наследования\+:Filters\+:\+:Discrete\+:\+:F\+OS\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=197pt]{class_filters_1_1_discrete_1_1_f_o_s__inherit__graph}
+\includegraphics[width=193pt]{class_filters_1_1_discrete_1_1_f_o_s__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Граф связей класса Filters\+:\+:Discrete\+:\+:F\+OS\+:\nopagebreak
+Граф связей класса Filters\+:\+:Discrete\+:\+:F\+OS\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=197pt]{class_filters_1_1_discrete_1_1_f_o_s__coll__graph}
+\includegraphics[width=213pt]{class_filters_1_1_discrete_1_1_f_o_s__coll__graph}
 \end{center}
 \end{figure}
 
 
 \subsection{Методы}
-\hypertarget{class_filters_1_1_discrete_1_1_f_o_s_a66b52dd04e77257393fe156b71e5582f}{}\label{class_filters_1_1_discrete_1_1_f_o_s_a66b52dd04e77257393fe156b71e5582f} 
 \index{Filters\+::\+Discrete\+::\+F\+OS@{Filters\+::\+Discrete\+::\+F\+OS}!algorithm@{algorithm}}
 \index{algorithm@{algorithm}!Filters\+::\+Discrete\+::\+F\+OS@{Filters\+::\+Discrete\+::\+F\+OS}}
-\subsubsection{\texorpdfstring{algorithm()}{algorithm()}}
-{\footnotesize\ttfamily void Filters\+::\+Discrete\+::\+F\+O\+S\+::algorithm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
-
+\subsubsection[{\texorpdfstring{algorithm() override}{algorithm() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Filters\+::\+Discrete\+::\+F\+O\+S\+::algorithm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_filters_1_1_discrete_1_1_f_o_s_a66b52dd04e77257393fe156b71e5582f}{}\label{class_filters_1_1_discrete_1_1_f_o_s_a66b52dd04e77257393fe156b71e5582f}
 
 
 Выполняет алгоритм. 
 
 Вектор $Z_t$ оценки вычисляется следующим образом\+: \[\Lambda_k = \tau_{k-1}(U_{k-1}, T_{k-1}),\] \[\Psi_k = \Theta_{k-1}(U_{k-1}, T_{k-1}),\] \[Z_k = \Lambda_k + \Psi_k \cdot G_k^T(\Lambda_k, \Psi_k) \cdot F_k^{-1}(\Lambda_k, \Psi_k) \cdot [Y_k - h_k(\Lambda_k, \Psi_k)].\] \[U_k = \Gamma_k^y \cdot Y_k + \Gamma_k^z \cdot Z_k + \chi_k.\]
 
-Параметры $\Gamma_k^y,\ \Gamma_k^z,\ T_k,\ \chi_k$ вычисляются в \hyperlink{class_filters_1_1_discrete_1_1_f_o_s_ac00393ddad3a1ba203e09db8cbc52944}{compute\+Params(size\+\_\+t, Array$<$\+Math\+::\+Vector$>$ \&, Math\+::\+Matrix \&)}.
+Параметры $\Gamma_k^y,\ \Gamma_k^z,\ T_k,\ \chi_k$ вычисляются в \hyperlink{class_filters_1_1_discrete_1_1_f_o_s_a2bf612c50a41e892050593ba705c3b79}{compute\+Params(size\+\_\+t, Array$<$\+Math\+::\+Vector$>$ \&, Math\+::\+Matrix \&)}.
 
 \begin{DoxySeeAlso}{См. также}
 \hyperlink{class_core_1_1_discrete_filter}{Core\+::\+Discrete\+Filter} 
@@ -79,21 +82,24 @@ void \hyperlink{class_filters_1_1_discrete_1_1_f_o_s_ac00393ddad3a1ba203e09db8cb
 
 
 
-См. определение в файле d\+\_\+fos.\+cc строка 28
+См. определение в файле d\+\_\+fos.\+cc строка 25
 
-\hypertarget{class_filters_1_1_discrete_1_1_f_o_s_ac00393ddad3a1ba203e09db8cbc52944}{}\label{class_filters_1_1_discrete_1_1_f_o_s_ac00393ddad3a1ba203e09db8cbc52944} 
 \index{Filters\+::\+Discrete\+::\+F\+OS@{Filters\+::\+Discrete\+::\+F\+OS}!compute\+Params@{compute\+Params}}
 \index{compute\+Params@{compute\+Params}!Filters\+::\+Discrete\+::\+F\+OS@{Filters\+::\+Discrete\+::\+F\+OS}}
-\subsubsection{\texorpdfstring{compute\+Params()}{computeParams()}}
-{\footnotesize\ttfamily void Filters\+::\+Discrete\+::\+F\+O\+S\+::compute\+Params (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{n,  }\item[{Array$<$ Math\+::\+Vector $>$ \&}]{u,  }\item[{Math\+::\+Matrix \&}]{T }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
+\subsubsection[{\texorpdfstring{compute\+Params(size\+\_\+t k, Array$<$ Math\+::\+Vector $>$ \&u, Math\+::\+Matrix \&\+T)}{computeParams(size_t k, Array< Math::Vector > &u, Math::Matrix &T)}}]{\setlength{\rightskip}{0pt plus 5cm}void Filters\+::\+Discrete\+::\+F\+O\+S\+::compute\+Params (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{k, }
+\item[{Array$<$ Math\+::\+Vector $>$ \&}]{u, }
+\item[{Math\+::\+Matrix \&}]{T}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_filters_1_1_discrete_1_1_f_o_s_a2bf612c50a41e892050593ba705c3b79}{}\label{class_filters_1_1_discrete_1_1_f_o_s_a2bf612c50a41e892050593ba705c3b79}
 
 
 Вычисляет параметры и заполняет массив $U_k$. 
 
 
 \begin{DoxyParams}[1]{Аргументы}
-\mbox{\tt in}  & {\em n} & -\/ индекс, соответствующий времени $t = n \cdot \Delta t$. \\
+\mbox{\tt in}  & {\em k} & -\/ индекс, соответствующий времени $t = k \cdot \delta t$. \\
 \hline
 \mbox{\tt out}  & {\em u} & -\/ масcив под выборку $U_k$. \\
 \hline
@@ -102,7 +108,7 @@ void \hyperlink{class_filters_1_1_discrete_1_1_f_o_s_ac00393ddad3a1ba203e09db8cb
 \end{DoxyParams}
 \[D_k^\delta = cov([Y_k^T\ \ Z_k^T]^T),\] \[[\Gamma_k^y\ \ \Gamma_k^z] = [D_{kk}^{xy}\ \ D_{kk}^{xz}] \cdot (D_k^\delta)^{-1},\] \[\chi_k = m_k^x - \Gamma_k^y \cdot m_k^y - \Gamma_k^z \cdot m_k^z,\] \[T_k = D_k^x - \Gamma_k^y \cdot (D_{kk}^{xy})^T - \Gamma_k^z \cdot (D_{kk}^{xz})^T.\] 
 
-См. определение в файле d\+\_\+fos.\+cc строка 77
+См. определение в файле d\+\_\+fos.\+cc строка 62
 
 
 

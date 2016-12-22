@@ -1,4 +1,5 @@
 <map id="Filters::ContinuousDiscrete::DFOS" name="Filters::ContinuousDiscrete::DFOS">
-<area shape="rect" id="node2" href="$class_core_1_1_continuous_discrete_filter.html" title="Базовый класс для всех непрерывно&#45;дискретных фильтров оптимальной структуры. " alt="" coords="10,80,197,121"/>
-<area shape="rect" id="node3" href="$class_core_1_1_filter.html" title="Базовый класс для всех фильтров. " alt="" coords="57,5,149,32"/>
+<area shape="rect" id="node2" href="$class_core_1_1_continuous_discrete_filter.html" title="Базовый класс для всех непрерывно&#45;дискретных фильтров оптимальной структуры. " alt="" coords="9,185,183,227"/>
+<area shape="rect" id="node3" href="$class_core_1_1_filter.html" title="Базовый класс для всех фильтров. " alt="" coords="53,109,139,136"/>
+<area shape="rect" id="node4" href="$class_math_1_1_multivariate_normal_distribution.html" title="Класс&#45;генератор случайных нормальных(гауссовских) векторов. " alt="" coords="12,5,180,47"/>
 </map>

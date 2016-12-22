@@ -1,4 +1,3 @@
 <map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
-<area shape="rect" id="node2" href="$class_matrix_widget.html" title="Класс для отображения / изменения матриц (или векторов). " alt="" coords="163,5,272,32"/>
-<area shape="rect" id="node3" href="$class_task_parameters_widget.html" title="Класс виджета, предаставляющего возможность работы с параметрами задач. " alt="" coords="132,56,303,83"/>
+<area shape="rect" id="node1" href="$class_math_1_1_lin_alg_1_1_current_pinv_method.html" title="Класс, упрощающий выбор метода псевдообращения матриц. " alt="" coords="5,5,177,47"/>
 </map>

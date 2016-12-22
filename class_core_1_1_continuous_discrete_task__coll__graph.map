@@ -1,4 +1,5 @@
 <map id="Core::ContinuousDiscreteTask" name="Core::ContinuousDiscreteTask">
-<area shape="rect" id="node2" href="$class_core_1_1_task.html" title="Базовый класс для всех задач " alt="" coords="69,80,158,107"/>
-<area shape="rect" id="node3" href="$class_core_1_1_function_time.html" title="Базовый класс для классов, представляющих собой функции времени. " alt="" coords="40,5,187,32"/>
+<area shape="rect" id="node2" href="$class_core_1_1_task.html" title="Базовый класс для всех задач " alt="" coords="119,109,205,136"/>
+<area shape="rect" id="node3" href="$class_core_1_1_function_time.html" title="Базовый класс для классов, представляющих собой функции времени. " alt="" coords="5,13,143,39"/>
+<area shape="rect" id="node4" href="$class_math_1_1_multivariate_normal_distribution.html" title="Класс&#45;генератор случайных нормальных(гауссовских) векторов. " alt="" coords="167,5,335,47"/>
 </map>

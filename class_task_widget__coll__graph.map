@@ -1,4 +1,4 @@
 <map id="TaskWidget" name="TaskWidget">
-<area shape="rect" id="node3" href="$class_task_parameters_widget.html" title="Класс виджета, предаставляющего возможность работы с параметрами задач. " alt="" coords="125,244,296,271"/>
-<area shape="rect" id="node5" href="$class_matrix_widget.html" title="Класс для отображения / изменения матриц (или векторов). " alt="" coords="201,81,311,108"/>
+<area shape="rect" id="node3" href="$class_task_parameters_widget.html" title="Класс виджета, предаставляющего возможность работы с параметрами задач. " alt="" coords="121,244,279,271"/>
+<area shape="rect" id="node5" href="$class_matrix_widget.html" title="Класс для отображения / изменения матриц (или векторов). " alt="" coords="193,81,292,108"/>
 </map>

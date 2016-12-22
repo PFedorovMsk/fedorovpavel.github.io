@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['writeresult',['writeResult',['../class_core_1_1_filter.html#a84c7d1ebe3931974c3beccf27f13c1c5',1,'Core::Filter']]],
-  ['writetofile',['writeToFile',['../class_filter_results_table.html#aa7da6ec37e106e4ce6e9144bfe1c6b38',1,'FilterResultsTable']]]
+  ['x0',['x0',['../class_core_1_1_task.html#a953cf6c745534e85cb0e36b8294c48ff',1,'Core::Task']]],
+  ['xlabel',['xLabel',['../class_graph_sheet.html#aba99f07178fd6c4a843b804c1320d1fb',1,'GraphSheet']]]
 ];
